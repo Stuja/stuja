@@ -14,7 +14,9 @@
     <img alt="Stuja" title="Stuja" src="https://github.com/Stuja/stuja/blob/master/imagenes/home.png" width="450">
 </p>
 <p align="center">
-    <a  href="https://sttuja.web.app">Web</a>
+       <a 		href="https://sttuja.web.app">
+  <img alt="Web" title="Web" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-web.png" width="140">
+  </a>
 </p>
 
 
