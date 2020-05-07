@@ -68,9 +68,20 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
    git clone https://github.com/YOUR-USERNAME/stuja
    ```
 
-4. **Aporta tus mejoras** al proyecto. 
+4. **Crea una rama**, protegiendo de ese modo la rama `master`. 
 
-5. **Guarda** los cambios. 
+   ```bash
+   git checkout -b "nombre-de-tu-rama"
+   ```
+
+   Puedes leer más información sobre el porqué de este paso en: 
+
+   * [Best practices for protected branches](https://github.community/t5/Support-Protips/Best-practices-for-protected-branches/ba-p/10224#)
+   * [Protecting the master branch](https://cityofaustin.github.io/ctm-dev-workflow/protected-branches.html)
+
+5. **Aporta tus mejoras** al proyecto. 
+
+6. **Guarda** los cambios. 
 
    ```bash
    git add . 
@@ -78,15 +89,17 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
    git commit -m "Descripción del cambio que has realizado"
    ```
 
-6. **Sube los cambios** a GitHub.
+7. **Sube los cambios** a GitHub.
 
    ```bash
-   git push origin master
+   git push origin "nombre-de-tu-rama"
    ```
 
-7. En GitHub, **haz un pull request** haciendo click en el botón *Compare & pull request*.
-8. En la nueva ventana, **describe los cambios que has añadido** y señala por qué son importantes.  
-9. **Envia el pull request** haciendo click en *Create pull request*.
+8. En GitHub, **haz un pull request** haciendo click en el botón *Compare & pull request*.
+
+9. En la nueva ventana, **describe los cambios que has añadido** y señala por qué son importantes.  
+
+10. **Envia el pull request** haciendo click en *Create pull request*.
 
 
 
