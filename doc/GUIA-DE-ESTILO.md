@@ -19,9 +19,9 @@
 
 ## ¿Por qué?
 
-Todos tenemos nuestro estilo, y eso está bien. Los problemas vienen cuando los estilos son muy distintos unos de otros y confunde más que ayuda. 
+Todos tenemos nuestro estilo, y eso está bien. Los problemas vienen cuando los estilos son muy distintos entre ellos y confunden más que ayudan. 
 
-Para que los estudiantes puedan encontrar la información más rápidamente y se hagan un mapa mental de cómo está estructurado el proyecto, el proyecto está organizado como sigue. 
+Para que los estudiantes puedan encontrar la información rápidamente y se hagan un mapa mental de cómo está estructurado el proyecto, este está organizado como sigue. 
 
 
 
@@ -45,7 +45,7 @@ Dentro de la carpeta `universidad/asignaturas` veremos un listado de carpetas co
 
 ## ¿Cómo nombrar los archivos o carpetas?
 
-Todas aquellas carpetas o archivos dentro de los tres directorios ya mencionados deberán tener nombre claros y sencillos sobre su contenido. De este modo los estudiantes sabrán en un vistazo de qué trata su contenido. 
+Todas aquellas carpetas o archivos dentro de los tres directorios ya mencionados deberán tener nombres claros y sencillos sobre su contenido. De este modo los estudiantes sabrán en un vistazo de qué trata su contenido. 
 
 ### Ejemplo:
 
