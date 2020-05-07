@@ -1,4 +1,4 @@
-<h1 align="center"> Programación y administración de redes </h1> <br>
+<h1 align="center"> Fundamentos de bases de datos </h1> <br>
 <p align="center">
           <a 		href="https://github.com/Stuja/stuja/tree/master">
   <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
