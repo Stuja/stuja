@@ -18,13 +18,13 @@
 
 
 
-¿Quieres contribuir y no sabes por dónde y cómo hacerlo?, ¡no debes preocuparte! Hay todo tipo de forma de involucrarse con el proyecto y unos pocos consejos te ayudarán a sacar el máximo provecho. 
+¿Quieres contribuir y no sabes por dónde y cómo hacerlo? ¡No debes preocuparte! Hay todo tipo de formas de involucrarse con el proyecto y unos pocos consejos te ayudarán a sacar el máximo provecho. 
 
 
 
 ## ¿En qué contribuir?
 
-Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es el lugar perfecto para empezar con algo. Si hay algo que falta, añádelo.  
+Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es el lugar perfecto para empezar con algo. Si falta algo, añádelo.  
 
 ### ¿Te gusta diseñar?
 
@@ -58,7 +58,7 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
 1. **Haz un Fork** del proyecto. 
 
-   En la esquina superior izquierda de la página, encontrarás un botón, haz click en **Fork**.
+   En la esquina superior izquierda de la página encontrarás un botón, haz click en **Fork**.
 
 2. En GitHub, **navega hacia el Fork** que se te ha generado. 
 
@@ -94,14 +94,14 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
 ¿Has tenido algún problema con los pasos anteriores? No te preocupes, aquí te facilitamos ayudas para que te sea más fácil: 
 
-- [Cómo crear un Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). Un Fork es una copia de un proyecto. Los Forks te permite experimentar libremente con cambios sin afectar el proyecto original. 
+- [Cómo crear un Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo). Un Fork es una copia de un proyecto. Los Forks te permite experimentar libremente con cambios sin afectar al proyecto original. 
 - [Cómo clonar un proyecto](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
 ¿Sigues con dudas? Accede a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y pregunta. Siempre hay miembros que te podrán ayudar mejor😉 . 
 
 
 
-## Alternativas de colobaración
+## Alternativas de colabaración
 
 Si quieres aportar algo al repositorio pero aún no te has animado a hacerlo directamente, hay otra manera en la que puedes colaborar: 
 

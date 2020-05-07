@@ -1,4 +1,4 @@
-<h1 align="center"> Programación y administración de redes </h1> <br>
+<h1 align="center"> Fundamentos de bases de datos </h1> <br>
 <p align="center">
           <a 		href="https://github.com/Stuja/stuja/tree/master">
   <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
@@ -19,7 +19,7 @@
 
 ## Resumen
 
-Es la primera asignatura de la carrera en la que aprendemos la utilización de los sistemas de gestión de bases de datos. Asimismo hacemos uso del lenguaje declarativo SQL.
+Es la primera asignatura de la carrera en la que aprendemos la utilización de los sistemas de gestión de bases de datos. Asimismo se hace uso del lenguaje declarativo SQL.
 
 
 

@@ -28,7 +28,7 @@ El sitio donde los estudiantes de Ingeniería Informática se reúnen para compa
 
 ## ¿Quiénes somos? 👩‍🎓 👨‍🎓
 
-Somos estudiantes de Ingeniería Informática de la Universidad de Jaén con ganas de compartir idea, apuntes, código y ayudar a los demás alumnos a salir de la carrera cuanto antes. 
+Somos estudiantes de Ingeniería Informática de la Universidad de Jaén con ganas de compartir ideas, apuntes, código y ayudar a los demás alumnos a salir de la carrera cuanto antes. 
 
 
 
@@ -72,13 +72,13 @@ Dentro de cada carpeta encontrarás un archivo `README.md`, el cual tiene inform
 
 ## ¿Cómo colaborar? 
 
-¿Quieres contribuir y no sabes por dónde y cómo hacerlo? Empieza por el archivo [CONTRIBUIR.md](https://github.com/Stuja/stuja/blob/master/doc/CONTRIBUIR.md) donde podrás informarte cómo colaborar en el proyecto. 
+¿Quieres contribuir y no sabes por dónde y cómo hacerlo? Empieza por el archivo [CONTRIBUIR.md](https://github.com/Stuja/stuja/blob/master/doc/CONTRIBUIR.md) donde podrás informarte sobre cómo colaborar en el proyecto. 
 
 
 
 ## Chat 💬
 
-Únete a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y entérate de lo que esta pasando. 
+Únete a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y entérate de lo que está pasando. 
 
 
 
