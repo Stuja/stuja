@@ -135,9 +135,61 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 - Diseño e implantación de servidores
 - Redes e infraestructuras de comunicaciones 
-- Tecnologías para gestión de la información 
+- Tecnologías para gestión de la información
+
+#### Comunes a todas las menciones
+
+- Ejercicio profesional de la informática
+- Prácticas externas
+
+#### Mención: Informática Empresarial
+
+- Sistemas de información para las decisiones estratégicas
+
+#### Mención: Tratamiento Inteligente de Información
+
+- Diseño de modelos de simulación
+
+#### Mención: Sistemas Gráficos
+
+- Programación de aplicaciones gráficas
+
+#### Mención: Técnicas para la Información y la Comunicación
+
+- Microprocesadores y microcontroladores
 
 
+
+### Segundo semestre
+
+#### Mención: Informática Empresarial
+
+- Web semántica y social
+- Creación de empresas basadas en TIC
+
+#### Mención: Tratamiento Inteligente de Información
+
+- Procesamiento del lenguaje natural
+- Inteligencia ambiental
+
+#### Comunes a Tratamiento Inteligente de Información e Informática Empresarial
+- Minería web
+
+#### Mención: Sistemas Gráficos
+
+- Desarrollo de videojuegos
+- Técnicas de animación 3D y post-procesamiento
+- Algoritmos geométricos
+
+#### Mención: Técnicas para la Información y la Comunicación
+
+- Protocolos de soporte a las aplicaciones multimedia
+- Programación hardware
+- Técnicas avanzadas de seguridad
+
+### TFG
+
+- TFG
 
 ## Contribuidores ✍️
 
