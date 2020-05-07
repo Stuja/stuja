@@ -34,6 +34,6 @@
 
 ## Consejos para superar la asignatura
 
-Aquí los alumnos de la carrara irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron y para que tú también la superes. 
+Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
 
 [TUS CONSEJOS PARA SUPERAR LA ASIGNATURA]
