@@ -30,7 +30,7 @@ Este Código de Conducta cubre el comportamiento de todos los miembros de la com
 
 No toleramos el acoso a miembros de la comunidad bajo ningún concepto. Cualquier persona que viole este código de conducta puede ser sancionado o expulsado de estos espacios a discreción del equipo.
 
-Si eres víctima de conductas abusivas, notas que otra persona está siendo acosada, o tienes dudas, por favor [contacta con nosotros](https://forms.gle/4HhgNvhabrvG79Af8). 
+Si eres víctima de conductas abusivas, notas que otra persona está siendo acosada o tienes dudas, por favor [contacta con nosotros](https://forms.gle/4HhgNvhabrvG79Af8). 
 
 
 
@@ -43,8 +43,8 @@ No toleramos el acoso a miembros de la comunidad bajo ningún concepto, por ejem
 - El contacto físico y el contacto físico simulado sin consentimiento o después de una solicitud de alto.
 - Amenazas de violencia, incluyendo Incitación a la violencia hacia cualquier individuo, incluyendo alentar a una persona para que se suicide o se autolastime.
 - Intimidación deliberada, como Acoso o bullying.
-- Hostigamiento con de fotografía o grabación, incluida la actividad en línea con fines de acoso.
-- Interrumpir a los demás cuando están dando su punto de vista. durante una discusión (“mansplanning”).
+- Hostigamiento con fotografía o grabación, incluida la actividad en línea con fines de acoso.
+- Interrumpir a los demás cuando están dando su punto de vista durante una discusión (“mansplaining”).
 - Comportamientos sexuales no deseados.
 - Patrón de contacto social inapropiado, como solicitar / asumir niveles inadecuados de intimidad con otros.
 - Continuar la comunicación uno-a-uno después de las solicitudes de alto.
@@ -54,6 +54,6 @@ No toleramos el acoso a miembros de la comunidad bajo ningún concepto, por ejem
 
 ## Informa
 
-Si eres acosado por un miembro de Stuja, notas que alguien más está siendo acosado o tiene alguna otra preocupación, por favor [contacta con nosotros](https://forms.gle/4HhgNvhabrvG79Af8). Responderemos tan pronto como podamos.
+Si eres acosado por un miembro de Stuja, notas que alguien más está siendo acosado o tienes alguna otra preocupación, por favor [contacta con nosotros](https://forms.gle/4HhgNvhabrvG79Af8). Responderemos tan pronto como podamos.
 
 Respetaremos las solicitudes de confidencialidad con el propósito de proteger a las víctimas de abuso y no nombraremos víctimas de acoso sin su consentimiento.
