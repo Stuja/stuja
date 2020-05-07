@@ -134,7 +134,7 @@ Existen muchos editores, y os invito que compartáis aquellos que vosotros uteli
 
 Todos aquellos que ayudaron a levantar el proyecto.
 
-| <img alt="manuelalferez" src="https://avatars1.githubusercontent.com/u/38152841?s=400&amp" width="50"> |      |
-| ------------------------------------------------------------ | ---- |
-| [manuelalferez](https://github.com/manuelalferez)            |      |
+| <img alt="manuelalferez" src="https://avatars1.githubusercontent.com/u/38152841?s=400&amp" width="50"> | <img alt="Delunado" src="https://avatars0.githubusercontent.com/u/11133623?s=400&v=4" width="50"> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [manuelalferez](https://github.com/manuelalferez)            | [Delunado](https://github.com/Delunado)                      |
 
