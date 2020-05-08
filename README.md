@@ -1,23 +1,24 @@
 <h1 align="center"> Stuja </h1> <br>
 <p align="center">
-          <a 		href="https://github.com/Stuja/stuja/tree/master">
-  <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
+          <a 		href="./">
+  <img alt="Inicio" title="Inicio" src="imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="https://github.com/Stuja/stuja/tree/master/universidad">
-  <img alt="Universidad" title="Universidad" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-universidad.png" width="140">
+      <a 		href="universidad">
+  <img alt="Universidad" title="Universidad" src="imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="https://github.com/Stuja/stuja/tree/master/doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-contribuir.png" width="140">
+        <a 		href="doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Stuja" title="Stuja" src="https://github.com/Stuja/stuja/blob/master/imagenes/home.png" width="450">
+    <img alt="Stuja" title="Stuja" src="imagenes/home.png" width="450">
 </p>
 <p align="center">
        <a 		href="https://sttuja.web.app">
-  <img alt="Web" title="Web" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-web.png" width="140">
+  <img alt="Web" title="Web" src="imagenes/boton-web.png" width="140">
   </a>
 </p>
+
 
 
 
