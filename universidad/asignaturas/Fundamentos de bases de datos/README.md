@@ -3,7 +3,7 @@
           <a 		href="../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../universidad">
+      <a 		href="../../README.md">
   <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
   </a>
         <a 		href="../../../doc/CONTRIBUIR.md">
