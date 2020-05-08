@@ -64,7 +64,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Segundo semestre
 
 - Sistemas concurrentes y distribuidos 
-- [Programación y administración de redes](https://github.com/Stuja/stuja/tree/master/universidad/asignaturas/Programaci%C3%B3n%20y%20administraci%C3%B3n%20de%20redes)
+- Programación y administración de redes
 - Inteligencia artificial 
 - Fundamentos de base de datos 
 - Diseño de algoritmos 
