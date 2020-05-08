@@ -1,18 +1,19 @@
 <h1 align="center"> Universidad </h1> <br>
 <p align="center">
-          <a 		href="https://github.com/Stuja/stuja/tree/master">
-  <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
+          <a 		href="../README.md">
+  <img alt="Inicio" title="Inicio" src="../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="https://github.com/Stuja/stuja/tree/master/universidad">
-  <img alt="Universidad" title="Universidad" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-universidad.png" width="140">
+      <a 		href="./">
+  <img alt="Universidad" title="Universidad" src="../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="https://github.com/Stuja/stuja/tree/master/doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-contribuir.png" width="140">
+        <a 		href="../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="HOME" title="HOME" src="https://github.com/Stuja/stuja/blob/master/imagenes/universidad.png" width="450">
+    <img alt="HOME" title="HOME" src="../imagenes/universidad.png" width="450">
 </p>
+
 
 
 
