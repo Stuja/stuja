@@ -1,6 +1,6 @@
 <h1 align="center"> Análisis y Métodos Numéricos </h1> <br>
 <p align="center">
-          <a 		href="../../../">
+          <a 		href="../../..">
   <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
   </a>
       <a 		href="../../universidad">
