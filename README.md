@@ -73,7 +73,7 @@ Dentro de cada carpeta encontrarás un archivo `README.md`, el cual tiene inform
 
 ## ¿Cómo colaborar? 
 
-¿Quieres contribuir y no sabes por dónde y cómo hacerlo? Empieza por el archivo [CONTRIBUIR.md](https://github.com/Stuja/stuja/blob/master/doc/CONTRIBUIR.md) donde podrás informarte sobre cómo colaborar en el proyecto. 
+¿Quieres contribuir y no sabes por dónde y cómo hacerlo? Empieza por el archivo [CONTRIBUIR.md](doc/CONTRIBUIR.md) donde podrás informarte sobre cómo colaborar en el proyecto. 
 
 
 
@@ -97,7 +97,8 @@ El proyecto está bajo la licencia **Atribución/Reconocimiento-NoComercial 4.0 
 
 <p>
           <a 		href="https://creativecommons.org/licenses/by-nc/4.0/legalcode">
-  <img alt="Licencia" title="Licencia" src="https://github.com/manuelalferez/stuja/blob/master/imagenes/licencia.png" width="80">
+  <img alt="Licencia" title="Licencia" src="imagenes/licencia.png" width="80">
   </a>
 </p>
+
 
