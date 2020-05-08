@@ -6,7 +6,7 @@
       <a 		href="../universidad">
   <img alt="Universidad" title="Universidad" src="../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="./">
+        <a 		href="./CONTRIBUIR.md">
   <img alt="Contribuir" title="Contribuir" src="../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
