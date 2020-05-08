@@ -1,0 +1,349 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11769,        339]
+NotebookOptionsPosition[     10967,        307]
+NotebookOutlinePosition[     11313,        322]
+CellTagsIndexPosition[     11270,        319]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Pr\[AAcute]cticas 4", "Title",
+ CellChangeTimes->{{3.7179966119576645`*^9, 3.717996659725397*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 10. (((~p) v q) -> r) -> ((p \[And] (~q)) v r))", "Subsection",
+ CellChangeTimes->{{3.7179966620715313`*^9, 3.717996668288887*^9}, {
+   3.717996868757353*^9, 3.7179968759167624`*^9}, {3.7179992013507695`*^9, 
+   3.717999201438775*^9}, {3.7179993155743027`*^9, 3.7179993165823603`*^9}, {
+   3.717999743031752*^9, 3.7179997621268444`*^9}, {3.717999799530984*^9, 
+   3.71799981484786*^9}, 3.7180000095429955`*^9, 3.718000052415448*^9}],
+
+Cell["a) Calcular tabla de verdad. ", "Text",
+ CellChangeTimes->{{3.7179999122204294`*^9, 3.717999924895154*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", " ", "=", " ", "3"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"p", " ", "=", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{"False", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"t", ",", " ", "n"}], "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"expresion", " ", ":=", " ", 
+     RowBox[{"Implies", "[", 
+      RowBox[{
+       RowBox[{"Implies", "[", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"!", 
+            RowBox[{"p", "[", 
+             RowBox[{"[", "1", "]"}], "]"}]}], " ", "||", " ", 
+           RowBox[{"p", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}], ")"}], ",", " ", 
+         RowBox[{"p", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], "]"}], ",", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"p", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], " ", "&&", " ", 
+          RowBox[{"!", 
+           RowBox[{"p", "[", 
+            RowBox[{"[", "2", "]"}], "]"}]}]}], ")"}], " ", "||", " ", 
+        RowBox[{"p", "[", 
+         RowBox[{"[", "3", "]"}], "]"}]}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"tabla", " ", "=", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{"\"\<F\>\"", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"2", "^", "n"}], " ", "+", " ", "1"}], ")"}]}], "}"}], ",",
+        " ", 
+       RowBox[{"{", 
+        RowBox[{"y", ",", " ", 
+         RowBox[{"n", " ", "+", " ", "1"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"k", " ", "=", " ", "1"}], ",", " ", 
+      RowBox[{"k", " ", "<", " ", 
+       RowBox[{"n", " ", "+", " ", "1"}]}], ",", " ", 
+      RowBox[{"k", "++"}], ",", " ", 
+      RowBox[{
+       RowBox[{"tabla", "[", 
+        RowBox[{"[", 
+         RowBox[{"1", ",", " ", "k"}], "]"}], "]"}], " ", "=", " ", 
+       SubscriptBox["\"\<p\>\"", "k"]}]}], "]"}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"tabla", "[", 
+      RowBox[{"[", 
+       RowBox[{"1", ",", " ", 
+        RowBox[{"n", " ", "+", " ", "1"}]}], "]"}], "]"}], " ", "=", " ", 
+     "\"\<Exp\>\""}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"i", " ", "=", " ", "0"}], ",", " ", 
+      RowBox[{"i", " ", "<", " ", 
+       RowBox[{"2", "^", "n"}]}], ",", " ", 
+      RowBox[{"i", "++"}], ",", "\n", "  \t", 
+      RowBox[{
+       RowBox[{"j", " ", "=", " ", "i"}], ";", "\n", "  \t", 
+       RowBox[{"For", "[", 
+        RowBox[{
+         RowBox[{"f", " ", "=", " ", "n"}], ",", " ", 
+         RowBox[{"f", " ", ">", " ", "0"}], ",", " ", 
+         RowBox[{"f", "--"}], ",", "\n", "   \t\t", 
+         RowBox[{
+          RowBox[{"resto", " ", "=", " ", 
+           RowBox[{"Mod", "[", 
+            RowBox[{"j", ",", " ", "2"}], "]"}]}], ";", "\n", "   \t\t", 
+          RowBox[{"j", " ", "=", " ", 
+           RowBox[{"Floor", "[", 
+            RowBox[{"j", "/", "2"}], "]"}]}], ";", "\n", "   \t\t", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"resto", " ", "==", " ", "0"}], ",", " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"p", "[", 
+               RowBox[{"[", "f", "]"}], "]"}], " ", "=", " ", "True"}], ";", 
+             " ", 
+             RowBox[{
+              RowBox[{"tabla", "[", 
+               RowBox[{"[", 
+                RowBox[{
+                 RowBox[{"i", " ", "+", " ", "2"}], ",", " ", "f"}], "]"}], 
+               "]"}], " ", "=", " ", "\"\<V\>\""}]}], ",", " ", "\n", "    ", 
+            RowBox[{
+             RowBox[{"p", "[", 
+              RowBox[{"[", "f", "]"}], "]"}], " ", "=", " ", "False"}]}], 
+           "]"}], ";"}]}], "\n", "   \t\t ", "]"}], ";", "\n", "  \t", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"TrueQ", "[", "expresion", "]"}], ",", " ", 
+         RowBox[{
+          RowBox[{"tabla", "[", 
+           RowBox[{"[", 
+            RowBox[{
+             RowBox[{"i", " ", "+", " ", "2"}], ",", " ", 
+             RowBox[{"n", " ", "+", " ", "1"}]}], "]"}], "]"}], " ", "=", 
+          " ", "\"\<V\>\""}]}], "]"}], ";"}]}], "\n", "  \t", "]"}], ";"}], 
+   "\n", 
+   RowBox[{"TableForm", "[", "tabla", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.717999334566389*^9, 3.7179993406227355`*^9}, 
+   3.7179998174710097`*^9, {3.717999868688939*^9, 3.717999906273089*^9}, {
+   3.7179999449263*^9, 3.7180000886955233`*^9}, {3.718000150906081*^9, 
+   3.7180001745514336`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     SubscriptBox["\<\"p\"\>", "1"], 
+     SubscriptBox["\<\"p\"\>", "2"], 
+     SubscriptBox["\<\"p\"\>", "3"], "\<\"Exp\"\>"},
+    {"\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+    {"\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+    {"\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+    {"\<\"V\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+    {"\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+    {"\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+    {"\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+    {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.718000090589631*^9, 3.7180001755984936`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+
+Argumentacion\
+\>", "Section",
+ CellChangeTimes->{{3.718000237100011*^9, 3.718000254671016*^9}}],
+
+Cell["Ejercicio 15 de la relacioncilla wapa", "Text",
+ CellChangeTimes->{{3.7180012561993003`*^9, 3.7180012635047183`*^9}}],
+
+Cell["estudiar validez o invalidez de la siguiente argumentacion:", "Text",
+ CellChangeTimes->{{3.7180012689500294`*^9, 3.718001304904086*^9}, {
+  3.718001362056355*^9, 3.718001366312598*^9}}],
+
+Cell["p v q, p -> q ; .:. p", "Text",
+ CellChangeTimes->{{3.7180013744080615`*^9, 3.718001375056099*^9}, {
+  3.718001482393238*^9, 3.718001490720714*^9}}],
+
+Cell["\<\
+Solo tenemos que ver si la forma enunciativa A1 o A2 -> A es una tautologia \
+(se dice que A vale su expresion y asi, y luego se usa este programilla \
+recio) P1, P2 como P[[1]], P[[2]]...\
+\>", "Text",
+ CellChangeTimes->{{3.7180014979121256`*^9, 3.718001519000332*^9}, {
+  3.718001645480566*^9, 3.7180016633445873`*^9}, {3.7180018210806093`*^9, 
+  3.718001848665188*^9}}],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"n", "=", "3"}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\n", 
+ RowBox[{
+  RowBox[{"tautologia", "=", "True"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"p", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{"False", ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "n"}], "}"}]}], "]"}]}], ";"}], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"A1", " ", ":=", " ", "..."}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"A2", " ", ":=", " ", "..."}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"A", " ", ":=", " ", "..."}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\[IndentingNewLine]", 
+ StyleBox[
+  RowBox[{"expresion", ":=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"A1", " ", "o", " ", "A2"}], ")"}], " ", "\[Rule]", " ", "A"}]}],
+  FontColor->RGBColor[1, 0, 0]], "\n", 
+ RowBox[{
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"i", "=", "0"}], ",", 
+    RowBox[{"i", "<", 
+     RowBox[{"2", "^", "n"}]}], ",", 
+    RowBox[{"i", "++"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"j", "=", "i"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"For", "[", 
+      RowBox[{
+       RowBox[{"f", "=", "n"}], ",", 
+       RowBox[{"f", ">", "0"}], ",", 
+       RowBox[{"f", "--"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"resto", "=", 
+         RowBox[{"Mod", "[", 
+          RowBox[{"j", ",", "2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"j", "=", 
+         RowBox[{"Floor", "[", 
+          RowBox[{"j", "/", "2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"resto", "\[Equal]", "0"}], ",", 
+          RowBox[{
+           RowBox[{"p", "[", 
+            RowBox[{"[", "f", "]"}], "]"}], "=", "True"}], ",", 
+          RowBox[{
+           RowBox[{"p", "[", 
+            RowBox[{"[", "f", "]"}], "]"}], "=", "False"}]}], "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"TrueQ", "[", "expresion", "]"}], ",", "Null", ",", 
+       RowBox[{"tautologia", "=", "False"}]}], "]"}], ";"}]}], 
+   "\[IndentingNewLine]", "]"}], ";"}], "\n", 
+ RowBox[{"If", "[", 
+  RowBox[{"tautologia", ",", 
+   RowBox[{
+   "Print", "[", "\"\<La forma enunciativa es una tautolog\[IAcute]a\>\"", 
+    "]"}], ",", 
+   RowBox[{
+   "Print", "[", "\"\<La forma enunciativa no es una tautolog\[IAcute]a\>\"", 
+    "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.718001522592537*^9, 3.718001530609996*^9}, 
+   3.718001593257579*^9, {3.718001630885731*^9, 3.718001640926306*^9}, {
+   3.7180017377098413`*^9, 3.7180017592220716`*^9}, {3.7180017956941576`*^9, 
+   3.7180018087659054`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7179993185624743`*^9, 3.7179993208476048`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 862},
+WindowMargins->{{78, Automatic}, {Automatic, 32}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 104, 1, 101, "Title"],
+Cell[CellGroupData[{
+Cell[709, 27, 448, 5, 49, "Subsection"],
+Cell[1160, 34, 113, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1298, 39, 4566, 122, 392, "Input"],
+Cell[5867, 163, 1167, 27, 161, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7083, 196, 107, 4, 111, "Section"],
+Cell[7193, 202, 123, 1, 30, "Text"],
+Cell[7319, 205, 192, 2, 30, "Text"],
+Cell[7514, 209, 154, 2, 30, "Text"],
+Cell[7671, 213, 382, 7, 49, "Text"],
+Cell[8056, 222, 2784, 78, 372, "Input"],
+Cell[10843, 302, 96, 1, 31, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

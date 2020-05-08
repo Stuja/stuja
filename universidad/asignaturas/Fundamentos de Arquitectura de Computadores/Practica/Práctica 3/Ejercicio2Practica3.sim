@@ -1,0 +1,39 @@
+MVI A, 00;
+MVI B, 00;
+MVI C, 00;
+MVI D, 00;
+MVI E, 00;
+MVI H, 00;
+MVI L, 00;
+
+
+IN 00;
+MOV e, a;
+
+LXI B, 00FF;
+CALL SUMALISTA;
+CALL DIVISION;
+MOV a, d;
+OUT 02;
+hlt;
+
+
+SUMALISTA: DCX b;
+DAD B
+DCR e;
+JNZ  SUMALISTA;
+RET;
+
+
+DIVISION:  in 00
+mov e, a
+mov a, h
+VUELTA: INR d 
+SUB e;
+JZ RETORNO
+JP VUELTA
+RETORNO: RET
+
+
+
+

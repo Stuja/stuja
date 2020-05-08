@@ -1,0 +1,23 @@
+LDA 0100;
+mov l, a;
+
+LDA 0101
+mov b, a
+mov c, a
+
+LXI D, 0102;
+
+Comparacion: LDAX D;
+cmp b
+
+cmp c
+INX D;
+
+
+MAYOR:
+MENOR: 
+
+; L - contador
+; B - mayor
+; C - menor
+; D/E - posicion de memoria

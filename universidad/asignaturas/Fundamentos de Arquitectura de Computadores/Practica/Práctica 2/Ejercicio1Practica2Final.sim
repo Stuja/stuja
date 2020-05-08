@@ -1,0 +1,27 @@
+LDA 0101;
+mov b,a;
+add a;
+jz CERO;
+LDA 0100;
+mov c,a;
+add a;
+jz CERO;
+mvi a, 00;
+
+
+Multiplicacion: add c;
+jc ACARREO;
+CONTINUAR: DCR b;
+jnz MULTIPLICACION;
+
+FIN: out 03;
+mov a, d;
+out 02;
+hlt; 
+
+CERO: mvi a, 00;
+out 03;
+hlt;
+
+ACARREO: INR d; 
+JMP CONTINUAR;

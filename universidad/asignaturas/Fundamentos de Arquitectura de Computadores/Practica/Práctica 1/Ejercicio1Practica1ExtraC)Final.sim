@@ -1,0 +1,51 @@
+in 00;
+mov b, a;
+in 01;
+mov, c, a;
+sub b;
+jm NEGATIVO;
+POSITIVO: mov d, c;
+mov h, b;
+jmp Fase2;
+NEGATIVO: mov d, b;
+mov h, c;
+
+Fase2: in 02;
+mov b, a;
+in 03;
+mov, c, a;
+sub b;
+jm NEGATIVO2;
+POSITIVO2: mov e, c;
+mov l, b;
+jmp Fase3;
+NEGATIVO2: mov e, b;
+mov l, c;
+jmp Fase3;
+
+Fase3: mov a, d;
+sub e;
+jz CERO3;
+jm NEGATIVO3;
+POSITIVO3:mov a, d
+out 05;
+jmp Menor;
+CERO3:  mvi a, FF;
+out 05;
+jmp Menor;
+NEGATIVO3: mov a, e;
+out 05;
+
+Menor:  mov a, h;
+sub l;
+jz CERO4;
+jm NEGATIVO4;
+POSITIVO4:mov a, l
+out 04;
+hlt;
+CERO4:  mvi a, FF;
+out 04;
+hlt;
+NEGATIVO4: mov a, h;
+out 04;
+hlt;

@@ -1,0 +1,12 @@
+comienzo: mvi a,80
+
+izq.derecha: out 00
+rrc
+jnc izq.derecha
+mvi a,02
+
+derecha.izq: out 00
+rlc
+jnc derecha.izq
+jmp comienzo
+hlt

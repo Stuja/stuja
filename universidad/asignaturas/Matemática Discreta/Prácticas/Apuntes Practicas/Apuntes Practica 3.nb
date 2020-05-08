@@ -1,0 +1,282 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10012,        272]
+NotebookOptionsPosition[      9296,        244]
+NotebookOutlinePosition[      9673,        260]
+CellTagsIndexPosition[      9630,        257]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Pr\[AAcute]ctica 3 Discreta", "Title",
+ CellChangeTimes->{{3.7173916019770937`*^9, 3.717391610648589*^9}}],
+
+Cell["\<\
+Tres tipos de ejercicios tipo: 
+
+- Calcular tablas de verdad (tautolog\[IAcute]a, contradici\[OAcute]n, l\
+\[OAcute]gicamente equivalente e implicaciones, formas normales, etc.)
+
+- Conjuntos adecuados de conectivas.
+
+- Argumentaciones (con texto o sin texto). 
+
+\
+\>", "Text",
+ CellChangeTimes->{{3.717391614368802*^9, 3.717391721640938*^9}, {
+  3.717391771601795*^9, 3.717391771769805*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["1. Tablas de verdad:", "Section",
+ CellChangeTimes->{{3.7173917427941475`*^9, 3.717391768313607*^9}}],
+
+Cell["\<\
+\tTodos los enunciados con letras may\[UAcute]sculas (A, B...), las variables \
+de enunciado con min\[UAcute]sculas (p, q...) y para formas enunciativas \
+letras especiales.\
+\>", "Text",
+ CellChangeTimes->{{3.717391936713239*^9, 3.7173919635217724`*^9}, {
+  3.7173919995538335`*^9, 3.717392003706071*^9}, {3.717392048041607*^9, 
+  3.717392068465775*^9}}],
+
+Cell["\<\
+\tPara escribir una matriz con la tabla de verdad deberemos tener (2^n + 1 \
+filas) x (n + 1 columnas). \
+\>", "Text",
+ CellChangeTimes->{{3.7173929144901648`*^9, 3.717392919970478*^9}, {
+  3.717393872434956*^9, 3.717393932083368*^9}}],
+
+Cell["\<\
+\tEjemplo:
+
+\tForma enunciativa: p1 -> (p2 v p1)\
+\>", "Text",
+ CellChangeTimes->{{3.7173947173142805`*^9, 3.717394747532009*^9}, {
+  3.7173948167799697`*^9, 3.7173948339319506`*^9}, {3.7173948795635605`*^9, 
+  3.717394883779802*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"\n", 
+                    RowBox[{
+                    StyleBox[
+                    RowBox[{
+                    RowBox[{"n", "=", "2"}], ";"}],
+                    FontColor->RGBColor[1, 0, 0]], "\n", 
+                    RowBox[{
+                    RowBox[{"p", "=", 
+                    RowBox[{"Table", "[", 
+                    RowBox[{"False", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"t", ",", "n"}], "}"}]}], "]"}]}], ";"}], "\n", 
+                    StyleBox[
+                    RowBox[{
+                    RowBox[{"expresion", ":=", 
+                    RowBox[{"Implies", "[", 
+                    RowBox[{
+                    RowBox[{"p", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", " ", 
+                    RowBox[{
+                    RowBox[{"p", "[", 
+                    RowBox[{"[", "2", "]"}], "]"}], " ", "||", " ", 
+                    RowBox[{"p", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}], ";"}],
+                    FontColor->RGBColor[1, 0, 0]], "\n", 
+                    RowBox[{
+                    RowBox[{"tabla", "=", 
+                    RowBox[{"Table", "[", 
+                    RowBox[{
+                    RowBox[{
+                    "\[OpenCurlyDoubleQuote]", "F", 
+                    "\[CloseCurlyDoubleQuote]"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"2", "^", "n"}], "+", "1"}], ")"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"y", ",", 
+                    RowBox[{"n", "+", "1"}]}], "}"}]}], "]"}]}], ";"}], "\n", 
+                    RowBox[{
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"k", "=", "1"}], ",", 
+                    RowBox[{"k", "<", 
+                    RowBox[{"n", "+", "1"}]}], ",", 
+                    RowBox[{"k", "++"}], ",", 
+                    RowBox[{
+                    RowBox[{"tabla", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"1", ",", "k"}], "]"}], "]"}], "=", 
+                    SubscriptBox[
+                    RowBox[{
+                    "\[OpenCurlyDoubleQuote]", "p", 
+                    "\[CloseCurlyDoubleQuote]"}], "k"]}]}], "]"}], ";"}], 
+                    "\n", 
+                    RowBox[{
+                    RowBox[{"tabla", "[", 
+                    RowBox[{"[", 
+                    RowBox[{"1", ",", 
+                    RowBox[{"n", "+", "1"}]}], "]"}], "]"}], "="}]}], 
+                    "\[CloseCurlyDoubleQuote]"}], "Exp"}], 
+                    "\[CloseCurlyDoubleQuote]"}], ";"}], "\n", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"i", "=", "0"}], ",", 
+                    RowBox[{"i", "<", 
+                    RowBox[{"2", "^", "n"}]}], ",", 
+                    RowBox[{"i", "++"}], ",", "\n", "\t", 
+                    RowBox[{
+                    RowBox[{"j", "=", "i"}], ";", "\n", "\t", 
+                    RowBox[{"For", "[", 
+                    RowBox[{
+                    RowBox[{"f", "=", "n"}], ",", 
+                    RowBox[{"f", ">", "0"}], ",", 
+                    RowBox[{"f", "--"}], ",", "\n", "\t\t", 
+                    RowBox[{
+                    RowBox[{"resto", "=", 
+                    RowBox[{"Mod", "[", 
+                    RowBox[{"j", ",", "2"}], "]"}]}], ";", "\n", "\t\t", 
+                    RowBox[{"j", "=", 
+                    RowBox[{"Floor", "[", 
+                    RowBox[{"j", "/", "2"}], "]"}]}], ";", "\n", "\t\t", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"resto", "==", "0"}], ",", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"p", "[", 
+                    RowBox[{"[", "f", "]"}], "]"}], "=", "True"}], ";", " ", 
+                    RowBox[{
+                    RowBox[{"tabla", "[", 
+                    RowBox[{"[", 
+                    RowBox[{
+                    RowBox[{"i", "+", "2"}], ",", "f"}], "]"}], "]"}], 
+                    "="}]}]}], " "}]}]}]}]}]}]}]}], 
+                    "\[CloseCurlyDoubleQuote]"}], "V"}], 
+                  "\[CloseCurlyDoubleQuote]"}], ",", 
+                 RowBox[{
+                  RowBox[{"p", "[", 
+                   RowBox[{"[", "f", "]"}], "]"}], "=", "False"}]}], "]"}], 
+               ";"}], "\[IndentingNewLine]"}], "]"}], ";"}], "\n", "\t", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{"TrueQ", "[", "expresion", "]"}], ",", 
+             RowBox[{
+              RowBox[{"tabla", "[", 
+               RowBox[{"[", 
+                RowBox[{
+                 RowBox[{"i", "+", "2"}], ",", 
+                 RowBox[{"n", "+", "1"}]}], "]"}], "]"}], "="}]}]}]}], 
+          "\[CloseCurlyDoubleQuote]"}], "V"}], "\[CloseCurlyDoubleQuote]"}], 
+       "]"}], ";"}], "\n"}], "\t", "]"}], ";"}], ".", "\n", 
+  RowBox[{"TableForm", "[", "tabla", "]"}]}]], "Input",
+ CellChangeTimes->{{3.7173947573875723`*^9, 3.7173947583396273`*^9}, {
+  3.717394798322914*^9, 3.717394803800227*^9}, {3.717395193858537*^9, 
+  3.7173952294025702`*^9}, {3.717395400979384*^9, 3.717395451187256*^9}, {
+  3.717395509102568*^9, 3.717395519742177*^9}, {3.717395558679404*^9, 
+  3.717395622134033*^9}, {3.717395703987715*^9, 3.717395713178241*^9}, {
+  3.7173958278147974`*^9, 3.7173958409175467`*^9}, {3.717395926069417*^9, 
+  3.7173959661307087`*^9}, {3.7173960148744965`*^9, 3.717396019977789*^9}, {
+  3.717396182051059*^9, 3.7173962418614798`*^9}, {3.7173963236891603`*^9, 
+  3.717396339554067*^9}},
+ EmphasizeSyntaxErrors->True],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7173974948701477`*^9, 3.7173974950951605`*^9}}],
+
+Cell["Hacer el 6, tablas de verdad. ", "Text",
+ CellChangeTimes->{{3.7173966458215847`*^9, 3.7173966573732457`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Syntax", "::", "bktmcp"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Expression \\\"\[NoBreak]\\!\\(If[\\(\\(\\(\\(resto == \
+0\\)\\), \\(\\(\\(\\(\\(\\(p[\\(\\([f]\\)\\)]\\)\\) = True\\)\\) ; \
+\\(\\(\\(\\(tabla[\\(\\([\\(\\(\\(\\(i + 2\\)\\), f\\)\\)]\\)\\)]\\)\\) \
+=\\)\\)\\)\\)\\)\\)\\)\[NoBreak]\\\" has no closing \\\"\[NoBreak]\\!\\(\\\"]\
+\\\"\\)\[NoBreak]\\\"\[NoBreak]\\!\\(\\\"\\\"\\)\[NoBreak].\"\>"}]], "Message",\
+ "MSG",
+ CellChangeTimes->{{3.717396342032209*^9, 3.7173963433662853`*^9}}],
+
+Cell["", "Text",
+ CellChangeTimes->{{3.7173929313011265`*^9, 3.717392932956221*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 862},
+WindowMargins->{{82, Automatic}, {27, Automatic}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 112, 1, 127, "Title"],
+Cell[695, 25, 401, 13, 261, "Text"],
+Cell[CellGroupData[{
+Cell[1121, 42, 107, 1, 86, "Section"],
+Cell[1231, 45, 365, 7, 88, "Text"],
+Cell[1599, 54, 245, 5, 63, "Text"],
+Cell[1847, 61, 244, 7, 88, "Text"],
+Cell[2094, 70, 6255, 147, 451, "Input"],
+Cell[8352, 219, 150, 2, 83, "Input"],
+Cell[8505, 223, 116, 1, 38, "Text"],
+Cell[8624, 226, 557, 11, 29, "Message"],
+Cell[9184, 239, 84, 1, 38, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
