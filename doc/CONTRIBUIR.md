@@ -25,7 +25,7 @@
 
 ## ¿En qué contribuir?
 
-Visita nuestro [tablón de tareas](../projects), es el lugar perfecto para empezar con algo. Si falta algo, añádelo.  
+Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es el lugar perfecto para empezar con algo. Si falta algo, añádelo.  
 
 ### ¿Te gusta diseñar?
 
