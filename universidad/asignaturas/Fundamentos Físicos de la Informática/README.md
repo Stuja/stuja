@@ -1,4 +1,4 @@
-<h1 align="center"> [TITULO DE LA ASIGNATURA] </h1> <br>
+<h1 align="center"> [FUNDAMENTOS FÍSICOS DE LA INFORMÁTICA] </h1> <br>
 <p align="center">
           <a 		href="https://github.com/Stuja/stuja/tree/master">
   <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
@@ -20,7 +20,7 @@
 
 ## Resumen
 
-[RESUMEN DE LA ASIGNATURA]
+El objetivo general de la asignatura Fundamentos Físicos de la Informática es dotar al alumno de algunos de los fundamentos físicos elementales, Electromagnetismo básico y Teoría de Circuitos, en los que se basa el funcionamiento de los dispositivos y sistemas usados en Informática.
 
 
 
