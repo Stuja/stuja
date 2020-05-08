@@ -1,4 +1,4 @@
-<h1 align="center"> [TITULO DE LA ASIGNATURA] </h1> <br>
+<h1 align="center"> [ANÁLISIS Y MÉTODOS NUMÉRICOS] </h1> <br>
 <p align="center">
           <a 		href="https://github.com/Stuja/stuja/tree/master">
   <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
@@ -20,8 +20,7 @@
 
 ## Resumen
 
-[RESUMEN DE LA ASIGNATURA]
-
+El objetivo de esta asignatura es proporcionar al alumno conocimientos básicos de Cálculo Diferencial e integral y de Métodos Numéricos, centrándose en las aplicaciones.
 
 
 ## Tabla de contenido
