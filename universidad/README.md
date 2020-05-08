@@ -29,11 +29,11 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Primer semestre
 
-- Fundamentos físicos de la informática
-- Matemática discreta
-- Fundamentos de programación
-- Análisis y métodos numéricos
-- Fundamentos de arquitectura de computadores
+- [Fundamentos físicos de la informática](asignaturas/Fundamentos%20Físicos%20de%20la%20Informática)
+- [Matemática discreta](/asignaturas/Matemática%20Discreta)
+- [Fundamentos de programación](asignaturas/Fundamentos%20de%20programación)
+- [Análisis y métodos numéricos](asignaturas/Análisis%20y%20Métodos%20Numéricos)
+- [Fundamentos de arquitectura de computadores](asignaturas/Fundamentos%20de%20Arquitectura%20de%20Computadores)
 
 
 
@@ -66,7 +66,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 - Sistemas concurrentes y distribuidos 
 - Programación y administración de redes
 - Inteligencia artificial 
-- Fundamentos de base de datos 
+- [Fundamentos de base de datos](asignaturas/Fundamentos%20de%20bases%20de%20datos) 
 - Diseño de algoritmos 
 
 
