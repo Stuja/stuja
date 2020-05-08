@@ -1,18 +1,19 @@
 <h1 align="center"> ¿Cómo contribuir? </h1> <br>
 <p align="center">
-          <a 		href="https://github.com/Stuja/stuja/tree/master">
-  <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
+          <a 		href="../README.md">
+  <img alt="Inicio" title="Inicio" src="../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="https://github.com/Stuja/stuja/tree/master/universidad">
-  <img alt="Universidad" title="Universidad" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-universidad.png" width="140">
+      <a 		href="../universidad">
+  <img alt="Universidad" title="Universidad" src="../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="https://github.com/Stuja/stuja/tree/master/doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-contribuir.png" width="140">
+        <a 		href=CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/contribuir.png" width="450">
+    <img alt="Contribuir" title="Contribuir" src="../imagenes/contribuir.png" width="450">
 </p>
+
 
 
 
@@ -24,7 +25,7 @@
 
 ## ¿En qué contribuir?
 
-Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es el lugar perfecto para empezar con algo. Si falta algo, añádelo.  
+Visita nuestro [tablón de tareas](../projects), es el lugar perfecto para empezar con algo. Si falta algo, añádelo.  
 
 ### ¿Te gusta diseñar?
 
@@ -124,9 +125,9 @@ Accediendo a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y enviándono
 
 ## Guía de estilo 🦋
 
-Para una visualización homogénea del proyecto, lee [nuestra guía de estilo](https://github.com/Stuja/stuja/tree/master/doc/GUIA-DE-ESTILO.md). Si ves algo que se pueda mejorar, no dudes en aportar tu mejora. 
+Para una visualización homogénea del proyecto, lee [nuestra guía de estilo](GUIA-DE-ESTILO.md). Si ves algo que se pueda mejorar, no dudes en aportar tu mejora. 
 
-Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](https://github.com/Stuja/stuja/blob/master/plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
+Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](../plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
 
 Basta con rellenar los espacios entre corchetes `[]` con la información correspondiente. 
 
