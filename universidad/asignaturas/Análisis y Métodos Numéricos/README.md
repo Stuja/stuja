@@ -26,9 +26,9 @@ El objetivo de esta asignatura es proporcionar al alumno conocimientos básicos 
 
 ## Tabla de contenido
 
-- [Teoría]([ENLACE A TEORIA])
-- [Prácticas]([ENLACE A PRACTICAS])
-- [Ejercicios y exámenes]([ENLACE A APOYO])
+- [Teoría](Teoría)
+- [Prácticas](Prácticas)
+- [Ejercicios y exámenes](Apoyo)
 
 
 
