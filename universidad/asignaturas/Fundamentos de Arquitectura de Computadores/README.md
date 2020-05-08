@@ -1,4 +1,4 @@
-<h1 align="center"> [FUNDAMENTOS DE ARQUITECTURA DE COMPUTADORES] </h1> <br>
+<h1 align="center"> Fundamentos de arquitectura de computadores </h1> <br>
 <p align="center">
           <a 		href="../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
@@ -18,6 +18,7 @@
 
 
 
+
 ## Resumen
 
 Tras la realización de la asignatura el alumno deberá tener un amplio conocimiento de los siguientes conceptos:
@@ -31,14 +32,12 @@ Tras la realización de la asignatura el alumno deberá tener un amplio conocimi
 
 ## Tabla de contenido
 
-- [Teoría]([ENLACE A TEORIA])
-- [Prácticas]([ENLACE A PRACTICAS])
-- [Ejercicios y exámenes]([ENLACE A APOYO])
+- [Teoría](Teoría)
+- [Prácticas](Prácticas)
+- [Ejercicios y exámenes](Apoyo)
 
 
 
 ## Consejos para superar la asignatura
 
 Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
-
-[TUS CONSEJOS PARA SUPERAR LA ASIGNATURA]
