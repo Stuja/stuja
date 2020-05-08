@@ -1,4 +1,4 @@
-<h1 align="center"> [ANÁLISIS Y MÉTODOS NUMÉRICOS] </h1> <br>
+<h1 align="center"> Análisis y Métodos Numéricos </h1> <br>
 <p align="center">
           <a 		href="https://github.com/Stuja/stuja/tree/master">
   <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
@@ -13,6 +13,7 @@
 <p align="center">
     <img alt="Asignatura" title="Asignatura" src="https://github.com/Stuja/stuja/blob/master/imagenes/asignatura.png" width="450">
 </p>
+
 
 
 
