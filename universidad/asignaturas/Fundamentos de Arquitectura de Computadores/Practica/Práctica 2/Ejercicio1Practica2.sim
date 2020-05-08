@@ -1,0 +1,18 @@
+LDA 0101;
+mov b,a;
+LDA 0100;
+mov c,a;
+jz CERO;
+DCR b;
+Multiplicacion: add c;
+DCR b;
+jnz MULTIPLICACION;
+FIN: out 03;
+hlt; 
+CERO: mvi a, 00;
+out 03;
+hlt;
+
+; Sumar X veces Y.
+; Se guarda el valor de Y en un registro y se va decrementando cada vez que se suma X.
+; Si Y es 0, la operacion ha terminado.

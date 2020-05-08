@@ -1,0 +1,810 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.2'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     24677,        665]*)
+(*NotebookOutlinePosition[     25421,        690]*)
+(*  CellTagsIndexPosition[     25377,        686]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+6. L\[OAcute]gica proposicional: Tautolog\[IAcute]as, contradicciones, formas \
+normales, equivalencias e implicaciones l\[OAcute]gicas y argumentaciones\
+\>", "Title",
+  FontSize->36],
+
+Cell["Ejemplos con Mathematica", "Subtitle"],
+
+Cell[CellGroupData[{
+
+Cell["1. Tautolog\[IAcute]a y contradicci\[OAcute]n", "Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.1.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Comprobar si la forma enunciativa: A: (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_1\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`p\_2\)]],
+  ") ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Wedge]\)]],
+  " (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_3\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`p\_4\)]],
+  ") es tautolog\[IAcute]a o contradicci\[OAcute]n."
+}], "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 4;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := \((p[\([1]\)] || p[\([2]\)])\) && \((p[\([3]\)] || 
+              p[\([4]\)])\);\)\), "\n", 
+    \(\(For[i = 0, 
+        i < 2^n, \(i++\), \[IndentingNewLine]j = i; \[IndentingNewLine]For[
+          f = n, f > 0, \(f--\), \[IndentingNewLine]resto = 
+            Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True, 
+            p[\([f]\)] = False];\[IndentingNewLine]]; \[IndentingNewLine]If[
+          TrueQ[expresion], Null, 
+          tautologia = False];\[IndentingNewLine]];\)\), "\n", 
+    \(If[tautologia, 
+      Print["\<La forma enunciativa es una tautolog\[IAcute]a\>"], 
+      Print["\<La forma enunciativa no es una tautolog\[IAcute]a\>"]]\)}], \
+"Input"],
+
+Cell[BoxData[
+    \("La forma enunciativa no es una tautolog\[IAcute]a"\)], "Print"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 4;\)\), "\n", 
+    \(\(contradiccion = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := \((p[\([1]\)] || p[\([2]\)])\) && \((p[\([3]\)] || 
+              p[\([4]\)])\);\)\), "\n", 
+    \(\(For[i = 0, 
+        i < 2^n, \(i++\), \[IndentingNewLine]j = i; \[IndentingNewLine]For[
+          f = n, f > 0, \(f--\), \[IndentingNewLine]resto = 
+            Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True, 
+            p[\([f]\)] = False];\[IndentingNewLine]]; \[IndentingNewLine]If[
+          TrueQ[expresion], contradiccion = False];\n];\)\), "\n", 
+    \(If[contradiccion, 
+      Print["\<La forma enunciativa es una contradicci\[OAcute]n\>"], 
+      Print["\<La forma enunciativa no es una contradicci\[OAcute]n\>"]]\)}], \
+"Input"],
+
+Cell[BoxData[
+    \("La forma enunciativa no es una contradicci\[OAcute]n"\)], "Print"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["2. Formas normales", "Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.2.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Calcular las formas normales de la forma enunciativa A: (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_1\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`p\_2\)]],
+  ") \[RightArrow] ",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_3\)]],
+  "."
+}], "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 3;\)\), "\n", 
+    \(\(cadena = "\<\>";\)\), "\n", 
+    \(\(cadena2 = "\<\>";\)\), "\n", 
+    \(\(cad = "\<\>";\)\), "\n", 
+    \(\(cad2 = "\<\>";\)\), "\n", 
+    \(\(contradiccion = True;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := 
+        Implies[\((p[\([1]\)] || p[\([2]\)])\), p[\([3]\)]];\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), 
+        j = i; \[IndentingNewLine]cad = "\<\>"; \[IndentingNewLine]cad2 = "\<\
+\>"; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+          resto = Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True; \[IndentingNewLine]If[f \[Equal] n, 
+              cad = StringJoin["\<p\>", ToString[f], cad], 
+              cad = StringJoin["\<p\>", ToString[f], "\< \[And] \>", 
+                  cad]]; \(If[f \[Equal] n, 
+                cad2 = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad2], 
+                cad2 = StringJoin["\<(~p\>", 
+                    ToString[f], "\<)\>", "\< \[Or] \>", cad2]];\), 
+            p[\([f]\)] = False; \[IndentingNewLine]If[f \[Equal] n, 
+              cad = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad], 
+              cad = StringJoin["\<(~p\>", 
+                  ToString[f], "\<)\>", "\< \[And] \>", 
+                  cad]]; \[IndentingNewLine]If[f \[Equal] n, 
+              cad2 = StringJoin["\<p\>", ToString[f], cad2], 
+              cad2 = StringJoin["\<p\>", ToString[f], "\< \[Or] \>", 
+                  cad2]];];]; \[IndentingNewLine]If[TrueQ[expresion], 
+          If[cadena \[Equal] "\<\>", 
+            cadena = StringJoin[cadena, "\<(\>", cad, "\<)\>"], 
+            cadena = 
+              StringJoin[cadena, "\< \[Or] (\>", 
+                cad, "\<)\>"]]; \[IndentingNewLine]\(contradiccion = 
+              False;\), 
+          If[cadena2 \[Equal] "\<\>", 
+            cadena2 = StringJoin[cadena2, "\<(\>", cad2, "\<)\>"], 
+            cadena2 = 
+              StringJoin[cadena2, "\< \[And] (\>", 
+                cad2, "\<)\>"]]; \[IndentingNewLine]tautologia = 
+            False;];];\)\), "\n", 
+    \(\(If[contradiccion, Print["\<Es una contradicci\[OAcute]n.\>"], 
+        Print["\<No es contradicci\[OAcute]n y la forma normal disyuntiva es: \
+\>", cadena]];\)\), "\n", 
+    \(\(If[tautologia, Print["\<Es una tautolog\[IAcute]a.\>"], 
+        Print["\<No es tautolog\[IAcute]a y la forma normal conjuntiva es: \
+\>", cadena2]];\)\)}], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es contradicci\[OAcute]n y la forma normal \
+disyuntiva es: "\[InvisibleSpace]"(p1 \[And] p2 \[And] p3) \[Or] (p1 \[And] \
+(~p2) \[And] p3) \[Or] ((~p1) \[And] p2 \[And] p3) \[Or] ((~p1) \[And] (~p2) \
+\[And] p3) \[Or] ((~p1) \[And] (~p2) \[And] (~p3))"\),
+      SequenceForm[ 
+      "No es contradicci\[OAcute]n y la forma normal disyuntiva es: ", 
+        "(p1 \[And] p2 \[And] p3) \[Or] (p1 \[And] (~p2) \[And] p3) \[Or] \
+((~p1) \[And] p2 \[And] p3) \[Or] ((~p1) \[And] (~p2) \[And] p3) \[Or] ((~p1) \
+\[And] (~p2) \[And] (~p3))"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es tautolog\[IAcute]a y la forma normal \
+conjuntiva es: "\[InvisibleSpace]"((~p1) \[Or] (~p2) \[Or] p3) \[And] ((~p1) \
+\[Or] p2 \[Or] p3) \[And] (p1 \[Or] (~p2) \[Or] p3)"\),
+      SequenceForm[ 
+      "No es tautolog\[IAcute]a y la forma normal conjuntiva es: ", 
+        "((~p1) \[Or] (~p2) \[Or] p3) \[And] ((~p1) \[Or] p2 \[Or] p3) \[And] \
+(p1 \[Or] (~p2) \[Or] p3)"],
+      Editable->False]], "Print"]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.3.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Calcular una forma enunciativa restringida equivalente a la forma \
+enunciativa A: ",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_1\)]],
+  "\[RightArrow]",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_2\)]],
+  "."
+}], "Text",
+  FontSize->14],
+
+Cell["\<\
+Bastar\[AAcute] con dar la forma normal disyuntiva o la forma normal \
+conjuntiva de A para tener tal forma enunciativa restringida.\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 2;\)\), "\n", 
+    \(\(cadena = "\<\>";\)\), "\n", 
+    \(\(cadena2 = "\<\>";\)\), "\n", 
+    \(\(cad = "\<\>";\)\), "\n", 
+    \(\(cad2 = "\<\>";\)\), "\n", 
+    \(\(contradiccion = True;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := Implies[p[\([1]\)], p[\([2]\)]];\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), 
+        j = i; \[IndentingNewLine]cad = "\<\>"; \[IndentingNewLine]cad2 = "\<\
+\>"; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+          resto = Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True; \[IndentingNewLine]If[f \[Equal] n, 
+              cad = StringJoin["\<p\>", ToString[f], cad], 
+              cad = StringJoin["\<p\>", ToString[f], "\< \[And] \>", 
+                  cad]]; \(If[f \[Equal] n, 
+                cad2 = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad2], 
+                cad2 = StringJoin["\<(~p\>", 
+                    ToString[f], "\<)\>", "\< \[Or] \>", cad2]];\), 
+            p[\([f]\)] = False; \[IndentingNewLine]If[f \[Equal] n, 
+              cad = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad], 
+              cad = StringJoin["\<(~p\>", 
+                  ToString[f], "\<)\>", "\< \[And] \>", 
+                  cad]]; \[IndentingNewLine]If[f \[Equal] n, 
+              cad2 = StringJoin["\<p\>", ToString[f], cad2], 
+              cad2 = StringJoin["\<p\>", ToString[f], "\< \[Or] \>", 
+                  cad2]];];]; \[IndentingNewLine]If[TrueQ[expresion], 
+          If[cadena \[Equal] "\<\>", 
+            cadena = StringJoin[cadena, "\<(\>", cad, "\<)\>"], 
+            cadena = 
+              StringJoin[cadena, "\< \[Or] (\>", 
+                cad, "\<)\>"]]; \[IndentingNewLine]\(contradiccion = 
+              False;\), 
+          If[cadena2 \[Equal] "\<\>", 
+            cadena2 = StringJoin[cadena2, "\<(\>", cad2, "\<)\>"], 
+            cadena2 = 
+              StringJoin[cadena2, "\< \[And] (\>", 
+                cad2, "\<)\>"]]; \[IndentingNewLine]tautologia = 
+            False;];];\)\), "\n", 
+    \(\(If[contradiccion, Print["\<Es una contradicci\[OAcute]n.\>"], 
+        Print["\<No es contradicci\[OAcute]n y la forma normal disyuntiva es: \
+\>", cadena]];\)\), "\n", 
+    \(\(If[tautologia, Print["\<Es una tautolog\[IAcute]a.\>"], 
+        Print["\<No es tautolog\[IAcute]a y la forma normal conjuntiva es: \
+\>", cadena2]];\)\)}], "Input"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es contradicci\[OAcute]n y la forma normal \
+disyuntiva es: "\[InvisibleSpace]"(p1 \[And] p2) \[Or] ((~p1) \[And] p2) \
+\[Or] ((~p1) \[And] (~p2))"\),
+      SequenceForm[ 
+      "No es contradicci\[OAcute]n y la forma normal disyuntiva es: ", 
+        "(p1 \[And] p2) \[Or] ((~p1) \[And] p2) \[Or] ((~p1) \[And] (~p2))"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es tautolog\[IAcute]a y la forma normal \
+conjuntiva es: "\[InvisibleSpace]"((~p1) \[Or] p2)"\),
+      SequenceForm[ 
+      "No es tautolog\[IAcute]a y la forma normal conjuntiva es: ", 
+        "((~p1) \[Or] p2)"],
+      Editable->False]], "Print"]
+}, Closed]],
+
+Cell[TextData[{
+  "Por tanto, una soluci\[OAcute]n para este problema ser\[IAcute]a la forma \
+enunciativa restringida (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_1\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  " (~",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_2\)]],
+  "))."
+}], "Text",
+  FontSize->14]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.4.", "Subsection",
+  FontSize->16],
+
+Cell["\<\
+Aplicamos el procedimiento logica a la forma enunciativa ((p\[RightArrow]q)\
+\[RightArrow](~r))\
+\>", "Text",
+  FontSize->14],
+
+Cell[BoxData[
+    \(logica := 
+      Module[{tabla, cadena, cadena2, cad, cad2, contradiccion, tautologia}, 
+        tabla = Table["\<F\>", {x, \((2^n + 1)\)}, {y, 
+              n + 1}]; \[IndentingNewLine]For[k = 1, k < n + 1, \(k++\), 
+          tabla[\([1, 
+                k]\)] = \\!\\("\<p\>" \\_ 
+                  k\\)]; \[IndentingNewLine]tabla[\([1, 
+              n + 1]\)] = "\<Exp\>"; \[IndentingNewLine]For[i = 0, 
+          i < 2^n, \(i++\), 
+          j = i; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+            resto = Mod[j, 2]; \[IndentingNewLine]j = 
+              Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+              p[\([f]\)] = True; tabla[\([i + 2, f]\)] = "\<V\>", 
+              p[\([f]\)] = False];]; \[IndentingNewLine]If[TrueQ[expresion], 
+            tabla[\([i + 2, 
+                  n + 1]\)] = "\<V\>"];]; \[IndentingNewLine]Print["\<La \
+tabla de verdad es: \>"]; \[IndentingNewLine]Print[
+          TableForm[
+            tabla]]; \[IndentingNewLine]cadena = "\<\>"; \
+\[IndentingNewLine]cadena2 = "\<\>"; \[IndentingNewLine]cad = "\<\>"; \
+\[IndentingNewLine]cad2 = "\<\>"; \[IndentingNewLine]contradiccion = 
+          True; \[IndentingNewLine]tautologia = True; \[IndentingNewLine]For[
+          i = 0, i < 2^n, \(i++\), 
+          j = i; \[IndentingNewLine]cad = "\<\>"; \[IndentingNewLine]cad2 = "\
+\<\>"; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+            resto = Mod[j, 2]; \[IndentingNewLine]j = 
+              Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+              p[\([f]\)] = True; \[IndentingNewLine]If[f \[Equal] n, 
+                cad = StringJoin["\<p\>", ToString[f], cad], 
+                cad = StringJoin["\<p\>", ToString[f], "\< \[And] \>", 
+                    cad]]; \[IndentingNewLine]If[f \[Equal] n, 
+                cad2 = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad2], 
+                cad2 = StringJoin["\<(~p\>", 
+                    ToString[f], "\<)\>", "\< \[Or] \>", cad2]];, 
+              p[\([f]\)] = False; \[IndentingNewLine]If[f \[Equal] n, 
+                cad = StringJoin["\<(~p\>", ToString[f], "\<)\>", cad], 
+                cad = StringJoin["\<(~p\>", 
+                    ToString[f], "\<)\>", "\< \[And] \>", 
+                    cad]]; \[IndentingNewLine]If[f \[Equal] n, 
+                cad2 = StringJoin["\<p\>", ToString[f], cad2], 
+                cad2 = StringJoin["\<p\>", ToString[f], "\< \[Or] \>", 
+                    cad2]];];]; \[IndentingNewLine]If[TrueQ[expresion], 
+            If[cadena \[Equal] "\<\>", 
+              cadena = StringJoin[cadena, "\<(\>", cad, "\<)\>"], 
+              cadena = 
+                StringJoin[cadena, "\< \[Or] (\>", 
+                  cad, "\<)\>"]]; \[IndentingNewLine]contradiccion = False;, 
+            If[cadena2 \[Equal] "\<\>", 
+              cadena2 = StringJoin[cadena2, "\<(\>", cad2, "\<)\>"], 
+              cadena2 = 
+                StringJoin[cadena2, "\< \[And] (\>", 
+                  cad2, "\<)\>"]]; \[IndentingNewLine]tautologia = 
+              False;];]; \[IndentingNewLine]If[contradiccion, 
+          Print["\<Es una contradicci\[OAcute]n.\>"], 
+          Print["\<No es contradicci\[OAcute]n y la forma normal disyuntiva \
+es: \>", cadena]]; \[IndentingNewLine]If[tautologia, 
+          Print["\<Es una tautolog\[IAcute]a.\>"], 
+          Print["\<No es tautolog\[IAcute]a y la forma normal conjuntiva es: \
+\>", cadena2]]]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 3;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(expresion := 
+      Implies[Implies[p[\([1]\)], p[\([2]\)]], \(! p[\([3]\)]\)]\), "\n", 
+    \(logica\)}], "Input"],
+
+Cell[BoxData[
+    \("La tabla de verdad es: "\)], "Print"],
+
+Cell[BoxData[
+    TagBox[GridBox[{
+          {\("p"\_1\), \("p"\_2\), \("p"\_3\), "\<\"Exp\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      Function[ BoxForm`e$, 
+        TableForm[ BoxForm`e$]]]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es contradicci\[OAcute]n y la forma normal \
+disyuntiva es: "\[InvisibleSpace]"(p1 \[And] p2 \[And] (~p3)) \[Or] (p1 \
+\[And] (~p2) \[And] p3) \[Or] (p1 \[And] (~p2) \[And] (~p3)) \[Or] ((~p1) \
+\[And] p2 \[And] (~p3)) \[Or] ((~p1) \[And] (~p2) \[And] (~p3))"\),
+      SequenceForm[ 
+      "No es contradicci\[OAcute]n y la forma normal disyuntiva es: ", 
+        "(p1 \[And] p2 \[And] (~p3)) \[Or] (p1 \[And] (~p2) \[And] p3) \[Or] \
+(p1 \[And] (~p2) \[And] (~p3)) \[Or] ((~p1) \[And] p2 \[And] (~p3)) \[Or] \
+((~p1) \[And] (~p2) \[And] (~p3))"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("No es tautolog\[IAcute]a y la forma normal \
+conjuntiva es: "\[InvisibleSpace]"((~p1) \[Or] (~p2) \[Or] (~p3)) \[And] (p1 \
+\[Or] (~p2) \[Or] (~p3)) \[And] (p1 \[Or] p2 \[Or] (~p3))"\),
+      SequenceForm[ 
+      "No es tautolog\[IAcute]a y la forma normal conjuntiva es: ", 
+        "((~p1) \[Or] (~p2) \[Or] (~p3)) \[And] (p1 \[Or] (~p2) \[Or] (~p3)) \
+\[And] (p1 \[Or] p2 \[Or] (~p3))"],
+      Editable->False]], "Print"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["3. Equivalencias l\[OAcute]gicas e implicaciones l\[OAcute]gicas", \
+"Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.5.", "Subsection",
+  FontSize->16],
+
+Cell["\<\
+Comprobar que las siguientes formas enunciativas son equivalentes:
+\ta) (p \[RightArrow] q)
+\tb) ((~q) \[RightArrow] (~p))\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Sii[a_, b_] := Implies[a, b] && Implies[b, a];\)\), "\n", 
+    \(\(n = 2;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := 
+        Sii[Implies[p[\([1]\)], p[\([2]\)]], 
+          Implies[\(! p[\([2]\)]\), \(! p[\([1]\)]\)]];\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), 
+        j = i; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+          resto = Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True, p[\([f]\)] = False];]; \[IndentingNewLine]If[
+          TrueQ[expresion], Null, tautologia = False];];\)\), "\n", 
+    \(If[tautologia, 
+      Print["\<La forma enunciativa es una tautolog\[IAcute]a\>"], 
+      Print["\<La forma enunciativa no es una tautolog\[IAcute]a\>"]]\)}], \
+"Input"],
+
+Cell[BoxData[
+    \("La forma enunciativa es una tautolog\[IAcute]a"\)], "Print"]
+}, Closed]],
+
+Cell["\<\
+Por tanto, la forma enunciativa ((p \[RightArrow] q) \[LeftRightArrow] ((~ q) \
+\[RightArrow] (~ p))) es una tautolog\[IAcute]a de lo que deducimos que (p \
+\[RightArrow] q) es l\[OAcute]gicamente equivalente a ((~ q) \[RightArrow] (~ \
+p)).\
+\>", "Text",
+  FontSize->14]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["4. Argumentaciones v\[AAcute]lidas", "Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.6.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Estudiar la validez o invalidez de la siguiente argumentaci\[OAcute]n:\n\
+((p ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Wedge]\)]],
+  " q) \[RightArrow] r), q ; \[Therefore] (p \[RightArrow] r)"
+}], "Text",
+  FontSize->14],
+
+Cell["\<\
+S\[OAcute]lo tenemos que ver si la forma enunciativa (((p\[Wedge]q)\
+\[RightArrow]r)\[Wedge]q)\[Rule](p\[RightArrow]r) es una tautolog\[IAcute]a\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 3;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := 
+        Implies[Implies[p[\([1]\)] && p[\([2]\)], p[\([3]\)]] && p[\([2]\)], 
+          Implies[p[\([1]\)], p[\([3]\)]]];\)\), "\n", 
+    \(\(For[i = 0, 
+        i < 2^n, \(i++\), \[IndentingNewLine]j = i; \[IndentingNewLine]For[
+          f = n, f > 0, \(f--\), \[IndentingNewLine]resto = 
+            Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True, 
+            p[\([f]\)] = False];\[IndentingNewLine]]; \[IndentingNewLine]If[
+          TrueQ[expresion], Null, 
+          tautologia = False];\[IndentingNewLine]];\)\), "\n", 
+    \(If[tautologia, 
+      Print["\<La forma enunciativa es una tautolog\[IAcute]a\>"], 
+      Print["\<La forma enunciativa no es una tautolog\[IAcute]a\>"]]\)}], \
+"Input"],
+
+Cell[BoxData[
+    \("La forma enunciativa es una tautolog\[IAcute]a"\)], "Print"]
+}, Closed]],
+
+Cell["Por tanto, la forma argumentativa es v\[AAcute]lida.", "Text",
+  FontSize->14]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 6.7.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Cierta empresa necesita incrementar su plantilla con un nuevo miembro que \
+pueda programar en ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  " o que sepa programaci\[OAcute]n. Adem\[AAcute]s si sabe programaci\
+\[OAcute]n entonces puede programar en ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  ". \[DownQuestion]Podemos deducir de lo anterior que dicha empresa necesita \
+una persona que sepa utilizar el programa ",
+  StyleBox["Mathematica",
+    FontSlant->"Italic"],
+  "?"
+}], "Text",
+  FontSize->14],
+
+Cell[TextData[{
+  "En realidad, este enunciado se puede estudiar a trav\[EAcute]s de una \
+argumentaci\[OAcute]n con premisas ",
+  Cell[BoxData[
+      \(TraditionalForm\`A\_1\)]],
+  ": p ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  " q, ",
+  Cell[BoxData[
+      \(TraditionalForm\`A\_2\)]],
+  ": q \[RightArrow] p y conclusi\[OAcute]n A: p. La respuesta a la pregunta \
+planteada ser\[AAcute] afirmativa si la argumentaci\[OAcute]n es valida y en \
+otro caso ser\[AAcute] negativa."
+}], "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(n = 2;\)\), "\n", 
+    \(\(tautologia = True;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := 
+        Implies[\((p[\([1]\)] || p[\([2]\)])\) && 
+            Implies[p[\([2]\)], p[\([1]\)]], p[\([1]\)]];\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), 
+        j = i; \[IndentingNewLine]For[f = n, f > 0, \(f--\), 
+          resto = Mod[j, 2]; \[IndentingNewLine]j = 
+            Floor[j/2]; \[IndentingNewLine]If[resto \[Equal] 0, 
+            p[\([f]\)] = True, p[\([f]\)] = False];]; \[IndentingNewLine]If[
+          TrueQ[expresion], Null, tautologia = False];];\)\), "\n", 
+    \(If[tautologia, 
+      Print["\<La forma enunciativa es una tautolog\[IAcute]a\>"], 
+      Print["\<La forma enunciativa no es una tautolog\[IAcute]a\>"]]\)}], \
+"Input"],
+
+Cell[BoxData[
+    \("La forma enunciativa es una tautolog\[IAcute]a"\)], "Print"]
+}, Closed]],
+
+Cell[TextData[{
+  "Por tanto, la forma argumentativa es v\[AAcute]lida y efectivamente la \
+empresa necesita una persona que sepa utilizar el programa ",
+  StyleBox["Mathematica.",
+    FontSlant->"Italic"]
+}], "Text",
+  FontSize->14]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+},
+FrontEndVersion->"5.2 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 941}},
+WindowSize->{1016, 651},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+StyleDefinitions -> "PASTELCOLOR.NB"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 194, 4, 192, "Title"],
+Cell[1973, 59, 44, 0, 41, "Subtitle"],
+
+Cell[CellGroupData[{
+Cell[2042, 63, 80, 1, 54, "Section"],
+
+Cell[CellGroupData[{
+Cell[2147, 68, 50, 1, 43, "Subsection"],
+Cell[2200, 71, 522, 20, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[2747, 95, 893, 18, 298, "Input"],
+Cell[3643, 115, 84, 1, 39, "Print"]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[3764, 121, 874, 17, 298, "Input"],
+Cell[4641, 140, 87, 1, 39, "Print"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[4789, 148, 53, 1, 38, "Section"],
+
+Cell[CellGroupData[{
+Cell[4867, 153, 50, 1, 43, "Subsection"],
+Cell[4920, 156, 340, 13, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[5285, 173, 2537, 48, 538, "Input"],
+Cell[7825, 223, 611, 10, 58, "Print"],
+Cell[8439, 235, 451, 8, 39, "Print"]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[8939, 249, 50, 1, 29, "Subsection"],
+Cell[8992, 252, 259, 10, 30, "Text"],
+Cell[9254, 264, 172, 4, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[9451, 272, 2508, 47, 538, "Input"],
+Cell[11962, 321, 397, 7, 39, "Print"],
+Cell[12362, 330, 291, 6, 39, "Print"]
+}, Closed]],
+Cell[12668, 339, 322, 12, 30, "Text"]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[13027, 356, 50, 1, 29, "Subsection"],
+Cell[13080, 359, 135, 4, 30, "Text"],
+Cell[13218, 365, 3442, 59, 678, "Input"],
+
+Cell[CellGroupData[{
+Cell[16685, 428, 209, 5, 98, "Input"],
+Cell[16897, 435, 58, 1, 39, "Print"],
+Cell[16958, 438, 813, 17, 163, "Print"],
+Cell[17774, 457, 623, 10, 58, "Print"],
+Cell[18400, 469, 463, 8, 39, "Print"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[18924, 484, 101, 2, 38, "Section"],
+
+Cell[CellGroupData[{
+Cell[19050, 490, 50, 1, 43, "Subsection"],
+Cell[19103, 493, 162, 5, 74, "Text"],
+
+Cell[CellGroupData[{
+Cell[19290, 502, 869, 17, 238, "Input"],
+Cell[20162, 521, 81, 1, 39, "Print"]
+}, Closed]],
+Cell[20258, 525, 281, 6, 30, "Text"]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[20588, 537, 69, 1, 38, "Section"],
+
+Cell[CellGroupData[{
+Cell[20682, 542, 50, 1, 43, "Subsection"],
+Cell[20735, 545, 245, 7, 52, "Text"],
+Cell[20983, 554, 184, 4, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[21192, 562, 935, 19, 298, "Input"],
+Cell[22130, 583, 81, 1, 39, "Print"]
+}, Closed]],
+Cell[22226, 587, 84, 1, 30, "Text"]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[22347, 593, 50, 1, 29, "Subsection"],
+Cell[22400, 596, 545, 15, 74, "Text"],
+Cell[22948, 613, 523, 15, 52, "Text"],
+
+Cell[CellGroupData[{
+Cell[23496, 632, 809, 16, 218, "Input"],
+Cell[24308, 650, 81, 1, 39, "Print"]
+}, Closed]],
+Cell[24404, 654, 233, 6, 30, "Text"]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

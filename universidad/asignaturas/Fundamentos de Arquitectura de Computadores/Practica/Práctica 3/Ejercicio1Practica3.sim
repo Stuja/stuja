@@ -1,0 +1,35 @@
+IN 00;
+MOV l, a;
+
+LXI b, 00FD;
+NDATO: INR e;
+INX b;
+DCR l;
+JZ FIN;
+LDAX b;
+MOV d, a;
+IN 01;
+CMP d;
+JZ POSICIONAR;
+JMP NDATO;
+
+POSICIONAR: mov h, e;
+JMP NDATO
+
+FIN: MOV d, h;
+MVI a, 00;
+ADD h;
+JZ FINSINDATO;
+MOV a, d;
+OUT 02;
+HLT;
+
+FINSINDATO: MVI a, FF;
+OUT 02;
+HLT;
+
+; En B/C se guarda la posicion de memoria
+; En D se guarda momentaneamente el numero de posicion a comparar en ese momento.
+; EN E se guarda la posicion actual en la lista
+; En H se guarda la posicion del elemento en la lista
+; EN L se guarda el numero de datos que faltan

@@ -1,0 +1,439 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13814,        429]
+NotebookOptionsPosition[     12615,        382]
+NotebookOutlinePosition[     12962,        397]
+CellTagsIndexPosition[     12919,        394]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Apuntes Sesion 10 Discreta", "Title",
+ CellChangeTimes->{{3.7216287319062386`*^9, 3.7216287484331837`*^9}, {
+  3.7216293953051825`*^9, 3.72162939823435*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "7", "]"}]], "Input",
+ CellChangeTimes->{{3.721629400781496*^9, 3.7216294075198812`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "7"}], "}"}]], "Output",
+ CellChangeTimes->{3.7216294086029434`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Divisors", "[", "21421", "]"}]], "Input",
+ CellChangeTimes->{{3.7216294099180183`*^9, 3.7216294141462603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "31", ",", "691", ",", "21421"}], "}"}]], "Output",
+ CellChangeTimes->{3.721629414705292*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 11 relacion de ejercicios", "Subchapter",
+ CellChangeTimes->{{3.7216322399408865`*^9, 3.7216322860845256`*^9}}],
+
+Cell["\<\
+Si x, y, z son los \[AAcute]ngulos de un tri\[AAcute]ngulo expresados en \
+grados. Suponiendo que
+x, y, z son n\[UAcute]meros enteros, calcular todos los tri\[AAcute]ngulos \
+cuyos \[AAcute]ngulos verifiquen la ecuaci\[OAcute]n 
+2 x + 5y = 3 z.\
+\>", "Text",
+ CellChangeTimes->{{3.72163239280963*^9, 3.7216324423804655`*^9}, {
+  3.721632525245205*^9, 3.721632528901414*^9}}],
+
+Cell["\<\
+La ecuacion no es diofantica ya que tiene 3 incognitas. Se elimina una.
+x+y+z = 180;
+z= 180-x-y;
+
+5x+8y = 540; Esta es la buena. 
+
+La ecuacion admite solucion en Z si y solo si (5, 8) / 540
+\
+\>", "Text",
+ CellChangeTimes->{{3.7216325845825987`*^9, 3.721632605148775*^9}, {
+  3.721632828684561*^9, 3.7216328900450706`*^9}, {3.721632923644992*^9, 
+  3.721632945845262*^9}}],
+
+Cell[".Calculo el m.c.d de (5, 8)", "Text",
+ CellChangeTimes->{{3.7216326702284975`*^9, 3.7216326825172005`*^9}, {
+  3.721632721100407*^9, 3.7216327233565364`*^9}, {3.7216329177966576`*^9, 
+  3.721632920924836*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"n1", "=", "5"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n2", "=", "8"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"Abs", "[", "n1", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"Abs", "[", "n2", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"a", "<", "b"}], ",", 
+    RowBox[{
+     RowBox[{"a", "=", "b"}], ";", 
+     RowBox[{"b", "=", 
+      RowBox[{"Abs", "[", "n1", "]"}]}], ";"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"m", "=", "1"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"While", "[", 
+   RowBox[{
+    RowBox[{"m", ">", "0"}], ",", 
+    RowBox[{
+     RowBox[{"m", "=", 
+      RowBox[{"Mod", "[", 
+       RowBox[{"a", ",", "b"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"a", "=", "b"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"b", "=", "m"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.d.(\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<)=\>\"", ",", "a"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.m.(\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<)=\>\"", ",", 
+   RowBox[{"Abs", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"n1", "*", "n2"}], ")"}], "/", "a"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.721632694654895*^9, 3.7216327277287865`*^9}, {
+  3.7216329494534683`*^9, 3.7216329520086145`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.d.(\"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\")=\"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["m.c.d.(", 5, ",", 8, ")=", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7216327329620857`*^9, 3.7216329535797043`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.m.(\"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\")=\"\>", "\[InvisibleSpace]", "40"}],
+  SequenceForm["m.c.m.(", 5, ",", 8, ")=", 40],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7216327329620857`*^9, 3.7216329535837045`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+
+.1/540 pues Existe k = 540 perteneciente a Z tal que 540 = 1 * K. Por tanto, \
+la ecuacion admite solucion.
+
+.Calculamos la Identidad de Bezout\
+\>", "Text",
+ CellChangeTimes->{{3.721632975964985*^9, 3.721633056172572*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"valor1", ",", "valor2"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n1", "=", "5"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n2", "=", "8"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Abs", "[", "n1", "]"}], ">", 
+     RowBox[{"Abs", "[", "n2", "]"}]}], ",", 
+    RowBox[{
+     RowBox[{"temp", "=", "n1"}], ";", 
+     RowBox[{"n1", "=", "n2"}], ";", 
+     RowBox[{"n2", "=", "temp"}]}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Signo1", "=", 
+   RowBox[{"n1", "/", 
+    RowBox[{"Abs", "[", "n1", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Signo2", "=", 
+   RowBox[{"n2", "/", 
+    RowBox[{"Abs", "[", "n2", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"Abs", "[", "n1", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"Abs", "[", "n2", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"a", "<", "b"}], ",", 
+    RowBox[{
+     RowBox[{"a", "=", "b"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"b", "=", 
+      RowBox[{"Abs", "[", "n1", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n3", "=", "a"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"n4", "=", "b"}], ";"}]}], "]"}], ";"}], "\n", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Mod", "[", 
+     RowBox[{"n2", ",", "n1"}], "]"}], "\[Equal]", "0"}], ",", 
+   RowBox[{
+    RowBox[{"Valoru", "=", "0"}], ";", 
+    RowBox[{"Valordev", "=", "Signo1"}], ";", 
+    RowBox[{"a", "=", "b"}], ";"}], ",", 
+   RowBox[{
+    RowBox[{"r", "=", "1"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"cocientes", "=", 
+     RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"s", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{"r", ">", "0"}], ",", 
+      RowBox[{
+       RowBox[{"q", "=", 
+        RowBox[{"Quotient", "[", 
+         RowBox[{"a", ",", "b"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"r", "=", 
+        RowBox[{"Mod", "[", 
+         RowBox[{"a", ",", "b"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"a", "=", "b"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"b", "=", "r"}], ";", "\[IndentingNewLine]", 
+       RowBox[{"s", "=", 
+        RowBox[{"s", "+", "1"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"cocientes", ",", "q"}], "]"}], ";"}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"listam", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{"0", ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "s"}], "}"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"listam", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], "=", "valor1"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"listam", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "=", "valor2"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"For", "[", 
+     RowBox[{
+      RowBox[{"f", "=", "3"}], ",", 
+      RowBox[{"f", "<", 
+       RowBox[{"s", "+", "1"}]}], ",", 
+      RowBox[{"f", "++"}], ",", 
+      RowBox[{
+       RowBox[{"listam", "[", 
+        RowBox[{"[", "f", "]"}], "]"}], "=", 
+       RowBox[{
+        RowBox[{"listam", "[", 
+         RowBox[{"[", 
+          RowBox[{"f", "-", "2"}], "]"}], "]"}], "-", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"listam", "[", 
+           RowBox[{"[", 
+            RowBox[{"f", "-", "1"}], "]"}], "]"}], "*", 
+          RowBox[{"cocientes", "[", 
+           RowBox[{"[", 
+            RowBox[{"f", "-", "2"}], "]"}], "]"}]}], ")"}]}]}]}], "]"}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Bezout", ":=", 
+     RowBox[{"Simplify", "[", 
+      RowBox[{
+       RowBox[{"listam", "[", 
+        RowBox[{"[", 
+         RowBox[{"s", "-", "1"}], "]"}], "]"}], "-", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"listam", "[", 
+          RowBox[{"[", "s", "]"}], "]"}], "*", 
+         RowBox[{"cocientes", "[", 
+          RowBox[{"[", 
+           RowBox[{"s", "-", "1"}], "]"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"valor1", "=", "1"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"valor2", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Valoru", "=", "Bezout"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"valor1", "=", "0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"valor2", "=", "1"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Valordev", "=", "Bezout"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Valoru", "=", 
+     RowBox[{"Valoru", "*", "Signo2"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Valordev", "=", 
+     RowBox[{"Valordev", "*", "Signo1"}]}], ";"}]}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.d.{\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<}=\>\"", ",", "a"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.m.{\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<}=\>\"", ",", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"n3", "*", "n4"}], ")"}], "/", "a"}]}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<Identidad de Bezout: \>\"", ",", "a", ",", "\"\< = \>\"", ",", "n2", 
+   ",", "\"\<\[CenterDot](\>\"", ",", "Valoru", ",", "\"\<) + \>\"", ",", 
+   "n1", ",", "\"\<\[CenterDot](\>\"", ",", "Valordev", ",", "\"\<).\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{
+  3.721633066604169*^9, {3.7216331326939487`*^9, 3.721633176348446*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.d.{\"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\"}=\"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["m.c.d.{", 5, ",", 8, "}=", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7216331780545435`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.m.{\"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\"}=\"\>", "\[InvisibleSpace]", "40"}],
+  SequenceForm["m.c.m.{", 5, ",", 8, "}=", 40],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7216331780565434`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Identidad de Bezout: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", "8", 
+   "\[InvisibleSpace]", "\<\"\[CenterDot](\"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\") + \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\"\[CenterDot](\"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "3"}], "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm[
+  "Identidad de Bezout: ", 1, " = ", 8, "\[CenterDot](", 2, ") + ", 5, 
+   "\[CenterDot](", -3, ")."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7216331780595436`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+
+.Ahora sabes que x\.ba es solucion, y es (-3 * K); y que y\.ba es (2 * K)
+
+x = -1620 [esto es -3 * 540] + 8t
+y = 1080 -5t
+z = 180 - x - y = 720 - 3t
+
+Hay que acotar la solucion -> (0 < x, y, z < 180) (Hacer)
+
+Hay que buscar el t de las tres incognitas y buscar la interseccion.\
+\>", "Text",
+ CellChangeTimes->{{3.721633202708954*^9, 3.7216332928611097`*^9}, {
+  3.721633501590049*^9, 3.7216335180379896`*^9}, {3.7216335647736626`*^9, 
+  3.721633636149745*^9}, {3.721633708629891*^9, 3.72163372872604*^9}, {
+  3.7216338416454988`*^9, 3.721633899645816*^9}, {3.721634638863097*^9, 
+  3.721634640190173*^9}}],
+
+Cell["\<\
+
+c = termino independiente
+d = m.c.d\
+\>", "Text",
+ CellChangeTimes->{{3.7216339161817617`*^9, 3.721633940677163*^9}, {
+  3.7216344354934645`*^9, 3.721634456197649*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 862},
+WindowMargins->{{Automatic, 248}, {22, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 163, 2, 101, "Title"],
+Cell[CellGroupData[{
+Cell[768, 28, 129, 2, 31, "Input"],
+Cell[900, 32, 117, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1054, 40, 135, 2, 31, "Input"],
+Cell[1192, 44, 142, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1371, 52, 127, 1, 67, "Subchapter"],
+Cell[1501, 55, 384, 8, 68, "Text"],
+Cell[1888, 65, 382, 12, 163, "Text"],
+Cell[2273, 79, 215, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[2513, 86, 1445, 45, 252, "Input"],
+Cell[CellGroupData[{
+Cell[3983, 135, 364, 7, 23, "Print"],
+Cell[4350, 144, 366, 7, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[4743, 155, 234, 7, 106, "Text"],
+Cell[CellGroupData[{
+Cell[5002, 166, 5410, 150, 792, "Input"],
+Cell[CellGroupData[{
+Cell[10437, 320, 340, 7, 23, "Print"],
+Cell[10780, 329, 342, 7, 23, "Print"],
+Cell[11125, 338, 636, 12, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[11788, 354, 617, 16, 201, "Text"],
+Cell[12408, 372, 179, 6, 68, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

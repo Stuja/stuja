@@ -1,0 +1,322 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9790,        312]
+NotebookOptionsPosition[      8895,        276]
+NotebookOutlinePosition[      9242,        291]
+CellTagsIndexPosition[      9199,        288]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Discreta sesion 12 practicas", "Title",
+ CellChangeTimes->{{3.7222341862484207`*^9, 3.7222341933758287`*^9}}],
+
+Cell["Zn = {clase0, clase1, ... clase n-1}", "Text",
+ CellChangeTimes->{{3.722234196327997*^9, 3.722234219351314*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Mod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"25", "*", "40"}], "-", 
+    RowBox[{"80", "*", "748"}]}], ",", " ", "100"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7222342723803473`*^9, 3.72223431666488*^9}}],
+
+Cell[BoxData["60"], "Output",
+ CellChangeTimes->{3.7222343218071747`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Mod", "[", 
+   RowBox[{
+    RowBox[{"-", "5"}], ",", " ", "100"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.722234342498358*^9, 3.722234350000787*^9}}],
+
+Cell[BoxData["95"], "Output",
+ CellChangeTimes->{3.7222343511498528`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", "[", 
+   RowBox[{"valor1", ",", "valor2"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n1", "=", "27"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"n2", "=", "1001"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Abs", "[", "n1", "]"}], ">", 
+     RowBox[{"Abs", "[", "n2", "]"}]}], ",", " ", 
+    RowBox[{
+     RowBox[{"temp", "=", "n1"}], ";", " ", 
+     RowBox[{"n1", "=", "n2"}], ";", " ", 
+     RowBox[{"n2", "=", "temp"}]}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Signo1", "=", 
+   RowBox[{"n1", "/", 
+    RowBox[{"Abs", "[", "n1", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Signo2", "=", 
+   RowBox[{"n2", "/", 
+    RowBox[{"Abs", "[", "n2", "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"Abs", "[", "n1", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"Abs", "[", "n2", "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", " ", "[", 
+   RowBox[{
+    RowBox[{"a", "<", "b"}], ",", 
+    RowBox[{
+     RowBox[{"a", "=", "b"}], ";", "\n", "\t", 
+     RowBox[{"b", "=", 
+      RowBox[{"Abs", "[", "n1", "]"}]}], ";", "\n", "\t", 
+     RowBox[{"n3", "=", "a"}], ";", "\n", "\t", 
+     RowBox[{"n4", "=", "b"}], ";"}]}], "\n", "]"}], ";"}], "\n", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Mod", "[", 
+     RowBox[{"n2", ",", "n1"}], "]"}], "==", "0"}], ",", 
+   RowBox[{
+    RowBox[{"Valoru", "=", "0"}], ";", 
+    RowBox[{"Valordev", "=", "Signo1"}], ";", 
+    RowBox[{"a", "=", "b"}], ";"}], ",", "\n", 
+   RowBox[{
+    RowBox[{"r", "=", "1"}], ";", "\n", 
+    RowBox[{"cocientes", "=", 
+     RowBox[{"{", "}"}]}], ";", "\n", 
+    RowBox[{"s", "=", "0"}], ";", "\n", 
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{"r", ">", "0"}], ",", "\n", "\t", 
+      RowBox[{
+       RowBox[{"q", "=", 
+        RowBox[{"Quotient", "[", 
+         RowBox[{"a", ",", "b"}], "]"}]}], ";", "\n", "\t", 
+       RowBox[{"r", "=", 
+        RowBox[{"Mod", "[", 
+         RowBox[{"a", ",", "b"}], "]"}]}], ";", "\n", "\t", 
+       RowBox[{"a", "=", "b"}], ";", "\n", "\t", 
+       RowBox[{"b", "=", "r"}], ";", "\n", "\t", 
+       RowBox[{"s", "=", 
+        RowBox[{"s", "+", "1"}]}], ";", "\n", "\t", 
+       RowBox[{"AppendTo", "[", 
+        RowBox[{"cocientes", ",", "q"}], "]"}], ";"}]}], "\n", "]"}], ";", 
+    "\n", 
+    RowBox[{"listam", "=", 
+     RowBox[{"Table", "[", 
+      RowBox[{"0", ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "s"}], "}"}]}], "]"}]}], ";", "\n", 
+    RowBox[{
+     RowBox[{"listam", "[", 
+      RowBox[{"[", "1", "]"}], "]"}], "=", "valor1"}], ";", "\n", 
+    RowBox[{
+     RowBox[{"listam", "[", 
+      RowBox[{"[", "2", "]"}], "]"}], "=", "valor2"}], ";", "\n", 
+    RowBox[{"For", " ", "[", 
+     RowBox[{
+      RowBox[{"f", "=", "3"}], ",", 
+      RowBox[{"f", "<", 
+       RowBox[{"s", "+", "1"}]}], ",", 
+      RowBox[{"f", "++"}], ",", "\n", 
+      RowBox[{
+       RowBox[{"listam", "[", 
+        RowBox[{"[", "f", "]"}], "]"}], "=", 
+       RowBox[{
+        RowBox[{"listam", "[", 
+         RowBox[{"[", 
+          RowBox[{"f", "-", "2"}], "]"}], "]"}], "-", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"listam", "[", 
+           RowBox[{"[", 
+            RowBox[{"f", "-", "1"}], "]"}], "]"}], "*", 
+          RowBox[{"cocientes", "[", 
+           RowBox[{"[", 
+            RowBox[{"f", "-", "2"}], "]"}], "]"}]}], ")"}]}]}]}], "\n", "]"}],
+     ";", "\n", 
+    RowBox[{"Bezout", ":=", 
+     RowBox[{"Simplify", "[", 
+      RowBox[{
+       RowBox[{"listam", "[", 
+        RowBox[{"[", 
+         RowBox[{"s", "-", "1"}], "]"}], "]"}], "-", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"listam", "[", 
+          RowBox[{"[", "s", "]"}], "]"}], "*", 
+         RowBox[{"cocientes", "[", 
+          RowBox[{"[", 
+           RowBox[{"s", "-", "1"}], "]"}], "]"}]}], ")"}]}], "]"}]}], ";", 
+    "\n", 
+    RowBox[{"valor1", "=", "1"}], ";", "\n", 
+    RowBox[{"valor2", "=", "0"}], ";", "\n", 
+    RowBox[{"Valoru", "=", "Bezout"}], ";", "\n", 
+    RowBox[{"valor1", "=", "0"}], ";", "\n", 
+    RowBox[{"valor2", "=", "1"}], ";", "\n", 
+    RowBox[{"Valordev", "=", "Bezout"}], ";", "\n", 
+    RowBox[{"Valoru", "=", 
+     RowBox[{"Valoru", "*", "Signo2"}]}], ";", "\n", 
+    RowBox[{"Valordev", "=", 
+     RowBox[{"Valordev", "*", "Signo1"}]}], ";"}]}], "\n", "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.d.{\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<}=\>\"", ",", "a"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.m.{\>\"", ",", "n1", ",", "\"\<,\>\"", ",", "n2", ",", 
+   "\"\<}=\>\"", ",", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"n3", "*", "n4"}], ")"}], "/", "a"}]}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<Identidad de Bezout: \>\"", ",", "a", ",", "\"\< = \>\"", ",", "n2", 
+   ",", "\"\<\[CenterDot](\>\"", ",", "Valoru", ",", "\"\<) + \>\"", ",", 
+   "n1", ",", "\"\<\[CenterDot](\>\"", ",", "Valordev", ",", "\"\<).\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.7222349769346457`*^9, 3.7222349911764603`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.d.{\"\>", "\[InvisibleSpace]", "27", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "1001", 
+   "\[InvisibleSpace]", "\<\"}=\"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["m.c.d.{", 27, ",", 1001, "}=", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.722234998706891*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.m.{\"\>", "\[InvisibleSpace]", "27", 
+   "\[InvisibleSpace]", "\<\",\"\>", "\[InvisibleSpace]", "1001", 
+   "\[InvisibleSpace]", "\<\"}=\"\>", "\[InvisibleSpace]", "27027"}],
+  SequenceForm["m.c.m.{", 27, ",", 1001, "}=", 27027],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.722234998706891*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Identidad de Bezout: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" = \"\>", "\[InvisibleSpace]", "1001", 
+   "\[InvisibleSpace]", "\<\"\[CenterDot](\"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", "13"}], "\[InvisibleSpace]", "\<\") + \"\>", 
+   "\[InvisibleSpace]", "27", "\[InvisibleSpace]", "\<\"\[CenterDot](\"\>", 
+   "\[InvisibleSpace]", "482", "\[InvisibleSpace]", "\<\").\"\>"}],
+  SequenceForm[
+  "Identidad de Bezout: ", 1, " = ", 1001, "\[CenterDot](", -13, ") + ", 27, 
+   "\[CenterDot](", 482, ")."],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7222349987078905`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+
+SI EL INVERSO APARECE NEGATIVO, HAY QUE UTILIZAR MOD[] PARA PASARLO A \
+POSITIVO (EL OPUESTO)\
+\>", "Text",
+ CellChangeTimes->{{3.722236884770767*^9, 3.722236920905834*^9}}],
+
+Cell["\<\
+
+Lo mas general que puede  caer:\
+\>", "Text",
+ CellChangeTimes->{{3.7222377253248444`*^9, 3.7222377417707853`*^9}}],
+
+Cell["2x + 5  _= 7 mod 5", "Text",
+ CellChangeTimes->{{3.722237698379303*^9, 3.722237744850961*^9}}],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox[
+    RowBox[{
+     RowBox[{"2", "x"}], " ", "+", " ", "5", " "}], "_"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "= ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["7", "_"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n\nx =  7-5/2 = 2/2 = 1"
+}], "Text",
+ CellChangeTimes->{{3.7222377472710996`*^9, 3.722237755218554*^9}, {
+  3.722237794531803*^9, 3.7222378287547603`*^9}}]
+}, Open  ]]
+},
+WindowSize->{767, 862},
+WindowMargins->{{144, Automatic}, {29, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 115, 1, 101, "Title"],
+Cell[698, 25, 118, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[841, 30, 232, 6, 31, "Input"],
+Cell[1076, 38, 73, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1186, 44, 209, 5, 52, "Input"],
+Cell[1398, 51, 73, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1508, 57, 5088, 147, 912, "Input"],
+Cell[CellGroupData[{
+Cell[6621, 208, 346, 7, 23, "Print"],
+Cell[6970, 217, 354, 7, 23, "Print"],
+Cell[7327, 226, 650, 12, 23, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[8004, 242, 184, 5, 68, "Text"],
+Cell[8191, 249, 126, 4, 49, "Text"],
+Cell[8320, 255, 100, 1, 30, "Text"],
+Cell[8423, 258, 456, 15, 70, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

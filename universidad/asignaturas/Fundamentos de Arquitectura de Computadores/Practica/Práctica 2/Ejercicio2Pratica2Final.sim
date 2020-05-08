@@ -1,0 +1,25 @@
+LDA 0100;
+MOV e, a;
+MVI h, FF;
+
+LXI b, 0100;
+NDATO: INX b;
+LDAX b;
+CMP h;
+JC MENOR;
+CONTINUAR: CMP l;
+JNC MAYOR;
+FINAL: DCR e;
+jnz NDATO;
+mov a, h;
+out 00;
+mov a, l;
+out 01;
+hlt;
+
+MENOR: mov h, a;
+JMP CONTINUAR;
+
+MAYOR: mov l, a;
+JMP FINAL;
+

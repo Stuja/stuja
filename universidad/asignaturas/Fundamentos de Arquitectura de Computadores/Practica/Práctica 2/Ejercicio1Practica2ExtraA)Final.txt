@@ -1,0 +1,7 @@
+¿Sabrías explicar a qué corresponde numéricamente del resultado en el puerto 02?
+
+El resultado que sale por el puerto 02 corresponde al acarreo. Es el número de veces que se ha sobrepasado el valor con el
+que un registro del 8085 puede operar, en este caso el rango (0, 255), lo que son 256 valores, ya que los registros 
+son de 8 bits. Si se multiplica este valor por 256 y se suma al resultado que la multiplicación va a dar por el 
+puerto 03, vamos a obtener el número que correspondería al hacer la multiplicación. Esto ocurre cuando 
+la multiplicación se produce entre números demasiado grandes.

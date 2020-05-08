@@ -1,0 +1,20 @@
+in 00;
+mov b, a;
+in 01;
+mov, c, a;
+sub b;
+jz CERO;
+jm NEGATIVE;
+jmp POSITIVE;
+CERO: mvi a, FF;
+out 03;
+hlt;
+POSITIVE: mov a, c;
+out 03;
+hlt;
+NEGATIVE: mov a, b;
+out 03;
+hlt;
+
+
+

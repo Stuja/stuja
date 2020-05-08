@@ -1,0 +1,218 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6999,        208]
+NotebookOptionsPosition[      6416,        183]
+NotebookOutlinePosition[      6763,        198]
+CellTagsIndexPosition[      6720,        195]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Practica 6 Discreta", "Title",
+ CellChangeTimes->{{3.719209995439112*^9, 3.7192100028225346`*^9}}],
+
+Cell["\<\
+a distinto de b Y a R b, para comprobar a = b. <-- Para ver si son \
+antisimetricas. Se chequea con todos los pares.
+
+Para la transitiva se coge un par que termine en b y otro que empiece en b y \
+comprobar si esta el b, c.
+
+(Existe programa de la profesora).\
+\>", "Text",
+ CellChangeTimes->{{3.719210005750702*^9, 3.7192100818710556`*^9}, {
+  3.71921017583143*^9, 3.7192101899272366`*^9}, {3.719210375399845*^9, 
+  3.7192103803591285`*^9}, {3.7192104333831615`*^9, 3.7192104471439486`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 19 relacion", "Subsection",
+ CellChangeTimes->{{3.719210441128604*^9, 3.7192104461448913`*^9}}],
+
+Cell["\<\
+R es de equivalencia si es reflexiva, sim\[EAcute]trica y transitiva:
+
+i) Reflexiva: Para todo a perteneciente a A, entonces a R a si y solo si (a, \
+a) pertenece a R:
+\t1 pertenece a A, entonces (1, 1) pertenece a R
+\t2 pertenece a A, entonces (2, 2) pertenece a R
+\t3...
+\thasta 4
+\t
+ii) Sim\[EAcute]trica:
+\tSi a R b entonces b R a;
+\tSi (a, b) pertenece a R, entonces (b, a) pertenece a R
+\t
+\t(1,1) pertenece a R, -> (1,1 pertenece a R)
+\t(2, 2) pertenece a R -> (2, 2)...
+\t(2, 3) pertenece a R -> (3, 2)... 
+\t(2, 4) pertence a R -> (4, 2)
+\t.... con todos.
+\t
+iii) Transitiva:
+\tSi (a, b) pertenece a R y (b, c) pertenece a R, entonces (a, c) pertenece a R
+\t
+\t(1, 1) \[Euro] R y (1, 1) \[Euro] R -> (1, 1)
+\t... algunos son triviales porque son iguales
+\t(2, 2) \[Euro] R y (2 ,2) \[Euro] R -> (2, 2) \[Euro] R
+\t(2, 2) \[Euro] R y (2, 3) \[Euro] R -> (2, 3) \[Euro] R
+\t... hacerlo con todos. 
+\t
+
+Clase 1 = {x \[Euro] A : (x, 1) \[Euro] R} = {1}
+Clase 2 = {x \[Euro] A : (x, 2) \[Euro] R} = {2, 3, 4} = Clase 3, 4. 
+
+MIRAR\
+\>", "Text",
+ CellChangeTimes->{{3.719210397767124*^9, 3.71921078128906*^9}, {
+   3.7192108520491076`*^9, 3.719210861415643*^9}, {3.719211079274104*^9, 
+   3.719211165290024*^9}, 3.7192119682029476`*^9, {3.7192121309872584`*^9, 
+   3.719212134424455*^9}, {3.7192122260746975`*^9, 3.7192122268987446`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"COCIENTE", "[", 
+    RowBox[{"A_", ",", "R_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"CONTADORi", ",", "CONTADORj", ",", "anadir"}], "}"}], ",", 
+     RowBox[{
+      RowBox[{"cociente", "=", 
+       RowBox[{"{", 
+        RowBox[{"{", 
+         RowBox[{"A", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "}"}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Do", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"anadir", "=", "True"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Do", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Intersection", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"A", "[", 
+                    RowBox[{"[", "CONTADORi", "]"}], "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"cociente", "[", 
+                    RowBox[{"[", "CONTADORj", "]"}], "]"}], "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "}"}], "}"}], ",", 
+                 "R"}], "]"}], "!=", 
+               RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"AppendTo", "[", 
+                RowBox[{
+                 RowBox[{"cociente", "[", 
+                  RowBox[{"[", "CONTADORj", "]"}], "]"}], ",", 
+                 RowBox[{"A", "[", 
+                  RowBox[{"[", "CONTADORi", "]"}], "]"}]}], "]"}], ";", 
+               "\[IndentingNewLine]", 
+               RowBox[{"anadir", "=", "False"}], ";", "\[IndentingNewLine]", 
+               RowBox[{"Break", "[", "]"}], ";"}]}], "\[IndentingNewLine]", 
+             "]"}], ";"}], "\[IndentingNewLine]", ",", 
+           RowBox[{"{", 
+            RowBox[{"CONTADORj", ",", "1", ",", 
+             RowBox[{"Length", "[", "cociente", "]"}]}], "}"}]}], "]"}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"If", " ", "[", 
+          RowBox[{"anadir", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"AppendTo", "[", 
+             RowBox[{"cociente", ",", 
+              RowBox[{"{", 
+               RowBox[{"A", "[", 
+                RowBox[{"[", "CONTADORi", "]"}], "]"}], "}"}]}], "]"}], 
+            ";"}]}], "\[IndentingNewLine]", "]"}], ";"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"CONTADORi", ",", "2", ",", 
+          RowBox[{"Length", "[", "A", "]"}]}], "}"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "cociente"}]}], "\[IndentingNewLine]", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{
+  3.7192113577310305`*^9, {3.71921144496202*^9, 3.7192114635390825`*^9}, {
+   3.7192119639327035`*^9, 3.7192119651327724`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 24", "Subsection",
+ CellChangeTimes->{{3.7192122332091055`*^9, 3.7192122491370163`*^9}, 
+   3.71921363494628*^9}],
+
+Cell[BoxData[{
+ RowBox[{"X", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+   "a", ",", " ", "b", ",", " ", "c", ",", " ", "d", " ", ",", "e", ",", " ", 
+    "f"}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Y", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{"b", ",", " ", "f", ",", " ", "e"}], 
+   "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Z", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", " ", "a", ",", " ", "e", ",", " ", "d"}], "}"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.7192138329396048`*^9, 3.719213844908289*^9}, {
+  3.7192139324272947`*^9, 3.7192139692204*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 862},
+WindowMargins->{{Automatic, 248}, {22, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 104, 1, 101, "Title"],
+Cell[687, 25, 502, 11, 125, "Text"],
+Cell[CellGroupData[{
+Cell[1214, 40, 111, 1, 49, "Subsection"],
+Cell[1328, 43, 1351, 38, 619, "Text"],
+Cell[2682, 83, 2901, 71, 332, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5620, 159, 129, 2, 49, "Subsection"],
+Cell[5752, 163, 636, 16, 112, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
