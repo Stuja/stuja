@@ -1,0 +1,423 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[      9252,        318]*)
+(*NotebookOutlinePosition[      9933,        341]*)
+(*  CellTagsIndexPosition[      9889,        337]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["5. L\[OAcute]gica proposicional: Conectivas y tablas de verdad", "Title",
+  FontSize->36],
+
+Cell["Ejemplos con Mathematica", "Subtitle"],
+
+Cell[CellGroupData[{
+
+Cell["1. Formas enunciativas y conectivas", "Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 5.1.", "Subsection",
+  FontSize->16],
+
+Cell["\<\
+Definir una funci\[OAcute]n que act\[UAcute]e como la conectiva p \
+\[LeftRightArrow] q.\
+\>", "Text",
+  FontSize->14],
+
+Cell["\<\
+1) Usando la equivalencia l\[OAcute]gica p \[LeftRightArrow] q \
+\[DoubleLeftRightArrow] (p \[RightArrow] q) \[And] (q \[RightArrow] p) \
+podemos definir una funci\[OAcute]n Sii[p, q]\
+\>", "Text",
+  FontSize->14],
+
+Cell[BoxData[
+    \(Sii[p_, q_] := Implies[p, q]\  && \ Implies[q, p]\)], "Input"],
+
+Cell["\<\
+Comprobamos que tiene la misma tabla de verdad que la conectiva \
+\[LeftRightArrow]\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(Sii[True, True]\), "\n", 
+    \(Sii[True, False]\), "\n", 
+    \(Sii[False, True]\), "\n", 
+    \(Sii[False, False]\)}], "Input"],
+
+Cell[BoxData[
+    \(True\)], "Output"],
+
+Cell[BoxData[
+    \(False\)], "Output"],
+
+Cell[BoxData[
+    \(False\)], "Output"],
+
+Cell[BoxData[
+    \(True\)], "Output"]
+}, Closed]],
+
+Cell["\<\
+2) Utilizando la orden condicional Which[], podemos definir una nueva funci\
+\[OAcute]n Sii2[] mediante:\
+\>", "Text",
+  FontSize->14],
+
+Cell[BoxData[
+    \(Sii2[p_, q_] := Which[p == q, \ True, \ p != q, \ False]\)], "Input"],
+
+Cell["3) Otra forma ser\[IAcute]a negando la funci\[OAcute]n Xor[]:", "Text",
+  FontSize->14],
+
+Cell[BoxData[
+    \(Sii3[p_, q_] := \ \(! \((Xor[p, q])\)\)\)], "Input"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 5.2.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Definir la forma enunciativa A = (p ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Wedge]\)]],
+  " (q ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Vee]\)]],
+  " (~r))) \[RightArrow] (r ",
+  Cell[BoxData[
+      \(TraditionalForm\`\[Wedge]\)]],
+  " q) y calcular el valor de esta forma para la combinaci\[OAcute]n de \
+valores de verdad de las conectivas p = Verdad, q = Falso y r = Verdad y para \
+la combinaci\[OAcute]n p = Verdad, q = Verdad y r = Falso:"
+}], "Text",
+  FontSize->14],
+
+Cell[BoxData[
+    \(A\  := \ 
+      Implies[p\  && \ \((q\  || \ \((\(! r\))\))\), \ r\  && \ q]\)], "Input"],
+
+Cell["\<\
+El valor de verdad para la combinaci\[OAcute]n V F V lo calculamos usando el \
+comando TrueQ[]\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(p = True;\)\), "\n", 
+    \(\(q = False;\)\), "\n", 
+    \(\(r = True;\)\), "\n", 
+    \(TrueQ[A]\)}], "Input"],
+
+Cell[BoxData[
+    \(True\)], "Output"]
+}, Closed]],
+
+Cell["\<\
+Y para la combinaci\[OAcute]n V V F, la calcularemos directamente solicitando \
+el valor de A:\
+\>", "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(p = True;\)\), "\n", 
+    \(\(q = True;\)\), "\n", 
+    \(\(r = False;\)\), "\n", 
+    \(A\)}], "Input"],
+
+Cell[BoxData[
+    \(False\)], "Output"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["2. Tablas de verdad", "Section",
+  FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 5.3.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Calcular la tabla de verdad de la forma enunciativa: (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_1\)]],
+  "\[LeftRightArrow] (",
+  Cell[BoxData[
+      \(TraditionalForm\`p\_2\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`\[Wedge]\)]],
+  Cell[BoxData[
+      \(TraditionalForm\`p\_3\)]],
+  "))."
+}], "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Sii[a_, b_] := Implies[a, b]\  && \ Implies[b, a];\)\), "\n", 
+    \(\(n = 3;\)\), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := 
+        Sii[p[\([1]\)], p[\([2]\)]\  && \ p[\([3]\)]];\)\), "\n", 
+    \(\(tabla = Table["\<F\>", {x, \((2^n + 1)\)}, {y, n + 1}];\)\), "\n", 
+    \(\(For[k = 1, k < n + 1, \(k++\), 
+        tabla[\([1, k]\)] = \\!\\("\<p\>" \\_ k\\)];\)\), "\n", 
+    \(\(tabla[\([1, n + 1]\)] = "\<Exp\>";\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), \n\tj = i; \n\t
+        For[f = n, 
+          f > 0, \(f--\), \n\t\tresto = Mod[j, 2]; \n\t\tj = 
+            Floor[j/2]; \n\t\tIf[resto == 0, p[\([f]\)] = True; \ 
+            tabla[\([i + 2, f]\)] = "\<V\>", 
+            p[\([f]\)] = False];\n\t\t\ ]; \n\t
+        If[TrueQ[expresion], 
+          tabla[\([i + 2, n + 1]\)] = "\<V\>"];\n\t];\)\), "\n", 
+    \(TableForm[tabla]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[GridBox[{
+          {\("p"\_1\), \("p"\_2\), \("p"\_3\), "\<\"Exp\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"F\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      Function[ BoxForm`e$, 
+        TableForm[ BoxForm`e$]]]], "Output"]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 5.4.", "Subsection",
+  FontSize->16],
+
+Cell[TextData[{
+  "Calcular la tabla de verdad de la forma enunciativa ((p \[DownArrow] ( \
+~r)) | (q ",
+  Cell[BoxData[
+      \(TraditionalForm\`\(\(\[Wedge]\)\(\ \)\)\)]],
+  "r))."
+}], "Text",
+  FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+    \(\(Sii[a_, b_] := Implies[a, b]\  && \ Implies[b, a];\)\), "\n", 
+    \(\(n = 3;\)\ \), "\n", 
+    \(\(p = Table[False, {t, n}];\)\), "\n", 
+    \(\(expresion := \ 
+        Nand[Nor[p[\([1]\)], \(! p[\([3]\)]\)], \ 
+          p[\([2]\)] && p[\([3]\)]];\)\), "\n", 
+    \(\(tabla = Table["\<F\>", {x, \((2^n + 1)\)}, {y, n + 1}];\)\), "\n", 
+    \(\(For[k = 1, k < n + 1, \(k++\), 
+        tabla[\([1, k]\)] = \ \\!\\("\<p\>" \\_ k\\)];\)\), "\n", 
+    \(\(tabla[\([1, n + 1]\)] = "\<Exp\>";\)\), "\n", 
+    \(\(For[i = 0, i < 2^n, \(i++\), \n\tj = i; \n\t
+        For[f = n, 
+          f > 0, \(f--\), \n\t\tresto = Mod[j, 2]; \n\t\tj = 
+            Floor[j/2]; \n\t\tIf[resto == 0, p[\([f]\)] = True; \ 
+            tabla[\([i + 2, f]\)] = "\<V\>", 
+            p[\([f]\)] = False];\n\t\t\ ]; \n\t
+        If[TrueQ[expresion], 
+          tabla[\([i + 2, n + 1]\)] = "\<V\>"];\n\t];\)\), "\n", 
+    \(TableForm[tabla]\)}], "Input"],
+
+Cell[BoxData[
+    TagBox[GridBox[{
+          {\("p"\_1\), \("p"\_2\), \("p"\_3\), "\<\"Exp\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"V\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>", "\<\"F\"\>"},
+          {"\<\"F\"\>", "\<\"V\"\>", "\<\"F\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>", "\<\"V\"\>"},
+          {"\<\"F\"\>", "\<\"F\"\>", "\<\"F\"\>", "\<\"V\"\>"}
+          },
+        RowSpacings->1,
+        ColumnSpacings->3,
+        RowAlignments->Baseline,
+        ColumnAlignments->{Left}],
+      Function[ BoxForm`e$, 
+        TableForm[ BoxForm`e$]]]], "Output"]
+}, Closed]]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1024}, {0, 685}},
+WindowSize->{903, 653},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+StyleDefinitions -> "PASTELCOLOR.NB"
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[1776, 53, 95, 1, 72, "Title"],
+Cell[1874, 56, 44, 0, 41, "Subtitle"],
+
+Cell[CellGroupData[{
+Cell[1943, 60, 70, 1, 54, "Section"],
+
+Cell[CellGroupData[{
+Cell[2038, 65, 50, 1, 43, "Subsection"],
+Cell[2091, 68, 128, 4, 30, "Text"],
+Cell[2222, 74, 223, 5, 30, "Text"],
+Cell[2448, 81, 82, 1, 38, "Input"],
+Cell[2533, 84, 123, 4, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[2681, 92, 150, 4, 98, "Input"],
+Cell[2834, 98, 38, 1, 37, "Output"],
+Cell[2875, 101, 39, 1, 37, "Output"],
+Cell[2917, 104, 39, 1, 37, "Output"],
+Cell[2959, 107, 38, 1, 37, "Output"]
+}, Closed]],
+Cell[3012, 111, 144, 4, 30, "Text"],
+Cell[3159, 117, 89, 1, 38, "Input"],
+Cell[3251, 120, 93, 1, 30, "Text"],
+Cell[3347, 123, 72, 1, 38, "Input"]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[3456, 129, 50, 1, 29, "Subsection"],
+Cell[3509, 132, 503, 14, 52, "Text"],
+Cell[4015, 148, 109, 2, 38, "Input"],
+Cell[4127, 152, 134, 4, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[4286, 160, 134, 4, 98, "Input"],
+Cell[4423, 166, 38, 1, 37, "Output"]
+}, Closed]],
+Cell[4476, 170, 134, 4, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[4635, 178, 127, 4, 98, "Input"],
+Cell[4765, 184, 39, 1, 37, "Output"]
+}, Closed]]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[4865, 192, 54, 1, 38, "Section"],
+
+Cell[CellGroupData[{
+Cell[4944, 197, 50, 1, 43, "Subsection"],
+Cell[4997, 200, 344, 13, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[5366, 217, 912, 18, 358, "Input"],
+Cell[6281, 237, 814, 17, 161, "Output"]
+}, Closed]]
+}, Closed]],
+
+Cell[CellGroupData[{
+Cell[7144, 260, 50, 1, 29, "Subsection"],
+Cell[7197, 263, 210, 7, 30, "Text"],
+
+Cell[CellGroupData[{
+Cell[7432, 274, 951, 19, 358, "Input"],
+Cell[8386, 295, 814, 17, 161, "Output"]
+}, Closed]]
+}, Closed]]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+

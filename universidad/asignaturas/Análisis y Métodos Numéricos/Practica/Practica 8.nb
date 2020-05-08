@@ -1,0 +1,232 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6642,        222]
+NotebookOptionsPosition[      6177,        201]
+NotebookOutlinePosition[      6524,        216]
+CellTagsIndexPosition[      6481,        213]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["PRACTICA 7 ANALISIS", "Title",
+ CellChangeTimes->{{3.7197568541003866`*^9, 3.7197568595066957`*^9}, 
+   3.7197571511393766`*^9}],
+
+Cell["\<\
+Aplicaciones:
+
+- Valor medio 
+
+- Area bajo una gr\[AAcute]fica
+
+- Volumen al girar eje X
+
+- Volumen al girar eje Y
+
+- Longitud de una gr\[AAcute]fica
+
+- Area al girar respecto eje X.\
+\>", "Text",
+ CellChangeTimes->{{3.719756869995296*^9, 3.719756937363149*^9}}],
+
+Cell["\<\
+
+
+
+Calcular el volumen del toro de radio mayor 8 y menor 3. Calcular el volumen \
+del cono.
+r= 4, h = 6.
+
+Calcular el area lateral del cono.
+r = 6, d = 10.
+
+Calcular el volumen de la esfera de radio R.
+
+Para calcular esto tenemos que ponerlo en funcion de como lo hemos visto \
+antes, con intervalos, funciones, etc (con las formulas de arriba).
+
+
+Volumen al girar ejeje X\
+\>", "Text",
+ CellChangeTimes->{{3.719758038117109*^9, 3.719758122748949*^9}, {
+  3.7197582709734273`*^9, 3.7197583019241977`*^9}, {3.7197588357497306`*^9, 
+  3.7197588584050264`*^9}, {3.7197590506620226`*^9, 3.719759059845548*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        RowBox[{"Cos", "[", "t", "]"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"8", " ", "+", " ", 
+          RowBox[{"3", " ", 
+           RowBox[{"Sin", "[", "t", "]"}]}]}], ")"}], " ", 
+        RowBox[{"Cos", " ", "[", "s", "]"}]}], ",", " ", 
+       RowBox[{"(", 
+        RowBox[{"8", " ", "+", " ", 
+         RowBox[{"3", " ", 
+          RowBox[{"Sin", " ", "[", "t", "]"}], " ", "Sin", " ", "s"}]}], 
+        ")"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", " ", "0", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", " ", "Pi", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", " ", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        RowBox[{"Cos", "[", "t", "]"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"8", " ", "+", " ", 
+          RowBox[{"3", " ", 
+           RowBox[{"Sin", "[", "t", "]"}]}]}], ")"}], " ", 
+        RowBox[{"Cos", " ", "[", "s", "]"}]}], ",", " ", 
+       RowBox[{"(", 
+        RowBox[{"8", " ", "+", " ", 
+         RowBox[{"3", " ", 
+          RowBox[{"Sin", " ", "[", "t", "]"}], " ", "Sin", " ", "s"}]}], 
+        ")"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", " ", "0", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", " ", "Pi", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}], ",", "\[IndentingNewLine]",
+    "\[IndentingNewLine]", 
+   RowBox[{"ParametricPlot3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"3", " ", 
+        RowBox[{"Cos", "[", "t", "]"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"8", " ", "+", " ", 
+          RowBox[{"3", " ", 
+           RowBox[{"Sin", "[", "t", "]"}]}]}], ")"}], " ", 
+        RowBox[{"Cos", " ", "[", "s", "]"}]}], ",", " ", 
+       RowBox[{"(", 
+        RowBox[{"8", " ", "+", " ", 
+         RowBox[{"3", " ", 
+          RowBox[{"Sin", " ", "[", "t", "]"}], " ", "Sin", " ", "s"}]}], 
+        ")"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", " ", "0", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", " ", "Pi", ",", " ", 
+       RowBox[{"2", " ", "Pi"}]}], "}"}]}], "]"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.7197590656168785`*^9, 3.719759160281293*^9}, {
+  3.719759201112628*^9, 3.7197592577878695`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   Graphics3DBox[{},
+    AutomaticImageSize->True,
+    Axes->True,
+    DisplayFunction->Identity,
+    FaceGridsStyle->Automatic,
+    ImageSize->{194.63257178852547`, 157.19700218815805`},
+    Method->{},
+    PlotRange->{{0., 0.}, {0., 0.}, {0., 0.}},
+    PlotRangePadding->{
+      Scaled[0.02], 
+      Scaled[0.02], 
+      Scaled[0.02]},
+    Ticks->{Automatic, Automatic, Automatic},
+    ViewPoint->{-2.2694904137144873`, -2.27008480841486, -1.0705737829136843`},
+    ViewVertical->{-0.7521903686561578, -0.38218265073127256`, 
+     0.536792390762883}], ",", 
+   Graphics3DBox[{},
+    AutomaticImageSize->True,
+    Axes->True,
+    DisplayFunction->Identity,
+    FaceGridsStyle->Automatic,
+    ImageSize->{191.7120372872523, 178.65902490930097`},
+    Method->{},
+    PlotRange->{{0., 0.}, {0., 0.}, {0., 0.}},
+    PlotRangePadding->{
+      Scaled[0.02], 
+      Scaled[0.02], 
+      Scaled[0.02]},
+    Ticks->{Automatic, Automatic, Automatic},
+    ViewPoint->{-3.3833582527773047`, 
+     0.052161827834154975`, -0.012887089691015706`},
+    ViewVertical->{-0.5843213715611622, 0.581412157329634, 
+     0.566152309936278}], ",", 
+   Graphics3DBox[{},
+    AutomaticImageSize->True,
+    Axes->True,
+    DisplayFunction->Identity,
+    FaceGridsStyle->Automatic,
+    ImageSize->{182.98972009811007`, 204.1082642387482},
+    Method->{},
+    PlotRange->{{0., 0.}, {0., 0.}, {0., 0.}},
+    PlotRangePadding->{
+      Scaled[0.02], 
+      Scaled[0.02], 
+      Scaled[0.02]},
+    Ticks->{Automatic, Automatic, Automatic},
+    ViewPoint->{1.9304799895457543`, 1.9977956525107752`, 1.931853912896229},
+    ViewVertical->{-0.3250835108198331, 0.6932672510747542, 
+     0.6431961050723995}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7197592589469357`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{767, 873},
+WindowMargins->{{Automatic, 568}, {44, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 134, 2, 101, "Title"],
+Cell[717, 26, 272, 15, 258, "Text"],
+Cell[992, 43, 616, 21, 315, "Text"],
+Cell[CellGroupData[{
+Cell[1633, 68, 2736, 75, 172, "Input"],
+Cell[4372, 145, 1777, 52, 254, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

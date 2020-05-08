@@ -1,0 +1,17 @@
+comienzo: mvi a,80
+
+izq.derch: out 00
+rrc
+jnc izq.derch
+mvi a,00
+out 00
+mvi a, 01
+
+derch.izq2: out 01
+rlc
+jnc derch.izq2
+mvi a, 00
+out 01
+jmp comienzo;
+
+hlt;

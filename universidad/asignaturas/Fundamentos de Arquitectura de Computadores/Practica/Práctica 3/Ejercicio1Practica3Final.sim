@@ -1,0 +1,29 @@
+IN 00;
+MOV l, a;
+
+LXI b, 00FD;
+NDATO: INR e;
+INX b;
+DCR l;
+JZ FIN;
+LDAX b;
+MOV d, a;
+IN 01;
+CMP d;
+JZ POSICIONAR;
+JMP NDATO;
+
+POSICIONAR: mov h, e;
+JMP NDATO
+
+FIN: MOV d, h;
+MVI a, 00;
+ADD h;
+JZ FINSINDATO;
+MOV a, d;
+OUT 02;
+HLT;
+
+FINSINDATO: MVI a, FF;
+OUT 02;
+HLT;

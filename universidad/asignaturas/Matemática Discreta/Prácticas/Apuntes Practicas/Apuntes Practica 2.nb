@@ -1,0 +1,5002 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    155006,       4992]
+NotebookOptionsPosition[    110092,       3814]
+NotebookOutlinePosition[    110440,       3829]
+CellTagsIndexPosition[    110397,       3826]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"0", ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"i", ",", " ", "1000", ",", " ", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.716183023905856*^9, 3.716183042187902*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.716183043835996*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"listezas", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"0", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "200"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7161830459571176`*^9, 3.716183076274852*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.7161830777959385`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"listezas", "*", "2"}]], "Input",
+ CellChangeTimes->{{3.7161830797100477`*^9, 3.716183085200362*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", 
+   ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+   "0", ",", "0", ",", "0", ",", "0", ",", "0"}], "}"}]], "Output",
+ CellChangeTimes->{3.7161830861154146`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"matrix", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{"12", ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "2"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", " ", "4"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7161832125076437`*^9, 3.7161832475086455`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"12", ",", "12", ",", "12", ",", "12"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"12", ",", "12", ",", "12", ",", "12"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.71618325055582*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "[", "matrix", "]"}]], "Input",
+ CellChangeTimes->{{3.716183254366038*^9, 3.716183261835465*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"12", "12", "12", "12"},
+    {"12", "12", "12", "12"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.7161832627565174`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"multipletas", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"2", "*", "j"}], ")"}], "^", "i"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "2"}], "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"j", ",", " ", "4"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7161833352196627`*^9, 3.7161834305641155`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"2", ",", "4", ",", "6", ",", "8"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"4", ",", "16", ",", "36", ",", "64"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7161834338823056`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TableForm", "[", "multipletas", "]"}]], "Input",
+ CellChangeTimes->{{3.716183438318559*^9, 3.7161834501872377`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"2", "4", "6", "8"},
+    {"4", "16", "36", "64"}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[2.0999999999999996`]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.7161834513903065`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", " ", 
+    RowBox[{"{", "1", "}"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", 
+      RowBox[{"{", "1", "}"}]}], "}"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7161837121332207`*^9, 3.7161837275861044`*^9}, {
+  3.716184035077692*^9, 3.7161840369738007`*^9}, {3.7161843924081297`*^9, 
+  3.7161844232078915`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   RowBox[{"{", "1", "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"{", "1", "}"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.7161844347565527`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", 
+  RowBox[{"Out", "[", "9", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7161844386807766`*^9, 3.7161844559497643`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", 
+   TagBox[GridBox[{
+      {"1"},
+      {
+       RowBox[{"{", "1", "}"}]},
+      {
+       RowBox[{"{", 
+        RowBox[{"1", ",", 
+         RowBox[{"{", "1", "}"}]}], "}"}]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}},
+        "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Column], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{3.7161844572828407`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MatrixPlot", "[", 
+   RowBox[{"Out", "[", "9", "]"}], "]"}], "\n"}]], "Input",
+ CellChangeTimes->{{3.716184462251125*^9, 3.7161844830853167`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MatrixPlot", "::", "mat0"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Argument \[NoBreak]\\!\\({1, \\(\\({1}\\)\\), \\(\\({1, \
+\\(\\({1}\\)\\)}\\)\\)}\\)\[NoBreak] at position \[NoBreak]\\!\\(1\\)\
+\[NoBreak] is not a matrix. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/MatrixPlot\\\", ButtonNote -> \\\"MatrixPlot::mat0\
+\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.7161844853754473`*^9}],
+
+Cell[BoxData[
+ RowBox[{"MatrixPlot", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", 
+    RowBox[{"{", "1", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", 
+      RowBox[{"{", "1", "}"}]}], "}"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.7161844853754473`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixPlot", "[", 
+  RowBox[{"{", 
+   RowBox[{"12", ",", " ", "12", ",", " ", "12", ",", " ", "12"}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7161845015083704`*^9, 3.716184511416937*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MatrixPlot", "::", "mat0"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Argument \[NoBreak]\\!\\({12, 12, 12, 12}\\)\[NoBreak] at \
+position \[NoBreak]\\!\\(1\\)\[NoBreak] is not a matrix. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/MatrixPlot\\\", ButtonNote -> \
+\\\"MatrixPlot::mat0\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.716184512801016*^9}],
+
+Cell[BoxData[
+ RowBox[{"MatrixPlot", "[", 
+  RowBox[{"{", 
+   RowBox[{"12", ",", "12", ",", "12", ",", "12"}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.7161845128020163`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"For", "[", 
+   RowBox[{
+    RowBox[{"n", " ", "=", " ", "1000"}], ",", " ", 
+    RowBox[{"n", ">", " ", "1"}], ",", " ", 
+    RowBox[{"n", "--"}], ",", " ", 
+    RowBox[{"Print", "[", "\"\<Maria\>\"", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.716185436061824*^9, 3.7161855344934535`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\<\"Maria\"\>", "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Print",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{
+  3.7161855383266726`*^9, {3.7161862849603777`*^9, 3.716186378762743*^9}}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538327673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538330673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538331673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538331673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538332673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383336735`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538334673*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383356733`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383356733`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383366737`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383376737`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383386736`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383396735`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383396735`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383406734`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538341674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538342674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383436737`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383436737`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538344674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538345674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538345674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538346674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538346674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538347674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538347674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538348674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538349674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538349674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538350674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538350674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538351674*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383526745`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383526745`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383536744`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383536744`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383546743`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383546743`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383556747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383566747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383566747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383576746`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383576746`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538358675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383596745`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383596745`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383596745`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538360675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538360675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538360675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538361675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538361675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538361675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383626747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383626747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383626747`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538363675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538363675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538363675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538364675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538364675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538364675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538365675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538365675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538365675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383666754`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383666754`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383666754`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383676753`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383676753`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538368675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538368675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538368675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538369675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538369675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538369675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538370675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538370675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538370675*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383716755`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383716755`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383716755`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538372676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538372676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538372676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383736753`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383736753`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383746758`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383746758`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383746758`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383756757`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383756757`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383756757`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383766756`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383766756`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383766756`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538377676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538377676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538378676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538378676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538378676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538379676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538379676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538379676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383806763`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383806763`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383806763`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383816757`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383816757`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538382676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538382676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538382676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538383676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538383676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538383676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538384676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538384676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383856764`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383856764`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383856764`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383866763`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383866763`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383876762`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383876762`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383876762`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383886766`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383886766`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383886766`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538389676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538389676*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383906765`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383906765`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383906765`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538391677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538391677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538392677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538392677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538392677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383936768`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383936768`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383946767`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383946767`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383946767`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383956766`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383956766`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538396677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538396677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538396677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383976765`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383976765`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538398677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538398677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538398677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383996773`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855383996773`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538400677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538400677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538401677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538401677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538401677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384026775`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384026775`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538403677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538403677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538403677*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384046774`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384046774`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384056773`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384056773`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384056773`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384066772`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384066772`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384076777`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384076777`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384086776`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384086776`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384086776`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384096775`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384096775`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538410678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538410678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384116774`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384116774`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384116774`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538412678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538412678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538413678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538413678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538413678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538414678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538414678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538415678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538415678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538416678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538416678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538416678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538417678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538417678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384186783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384186783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538419678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538419678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538420678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538420678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538420678*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384216785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384216785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384226785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384226785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384236784`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384236784`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384246783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384246783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384246783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384256783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384256783`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384266787`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384266787`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538427679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538427679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384286785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384286785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384286785`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538429679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538429679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538430679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538430679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538431679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538431679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384326787`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384326787`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384326787`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538433679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538433679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538434679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538434679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384356794`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384356794`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538436679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538436679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384376793`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384376793`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384376793`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538438679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538438679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538439679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538439679*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384406796`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384406796`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844168*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844168*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384426794`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384426794`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844368*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844368*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384446793`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384446793`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384456797`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384456797`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384456797`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384466796`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384466796`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384476795`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384476795`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844868*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553844868*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384496803`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384496803`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845068*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845068*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845168*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845168*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845268*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845268*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845368*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845368*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384546804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384546804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384556804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384556804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384566803`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384566803`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384566803`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384576807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384576807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845868*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553845868*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384596806`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384596806`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384606805`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384606805`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384616804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384616804`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538462681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538462681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384636807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384636807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384646807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384646807`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538465681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538465681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384666805`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384666805`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538467681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538467681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384686813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384686813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384696813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384696813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538470681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538470681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538471681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538471681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538472681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538472681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384736814`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384736814`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538474681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538474681*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384756813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384756813`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384766817`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384766817`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384776816`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384786816`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384786816`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384796815`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384796815`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384806814`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384806814`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538481682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538481682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384826818`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384826818`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384836817`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384836817`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538484682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538484682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538485682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538485682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538486682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538486682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384876823`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384876823`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538488682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538489682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538489682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384906826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384906826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538491682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538491682*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384926825`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384926825`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384936824`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384936824`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384946823`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384946823`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384956827`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384966826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384966826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384976826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855384976826`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538498683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538498683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538499683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538499683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538500683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538500683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385016828`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385016828`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385026827`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538503683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538503683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385046835`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385046835`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538505683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538505683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385066833`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385066833`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385076833`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385076833`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538508683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538509683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538509683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538510683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538510683*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385116835`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385116835`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538512684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538512684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385136833`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385146837`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385146837`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385156837`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385156837`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385166836`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385166836`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538517684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538518684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538518684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538519684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538519684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385206842`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385206842`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385216837`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538522684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538522684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538523684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538523684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538524684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538524684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385256844`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385266843`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385266843`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538527684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538527684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385286846`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385286846`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538529684*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385306845`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385306845`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538531685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538531685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538532685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538532685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385336847`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538534685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538534685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385356846`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385356846`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538536685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538536685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538537685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538538685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538538685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385396852`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385396852`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538540685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538541685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538541685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385426855`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385426855`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538543685*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385446854`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385446854`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385456853`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385456853`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385466857`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385476856`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385476856`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385486856`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385486856`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385496855`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538550686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538550686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385516853`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385516853`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385526857`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538553686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538553686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538554686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538554686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538555686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538556686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538556686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538557686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538557686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385586863`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538559686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538559686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538560686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538560686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385616865`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385626864`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385626864`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385636864`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385646863`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385646863`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538565686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538565686*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385666866`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538567687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538567687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385686865`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538569687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538569687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538570687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538570687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385716867`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538572687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538572687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538573687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538573687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538574687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385756874`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385756874`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538576687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385776873`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385776873`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538578687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538579687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538579687*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385806875`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385806875`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538581688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385826874`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385826874`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538583688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385846877`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385846877`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385856876`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385866876`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385866876`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385876875`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538588688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538588688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385896883`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385906878`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385906878`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538591688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538591688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538592688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538593688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538593688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385946884`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385956883`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385956883`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385966883`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385976887`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385976887`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538598688*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385996885`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855385996885`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386006885`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386016884`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386016884`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538602689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386036887`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386036887`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386046886`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538605689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538605689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386066885`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538607689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538607689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386086893`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538609689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538609689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538610689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538611689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538611689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538612689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386136894`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386136894`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538614689*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386156893`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386156893`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386166897`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386176896`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386176896`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386186895`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553861969*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553861969*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386206894`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862169*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862169*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386226897`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386236897`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862469*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862469*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862569*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862669*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862669*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386276903`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386286902`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862969*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553862969*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386306906`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386316905`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386326904`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386326904`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386336904`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386346903`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386346903`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386356907`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386366906`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386376905`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386376905`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538638691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538639691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538640691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538640691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386416907`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386426907`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538643691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538643691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386446915`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538645691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386466913`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386466913`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386476912`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538648691*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386496916`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386496916`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386506915`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386516914`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538652692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538652692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386536913`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386546917`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386556916`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386556916`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386566916`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538657692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538658692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538659692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538659692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538660692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386616917`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538662692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538662692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386636925`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538664692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386656923`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386656923`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386666927`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538667692*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386686926`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386696925`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386696925`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386706924`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538671693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538672693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538672693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386736927`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538674693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386756926`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386756926`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538676693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538677693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538678693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538679693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538679693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538680693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538681693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386826935`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538683693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538683693*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386846933`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386856937`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386866937`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386866937`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386876936`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386886935`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386896935`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538690694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538691694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538691694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855386926937`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538693694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538694694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538695694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538695694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538696694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538697694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538698694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538699694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538699694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538700694*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387016945`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387026944`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387036943`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387036943`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387046947`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387056947`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387066946`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538707695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387086945`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387086945`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538709695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538710695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387116947`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538712695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538712695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538713695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538714695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387156954`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387166953`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538717695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538717695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538718695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538719695*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387206955`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538721696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538721696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387226954`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387236958`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387246957`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387256956`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387256956`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538726696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387276955`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538728696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387296963`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387306957`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387306957`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538731696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538732696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538733696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387346964`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387356963`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387356963`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387366962`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387376966`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538738696*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387396965`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538740697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538740697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387416964`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538742697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387436967`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387446966`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538745697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538745697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387466965`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538747697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387486973`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538749697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538750697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387516975`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387516975`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538752697*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387536974`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387546973`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387556973`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387566977`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387566977`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387576976`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387586975`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538759698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387606974`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538761698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387626977`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387626977`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538763698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538764698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538765698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538766698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387676983`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538768698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538769698*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387706985`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387706985`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387716985`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387726984`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387736983`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387746983`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387756987`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387766986`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387766986`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387776985`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538778699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538779699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538780699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387816987`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538782699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538782699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538783699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387846994`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538785699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387866993`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538787699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538788699*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387896996`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387896996`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387906995`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387916994`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387927*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387936993`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387946997`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387956996`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387966995`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387966995`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387977*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387987003`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855387997*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388007*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388017*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388027*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388037004`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388037004`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388047*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388057003`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388067007`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388077*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388087006`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388097005`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388107004`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538811701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538811701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388127007`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388137007`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538814701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388157005`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538816701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388177013`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538818701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538819701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538820701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538820701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538821701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388227015`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538823701*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388247013`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388257017`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388267016`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388277016`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388287015`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388297014`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388297014`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538830702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388317018`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388327017`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538833702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538834702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538835702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388367023`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538837702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538838702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538839702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538840702*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388417025`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388417025`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388427024`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388437023`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388447027`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388457026`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388467026`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538847703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538848703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538849703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538850703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388517027`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538852703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538852703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538853703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538854703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388557034`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388567033`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538857703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538858703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538859703*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388607035`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538861704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388627033`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388637037`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388647037`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388657036`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388657036`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538866704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538867704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538868704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388697042`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388707037`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538871704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538872704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538873704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388747044`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388757043`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538876704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388777046`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538878704*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388797045`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538880705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388817043`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388817043`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388827047`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538883705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388847046`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538885705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388867044`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538887705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388887053`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538889705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538890705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388917055`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538892705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388937054`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388947053`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538895705*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388967056`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388977056`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855388987055`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538899706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389007053`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389017057`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538902706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538903706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538904706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538904706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538905706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538906706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389077063`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538908706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538909706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389107065`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389117064`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389127064`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389137063`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538914706*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389157066`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389167066`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389177065`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538918707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538919707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389207067`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538921707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538922707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538923707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389247074`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538925707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389267073`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538927707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538928707*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389297075`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389307075`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389317074`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538932708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389337077`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389347076`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389357076`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389367075`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538937708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389387083`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389397078`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538940708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538941708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538942708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389437084`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538944708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389457083`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389467087`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538947708*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389487085`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389497085`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389507084`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538951709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389527087`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389537086`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538954709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389557085`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538956709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389577093`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538958709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538959709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538960709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538961709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389627094`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538963709*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389647093`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389657097`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389667096`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389677095`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553896871*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389697094`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897071*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389717097`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389727097`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897371*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897471*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897571*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389767103`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897771*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897871*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.71618553897971*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389817104`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389827104`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389837103`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389847107`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389857106`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389867105`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538987711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538988711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538989711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389907107`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389917107`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538992711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538993711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538994711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389957113`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389967113`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538997711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185538998711*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855389997115`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.716185539001712*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855390027113`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855390037117`*^9}],
+
+Cell[BoxData["\<\"Maria\"\>"], "Print",
+ CellChangeTimes->{3.7161855390047116`*^9}]
+}, Closed]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"bornyear", " ", "=", " ", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"11", " ", "*", " ", "i"}], ",", " ", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", " ", "1", ",", " ", "8"}], "}"}]}], "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{
+   "11", ",", "22", ",", "33", ",", "44", ",", "55", ",", "66", ",", "77", 
+    ",", "88"}], "}"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Cos", "^", 
+  RowBox[{"2", "[", "0", "]"}]}]}], "Input",
+ CellChangeTimes->{{3.716186700593151*^9, 3.7161867081065807`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "11", ",", "22", ",", "33", ",", "44", ",", "55", ",", "66", ",", "77", ",",
+    "88"}], "}"}]], "Output",
+ CellChangeTimes->{3.716186709021633*^9}],
+
+Cell[BoxData[
+ SuperscriptBox["Cos", 
+  RowBox[{"2", "[", "0", "]"}]]], "Output",
+ CellChangeTimes->{3.7161867090356336`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Cos", "[", "0", "]"}], "^", "2"}]], "Input",
+ CellChangeTimes->{{3.716186716683071*^9, 3.7161867204662876`*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.716186721365339*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"For", "[", 
+  RowBox[{
+   RowBox[{"i", " ", "=", " ", "100"}], ",", " ", 
+   RowBox[{"i", " ", ">", " ", "0"}], ",", " ", 
+   RowBox[{"Print", "[", 
+    RowBox[{"\"\<lol\>\"", " ", "*", " ", "i"}], "]"}], ",", " ", 
+   RowBox[{"i", "--"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7161868523038282`*^9, 3.7161869300402746`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"99", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318133755`*^9}],
+
+Cell[BoxData[
+ RowBox[{"98", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931817376*^9}],
+
+Cell[BoxData[
+ RowBox[{"97", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318223763`*^9}],
+
+Cell[BoxData[
+ RowBox[{"96", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931828377*^9}],
+
+Cell[BoxData[
+ RowBox[{"95", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318303766`*^9}],
+
+Cell[BoxData[
+ RowBox[{"94", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318323765`*^9}],
+
+Cell[BoxData[
+ RowBox[{"93", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318353767`*^9}],
+
+Cell[BoxData[
+ RowBox[{"92", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318373775`*^9}],
+
+Cell[BoxData[
+ RowBox[{"91", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318393774`*^9}],
+
+Cell[BoxData[
+ RowBox[{"90", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318413773`*^9}],
+
+Cell[BoxData[
+ RowBox[{"89", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318433776`*^9}],
+
+Cell[BoxData[
+ RowBox[{"88", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931845378*^9}],
+
+Cell[BoxData[
+ RowBox[{"87", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931847378*^9}],
+
+Cell[BoxData[
+ RowBox[{"86", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318493776`*^9}],
+
+Cell[BoxData[
+ RowBox[{"85", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931851378*^9}],
+
+Cell[BoxData[
+ RowBox[{"84", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318533783`*^9}],
+
+Cell[BoxData[
+ RowBox[{"83", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931855378*^9}],
+
+Cell[BoxData[
+ RowBox[{"82", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318563786`*^9}],
+
+Cell[BoxData[
+ RowBox[{"81", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318583784`*^9}],
+
+Cell[BoxData[
+ RowBox[{"80", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318603783`*^9}],
+
+Cell[BoxData[
+ RowBox[{"79", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318613787`*^9}],
+
+Cell[BoxData[
+ RowBox[{"78", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318633785`*^9}],
+
+Cell[BoxData[
+ RowBox[{"77", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931864379*^9}],
+
+Cell[BoxData[
+ RowBox[{"76", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931866379*^9}],
+
+Cell[BoxData[
+ RowBox[{"75", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318673787`*^9}],
+
+Cell[BoxData[
+ RowBox[{"74", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931869379*^9}],
+
+Cell[BoxData[
+ RowBox[{"73", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931870379*^9}],
+
+Cell[BoxData[
+ RowBox[{"72", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931871379*^9}],
+
+Cell[BoxData[
+ RowBox[{"71", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931873379*^9}],
+
+Cell[BoxData[
+ RowBox[{"70", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931874379*^9}],
+
+Cell[BoxData[
+ RowBox[{"69", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318763795`*^9}],
+
+Cell[BoxData[
+ RowBox[{"68", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318773794`*^9}],
+
+Cell[BoxData[
+ RowBox[{"67", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318793793`*^9}],
+
+Cell[BoxData[
+ RowBox[{"66", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318803797`*^9}],
+
+Cell[BoxData[
+ RowBox[{"65", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318823795`*^9}],
+
+Cell[BoxData[
+ RowBox[{"64", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.71618693188338*^9}],
+
+Cell[BoxData[
+ RowBox[{"63", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.71618693188538*^9}],
+
+Cell[BoxData[
+ RowBox[{"62", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.71618693188638*^9}],
+
+Cell[BoxData[
+ RowBox[{"61", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318873796`*^9}],
+
+Cell[BoxData[
+ RowBox[{"60", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.71618693188938*^9}],
+
+Cell[BoxData[
+ RowBox[{"59", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318913803`*^9}],
+
+Cell[BoxData[
+ RowBox[{"58", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318923807`*^9}],
+
+Cell[BoxData[
+ RowBox[{"57", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.71618693189338*^9}],
+
+Cell[BoxData[
+ RowBox[{"56", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318953805`*^9}],
+
+Cell[BoxData[
+ RowBox[{"55", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318963804`*^9}],
+
+Cell[BoxData[
+ RowBox[{"54", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869318983803`*^9}],
+
+Cell[BoxData[
+ RowBox[{"53", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931900381*^9}],
+
+Cell[BoxData[
+ RowBox[{"52", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319013805`*^9}],
+
+Cell[BoxData[
+ RowBox[{"51", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931903381*^9}],
+
+Cell[BoxData[
+ RowBox[{"50", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931904381*^9}],
+
+Cell[BoxData[
+ RowBox[{"49", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931906381*^9}],
+
+Cell[BoxData[
+ RowBox[{"48", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931907381*^9}],
+
+Cell[BoxData[
+ RowBox[{"47", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931909381*^9}],
+
+Cell[BoxData[
+ RowBox[{"46", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319103813`*^9}],
+
+Cell[BoxData[
+ RowBox[{"45", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931912381*^9}],
+
+Cell[BoxData[
+ RowBox[{"44", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319133816`*^9}],
+
+Cell[BoxData[
+ RowBox[{"43", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319153814`*^9}],
+
+Cell[BoxData[
+ RowBox[{"42", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931916382*^9}],
+
+Cell[BoxData[
+ RowBox[{"41", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319183817`*^9}],
+
+Cell[BoxData[
+ RowBox[{"40", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931919382*^9}],
+
+Cell[BoxData[
+ RowBox[{"39", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931921382*^9}],
+
+Cell[BoxData[
+ RowBox[{"38", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319223824`*^9}],
+
+Cell[BoxData[
+ RowBox[{"37", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931924382*^9}],
+
+Cell[BoxData[
+ RowBox[{"36", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931926382*^9}],
+
+Cell[BoxData[
+ RowBox[{"35", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319283824`*^9}],
+
+Cell[BoxData[
+ RowBox[{"34", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319293823`*^9}],
+
+Cell[BoxData[
+ RowBox[{"33", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931931382*^9}],
+
+Cell[BoxData[
+ RowBox[{"32", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319323826`*^9}],
+
+Cell[BoxData[
+ RowBox[{"31", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931934383*^9}],
+
+Cell[BoxData[
+ RowBox[{"30", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931935383*^9}],
+
+Cell[BoxData[
+ RowBox[{"29", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319373827`*^9}],
+
+Cell[BoxData[
+ RowBox[{"28", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931938383*^9}],
+
+Cell[BoxData[
+ RowBox[{"27", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931940383*^9}],
+
+Cell[BoxData[
+ RowBox[{"26", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319413834`*^9}],
+
+Cell[BoxData[
+ RowBox[{"25", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931943383*^9}],
+
+Cell[BoxData[
+ RowBox[{"24", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931944383*^9}],
+
+Cell[BoxData[
+ RowBox[{"23", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319463835`*^9}],
+
+Cell[BoxData[
+ RowBox[{"22", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319473834`*^9}],
+
+Cell[BoxData[
+ RowBox[{"21", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319493837`*^9}],
+
+Cell[BoxData[
+ RowBox[{"20", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319503837`*^9}],
+
+Cell[BoxData[
+ RowBox[{"19", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319523835`*^9}],
+
+Cell[BoxData[
+ RowBox[{"18", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319533834`*^9}],
+
+Cell[BoxData[
+ RowBox[{"17", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319553843`*^9}],
+
+Cell[BoxData[
+ RowBox[{"16", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319563837`*^9}],
+
+Cell[BoxData[
+ RowBox[{"15", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931958384*^9}],
+
+Cell[BoxData[
+ RowBox[{"14", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931959384*^9}],
+
+Cell[BoxData[
+ RowBox[{"13", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319613843`*^9}],
+
+Cell[BoxData[
+ RowBox[{"12", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931962384*^9}],
+
+Cell[BoxData[
+ RowBox[{"11", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931964384*^9}],
+
+Cell[BoxData[
+ RowBox[{"10", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319653845`*^9}],
+
+Cell[BoxData[
+ RowBox[{"9", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319673843`*^9}],
+
+Cell[BoxData[
+ RowBox[{"8", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319683847`*^9}],
+
+Cell[BoxData[
+ RowBox[{"7", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319703846`*^9}],
+
+Cell[BoxData[
+ RowBox[{"6", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319723845`*^9}],
+
+Cell[BoxData[
+ RowBox[{"5", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931973385*^9}],
+
+Cell[BoxData[
+ RowBox[{"4", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.7161869319753847`*^9}],
+
+Cell[BoxData[
+ RowBox[{"3", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931976385*^9}],
+
+Cell[BoxData[
+ RowBox[{"2", " ", "\<\"lol\"\>"}]], "Print",
+ CellChangeTimes->{3.716186931978385*^9}],
+
+Cell[BoxData["\<\"lol\"\>"], "Print",
+ CellChangeTimes->{3.7161869319793854`*^9}],
+
+Cell[BoxData["0"], "Print",
+ CellChangeTimes->{3.716186931981385*^9}]
+}, Open  ]]
+}, Closed]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.716186532772552*^9, 3.7161865368377843`*^9}, {
+  3.716186604262641*^9, 3.71618662872404*^9}}]
+},
+WindowSize->{767, 614},
+WindowMargins->{{198, Automatic}, {113, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 224, 5, 31, "Input"],
+Cell[807, 29, 87, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[931, 36, 253, 6, 31, "Input"],
+Cell[1187, 44, 2204, 30, 152, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3428, 79, 124, 2, 31, "Input"],
+Cell[3555, 83, 2204, 30, 152, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5796, 118, 323, 8, 31, "Input"],
+Cell[6122, 128, 260, 7, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6419, 140, 133, 2, 31, "Input"],
+Cell[6555, 144, 606, 17, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7198, 166, 400, 11, 31, "Input"],
+Cell[7601, 179, 258, 7, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7896, 191, 140, 2, 31, "Input"],
+Cell[8039, 195, 601, 17, 56, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8677, 217, 407, 10, 31, "Input"],
+Cell[9087, 229, 226, 7, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9350, 241, 163, 3, 31, "Input"],
+Cell[9516, 246, 799, 25, 71, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10352, 276, 181, 4, 52, "Input"],
+Cell[10536, 282, 534, 11, 21, "Message"],
+Cell[11073, 295, 268, 8, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11378, 308, 220, 5, 31, "Input"],
+Cell[11601, 315, 492, 10, 21, "Message"],
+Cell[12096, 327, 179, 4, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12312, 336, 354, 8, 52, "Input"],
+Cell[CellGroupData[{
+Cell[12691, 348, 245, 6, 62, "Print"],
+Cell[12939, 356, 81, 1, 23, "Print"],
+Cell[13023, 359, 81, 1, 23, "Print"],
+Cell[13107, 362, 81, 1, 23, "Print"],
+Cell[13191, 365, 81, 1, 23, "Print"],
+Cell[13275, 368, 81, 1, 23, "Print"],
+Cell[13359, 371, 83, 1, 23, "Print"],
+Cell[13445, 374, 81, 1, 23, "Print"],
+Cell[13529, 377, 83, 1, 23, "Print"],
+Cell[13615, 380, 83, 1, 23, "Print"],
+Cell[13701, 383, 83, 1, 23, "Print"],
+Cell[13787, 386, 83, 1, 23, "Print"],
+Cell[13873, 389, 83, 1, 23, "Print"],
+Cell[13959, 392, 83, 1, 23, "Print"],
+Cell[14045, 395, 83, 1, 23, "Print"],
+Cell[14131, 398, 83, 1, 23, "Print"],
+Cell[14217, 401, 81, 1, 23, "Print"],
+Cell[14301, 404, 81, 1, 23, "Print"],
+Cell[14385, 407, 83, 1, 23, "Print"],
+Cell[14471, 410, 83, 1, 23, "Print"],
+Cell[14557, 413, 81, 1, 23, "Print"],
+Cell[14641, 416, 81, 1, 23, "Print"],
+Cell[14725, 419, 81, 1, 23, "Print"],
+Cell[14809, 422, 81, 1, 23, "Print"],
+Cell[14893, 425, 81, 1, 23, "Print"],
+Cell[14977, 428, 81, 1, 23, "Print"],
+Cell[15061, 431, 81, 1, 23, "Print"],
+Cell[15145, 434, 81, 1, 23, "Print"],
+Cell[15229, 437, 81, 1, 23, "Print"],
+Cell[15313, 440, 81, 1, 23, "Print"],
+Cell[15397, 443, 81, 1, 23, "Print"],
+Cell[15481, 446, 81, 1, 23, "Print"],
+Cell[15565, 449, 81, 1, 23, "Print"],
+Cell[15649, 452, 83, 1, 23, "Print"],
+Cell[15735, 455, 83, 1, 23, "Print"],
+Cell[15821, 458, 83, 1, 23, "Print"],
+Cell[15907, 461, 83, 1, 23, "Print"],
+Cell[15993, 464, 83, 1, 23, "Print"],
+Cell[16079, 467, 83, 1, 23, "Print"],
+Cell[16165, 470, 83, 1, 23, "Print"],
+Cell[16251, 473, 83, 1, 23, "Print"],
+Cell[16337, 476, 83, 1, 23, "Print"],
+Cell[16423, 479, 83, 1, 23, "Print"],
+Cell[16509, 482, 83, 1, 23, "Print"],
+Cell[16595, 485, 81, 1, 23, "Print"],
+Cell[16679, 488, 83, 1, 23, "Print"],
+Cell[16765, 491, 83, 1, 23, "Print"],
+Cell[16851, 494, 83, 1, 23, "Print"],
+Cell[16937, 497, 81, 1, 23, "Print"],
+Cell[17021, 500, 81, 1, 23, "Print"],
+Cell[17105, 503, 81, 1, 23, "Print"],
+Cell[17189, 506, 81, 1, 23, "Print"],
+Cell[17273, 509, 81, 1, 23, "Print"],
+Cell[17357, 512, 81, 1, 23, "Print"],
+Cell[17441, 515, 83, 1, 23, "Print"],
+Cell[17527, 518, 83, 1, 23, "Print"],
+Cell[17613, 521, 83, 1, 23, "Print"],
+Cell[17699, 524, 81, 1, 23, "Print"],
+Cell[17783, 527, 81, 1, 23, "Print"],
+Cell[17867, 530, 81, 1, 23, "Print"],
+Cell[17951, 533, 81, 1, 23, "Print"],
+Cell[18035, 536, 81, 1, 23, "Print"],
+Cell[18119, 539, 81, 1, 23, "Print"],
+Cell[18203, 542, 81, 1, 23, "Print"],
+Cell[18287, 545, 81, 1, 23, "Print"],
+Cell[18371, 548, 81, 1, 23, "Print"],
+Cell[18455, 551, 83, 1, 23, "Print"],
+Cell[18541, 554, 83, 1, 23, "Print"],
+Cell[18627, 557, 83, 1, 23, "Print"],
+Cell[18713, 560, 83, 1, 23, "Print"],
+Cell[18799, 563, 83, 1, 23, "Print"],
+Cell[18885, 566, 81, 1, 23, "Print"],
+Cell[18969, 569, 81, 1, 23, "Print"],
+Cell[19053, 572, 81, 1, 23, "Print"],
+Cell[19137, 575, 81, 1, 23, "Print"],
+Cell[19221, 578, 81, 1, 23, "Print"],
+Cell[19305, 581, 81, 1, 23, "Print"],
+Cell[19389, 584, 81, 1, 23, "Print"],
+Cell[19473, 587, 81, 1, 23, "Print"],
+Cell[19557, 590, 81, 1, 23, "Print"],
+Cell[19641, 593, 83, 1, 23, "Print"],
+Cell[19727, 596, 83, 1, 23, "Print"],
+Cell[19813, 599, 83, 1, 23, "Print"],
+Cell[19899, 602, 81, 1, 23, "Print"],
+Cell[19983, 605, 81, 1, 23, "Print"],
+Cell[20067, 608, 81, 1, 23, "Print"],
+Cell[20151, 611, 83, 1, 23, "Print"],
+Cell[20237, 614, 83, 1, 23, "Print"],
+Cell[20323, 617, 83, 1, 23, "Print"],
+Cell[20409, 620, 83, 1, 23, "Print"],
+Cell[20495, 623, 83, 1, 23, "Print"],
+Cell[20581, 626, 83, 1, 23, "Print"],
+Cell[20667, 629, 83, 1, 23, "Print"],
+Cell[20753, 632, 83, 1, 23, "Print"],
+Cell[20839, 635, 83, 1, 23, "Print"],
+Cell[20925, 638, 83, 1, 23, "Print"],
+Cell[21011, 641, 83, 1, 23, "Print"],
+Cell[21097, 644, 81, 1, 23, "Print"],
+Cell[21181, 647, 81, 1, 23, "Print"],
+Cell[21265, 650, 81, 1, 23, "Print"],
+Cell[21349, 653, 81, 1, 23, "Print"],
+Cell[21433, 656, 81, 1, 23, "Print"],
+Cell[21517, 659, 81, 1, 23, "Print"],
+Cell[21601, 662, 81, 1, 23, "Print"],
+Cell[21685, 665, 81, 1, 23, "Print"],
+Cell[21769, 668, 83, 1, 23, "Print"],
+Cell[21855, 671, 83, 1, 23, "Print"],
+Cell[21941, 674, 83, 1, 23, "Print"],
+Cell[22027, 677, 83, 1, 23, "Print"],
+Cell[22113, 680, 83, 1, 23, "Print"],
+Cell[22199, 683, 81, 1, 23, "Print"],
+Cell[22283, 686, 81, 1, 23, "Print"],
+Cell[22367, 689, 81, 1, 23, "Print"],
+Cell[22451, 692, 81, 1, 23, "Print"],
+Cell[22535, 695, 81, 1, 23, "Print"],
+Cell[22619, 698, 81, 1, 23, "Print"],
+Cell[22703, 701, 81, 1, 23, "Print"],
+Cell[22787, 704, 81, 1, 23, "Print"],
+Cell[22871, 707, 83, 1, 23, "Print"],
+Cell[22957, 710, 83, 1, 23, "Print"],
+Cell[23043, 713, 83, 1, 23, "Print"],
+Cell[23129, 716, 83, 1, 23, "Print"],
+Cell[23215, 719, 83, 1, 23, "Print"],
+Cell[23301, 722, 83, 1, 23, "Print"],
+Cell[23387, 725, 83, 1, 23, "Print"],
+Cell[23473, 728, 83, 1, 23, "Print"],
+Cell[23559, 731, 83, 1, 23, "Print"],
+Cell[23645, 734, 83, 1, 23, "Print"],
+Cell[23731, 737, 83, 1, 23, "Print"],
+Cell[23817, 740, 81, 1, 23, "Print"],
+Cell[23901, 743, 81, 1, 23, "Print"],
+Cell[23985, 746, 83, 1, 23, "Print"],
+Cell[24071, 749, 83, 1, 23, "Print"],
+Cell[24157, 752, 83, 1, 23, "Print"],
+Cell[24243, 755, 81, 1, 23, "Print"],
+Cell[24327, 758, 81, 1, 23, "Print"],
+Cell[24411, 761, 81, 1, 23, "Print"],
+Cell[24495, 764, 81, 1, 23, "Print"],
+Cell[24579, 767, 81, 1, 23, "Print"],
+Cell[24663, 770, 83, 1, 23, "Print"],
+Cell[24749, 773, 83, 1, 23, "Print"],
+Cell[24835, 776, 83, 1, 23, "Print"],
+Cell[24921, 779, 83, 1, 23, "Print"],
+Cell[25007, 782, 83, 1, 23, "Print"],
+Cell[25093, 785, 83, 1, 23, "Print"],
+Cell[25179, 788, 83, 1, 23, "Print"],
+Cell[25265, 791, 81, 1, 23, "Print"],
+Cell[25349, 794, 81, 1, 23, "Print"],
+Cell[25433, 797, 81, 1, 23, "Print"],
+Cell[25517, 800, 83, 1, 23, "Print"],
+Cell[25603, 803, 83, 1, 23, "Print"],
+Cell[25689, 806, 81, 1, 23, "Print"],
+Cell[25773, 809, 81, 1, 23, "Print"],
+Cell[25857, 812, 81, 1, 23, "Print"],
+Cell[25941, 815, 83, 1, 23, "Print"],
+Cell[26027, 818, 83, 1, 23, "Print"],
+Cell[26113, 821, 81, 1, 23, "Print"],
+Cell[26197, 824, 81, 1, 23, "Print"],
+Cell[26281, 827, 81, 1, 23, "Print"],
+Cell[26365, 830, 81, 1, 23, "Print"],
+Cell[26449, 833, 81, 1, 23, "Print"],
+Cell[26533, 836, 83, 1, 23, "Print"],
+Cell[26619, 839, 83, 1, 23, "Print"],
+Cell[26705, 842, 81, 1, 23, "Print"],
+Cell[26789, 845, 81, 1, 23, "Print"],
+Cell[26873, 848, 81, 1, 23, "Print"],
+Cell[26957, 851, 83, 1, 23, "Print"],
+Cell[27043, 854, 83, 1, 23, "Print"],
+Cell[27129, 857, 83, 1, 23, "Print"],
+Cell[27215, 860, 83, 1, 23, "Print"],
+Cell[27301, 863, 83, 1, 23, "Print"],
+Cell[27387, 866, 83, 1, 23, "Print"],
+Cell[27473, 869, 83, 1, 23, "Print"],
+Cell[27559, 872, 83, 1, 23, "Print"],
+Cell[27645, 875, 83, 1, 23, "Print"],
+Cell[27731, 878, 83, 1, 23, "Print"],
+Cell[27817, 881, 83, 1, 23, "Print"],
+Cell[27903, 884, 83, 1, 23, "Print"],
+Cell[27989, 887, 83, 1, 23, "Print"],
+Cell[28075, 890, 83, 1, 23, "Print"],
+Cell[28161, 893, 81, 1, 23, "Print"],
+Cell[28245, 896, 81, 1, 23, "Print"],
+Cell[28329, 899, 83, 1, 23, "Print"],
+Cell[28415, 902, 83, 1, 23, "Print"],
+Cell[28501, 905, 83, 1, 23, "Print"],
+Cell[28587, 908, 81, 1, 23, "Print"],
+Cell[28671, 911, 81, 1, 23, "Print"],
+Cell[28755, 914, 81, 1, 23, "Print"],
+Cell[28839, 917, 81, 1, 23, "Print"],
+Cell[28923, 920, 81, 1, 23, "Print"],
+Cell[29007, 923, 81, 1, 23, "Print"],
+Cell[29091, 926, 81, 1, 23, "Print"],
+Cell[29175, 929, 81, 1, 23, "Print"],
+Cell[29259, 932, 81, 1, 23, "Print"],
+Cell[29343, 935, 81, 1, 23, "Print"],
+Cell[29427, 938, 81, 1, 23, "Print"],
+Cell[29511, 941, 81, 1, 23, "Print"],
+Cell[29595, 944, 81, 1, 23, "Print"],
+Cell[29679, 947, 81, 1, 23, "Print"],
+Cell[29763, 950, 83, 1, 23, "Print"],
+Cell[29849, 953, 83, 1, 23, "Print"],
+Cell[29935, 956, 81, 1, 23, "Print"],
+Cell[30019, 959, 81, 1, 23, "Print"],
+Cell[30103, 962, 81, 1, 23, "Print"],
+Cell[30187, 965, 81, 1, 23, "Print"],
+Cell[30271, 968, 81, 1, 23, "Print"],
+Cell[30355, 971, 83, 1, 23, "Print"],
+Cell[30441, 974, 83, 1, 23, "Print"],
+Cell[30527, 977, 83, 1, 23, "Print"],
+Cell[30613, 980, 83, 1, 23, "Print"],
+Cell[30699, 983, 83, 1, 23, "Print"],
+Cell[30785, 986, 83, 1, 23, "Print"],
+Cell[30871, 989, 83, 1, 23, "Print"],
+Cell[30957, 992, 83, 1, 23, "Print"],
+Cell[31043, 995, 83, 1, 23, "Print"],
+Cell[31129, 998, 83, 1, 23, "Print"],
+Cell[31215, 1001, 83, 1, 23, "Print"],
+Cell[31301, 1004, 83, 1, 23, "Print"],
+Cell[31387, 1007, 83, 1, 23, "Print"],
+Cell[31473, 1010, 81, 1, 23, "Print"],
+Cell[31557, 1013, 81, 1, 23, "Print"],
+Cell[31641, 1016, 83, 1, 23, "Print"],
+Cell[31727, 1019, 83, 1, 23, "Print"],
+Cell[31813, 1022, 83, 1, 23, "Print"],
+Cell[31899, 1025, 81, 1, 23, "Print"],
+Cell[31983, 1028, 81, 1, 23, "Print"],
+Cell[32067, 1031, 81, 1, 23, "Print"],
+Cell[32151, 1034, 81, 1, 23, "Print"],
+Cell[32235, 1037, 81, 1, 23, "Print"],
+Cell[32319, 1040, 81, 1, 23, "Print"],
+Cell[32403, 1043, 83, 1, 23, "Print"],
+Cell[32489, 1046, 83, 1, 23, "Print"],
+Cell[32575, 1049, 83, 1, 23, "Print"],
+Cell[32661, 1052, 81, 1, 23, "Print"],
+Cell[32745, 1055, 81, 1, 23, "Print"],
+Cell[32829, 1058, 81, 1, 23, "Print"],
+Cell[32913, 1061, 81, 1, 23, "Print"],
+Cell[32997, 1064, 83, 1, 23, "Print"],
+Cell[33083, 1067, 83, 1, 23, "Print"],
+Cell[33169, 1070, 81, 1, 23, "Print"],
+Cell[33253, 1073, 81, 1, 23, "Print"],
+Cell[33337, 1076, 83, 1, 23, "Print"],
+Cell[33423, 1079, 83, 1, 23, "Print"],
+Cell[33509, 1082, 83, 1, 23, "Print"],
+Cell[33595, 1085, 81, 1, 23, "Print"],
+Cell[33679, 1088, 81, 1, 23, "Print"],
+Cell[33763, 1091, 81, 1, 23, "Print"],
+Cell[33847, 1094, 81, 1, 23, "Print"],
+Cell[33931, 1097, 83, 1, 23, "Print"],
+Cell[34017, 1100, 83, 1, 23, "Print"],
+Cell[34103, 1103, 80, 1, 23, "Print"],
+Cell[34186, 1106, 80, 1, 23, "Print"],
+Cell[34269, 1109, 83, 1, 23, "Print"],
+Cell[34355, 1112, 83, 1, 23, "Print"],
+Cell[34441, 1115, 80, 1, 23, "Print"],
+Cell[34524, 1118, 80, 1, 23, "Print"],
+Cell[34607, 1121, 83, 1, 23, "Print"],
+Cell[34693, 1124, 83, 1, 23, "Print"],
+Cell[34779, 1127, 83, 1, 23, "Print"],
+Cell[34865, 1130, 83, 1, 23, "Print"],
+Cell[34951, 1133, 83, 1, 23, "Print"],
+Cell[35037, 1136, 83, 1, 23, "Print"],
+Cell[35123, 1139, 83, 1, 23, "Print"],
+Cell[35209, 1142, 83, 1, 23, "Print"],
+Cell[35295, 1145, 83, 1, 23, "Print"],
+Cell[35381, 1148, 80, 1, 23, "Print"],
+Cell[35464, 1151, 80, 1, 23, "Print"],
+Cell[35547, 1154, 83, 1, 23, "Print"],
+Cell[35633, 1157, 83, 1, 23, "Print"],
+Cell[35719, 1160, 80, 1, 23, "Print"],
+Cell[35802, 1163, 80, 1, 23, "Print"],
+Cell[35885, 1166, 80, 1, 23, "Print"],
+Cell[35968, 1169, 80, 1, 23, "Print"],
+Cell[36051, 1172, 80, 1, 23, "Print"],
+Cell[36134, 1175, 80, 1, 23, "Print"],
+Cell[36217, 1178, 80, 1, 23, "Print"],
+Cell[36300, 1181, 80, 1, 23, "Print"],
+Cell[36383, 1184, 83, 1, 23, "Print"],
+Cell[36469, 1187, 83, 1, 23, "Print"],
+Cell[36555, 1190, 83, 1, 23, "Print"],
+Cell[36641, 1193, 83, 1, 23, "Print"],
+Cell[36727, 1196, 83, 1, 23, "Print"],
+Cell[36813, 1199, 83, 1, 23, "Print"],
+Cell[36899, 1202, 83, 1, 23, "Print"],
+Cell[36985, 1205, 83, 1, 23, "Print"],
+Cell[37071, 1208, 83, 1, 23, "Print"],
+Cell[37157, 1211, 80, 1, 23, "Print"],
+Cell[37240, 1214, 80, 1, 23, "Print"],
+Cell[37323, 1217, 83, 1, 23, "Print"],
+Cell[37409, 1220, 83, 1, 23, "Print"],
+Cell[37495, 1223, 83, 1, 23, "Print"],
+Cell[37581, 1226, 83, 1, 23, "Print"],
+Cell[37667, 1229, 83, 1, 23, "Print"],
+Cell[37753, 1232, 83, 1, 23, "Print"],
+Cell[37839, 1235, 81, 1, 23, "Print"],
+Cell[37923, 1238, 81, 1, 23, "Print"],
+Cell[38007, 1241, 83, 1, 23, "Print"],
+Cell[38093, 1244, 83, 1, 23, "Print"],
+Cell[38179, 1247, 83, 1, 23, "Print"],
+Cell[38265, 1250, 83, 1, 23, "Print"],
+Cell[38351, 1253, 81, 1, 23, "Print"],
+Cell[38435, 1256, 81, 1, 23, "Print"],
+Cell[38519, 1259, 83, 1, 23, "Print"],
+Cell[38605, 1262, 83, 1, 23, "Print"],
+Cell[38691, 1265, 81, 1, 23, "Print"],
+Cell[38775, 1268, 81, 1, 23, "Print"],
+Cell[38859, 1271, 83, 1, 23, "Print"],
+Cell[38945, 1274, 83, 1, 23, "Print"],
+Cell[39031, 1277, 83, 1, 23, "Print"],
+Cell[39117, 1280, 83, 1, 23, "Print"],
+Cell[39203, 1283, 81, 1, 23, "Print"],
+Cell[39287, 1286, 81, 1, 23, "Print"],
+Cell[39371, 1289, 81, 1, 23, "Print"],
+Cell[39455, 1292, 81, 1, 23, "Print"],
+Cell[39539, 1295, 81, 1, 23, "Print"],
+Cell[39623, 1298, 81, 1, 23, "Print"],
+Cell[39707, 1301, 83, 1, 23, "Print"],
+Cell[39793, 1304, 83, 1, 23, "Print"],
+Cell[39879, 1307, 81, 1, 23, "Print"],
+Cell[39963, 1310, 81, 1, 23, "Print"],
+Cell[40047, 1313, 83, 1, 23, "Print"],
+Cell[40133, 1316, 83, 1, 23, "Print"],
+Cell[40219, 1319, 83, 1, 23, "Print"],
+Cell[40305, 1322, 83, 1, 23, "Print"],
+Cell[40391, 1325, 83, 1, 23, "Print"],
+Cell[40477, 1328, 83, 1, 23, "Print"],
+Cell[40563, 1331, 83, 1, 23, "Print"],
+Cell[40649, 1334, 83, 1, 23, "Print"],
+Cell[40735, 1337, 83, 1, 23, "Print"],
+Cell[40821, 1340, 83, 1, 23, "Print"],
+Cell[40907, 1343, 83, 1, 23, "Print"],
+Cell[40993, 1346, 81, 1, 23, "Print"],
+Cell[41077, 1349, 81, 1, 23, "Print"],
+Cell[41161, 1352, 83, 1, 23, "Print"],
+Cell[41247, 1355, 83, 1, 23, "Print"],
+Cell[41333, 1358, 83, 1, 23, "Print"],
+Cell[41419, 1361, 83, 1, 23, "Print"],
+Cell[41505, 1364, 81, 1, 23, "Print"],
+Cell[41589, 1367, 81, 1, 23, "Print"],
+Cell[41673, 1370, 81, 1, 23, "Print"],
+Cell[41757, 1373, 81, 1, 23, "Print"],
+Cell[41841, 1376, 81, 1, 23, "Print"],
+Cell[41925, 1379, 81, 1, 23, "Print"],
+Cell[42009, 1382, 83, 1, 23, "Print"],
+Cell[42095, 1385, 83, 1, 23, "Print"],
+Cell[42181, 1388, 81, 1, 23, "Print"],
+Cell[42265, 1391, 81, 1, 23, "Print"],
+Cell[42349, 1394, 81, 1, 23, "Print"],
+Cell[42433, 1397, 83, 1, 23, "Print"],
+Cell[42519, 1400, 83, 1, 23, "Print"],
+Cell[42605, 1403, 81, 1, 23, "Print"],
+Cell[42689, 1406, 81, 1, 23, "Print"],
+Cell[42773, 1409, 83, 1, 23, "Print"],
+Cell[42859, 1412, 83, 1, 23, "Print"],
+Cell[42945, 1415, 83, 1, 23, "Print"],
+Cell[43031, 1418, 83, 1, 23, "Print"],
+Cell[43117, 1421, 83, 1, 23, "Print"],
+Cell[43203, 1424, 83, 1, 23, "Print"],
+Cell[43289, 1427, 83, 1, 23, "Print"],
+Cell[43375, 1430, 83, 1, 23, "Print"],
+Cell[43461, 1433, 83, 1, 23, "Print"],
+Cell[43547, 1436, 83, 1, 23, "Print"],
+Cell[43633, 1439, 83, 1, 23, "Print"],
+Cell[43719, 1442, 81, 1, 23, "Print"],
+Cell[43803, 1445, 81, 1, 23, "Print"],
+Cell[43887, 1448, 81, 1, 23, "Print"],
+Cell[43971, 1451, 81, 1, 23, "Print"],
+Cell[44055, 1454, 81, 1, 23, "Print"],
+Cell[44139, 1457, 81, 1, 23, "Print"],
+Cell[44223, 1460, 83, 1, 23, "Print"],
+Cell[44309, 1463, 83, 1, 23, "Print"],
+Cell[44395, 1466, 83, 1, 23, "Print"],
+Cell[44481, 1469, 81, 1, 23, "Print"],
+Cell[44565, 1472, 81, 1, 23, "Print"],
+Cell[44649, 1475, 83, 1, 23, "Print"],
+Cell[44735, 1478, 83, 1, 23, "Print"],
+Cell[44821, 1481, 81, 1, 23, "Print"],
+Cell[44905, 1484, 81, 1, 23, "Print"],
+Cell[44989, 1487, 83, 1, 23, "Print"],
+Cell[45075, 1490, 83, 1, 23, "Print"],
+Cell[45161, 1493, 83, 1, 23, "Print"],
+Cell[45247, 1496, 83, 1, 23, "Print"],
+Cell[45333, 1499, 81, 1, 23, "Print"],
+Cell[45417, 1502, 81, 1, 23, "Print"],
+Cell[45501, 1505, 81, 1, 23, "Print"],
+Cell[45585, 1508, 81, 1, 23, "Print"],
+Cell[45669, 1511, 81, 1, 23, "Print"],
+Cell[45753, 1514, 83, 1, 23, "Print"],
+Cell[45839, 1517, 83, 1, 23, "Print"],
+Cell[45925, 1520, 81, 1, 23, "Print"],
+Cell[46009, 1523, 81, 1, 23, "Print"],
+Cell[46093, 1526, 83, 1, 23, "Print"],
+Cell[46179, 1529, 83, 1, 23, "Print"],
+Cell[46265, 1532, 83, 1, 23, "Print"],
+Cell[46351, 1535, 83, 1, 23, "Print"],
+Cell[46437, 1538, 83, 1, 23, "Print"],
+Cell[46523, 1541, 83, 1, 23, "Print"],
+Cell[46609, 1544, 83, 1, 23, "Print"],
+Cell[46695, 1547, 81, 1, 23, "Print"],
+Cell[46779, 1550, 81, 1, 23, "Print"],
+Cell[46863, 1553, 81, 1, 23, "Print"],
+Cell[46947, 1556, 81, 1, 23, "Print"],
+Cell[47031, 1559, 81, 1, 23, "Print"],
+Cell[47115, 1562, 83, 1, 23, "Print"],
+Cell[47201, 1565, 83, 1, 23, "Print"],
+Cell[47287, 1568, 83, 1, 23, "Print"],
+Cell[47373, 1571, 81, 1, 23, "Print"],
+Cell[47457, 1574, 81, 1, 23, "Print"],
+Cell[47541, 1577, 81, 1, 23, "Print"],
+Cell[47625, 1580, 81, 1, 23, "Print"],
+Cell[47709, 1583, 81, 1, 23, "Print"],
+Cell[47793, 1586, 81, 1, 23, "Print"],
+Cell[47877, 1589, 83, 1, 23, "Print"],
+Cell[47963, 1592, 83, 1, 23, "Print"],
+Cell[48049, 1595, 83, 1, 23, "Print"],
+Cell[48135, 1598, 81, 1, 23, "Print"],
+Cell[48219, 1601, 81, 1, 23, "Print"],
+Cell[48303, 1604, 83, 1, 23, "Print"],
+Cell[48389, 1607, 83, 1, 23, "Print"],
+Cell[48475, 1610, 81, 1, 23, "Print"],
+Cell[48559, 1613, 83, 1, 23, "Print"],
+Cell[48645, 1616, 83, 1, 23, "Print"],
+Cell[48731, 1619, 81, 1, 23, "Print"],
+Cell[48815, 1622, 81, 1, 23, "Print"],
+Cell[48899, 1625, 81, 1, 23, "Print"],
+Cell[48983, 1628, 81, 1, 23, "Print"],
+Cell[49067, 1631, 83, 1, 23, "Print"],
+Cell[49153, 1634, 81, 1, 23, "Print"],
+Cell[49237, 1637, 81, 1, 23, "Print"],
+Cell[49321, 1640, 83, 1, 23, "Print"],
+Cell[49407, 1643, 83, 1, 23, "Print"],
+Cell[49493, 1646, 81, 1, 23, "Print"],
+Cell[49577, 1649, 81, 1, 23, "Print"],
+Cell[49661, 1652, 81, 1, 23, "Print"],
+Cell[49745, 1655, 81, 1, 23, "Print"],
+Cell[49829, 1658, 81, 1, 23, "Print"],
+Cell[49913, 1661, 83, 1, 23, "Print"],
+Cell[49999, 1664, 83, 1, 23, "Print"],
+Cell[50085, 1667, 81, 1, 23, "Print"],
+Cell[50169, 1670, 81, 1, 23, "Print"],
+Cell[50253, 1673, 81, 1, 23, "Print"],
+Cell[50337, 1676, 83, 1, 23, "Print"],
+Cell[50423, 1679, 83, 1, 23, "Print"],
+Cell[50509, 1682, 81, 1, 23, "Print"],
+Cell[50593, 1685, 83, 1, 23, "Print"],
+Cell[50679, 1688, 83, 1, 23, "Print"],
+Cell[50765, 1691, 83, 1, 23, "Print"],
+Cell[50851, 1694, 83, 1, 23, "Print"],
+Cell[50937, 1697, 83, 1, 23, "Print"],
+Cell[51023, 1700, 83, 1, 23, "Print"],
+Cell[51109, 1703, 83, 1, 23, "Print"],
+Cell[51195, 1706, 83, 1, 23, "Print"],
+Cell[51281, 1709, 83, 1, 23, "Print"],
+Cell[51367, 1712, 83, 1, 23, "Print"],
+Cell[51453, 1715, 81, 1, 23, "Print"],
+Cell[51537, 1718, 81, 1, 23, "Print"],
+Cell[51621, 1721, 83, 1, 23, "Print"],
+Cell[51707, 1724, 83, 1, 23, "Print"],
+Cell[51793, 1727, 83, 1, 23, "Print"],
+Cell[51879, 1730, 81, 1, 23, "Print"],
+Cell[51963, 1733, 81, 1, 23, "Print"],
+Cell[52047, 1736, 81, 1, 23, "Print"],
+Cell[52131, 1739, 81, 1, 23, "Print"],
+Cell[52215, 1742, 81, 1, 23, "Print"],
+Cell[52299, 1745, 81, 1, 23, "Print"],
+Cell[52383, 1748, 81, 1, 23, "Print"],
+Cell[52467, 1751, 81, 1, 23, "Print"],
+Cell[52551, 1754, 81, 1, 23, "Print"],
+Cell[52635, 1757, 83, 1, 23, "Print"],
+Cell[52721, 1760, 81, 1, 23, "Print"],
+Cell[52805, 1763, 81, 1, 23, "Print"],
+Cell[52889, 1766, 81, 1, 23, "Print"],
+Cell[52973, 1769, 81, 1, 23, "Print"],
+Cell[53057, 1772, 83, 1, 23, "Print"],
+Cell[53143, 1775, 83, 1, 23, "Print"],
+Cell[53229, 1778, 83, 1, 23, "Print"],
+Cell[53315, 1781, 83, 1, 23, "Print"],
+Cell[53401, 1784, 83, 1, 23, "Print"],
+Cell[53487, 1787, 83, 1, 23, "Print"],
+Cell[53573, 1790, 81, 1, 23, "Print"],
+Cell[53657, 1793, 81, 1, 23, "Print"],
+Cell[53741, 1796, 83, 1, 23, "Print"],
+Cell[53827, 1799, 81, 1, 23, "Print"],
+Cell[53911, 1802, 81, 1, 23, "Print"],
+Cell[53995, 1805, 83, 1, 23, "Print"],
+Cell[54081, 1808, 81, 1, 23, "Print"],
+Cell[54165, 1811, 81, 1, 23, "Print"],
+Cell[54249, 1814, 81, 1, 23, "Print"],
+Cell[54333, 1817, 81, 1, 23, "Print"],
+Cell[54417, 1820, 83, 1, 23, "Print"],
+Cell[54503, 1823, 81, 1, 23, "Print"],
+Cell[54587, 1826, 81, 1, 23, "Print"],
+Cell[54671, 1829, 81, 1, 23, "Print"],
+Cell[54755, 1832, 81, 1, 23, "Print"],
+Cell[54839, 1835, 81, 1, 23, "Print"],
+Cell[54923, 1838, 83, 1, 23, "Print"],
+Cell[55009, 1841, 83, 1, 23, "Print"],
+Cell[55095, 1844, 81, 1, 23, "Print"],
+Cell[55179, 1847, 83, 1, 23, "Print"],
+Cell[55265, 1850, 83, 1, 23, "Print"],
+Cell[55351, 1853, 81, 1, 23, "Print"],
+Cell[55435, 1856, 81, 1, 23, "Print"],
+Cell[55519, 1859, 81, 1, 23, "Print"],
+Cell[55603, 1862, 83, 1, 23, "Print"],
+Cell[55689, 1865, 83, 1, 23, "Print"],
+Cell[55775, 1868, 81, 1, 23, "Print"],
+Cell[55859, 1871, 83, 1, 23, "Print"],
+Cell[55945, 1874, 83, 1, 23, "Print"],
+Cell[56031, 1877, 81, 1, 23, "Print"],
+Cell[56115, 1880, 83, 1, 23, "Print"],
+Cell[56201, 1883, 83, 1, 23, "Print"],
+Cell[56287, 1886, 83, 1, 23, "Print"],
+Cell[56373, 1889, 83, 1, 23, "Print"],
+Cell[56459, 1892, 83, 1, 23, "Print"],
+Cell[56545, 1895, 83, 1, 23, "Print"],
+Cell[56631, 1898, 81, 1, 23, "Print"],
+Cell[56715, 1901, 81, 1, 23, "Print"],
+Cell[56799, 1904, 83, 1, 23, "Print"],
+Cell[56885, 1907, 83, 1, 23, "Print"],
+Cell[56971, 1910, 83, 1, 23, "Print"],
+Cell[57057, 1913, 81, 1, 23, "Print"],
+Cell[57141, 1916, 81, 1, 23, "Print"],
+Cell[57225, 1919, 81, 1, 23, "Print"],
+Cell[57309, 1922, 81, 1, 23, "Print"],
+Cell[57393, 1925, 81, 1, 23, "Print"],
+Cell[57477, 1928, 83, 1, 23, "Print"],
+Cell[57563, 1931, 83, 1, 23, "Print"],
+Cell[57649, 1934, 83, 1, 23, "Print"],
+Cell[57735, 1937, 83, 1, 23, "Print"],
+Cell[57821, 1940, 83, 1, 23, "Print"],
+Cell[57907, 1943, 83, 1, 23, "Print"],
+Cell[57993, 1946, 81, 1, 23, "Print"],
+Cell[58077, 1949, 83, 1, 23, "Print"],
+Cell[58163, 1952, 83, 1, 23, "Print"],
+Cell[58249, 1955, 83, 1, 23, "Print"],
+Cell[58335, 1958, 83, 1, 23, "Print"],
+Cell[58421, 1961, 83, 1, 23, "Print"],
+Cell[58507, 1964, 81, 1, 23, "Print"],
+Cell[58591, 1967, 83, 1, 23, "Print"],
+Cell[58677, 1970, 83, 1, 23, "Print"],
+Cell[58763, 1973, 83, 1, 23, "Print"],
+Cell[58849, 1976, 81, 1, 23, "Print"],
+Cell[58933, 1979, 81, 1, 23, "Print"],
+Cell[59017, 1982, 83, 1, 23, "Print"],
+Cell[59103, 1985, 81, 1, 23, "Print"],
+Cell[59187, 1988, 81, 1, 23, "Print"],
+Cell[59271, 1991, 83, 1, 23, "Print"],
+Cell[59357, 1994, 81, 1, 23, "Print"],
+Cell[59441, 1997, 81, 1, 23, "Print"],
+Cell[59525, 2000, 81, 1, 23, "Print"],
+Cell[59609, 2003, 81, 1, 23, "Print"],
+Cell[59693, 2006, 81, 1, 23, "Print"],
+Cell[59777, 2009, 81, 1, 23, "Print"],
+Cell[59861, 2012, 83, 1, 23, "Print"],
+Cell[59947, 2015, 83, 1, 23, "Print"],
+Cell[60033, 2018, 81, 1, 23, "Print"],
+Cell[60117, 2021, 83, 1, 23, "Print"],
+Cell[60203, 2024, 83, 1, 23, "Print"],
+Cell[60289, 2027, 83, 1, 23, "Print"],
+Cell[60375, 2030, 83, 1, 23, "Print"],
+Cell[60461, 2033, 83, 1, 23, "Print"],
+Cell[60547, 2036, 83, 1, 23, "Print"],
+Cell[60633, 2039, 80, 1, 23, "Print"],
+Cell[60716, 2042, 80, 1, 23, "Print"],
+Cell[60799, 2045, 83, 1, 23, "Print"],
+Cell[60885, 2048, 80, 1, 23, "Print"],
+Cell[60968, 2051, 80, 1, 23, "Print"],
+Cell[61051, 2054, 83, 1, 23, "Print"],
+Cell[61137, 2057, 83, 1, 23, "Print"],
+Cell[61223, 2060, 80, 1, 23, "Print"],
+Cell[61306, 2063, 80, 1, 23, "Print"],
+Cell[61389, 2066, 80, 1, 23, "Print"],
+Cell[61472, 2069, 80, 1, 23, "Print"],
+Cell[61555, 2072, 80, 1, 23, "Print"],
+Cell[61638, 2075, 83, 1, 23, "Print"],
+Cell[61724, 2078, 83, 1, 23, "Print"],
+Cell[61810, 2081, 80, 1, 23, "Print"],
+Cell[61893, 2084, 80, 1, 23, "Print"],
+Cell[61976, 2087, 83, 1, 23, "Print"],
+Cell[62062, 2090, 83, 1, 23, "Print"],
+Cell[62148, 2093, 83, 1, 23, "Print"],
+Cell[62234, 2096, 83, 1, 23, "Print"],
+Cell[62320, 2099, 83, 1, 23, "Print"],
+Cell[62406, 2102, 83, 1, 23, "Print"],
+Cell[62492, 2105, 83, 1, 23, "Print"],
+Cell[62578, 2108, 83, 1, 23, "Print"],
+Cell[62664, 2111, 83, 1, 23, "Print"],
+Cell[62750, 2114, 83, 1, 23, "Print"],
+Cell[62836, 2117, 83, 1, 23, "Print"],
+Cell[62922, 2120, 81, 1, 23, "Print"],
+Cell[63006, 2123, 81, 1, 23, "Print"],
+Cell[63090, 2126, 81, 1, 23, "Print"],
+Cell[63174, 2129, 81, 1, 23, "Print"],
+Cell[63258, 2132, 83, 1, 23, "Print"],
+Cell[63344, 2135, 83, 1, 23, "Print"],
+Cell[63430, 2138, 81, 1, 23, "Print"],
+Cell[63514, 2141, 81, 1, 23, "Print"],
+Cell[63598, 2144, 83, 1, 23, "Print"],
+Cell[63684, 2147, 81, 1, 23, "Print"],
+Cell[63768, 2150, 83, 1, 23, "Print"],
+Cell[63854, 2153, 83, 1, 23, "Print"],
+Cell[63940, 2156, 83, 1, 23, "Print"],
+Cell[64026, 2159, 81, 1, 23, "Print"],
+Cell[64110, 2162, 83, 1, 23, "Print"],
+Cell[64196, 2165, 83, 1, 23, "Print"],
+Cell[64282, 2168, 83, 1, 23, "Print"],
+Cell[64368, 2171, 83, 1, 23, "Print"],
+Cell[64454, 2174, 81, 1, 23, "Print"],
+Cell[64538, 2177, 81, 1, 23, "Print"],
+Cell[64622, 2180, 83, 1, 23, "Print"],
+Cell[64708, 2183, 83, 1, 23, "Print"],
+Cell[64794, 2186, 83, 1, 23, "Print"],
+Cell[64880, 2189, 83, 1, 23, "Print"],
+Cell[64966, 2192, 83, 1, 23, "Print"],
+Cell[65052, 2195, 81, 1, 23, "Print"],
+Cell[65136, 2198, 81, 1, 23, "Print"],
+Cell[65220, 2201, 81, 1, 23, "Print"],
+Cell[65304, 2204, 81, 1, 23, "Print"],
+Cell[65388, 2207, 81, 1, 23, "Print"],
+Cell[65472, 2210, 83, 1, 23, "Print"],
+Cell[65558, 2213, 81, 1, 23, "Print"],
+Cell[65642, 2216, 81, 1, 23, "Print"],
+Cell[65726, 2219, 83, 1, 23, "Print"],
+Cell[65812, 2222, 81, 1, 23, "Print"],
+Cell[65896, 2225, 83, 1, 23, "Print"],
+Cell[65982, 2228, 83, 1, 23, "Print"],
+Cell[66068, 2231, 83, 1, 23, "Print"],
+Cell[66154, 2234, 81, 1, 23, "Print"],
+Cell[66238, 2237, 83, 1, 23, "Print"],
+Cell[66324, 2240, 83, 1, 23, "Print"],
+Cell[66410, 2243, 83, 1, 23, "Print"],
+Cell[66496, 2246, 83, 1, 23, "Print"],
+Cell[66582, 2249, 81, 1, 23, "Print"],
+Cell[66666, 2252, 81, 1, 23, "Print"],
+Cell[66750, 2255, 81, 1, 23, "Print"],
+Cell[66834, 2258, 83, 1, 23, "Print"],
+Cell[66920, 2261, 81, 1, 23, "Print"],
+Cell[67004, 2264, 83, 1, 23, "Print"],
+Cell[67090, 2267, 83, 1, 23, "Print"],
+Cell[67176, 2270, 81, 1, 23, "Print"],
+Cell[67260, 2273, 81, 1, 23, "Print"],
+Cell[67344, 2276, 81, 1, 23, "Print"],
+Cell[67428, 2279, 81, 1, 23, "Print"],
+Cell[67512, 2282, 81, 1, 23, "Print"],
+Cell[67596, 2285, 81, 1, 23, "Print"],
+Cell[67680, 2288, 81, 1, 23, "Print"],
+Cell[67764, 2291, 83, 1, 23, "Print"],
+Cell[67850, 2294, 81, 1, 23, "Print"],
+Cell[67934, 2297, 81, 1, 23, "Print"],
+Cell[68018, 2300, 83, 1, 23, "Print"],
+Cell[68104, 2303, 83, 1, 23, "Print"],
+Cell[68190, 2306, 83, 1, 23, "Print"],
+Cell[68276, 2309, 83, 1, 23, "Print"],
+Cell[68362, 2312, 83, 1, 23, "Print"],
+Cell[68448, 2315, 83, 1, 23, "Print"],
+Cell[68534, 2318, 83, 1, 23, "Print"],
+Cell[68620, 2321, 81, 1, 23, "Print"],
+Cell[68704, 2324, 81, 1, 23, "Print"],
+Cell[68788, 2327, 81, 1, 23, "Print"],
+Cell[68872, 2330, 83, 1, 23, "Print"],
+Cell[68958, 2333, 81, 1, 23, "Print"],
+Cell[69042, 2336, 81, 1, 23, "Print"],
+Cell[69126, 2339, 81, 1, 23, "Print"],
+Cell[69210, 2342, 81, 1, 23, "Print"],
+Cell[69294, 2345, 81, 1, 23, "Print"],
+Cell[69378, 2348, 81, 1, 23, "Print"],
+Cell[69462, 2351, 81, 1, 23, "Print"],
+Cell[69546, 2354, 81, 1, 23, "Print"],
+Cell[69630, 2357, 81, 1, 23, "Print"],
+Cell[69714, 2360, 81, 1, 23, "Print"],
+Cell[69798, 2363, 83, 1, 23, "Print"],
+Cell[69884, 2366, 83, 1, 23, "Print"],
+Cell[69970, 2369, 83, 1, 23, "Print"],
+Cell[70056, 2372, 83, 1, 23, "Print"],
+Cell[70142, 2375, 83, 1, 23, "Print"],
+Cell[70228, 2378, 83, 1, 23, "Print"],
+Cell[70314, 2381, 83, 1, 23, "Print"],
+Cell[70400, 2384, 81, 1, 23, "Print"],
+Cell[70484, 2387, 83, 1, 23, "Print"],
+Cell[70570, 2390, 83, 1, 23, "Print"],
+Cell[70656, 2393, 81, 1, 23, "Print"],
+Cell[70740, 2396, 81, 1, 23, "Print"],
+Cell[70824, 2399, 83, 1, 23, "Print"],
+Cell[70910, 2402, 81, 1, 23, "Print"],
+Cell[70994, 2405, 81, 1, 23, "Print"],
+Cell[71078, 2408, 81, 1, 23, "Print"],
+Cell[71162, 2411, 81, 1, 23, "Print"],
+Cell[71246, 2414, 83, 1, 23, "Print"],
+Cell[71332, 2417, 83, 1, 23, "Print"],
+Cell[71418, 2420, 81, 1, 23, "Print"],
+Cell[71502, 2423, 81, 1, 23, "Print"],
+Cell[71586, 2426, 81, 1, 23, "Print"],
+Cell[71670, 2429, 81, 1, 23, "Print"],
+Cell[71754, 2432, 83, 1, 23, "Print"],
+Cell[71840, 2435, 81, 1, 23, "Print"],
+Cell[71924, 2438, 81, 1, 23, "Print"],
+Cell[72008, 2441, 83, 1, 23, "Print"],
+Cell[72094, 2444, 83, 1, 23, "Print"],
+Cell[72180, 2447, 83, 1, 23, "Print"],
+Cell[72266, 2450, 83, 1, 23, "Print"],
+Cell[72352, 2453, 83, 1, 23, "Print"],
+Cell[72438, 2456, 81, 1, 23, "Print"],
+Cell[72522, 2459, 83, 1, 23, "Print"],
+Cell[72608, 2462, 81, 1, 23, "Print"],
+Cell[72692, 2465, 83, 1, 23, "Print"],
+Cell[72778, 2468, 83, 1, 23, "Print"],
+Cell[72864, 2471, 83, 1, 23, "Print"],
+Cell[72950, 2474, 81, 1, 23, "Print"],
+Cell[73034, 2477, 81, 1, 23, "Print"],
+Cell[73118, 2480, 81, 1, 23, "Print"],
+Cell[73202, 2483, 83, 1, 23, "Print"],
+Cell[73288, 2486, 83, 1, 23, "Print"],
+Cell[73374, 2489, 83, 1, 23, "Print"],
+Cell[73460, 2492, 83, 1, 23, "Print"],
+Cell[73546, 2495, 83, 1, 23, "Print"],
+Cell[73632, 2498, 81, 1, 23, "Print"],
+Cell[73716, 2501, 83, 1, 23, "Print"],
+Cell[73802, 2504, 81, 1, 23, "Print"],
+Cell[73886, 2507, 81, 1, 23, "Print"],
+Cell[73970, 2510, 83, 1, 23, "Print"],
+Cell[74056, 2513, 81, 1, 23, "Print"],
+Cell[74140, 2516, 83, 1, 23, "Print"],
+Cell[74226, 2519, 83, 1, 23, "Print"],
+Cell[74312, 2522, 81, 1, 23, "Print"],
+Cell[74396, 2525, 81, 1, 23, "Print"],
+Cell[74480, 2528, 83, 1, 23, "Print"],
+Cell[74566, 2531, 81, 1, 23, "Print"],
+Cell[74650, 2534, 83, 1, 23, "Print"],
+Cell[74736, 2537, 81, 1, 23, "Print"],
+Cell[74820, 2540, 81, 1, 23, "Print"],
+Cell[74904, 2543, 83, 1, 23, "Print"],
+Cell[74990, 2546, 83, 1, 23, "Print"],
+Cell[75076, 2549, 81, 1, 23, "Print"],
+Cell[75160, 2552, 83, 1, 23, "Print"],
+Cell[75246, 2555, 83, 1, 23, "Print"],
+Cell[75332, 2558, 83, 1, 23, "Print"],
+Cell[75418, 2561, 83, 1, 23, "Print"],
+Cell[75504, 2564, 83, 1, 23, "Print"],
+Cell[75590, 2567, 83, 1, 23, "Print"],
+Cell[75676, 2570, 83, 1, 23, "Print"],
+Cell[75762, 2573, 81, 1, 23, "Print"],
+Cell[75846, 2576, 83, 1, 23, "Print"],
+Cell[75932, 2579, 81, 1, 23, "Print"],
+Cell[76016, 2582, 83, 1, 23, "Print"],
+Cell[76102, 2585, 83, 1, 23, "Print"],
+Cell[76188, 2588, 81, 1, 23, "Print"],
+Cell[76272, 2591, 81, 1, 23, "Print"],
+Cell[76356, 2594, 81, 1, 23, "Print"],
+Cell[76440, 2597, 81, 1, 23, "Print"],
+Cell[76524, 2600, 83, 1, 23, "Print"],
+Cell[76610, 2603, 81, 1, 23, "Print"],
+Cell[76694, 2606, 81, 1, 23, "Print"],
+Cell[76778, 2609, 83, 1, 23, "Print"],
+Cell[76864, 2612, 83, 1, 23, "Print"],
+Cell[76950, 2615, 83, 1, 23, "Print"],
+Cell[77036, 2618, 83, 1, 23, "Print"],
+Cell[77122, 2621, 83, 1, 23, "Print"],
+Cell[77208, 2624, 83, 1, 23, "Print"],
+Cell[77294, 2627, 83, 1, 23, "Print"],
+Cell[77380, 2630, 83, 1, 23, "Print"],
+Cell[77466, 2633, 83, 1, 23, "Print"],
+Cell[77552, 2636, 83, 1, 23, "Print"],
+Cell[77638, 2639, 81, 1, 23, "Print"],
+Cell[77722, 2642, 81, 1, 23, "Print"],
+Cell[77806, 2645, 81, 1, 23, "Print"],
+Cell[77890, 2648, 83, 1, 23, "Print"],
+Cell[77976, 2651, 81, 1, 23, "Print"],
+Cell[78060, 2654, 81, 1, 23, "Print"],
+Cell[78144, 2657, 81, 1, 23, "Print"],
+Cell[78228, 2660, 83, 1, 23, "Print"],
+Cell[78314, 2663, 81, 1, 23, "Print"],
+Cell[78398, 2666, 83, 1, 23, "Print"],
+Cell[78484, 2669, 81, 1, 23, "Print"],
+Cell[78568, 2672, 81, 1, 23, "Print"],
+Cell[78652, 2675, 83, 1, 23, "Print"],
+Cell[78738, 2678, 83, 1, 23, "Print"],
+Cell[78824, 2681, 83, 1, 23, "Print"],
+Cell[78910, 2684, 83, 1, 23, "Print"],
+Cell[78996, 2687, 79, 1, 23, "Print"],
+Cell[79078, 2690, 83, 1, 23, "Print"],
+Cell[79164, 2693, 83, 1, 23, "Print"],
+Cell[79250, 2696, 83, 1, 23, "Print"],
+Cell[79336, 2699, 83, 1, 23, "Print"],
+Cell[79422, 2702, 83, 1, 23, "Print"],
+Cell[79508, 2705, 79, 1, 23, "Print"],
+Cell[79590, 2708, 83, 1, 23, "Print"],
+Cell[79676, 2711, 79, 1, 23, "Print"],
+Cell[79758, 2714, 79, 1, 23, "Print"],
+Cell[79840, 2717, 79, 1, 23, "Print"],
+Cell[79922, 2720, 79, 1, 23, "Print"],
+Cell[80004, 2723, 83, 1, 23, "Print"],
+Cell[80090, 2726, 83, 1, 23, "Print"],
+Cell[80176, 2729, 79, 1, 23, "Print"],
+Cell[80258, 2732, 83, 1, 23, "Print"],
+Cell[80344, 2735, 83, 1, 23, "Print"],
+Cell[80430, 2738, 79, 1, 23, "Print"],
+Cell[80512, 2741, 83, 1, 23, "Print"],
+Cell[80598, 2744, 83, 1, 23, "Print"],
+Cell[80684, 2747, 83, 1, 23, "Print"],
+Cell[80770, 2750, 81, 1, 23, "Print"],
+Cell[80854, 2753, 81, 1, 23, "Print"],
+Cell[80938, 2756, 83, 1, 23, "Print"],
+Cell[81024, 2759, 83, 1, 23, "Print"],
+Cell[81110, 2762, 81, 1, 23, "Print"],
+Cell[81194, 2765, 83, 1, 23, "Print"],
+Cell[81280, 2768, 81, 1, 23, "Print"],
+Cell[81364, 2771, 83, 1, 23, "Print"],
+Cell[81450, 2774, 81, 1, 23, "Print"],
+Cell[81534, 2777, 81, 1, 23, "Print"],
+Cell[81618, 2780, 81, 1, 23, "Print"],
+Cell[81702, 2783, 81, 1, 23, "Print"],
+Cell[81786, 2786, 81, 1, 23, "Print"],
+Cell[81870, 2789, 83, 1, 23, "Print"],
+Cell[81956, 2792, 81, 1, 23, "Print"],
+Cell[82040, 2795, 83, 1, 23, "Print"],
+Cell[82126, 2798, 83, 1, 23, "Print"],
+Cell[82212, 2801, 83, 1, 23, "Print"],
+Cell[82298, 2804, 83, 1, 23, "Print"],
+Cell[82384, 2807, 83, 1, 23, "Print"],
+Cell[82470, 2810, 83, 1, 23, "Print"],
+Cell[82556, 2813, 83, 1, 23, "Print"],
+Cell[82642, 2816, 81, 1, 23, "Print"],
+Cell[82726, 2819, 83, 1, 23, "Print"],
+Cell[82812, 2822, 83, 1, 23, "Print"],
+Cell[82898, 2825, 81, 1, 23, "Print"],
+Cell[82982, 2828, 81, 1, 23, "Print"],
+Cell[83066, 2831, 81, 1, 23, "Print"],
+Cell[83150, 2834, 83, 1, 23, "Print"],
+Cell[83236, 2837, 81, 1, 23, "Print"],
+Cell[83320, 2840, 81, 1, 23, "Print"],
+Cell[83404, 2843, 81, 1, 23, "Print"],
+Cell[83488, 2846, 81, 1, 23, "Print"],
+Cell[83572, 2849, 83, 1, 23, "Print"],
+Cell[83658, 2852, 83, 1, 23, "Print"],
+Cell[83744, 2855, 83, 1, 23, "Print"],
+Cell[83830, 2858, 83, 1, 23, "Print"],
+Cell[83916, 2861, 83, 1, 23, "Print"],
+Cell[84002, 2864, 83, 1, 23, "Print"],
+Cell[84088, 2867, 83, 1, 23, "Print"],
+Cell[84174, 2870, 81, 1, 23, "Print"],
+Cell[84258, 2873, 81, 1, 23, "Print"],
+Cell[84342, 2876, 81, 1, 23, "Print"],
+Cell[84426, 2879, 81, 1, 23, "Print"],
+Cell[84510, 2882, 83, 1, 23, "Print"],
+Cell[84596, 2885, 81, 1, 23, "Print"],
+Cell[84680, 2888, 81, 1, 23, "Print"],
+Cell[84764, 2891, 81, 1, 23, "Print"],
+Cell[84848, 2894, 81, 1, 23, "Print"],
+Cell[84932, 2897, 83, 1, 23, "Print"],
+Cell[85018, 2900, 83, 1, 23, "Print"],
+Cell[85104, 2903, 81, 1, 23, "Print"],
+Cell[85188, 2906, 81, 1, 23, "Print"],
+Cell[85272, 2909, 81, 1, 23, "Print"],
+Cell[85356, 2912, 83, 1, 23, "Print"],
+Cell[85442, 2915, 81, 1, 23, "Print"],
+Cell[85526, 2918, 83, 1, 23, "Print"],
+Cell[85612, 2921, 83, 1, 23, "Print"],
+Cell[85698, 2924, 83, 1, 23, "Print"],
+Cell[85784, 2927, 83, 1, 23, "Print"],
+Cell[85870, 2930, 83, 1, 23, "Print"],
+Cell[85956, 2933, 81, 1, 23, "Print"],
+Cell[86040, 2936, 81, 1, 23, "Print"],
+Cell[86124, 2939, 81, 1, 23, "Print"],
+Cell[86208, 2942, 83, 1, 23, "Print"],
+Cell[86294, 2945, 83, 1, 23, "Print"],
+Cell[86380, 2948, 81, 1, 23, "Print"],
+Cell[86464, 2951, 81, 1, 23, "Print"],
+Cell[86548, 2954, 81, 1, 23, "Print"],
+Cell[86632, 2957, 83, 1, 23, "Print"],
+Cell[86718, 2960, 83, 1, 23, "Print"],
+Cell[86804, 2963, 81, 1, 23, "Print"],
+Cell[86888, 2966, 83, 1, 23, "Print"],
+Cell[86974, 2969, 81, 1, 23, "Print"],
+Cell[87058, 2972, 83, 1, 23, "Print"],
+Cell[87144, 2975, 81, 1, 23, "Print"],
+Cell[87228, 2978, 83, 1, 23, "Print"],
+Cell[87314, 2981, 83, 1, 23, "Print"],
+Cell[87400, 2984, 83, 1, 23, "Print"],
+Cell[87486, 2987, 81, 1, 23, "Print"],
+Cell[87570, 2990, 83, 1, 23, "Print"],
+Cell[87656, 2993, 81, 1, 23, "Print"],
+Cell[87740, 2996, 83, 1, 23, "Print"],
+Cell[87826, 2999, 81, 1, 23, "Print"],
+Cell[87910, 3002, 83, 1, 23, "Print"],
+Cell[87996, 3005, 81, 1, 23, "Print"],
+Cell[88080, 3008, 81, 1, 23, "Print"],
+Cell[88164, 3011, 83, 1, 23, "Print"],
+Cell[88250, 3014, 81, 1, 23, "Print"],
+Cell[88334, 3017, 83, 1, 23, "Print"],
+Cell[88420, 3020, 83, 1, 23, "Print"],
+Cell[88506, 3023, 81, 1, 23, "Print"],
+Cell[88590, 3026, 83, 1, 23, "Print"],
+Cell[88676, 3029, 83, 1, 23, "Print"],
+Cell[88762, 3032, 83, 1, 23, "Print"],
+Cell[88848, 3035, 81, 1, 23, "Print"],
+Cell[88932, 3038, 83, 1, 23, "Print"],
+Cell[89018, 3041, 83, 1, 23, "Print"],
+Cell[89104, 3044, 81, 1, 23, "Print"],
+Cell[89188, 3047, 81, 1, 23, "Print"],
+Cell[89272, 3050, 81, 1, 23, "Print"],
+Cell[89356, 3053, 81, 1, 23, "Print"],
+Cell[89440, 3056, 81, 1, 23, "Print"],
+Cell[89524, 3059, 81, 1, 23, "Print"],
+Cell[89608, 3062, 83, 1, 23, "Print"],
+Cell[89694, 3065, 81, 1, 23, "Print"],
+Cell[89778, 3068, 81, 1, 23, "Print"],
+Cell[89862, 3071, 83, 1, 23, "Print"],
+Cell[89948, 3074, 83, 1, 23, "Print"],
+Cell[90034, 3077, 83, 1, 23, "Print"],
+Cell[90120, 3080, 83, 1, 23, "Print"],
+Cell[90206, 3083, 81, 1, 23, "Print"],
+Cell[90290, 3086, 83, 1, 23, "Print"],
+Cell[90376, 3089, 83, 1, 23, "Print"],
+Cell[90462, 3092, 83, 1, 23, "Print"],
+Cell[90548, 3095, 81, 1, 23, "Print"],
+Cell[90632, 3098, 81, 1, 23, "Print"],
+Cell[90716, 3101, 83, 1, 23, "Print"],
+Cell[90802, 3104, 81, 1, 23, "Print"],
+Cell[90886, 3107, 81, 1, 23, "Print"],
+Cell[90970, 3110, 81, 1, 23, "Print"],
+Cell[91054, 3113, 83, 1, 23, "Print"],
+Cell[91140, 3116, 81, 1, 23, "Print"],
+Cell[91224, 3119, 83, 1, 23, "Print"],
+Cell[91310, 3122, 81, 1, 23, "Print"],
+Cell[91394, 3125, 81, 1, 23, "Print"],
+Cell[91478, 3128, 83, 1, 23, "Print"],
+Cell[91564, 3131, 83, 1, 23, "Print"],
+Cell[91650, 3134, 83, 1, 23, "Print"],
+Cell[91736, 3137, 81, 1, 23, "Print"],
+Cell[91820, 3140, 83, 1, 23, "Print"],
+Cell[91906, 3143, 83, 1, 23, "Print"],
+Cell[91992, 3146, 83, 1, 23, "Print"],
+Cell[92078, 3149, 83, 1, 23, "Print"],
+Cell[92164, 3152, 81, 1, 23, "Print"],
+Cell[92248, 3155, 83, 1, 23, "Print"],
+Cell[92334, 3158, 83, 1, 23, "Print"],
+Cell[92420, 3161, 81, 1, 23, "Print"],
+Cell[92504, 3164, 81, 1, 23, "Print"],
+Cell[92588, 3167, 81, 1, 23, "Print"],
+Cell[92672, 3170, 83, 1, 23, "Print"],
+Cell[92758, 3173, 81, 1, 23, "Print"],
+Cell[92842, 3176, 83, 1, 23, "Print"],
+Cell[92928, 3179, 83, 1, 23, "Print"],
+Cell[93014, 3182, 81, 1, 23, "Print"],
+Cell[93098, 3185, 83, 1, 23, "Print"],
+Cell[93184, 3188, 83, 1, 23, "Print"],
+Cell[93270, 3191, 83, 1, 23, "Print"],
+Cell[93356, 3194, 81, 1, 23, "Print"],
+Cell[93440, 3197, 83, 1, 23, "Print"],
+Cell[93526, 3200, 83, 1, 23, "Print"],
+Cell[93612, 3203, 81, 1, 23, "Print"],
+Cell[93696, 3206, 83, 1, 23, "Print"],
+Cell[93782, 3209, 81, 1, 23, "Print"],
+Cell[93866, 3212, 83, 1, 23, "Print"],
+Cell[93952, 3215, 81, 1, 23, "Print"],
+Cell[94036, 3218, 81, 1, 23, "Print"],
+Cell[94120, 3221, 81, 1, 23, "Print"],
+Cell[94204, 3224, 81, 1, 23, "Print"],
+Cell[94288, 3227, 83, 1, 23, "Print"],
+Cell[94374, 3230, 81, 1, 23, "Print"],
+Cell[94458, 3233, 83, 1, 23, "Print"],
+Cell[94544, 3236, 83, 1, 23, "Print"],
+Cell[94630, 3239, 83, 1, 23, "Print"],
+Cell[94716, 3242, 83, 1, 23, "Print"],
+Cell[94802, 3245, 80, 1, 23, "Print"],
+Cell[94885, 3248, 83, 1, 23, "Print"],
+Cell[94971, 3251, 80, 1, 23, "Print"],
+Cell[95054, 3254, 83, 1, 23, "Print"],
+Cell[95140, 3257, 83, 1, 23, "Print"],
+Cell[95226, 3260, 80, 1, 23, "Print"],
+Cell[95309, 3263, 80, 1, 23, "Print"],
+Cell[95392, 3266, 80, 1, 23, "Print"],
+Cell[95475, 3269, 83, 1, 23, "Print"],
+Cell[95561, 3272, 80, 1, 23, "Print"],
+Cell[95644, 3275, 80, 1, 23, "Print"],
+Cell[95727, 3278, 80, 1, 23, "Print"],
+Cell[95810, 3281, 83, 1, 23, "Print"],
+Cell[95896, 3284, 83, 1, 23, "Print"],
+Cell[95982, 3287, 83, 1, 23, "Print"],
+Cell[96068, 3290, 83, 1, 23, "Print"],
+Cell[96154, 3293, 83, 1, 23, "Print"],
+Cell[96240, 3296, 83, 1, 23, "Print"],
+Cell[96326, 3299, 81, 1, 23, "Print"],
+Cell[96410, 3302, 81, 1, 23, "Print"],
+Cell[96494, 3305, 81, 1, 23, "Print"],
+Cell[96578, 3308, 83, 1, 23, "Print"],
+Cell[96664, 3311, 83, 1, 23, "Print"],
+Cell[96750, 3314, 81, 1, 23, "Print"],
+Cell[96834, 3317, 81, 1, 23, "Print"],
+Cell[96918, 3320, 81, 1, 23, "Print"],
+Cell[97002, 3323, 83, 1, 23, "Print"],
+Cell[97088, 3326, 83, 1, 23, "Print"],
+Cell[97174, 3329, 81, 1, 23, "Print"],
+Cell[97258, 3332, 81, 1, 23, "Print"],
+Cell[97342, 3335, 83, 1, 23, "Print"],
+Cell[97428, 3338, 81, 1, 23, "Print"],
+Cell[97512, 3341, 83, 1, 23, "Print"],
+Cell[97598, 3344, 83, 1, 23, "Print"],
+Cell[97684, 3347, 83, 1, 23, "Print"]
+}, Closed]]
+}, Open  ]],
+Cell[97794, 3352, 234, 6, 31, "Input"],
+Cell[CellGroupData[{
+Cell[98053, 3362, 336, 8, 72, InheritFromParent],
+Cell[98392, 3372, 190, 5, 31, "Output"],
+Cell[98585, 3379, 125, 3, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[98747, 3387, 147, 3, 31, "Input"],
+Cell[98897, 3392, 70, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99004, 3398, 352, 8, 31, "Input"],
+Cell[CellGroupData[{
+Cell[99381, 3410, 104, 2, 23, "Print"],
+Cell[99488, 3414, 102, 2, 23, "Print"],
+Cell[99593, 3418, 104, 2, 23, "Print"],
+Cell[99700, 3422, 102, 2, 23, "Print"],
+Cell[99805, 3426, 104, 2, 23, "Print"],
+Cell[99912, 3430, 104, 2, 23, "Print"],
+Cell[100019, 3434, 104, 2, 23, "Print"],
+Cell[100126, 3438, 104, 2, 23, "Print"],
+Cell[100233, 3442, 104, 2, 23, "Print"],
+Cell[100340, 3446, 104, 2, 23, "Print"],
+Cell[100447, 3450, 104, 2, 23, "Print"],
+Cell[100554, 3454, 102, 2, 23, "Print"],
+Cell[100659, 3458, 102, 2, 23, "Print"],
+Cell[100764, 3462, 104, 2, 23, "Print"],
+Cell[100871, 3466, 102, 2, 23, "Print"],
+Cell[100976, 3470, 104, 2, 23, "Print"],
+Cell[101083, 3474, 102, 2, 23, "Print"],
+Cell[101188, 3478, 104, 2, 23, "Print"],
+Cell[101295, 3482, 104, 2, 23, "Print"],
+Cell[101402, 3486, 104, 2, 23, "Print"],
+Cell[101509, 3490, 104, 2, 23, "Print"],
+Cell[101616, 3494, 104, 2, 23, "Print"],
+Cell[101723, 3498, 102, 2, 23, "Print"],
+Cell[101828, 3502, 102, 2, 23, "Print"],
+Cell[101933, 3506, 104, 2, 23, "Print"],
+Cell[102040, 3510, 102, 2, 23, "Print"],
+Cell[102145, 3514, 102, 2, 23, "Print"],
+Cell[102250, 3518, 102, 2, 23, "Print"],
+Cell[102355, 3522, 102, 2, 23, "Print"],
+Cell[102460, 3526, 102, 2, 23, "Print"],
+Cell[102565, 3530, 104, 2, 23, "Print"],
+Cell[102672, 3534, 104, 2, 23, "Print"],
+Cell[102779, 3538, 104, 2, 23, "Print"],
+Cell[102886, 3542, 104, 2, 23, "Print"],
+Cell[102993, 3546, 104, 2, 23, "Print"],
+Cell[103100, 3550, 101, 2, 23, "Print"],
+Cell[103204, 3554, 101, 2, 23, "Print"],
+Cell[103308, 3558, 101, 2, 23, "Print"],
+Cell[103412, 3562, 104, 2, 23, "Print"],
+Cell[103519, 3566, 101, 2, 23, "Print"],
+Cell[103623, 3570, 104, 2, 23, "Print"],
+Cell[103730, 3574, 104, 2, 23, "Print"],
+Cell[103837, 3578, 101, 2, 23, "Print"],
+Cell[103941, 3582, 104, 2, 23, "Print"],
+Cell[104048, 3586, 104, 2, 23, "Print"],
+Cell[104155, 3590, 104, 2, 23, "Print"],
+Cell[104262, 3594, 102, 2, 23, "Print"],
+Cell[104367, 3598, 104, 2, 23, "Print"],
+Cell[104474, 3602, 102, 2, 23, "Print"],
+Cell[104579, 3606, 102, 2, 23, "Print"],
+Cell[104684, 3610, 102, 2, 23, "Print"],
+Cell[104789, 3614, 102, 2, 23, "Print"],
+Cell[104894, 3618, 102, 2, 23, "Print"],
+Cell[104999, 3622, 104, 2, 23, "Print"],
+Cell[105106, 3626, 102, 2, 23, "Print"],
+Cell[105211, 3630, 104, 2, 23, "Print"],
+Cell[105318, 3634, 104, 2, 23, "Print"],
+Cell[105425, 3638, 102, 2, 23, "Print"],
+Cell[105530, 3642, 104, 2, 23, "Print"],
+Cell[105637, 3646, 102, 2, 23, "Print"],
+Cell[105742, 3650, 102, 2, 23, "Print"],
+Cell[105847, 3654, 104, 2, 23, "Print"],
+Cell[105954, 3658, 102, 2, 23, "Print"],
+Cell[106059, 3662, 102, 2, 23, "Print"],
+Cell[106164, 3666, 104, 2, 23, "Print"],
+Cell[106271, 3670, 104, 2, 23, "Print"],
+Cell[106378, 3674, 102, 2, 23, "Print"],
+Cell[106483, 3678, 104, 2, 23, "Print"],
+Cell[106590, 3682, 102, 2, 23, "Print"],
+Cell[106695, 3686, 102, 2, 23, "Print"],
+Cell[106800, 3690, 104, 2, 23, "Print"],
+Cell[106907, 3694, 102, 2, 23, "Print"],
+Cell[107012, 3698, 102, 2, 23, "Print"],
+Cell[107117, 3702, 104, 2, 23, "Print"],
+Cell[107224, 3706, 102, 2, 23, "Print"],
+Cell[107329, 3710, 102, 2, 23, "Print"],
+Cell[107434, 3714, 104, 2, 23, "Print"],
+Cell[107541, 3718, 104, 2, 23, "Print"],
+Cell[107648, 3722, 104, 2, 23, "Print"],
+Cell[107755, 3726, 104, 2, 23, "Print"],
+Cell[107862, 3730, 104, 2, 23, "Print"],
+Cell[107969, 3734, 104, 2, 23, "Print"],
+Cell[108076, 3738, 104, 2, 23, "Print"],
+Cell[108183, 3742, 104, 2, 23, "Print"],
+Cell[108290, 3746, 102, 2, 23, "Print"],
+Cell[108395, 3750, 102, 2, 23, "Print"],
+Cell[108500, 3754, 104, 2, 23, "Print"],
+Cell[108607, 3758, 102, 2, 23, "Print"],
+Cell[108712, 3762, 102, 2, 23, "Print"],
+Cell[108817, 3766, 104, 2, 23, "Print"],
+Cell[108924, 3770, 103, 2, 23, "Print"],
+Cell[109030, 3774, 103, 2, 23, "Print"],
+Cell[109136, 3778, 103, 2, 23, "Print"],
+Cell[109242, 3782, 103, 2, 23, "Print"],
+Cell[109348, 3786, 101, 2, 23, "Print"],
+Cell[109452, 3790, 103, 2, 23, "Print"],
+Cell[109558, 3794, 101, 2, 23, "Print"],
+Cell[109662, 3798, 101, 2, 23, "Print"],
+Cell[109766, 3802, 81, 1, 23, "Print"],
+Cell[109850, 3805, 69, 1, 23, "Print"]
+}, Open  ]]
+}, Closed]],
+Cell[109946, 3810, 142, 2, 25, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
