@@ -30,7 +30,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Primer semestre
 
 - [Fundamentos físicos de la informática](asignaturas/Fundamentos%20Físicos%20de%20la%20Informática)
-- [Matemática discreta](/asignaturas/Matemática%20Discreta)
+- [Matemática discreta](asignaturas/Matemática%20Discreta)
 - [Fundamentos de programación](asignaturas/Fundamentos%20de%20programación)
 - [Análisis y métodos numéricos](asignaturas/Análisis%20y%20Métodos%20Numéricos)
 - [Fundamentos de arquitectura de computadores](asignaturas/Fundamentos%20de%20Arquitectura%20de%20Computadores)
