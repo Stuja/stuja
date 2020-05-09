@@ -1,18 +1,19 @@
 <h1 align="center"> Guía de estilo </h1> <br>
 <p align="center">
-          <a 		href="https://github.com/Stuja/stuja/tree/master">
-  <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
+          <a 		href="../README.md">
+  <img alt="Inicio" title="Inicio" src="../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="https://github.com/Stuja/stuja/tree/master/universidad">
-  <img alt="Universidad" title="Universidad" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-universidad.png" width="140">
+      <a 		href="../universidad">
+  <img alt="Universidad" title="Universidad" src="../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="https://github.com/Stuja/stuja/tree/master/doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-contribuir.png" width="140">
+        <a 		href="CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Estilo" title="Estilo" src="https://github.com/Stuja/stuja/blob/master/imagenes/estilo.png" width="450">
+    <img alt="Estilo" title="Estilo" src="../imagenes/estilo.png" width="450">
 </p>
+
 
 
 
@@ -59,6 +60,6 @@ Si estamos dentro de la carpeta de la asignatura `Sistemas concurrentes y distri
 
 ## Plantilla
 
-Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](https://github.com/Stuja/stuja/blob/master/plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
+Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](../plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
 
 Basta con rellenar los espacios entre corchetes `[]` con la información correspondiente. 

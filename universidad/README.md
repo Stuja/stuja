@@ -1,18 +1,19 @@
 <h1 align="center"> Universidad </h1> <br>
 <p align="center">
-          <a 		href="https://github.com/Stuja/stuja/tree/master">
-  <img alt="Inicio" title="Inicio" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-inicio.png" width="140">
+          <a 		href="../README.md">
+  <img alt="Inicio" title="Inicio" src="../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="https://github.com/Stuja/stuja/tree/master/universidad">
-  <img alt="Universidad" title="Universidad" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-universidad.png" width="140">
+      <a 		href="./">
+  <img alt="Universidad" title="Universidad" src="../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="https://github.com/Stuja/stuja/tree/master/doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="https://github.com/Stuja/stuja/blob/master/imagenes/boton-contribuir.png" width="140">
+        <a 		href="../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="HOME" title="HOME" src="https://github.com/Stuja/stuja/blob/master/imagenes/universidad.png" width="450">
+    <img alt="HOME" title="HOME" src="../imagenes/universidad.png" width="450">
 </p>
+
 
 
 
@@ -29,11 +30,11 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Primer semestre
 
-- Fundamentos físicos de la informática
-- Matemática discreta
-- Fundamentos de programación
-- Análisis y métodos numéricos
-- Fundamentos de arquitectura de computadores
+- [Fundamentos físicos de la informática](asignaturas/Fundamentos%20Físicos%20de%20la%20Informática)
+- [Matemática discreta](asignaturas/Matemática%20Discreta)
+- [Fundamentos de programación](asignaturas/Fundamentos%20de%20programación)
+- [Análisis y métodos numéricos](asignaturas/Análisis%20y%20Métodos%20Numéricos)
+- [Fundamentos de arquitectura de computadores](asignaturas/Fundamentos%20de%20Arquitectura%20de%20Computadores)
 
 
 
@@ -64,9 +65,9 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Segundo semestre
 
 - Sistemas concurrentes y distribuidos 
-- [Programación y administración de redes](https://github.com/Stuja/stuja/tree/master/universidad/asignaturas/Programaci%C3%B3n%20y%20administraci%C3%B3n%20de%20redes)
+- Programación y administración de redes
 - Inteligencia artificial 
-- Fundamentos de base de datos 
+- [Fundamentos de base de datos](asignaturas/Fundamentos%20de%20bases%20de%20datos) 
 - Diseño de algoritmos 
 
 
