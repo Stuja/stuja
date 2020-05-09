@@ -64,6 +64,7 @@ Dentro de cada carpeta encontrarás un archivo `README.md`, el cual tiene inform
 ### Carpetas del proyecto
 
 - `doc`: Documentación del proyecto. 
+- `extra`: Contiene documentos que ayudan en el aprendizaje y que no están relacionados con el contenido académico. Añade aquí todo aquello que aporta un plus a la carrera. 
 - `imagenes`: Contiene imágenes usadas en las documentaciones de los directorios principales. 
 - `plantillas`: Plantillas para la documentación del proyecto. A veces viene bien y nos ahorra trabajo tener un molde prefabricado listo para usar 😉. 
 - `universidad`: Raíz del proyecto. Aquí encontrarás un índice de todas las asignaturas de la carrera. 
@@ -80,6 +81,8 @@ Dentro de cada carpeta encontrarás un archivo `README.md`, el cual tiene inform
 ## Chat 💬
 
 Únete a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y entérate de lo que está pasando. 
+
+¿No estás en ningún grupo de clase? [Únete a alguno](extra/GRUPOS-DE-CLASE.md) para conocer a tus compañeros. 
 
 
 
