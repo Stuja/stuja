@@ -64,7 +64,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Segundo semestre
 
-- Sistemas concurrentes y distribuidos 
+- [Sistemas concurrentes y distribuidos](asignaturas/Sistemas%20concurrentes%20y%20distribuidos) 
 - Programación y administración de redes
 - Inteligencia artificial 
 - [Fundamentos de base de datos](asignaturas/Fundamentos%20de%20bases%20de%20datos) 
