@@ -81,6 +81,8 @@ Dentro de cada carpeta encontrarás un archivo `README.md`, el cual tiene inform
 
 Únete a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y entérate de lo que está pasando. 
 
+¿No estás en ningún grupo de clase? [Únete a alguno](extra/GRUPOS-DE-CLASE.md) para conocer a tus compañeros. 
+
 
 
 ## Contribuidores ✍️
