@@ -1,0 +1,1979 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     47850,       1970]
+NotebookOptionsPosition[     41094,       1733]
+NotebookOutlinePosition[     41491,       1749]
+CellTagsIndexPosition[     41448,       1746]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["13. Polinomios. C\[AAcute]lculos b\[AAcute]sicos y divisibilidad", \
+"Title",
+ FontSize->36],
+
+Cell["Ejemplos con Mathematica", "Subtitle"],
+
+Cell[CellGroupData[{
+
+Cell["1. Representaci\[OAcute]n de polinomios en una y varias variables", \
+"Section",
+ FontSize->18],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.1. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Introducir los polinomios p(x) = x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["", "2"], 
+     RowBox[{"+", "1"}]}], ","}], TraditionalForm]]],
+ "q(x,y) = xy + x +1 con Mathematica y expresar el polinomio en dos variables \
+en funci\[OAcute]n de la indeterminada x  y luego en funci\[OAcute]n de y."
+}], "Text",
+ FontSize->14],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"p", "[", "x_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{"x", "^", "2"}], "+", "1"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"q", "[", 
+   RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"x", "*", "y"}], "+", "x", "+", "1"}]}]], "Input"],
+
+Cell["\<\
+Expresamos el polinomio q(x,y) en funci\[OAcute]n de la indeterminada x\
+\>", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Collect", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "*", "y"}], "+", "x", "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"x", " ", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "y"}], ")"}]}]}]], "Output"]
+}, Open  ]],
+
+Cell["o bien podemos verlo en funci\[OAcute]n de la indeterminada y", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Collect", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "*", "y"}], "+", "x", "+", "1"}], ",", "y"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x", "+", 
+  RowBox[{"x", " ", "y"}]}]], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.2. ", "Subsection",
+ FontSize->16],
+
+Cell["\<\
+Comprobar que la funci\[OAcute]n f(x) = 1/x no es un polinomio y que x +1 si \
+lo es.\
+\>", "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], ":=", 
+  RowBox[{"1", "/", "x"}]}], "\[IndentingNewLine]", 
+ RowBox[{"PolynomialQ", "[", 
+  RowBox[{
+   RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}]}], "Input"],
+
+Cell[BoxData["False"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQ", "[", 
+  RowBox[{
+   RowBox[{"x", "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData["True"], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.3. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Consideremos el polinomio (1 + 2x + x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ ")(1 ",
+ Cell[BoxData[
+  FormBox["-", TraditionalForm]]],
+ " x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "3"], TraditionalForm]]],
+ "). Para ponerlo en forma extendida "
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Expand", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     RowBox[{"2", "x"}], "+", 
+     RowBox[{"x", "^", "2"}]}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{"1", "-", 
+     RowBox[{"x", "^", "2"}], "+", 
+     RowBox[{"x", "^", "3"}]}], ")"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  RowBox[{"2", " ", "x"}], "-", 
+  SuperscriptBox["x", "3"], "+", 
+  SuperscriptBox["x", "4"], "+", 
+  SuperscriptBox["x", "5"]}]], "Output"]
+}, Open  ]],
+
+Cell["\<\
+Obtenemos una lista de los coeficientes de la indeterminada x del polinomio \
+anterior, de la forma\
+\>", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CoefficientList", "[", 
+  RowBox[{"%", ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "0", ",", 
+   RowBox[{"-", "1"}], ",", "1", ",", "1"}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell["\<\
+como vemos comienza por el de grado 0 hasta el de grado 5. 
+Si queremos saber el grado del polinomio escribiremos\
+\>", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Exponent", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"2", "x"}], "+", 
+      RowBox[{"x", "^", "2"}]}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      RowBox[{"x", "^", "2"}], "+", 
+      RowBox[{"x", "^", "3"}]}], ")"}]}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData["5"], "Output"]
+}, Open  ]],
+
+Cell["Observemos que para el polinomio constante su grado es 0", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Exponent", "[", 
+  RowBox[{"7", ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData["0"], "Output"]
+}, Open  ]],
+
+Cell["\<\
+salvo en el caso en que sea 0, que requerir\[AAcute] un especial cuidado pues\
+\>", "Text",
+ FontSize->16],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Exponent", "[", 
+  RowBox[{"0", ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"-", "\[Infinity]"}]], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["2. Polinomios en ",
+  FontSize->18],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[DoubleStruckCapitalZ]", "n"], TraditionalForm]],
+  FontSize->18]
+}], "Section"],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.4. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular el polinomio 2x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ " + x + 1 m\[OAcute]dulo 2."
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"2", 
+     RowBox[{"x", "^", "2"}]}], "+", "x", "+", "1"}], ",", "2"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", "x"}]], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["3. Algoritmo de la divisi\[OAcute]n",
+ FontSize->18]], "Section"],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.5. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular el cociente y el resto que resulta de dividir x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "7"], TraditionalForm]]],
+ " + 2x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "3"], TraditionalForm]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " "}], TraditionalForm]]],
+ " x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "5"}], TraditionalForm]]],
+ " entre x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "2"], " ", 
+    RowBox[{"+", " ", "1"}]}], TraditionalForm]]],
+ "."
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "7"}], "+", 
+    RowBox[{"2", 
+     RowBox[{"x", "^", "3"}]}], "-", "x", "-", "5"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"3", " ", "x"}], "-", 
+  SuperscriptBox["x", "3"], "+", 
+  SuperscriptBox["x", "5"]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialRemainder", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "7"}], "+", 
+    RowBox[{"2", 
+     RowBox[{"x", "^", "3"}]}], "-", "x", "-", "5"}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "5"}], "-", 
+  RowBox[{"4", " ", "x"}]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+}, Open  ]]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.6. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular el cociente y el resto que resulta de dividir x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "7"], TraditionalForm]]],
+ " + 2x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "3"], TraditionalForm]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " "}], TraditionalForm]]],
+ " x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "5"}], TraditionalForm]]],
+ " entre x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "2"], " ", 
+    RowBox[{"+", " ", "1"}]}], TraditionalForm]]],
+ "en \[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["", "5"], 
+    RowBox[{"[", "x", "]"}]}], TraditionalForm]]],
+ ".\n\nEn primer lugar, pasamos los polinomios a \[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["", "5"], 
+    RowBox[{"[", "x", "]"}]}], TraditionalForm]]]
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"x", "^", "7"}], "+", 
+    RowBox[{"2", 
+     RowBox[{"x", "^", "3"}]}], "-", "x", "-", "5"}], ",", "5"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", "x"}], "+", 
+  RowBox[{"2", " ", 
+   SuperscriptBox["x", "3"]}], "+", 
+  SuperscriptBox["x", "7"]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Observemos que  x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "2"], " ", 
+    RowBox[{"+", " ", "1"}]}], TraditionalForm]]],
+ " ya tiene sus coeficientes en \[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["", "5"], TraditionalForm]]],
+ ".\nCalculamos ahora el cociente y el resto que resulta de dividirlos en \
+\[DoubleStruckCapitalZ][x]"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"4", "x"}], "+", 
+    RowBox[{"2", 
+     RowBox[{"x", "^", "3"}]}], "+", 
+    RowBox[{"x", "^", "7"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"3", " ", "x"}], "-", 
+  SuperscriptBox["x", "3"], "+", 
+  SuperscriptBox["x", "5"]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialRemainder", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"4", "x"}], "+", 
+    RowBox[{"2", 
+     RowBox[{"x", "^", "3"}]}], "+", 
+    RowBox[{"x", "^", "7"}]}], ",", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "+", "1"}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData["x"], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "y ahora volvemos a pasar los resultados anteriores a \
+\[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["", "5"], 
+    RowBox[{"[", "x", "]"}]}], TraditionalForm]]],
+ " y ser\[AAcute]n los cocientes y restos que buscamos"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"3", "x"}], "-", 
+    RowBox[{"x", "^", "3"}], "+", 
+    RowBox[{"x", "^", "5"}]}], ",", "5"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolynomialMod", "[", 
+  RowBox[{"x", ",", "5"}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"3", " ", "x"}], "+", 
+  RowBox[{"4", " ", 
+   SuperscriptBox["x", "3"]}], "+", 
+  SuperscriptBox["x", "5"]}]], "Output"],
+
+Cell[BoxData["x"], "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["4. Factorizaci\[OAcute]n y c\[AAcute]lculo de ra\
+\[IAcute]ces",
+ FontSize->18]], "Section"],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.7. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular la factorizaci\[OAcute]n en irreducibles y las ra\[IAcute]ces de \
+2x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "6"], " ", 
+    RowBox[{"-", " ", "5"}]}], TraditionalForm]]],
+ "x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ " + 5x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["", "3"], 
+     FormBox["",
+      TraditionalForm]}], "-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "6x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 10x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "4"}], TraditionalForm]]],
+ " , en los siguientes anillos de polinomios:"
+}], "Text",
+ FontSize->14]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\t4.1. Factorizaci\[OAcute]n y c\[AAcute]lculo de ra\[IAcute]ces en \
+\[DoubleStruckCapitalZ]", "Section"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Factor", "[", 
+  RowBox[{
+   RowBox[{"2", 
+    RowBox[{"x", "^", "6"}]}], "-", 
+   RowBox[{"5", 
+    RowBox[{"x", "^", "5"}]}], "+", 
+   RowBox[{"5", 
+    RowBox[{"x", "^", "3"}]}], "-", 
+   RowBox[{"6", 
+    RowBox[{"x", "^", "2"}]}], "+", 
+   RowBox[{"10", "x"}], "-", "4"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "2"}], "+", "x"}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    RowBox[{"2", " ", "x"}]}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "2"}], "+", 
+    SuperscriptBox["x", "2"]}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", 
+    SuperscriptBox["x", "2"]}], ")"}]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "es la factorizaci\[OAcute]n en \[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"[", "x", "]"}], TraditionalForm]]],
+ " del polinomio y su \[UAcute]nica raiz es 2."
+}], "Text",
+ FontSize->14]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "\t4.2. Factorizaci\[OAcute]n y c\[AAcute]lculo de ra\[IAcute]ces en ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[DoubleStruckCapitalZ]", "n"], TraditionalForm]]]
+}], "Section"],
+
+Cell[TextData[{
+ "Para calcular la factorizaci\[OAcute]n en irreducibles del polinomio en \
+\[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["", "2"], 
+    RowBox[{"[", "x", "]"}]}], TraditionalForm]]]
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Factor", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"2", 
+     RowBox[{"x", "^", "6"}]}], "-", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "5"}]}], "+", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "3"}]}], "-", 
+    RowBox[{"6", 
+     RowBox[{"x", "^", "2"}]}], "+", 
+    RowBox[{"10", "x"}], "-", "4"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "2"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["x", "3"], " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "+", "x"}], ")"}], "2"]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "y sus ra\[IAcute]ces son: el 0 (triple) y el ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "=", 
+    RowBox[{"1", " ", "con", " "}]}], TraditionalForm]]],
+ "multiplicidad 2."
+}], "Text",
+ FontSize->14],
+
+Cell[TextData[{
+ "Para calcular la factorizaci\[OAcute]n en irreducibles del polinomio en \
+\[DoubleStruckCapitalZ]",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["", "3"], 
+    RowBox[{"[", "x", "]"}]}], TraditionalForm]]]
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Factor", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"2", 
+     RowBox[{"x", "^", "6"}]}], "-", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "5"}]}], "+", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "3"}]}], "-", 
+    RowBox[{"6", 
+     RowBox[{"x", "^", "2"}]}], "+", 
+    RowBox[{"10", "x"}], "-", "4"}], ",", 
+   RowBox[{"Modulus", "\[Rule]", "3"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "+", "x"}], ")"}], "2"], " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{"1", "+", 
+     SuperscriptBox["x", "2"]}], ")"}], "2"]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "y su ra\[IAcute]z es el ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "=", 
+    RowBox[{"2", " ", "con", " "}]}], TraditionalForm]]],
+ "multiplicidad 2."
+}], "Text",
+ FontSize->14]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\t4.3. Factorizaci\[OAcute]n y c\[AAcute]lculo de ra\[IAcute]ces en  Q, \
+\[DoubleStruckCapitalR] y \[DoubleStruckCapitalC]", "Section"],
+
+Cell["\<\
+Para calcular la factorizaci\[OAcute]n en irreducibles del polinomio en estos \
+anillos comenzaremos calculando sus ra\[IAcute]ces\
+\>", "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Roots", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"2", 
+      RowBox[{"x", "^", "6"}]}], "-", 
+     RowBox[{"5", 
+      RowBox[{"x", "^", "5"}]}], "+", 
+     RowBox[{"5", 
+      RowBox[{"x", "^", "3"}]}], "-", 
+     RowBox[{"6", 
+      RowBox[{"x", "^", "2"}]}], "+", 
+     RowBox[{"10", "x"}], "-", "4"}], "\[Equal]", "0"}], ",", "x"}], 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "\[Equal]", "\[ImaginaryI]"}], "||", 
+  RowBox[{"x", "\[Equal]", 
+   RowBox[{"-", "\[ImaginaryI]"}]}], "||", 
+  RowBox[{"x", "\[Equal]", 
+   SqrtBox["2"]}], "||", 
+  RowBox[{"x", "\[Equal]", 
+   RowBox[{"-", 
+    SqrtBox["2"]}]}], "||", 
+  RowBox[{"x", "\[Equal]", 
+   FractionBox["1", "2"]}], "||", 
+  RowBox[{"x", "\[Equal]", "2"}]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "\tAs\[IAcute], en Q? sus ra\[IAcute]ces son: el 2 y 1/2 y la factorizaci\
+\[OAcute]n del polinomio ser\[AAcute] 2(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "/", "2"}], TraditionalForm]]],
+ ") ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "1"], TraditionalForm]]],
+ "(x) siendo  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "1"], TraditionalForm]]],
+ "(x) el cociente de 2x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "6"], " ", 
+    RowBox[{"-", " ", "5"}]}], TraditionalForm]]],
+ "x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ " + 5x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["", "3"], 
+     FormBox["",
+      TraditionalForm]}], "-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "6x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 10x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "4"}], TraditionalForm]]],
+ " entre 2(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "/", "2"}], TraditionalForm]]],
+ "). Es decir, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "1"], TraditionalForm]]],
+ "(x) es "
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"2", 
+     RowBox[{"x", "^", "6"}]}], "-", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "5"}]}], "+", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "3"}]}], "-", 
+    RowBox[{"6", 
+     RowBox[{"x", "^", "2"}]}], "+", 
+    RowBox[{"10", "x"}], "-", "4"}], ",", 
+   RowBox[{"2", 
+    RowBox[{"(", 
+     RowBox[{"x", "-", "2"}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"x", "-", 
+      RowBox[{"1", "/", "2"}]}], ")"}]}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "2"}], "-", 
+  SuperscriptBox["x", "2"], "+", 
+  SuperscriptBox["x", "4"]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "\tEn \[DoubleStruckCapitalR] sus ra\[IAcute]ces son: el 2, 1/2, ",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    SqrtBox["2"], "y"}], " ", "-", 
+   SqrtBox["2"]}]]],
+ "y la factorizaci\[OAcute]n del polinomio ser\[AAcute] 2(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "/", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  RowBox[{" ", 
+   RowBox[{"-", 
+    SqrtBox[
+     RowBox[{"2", " "}]]}]}]]],
+ Cell[BoxData[
+  RowBox[{")", 
+   RowBox[{"(", 
+    RowBox[{"x", " ", "+", 
+     SqrtBox["2"]}], ")"}]}]]],
+ " ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "2"], TraditionalForm]]],
+ "(x) siendo  ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "2"], TraditionalForm]]],
+ "(x) el cociente de 2x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "6"], " ", 
+    RowBox[{"-", " ", "5"}]}], TraditionalForm]]],
+ "x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ " + 5x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["", "3"], 
+     FormBox["",
+      TraditionalForm]}], "-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "6x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 10x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "4"}], TraditionalForm]]],
+ " entre 2(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "/", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  RowBox[{" ", 
+   RowBox[{"-", 
+    SqrtBox[
+     RowBox[{"2", " "}]]}]}]]],
+ Cell[BoxData[
+  RowBox[{")", 
+   RowBox[{"(", 
+    RowBox[{"x", " ", "+", 
+     SqrtBox["2"]}], ")"}]}]]],
+ ". Es decir, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "2"], TraditionalForm]]],
+ "(x) es el siguiente cociente"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolynomialQuotient", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"2", 
+     RowBox[{"x", "^", "6"}]}], "-", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "5"}]}], "+", 
+    RowBox[{"5", 
+     RowBox[{"x", "^", "3"}]}], "-", 
+    RowBox[{"6", 
+     RowBox[{"x", "^", "2"}]}], "+", 
+    RowBox[{"10", "x"}], "-", "4"}], ",", 
+   RowBox[{"2", 
+    RowBox[{"(", 
+     RowBox[{"x", "-", "2"}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"x", "-", 
+      RowBox[{"1", "/", "2"}]}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"x", " ", "-", 
+      SqrtBox[
+       RowBox[{"2", " "}]]}], ")"}], 
+    RowBox[{"(", 
+     RowBox[{"x", " ", "+", 
+      SqrtBox["2"]}], ")"}]}], ",", "x"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"1", "+", 
+  SuperscriptBox["x", "2"]}]], "Output"]
+}, Open  ]],
+
+Cell[TextData[{
+ "\tComo sabemos todas las ra\[IAcute]ces son complejas. As\[IAcute], el 2, \
+1/2, ",
+ Cell[BoxData[
+  RowBox[{
+   SqrtBox["2"], ",", 
+   RowBox[{"-", 
+    SqrtBox["2"]}], ",", 
+   RowBox[{
+    RowBox[{"\[ImaginaryI]", " ", "y"}], " ", "-", "\[ImaginaryI]"}]}]]],
+ " son las ra\[IAcute]ces en \[DoubleStruckCapitalC] y la \
+factorizaci\[OAcute]n del polinomio ser\[AAcute] 2(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", " ", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"-", " ", "1"}], "/", "2"}], TraditionalForm]]],
+ ")(x ",
+ Cell[BoxData[
+  RowBox[{" ", 
+   RowBox[{"-", 
+    SqrtBox[
+     RowBox[{"2", " "}]]}]}]]],
+ Cell[BoxData[
+  RowBox[{")", 
+   RowBox[{"(", 
+    RowBox[{"x", " ", "-", 
+     SqrtBox["2"]}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{"x", "-", "\[ImaginaryI]"}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{"x", "+", "\[ImaginaryI]"}], ")"}]}]]],
+ "."
+}], "Text",
+ FontSize->14]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["5. Factorizaci\[OAcute]n de polinomios: \
+m\[AAcute]ximo com\[UAcute]n divisor y m\[IAcute]nimo com\[UAcute]n \
+m\[UAcute]ltiplo",
+ FontSize->18]], "Section"],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.8. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular una lista de todos los divisores del polinomio x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ " + x + 1"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FactorList", "[", 
+  RowBox[{
+   RowBox[{"x", "^", "5"}], "+", "x", "+", "1"}], "]"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x", "+", 
+      SuperscriptBox["x", "2"]}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "-", 
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["x", "3"]}], ",", "1"}], "}"}]}], "}"}]], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.9. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Observar la forma en que las funciones Factor[] o FactorList[] presentan \
+los divisores del polinomio 8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox["-", TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "4"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "3"], "+"}], TraditionalForm]]],
+ "8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 32x + 32 "
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"FactorList", "[", 
+    RowBox[{
+     RowBox[{"8", 
+      RowBox[{"x", "^", "5"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "4"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "3"}]}], "+", 
+     RowBox[{"8", 
+      RowBox[{"x", "^", "2"}]}], "+", 
+     RowBox[{"32", "x"}], "+", "32"}], "]"}], " \t"}],
+  FormatType->StandardForm]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"8", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x", "+", 
+      SuperscriptBox["x", "2"]}], ",", "1"}], "}"}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{" ", 
+  StyleBox[
+   RowBox[{"Factor", "[", 
+    RowBox[{
+     RowBox[{"8", 
+      RowBox[{"x", "^", "5"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "4"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "3"}]}], "+", 
+     RowBox[{"8", 
+      RowBox[{"x", "^", "2"}]}], "+", 
+     RowBox[{"32", "x"}], "+", "32"}], "]"}],
+   FormatType->StandardForm], 
+  StyleBox[" \t",
+   FormatType->StandardForm]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"8", " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "2"}], "+", "x"}], ")"}], "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", "x"}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "+", "x", "+", 
+    SuperscriptBox["x", "2"]}], ")"}]}]], "Output"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.10. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular, a partir de sus divisores, el m\[AAcute]ximo com\[UAcute]n \
+divisor y el m\[IAcute]nimo com\[UAcute]n m\[UAcute]ltiplo de los polinomios \
+8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox["-", TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "4"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "3"], "+"}], TraditionalForm]]],
+ "8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 32x + 32  y  4x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "3"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "12x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "8"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"FactorList", "[", 
+    RowBox[{
+     RowBox[{"8", 
+      RowBox[{"x", "^", "5"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "4"}]}], "-", 
+     RowBox[{"16", 
+      RowBox[{"x", "^", "3"}]}], "+", 
+     RowBox[{"8", 
+      RowBox[{"x", "^", "2"}]}], "+", 
+     RowBox[{"32", "x"}], "+", "32"}], "]"}], " \t"}],
+  FormatType->StandardForm]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"8", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x", "+", 
+      SuperscriptBox["x", "2"]}], ",", "1"}], "}"}]}], "}"}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"FactorList", "[", 
+    RowBox[{
+     RowBox[{"4", 
+      RowBox[{"x", "^", "3"}]}], "-", 
+     RowBox[{"12", "x"}], "-", "8"}], "]"}], " \t"}],
+  FormatType->StandardForm]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"4", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x"}], ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "+", "x"}], ",", "2"}], "}"}]}], "}"}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+}, Open  ]],
+
+Cell[TextData[{
+ "As\[IAcute], para el m\[AAcute]ximo com\[UAcute]n divisor (comunes elevados \
+al menor exponente) tomaremos (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "2 + x)(1 + x) y un m\[IAcute]nimo com\[UAcute]n m\[UAcute]ltiplo (comunes y \
+no comunes elevados al mayor exponente) ser\[AAcute] (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "2 + x)",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "(1 + x)",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "(1 + x + x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ ") que, en forma extendida son"
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Expand", "[", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", "2"}], "+", "x"}], ")"}], 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "x"}], ")"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Expand", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "2"}], "+", "x"}], ")"}], "^", "2"}], 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"1", "+", "x"}], ")"}], "^", "2"}], 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "x", "+", 
+     RowBox[{"x", "^", "2"}]}], ")"}]}], "]"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "2"}], "-", "x", "+", 
+  SuperscriptBox["x", "2"]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False],
+
+Cell[BoxData[
+ RowBox[{"4", "+", 
+  RowBox[{"8", " ", "x"}], "+", 
+  RowBox[{"5", " ", 
+   SuperscriptBox["x", "2"]}], "-", 
+  SuperscriptBox["x", "3"], "-", 
+  RowBox[{"4", " ", 
+   SuperscriptBox["x", "4"]}], "-", 
+  SuperscriptBox["x", "5"], "+", 
+  SuperscriptBox["x", "6"]}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.11. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular, usando las funciones de ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ", el m\[AAcute]ximo com\[UAcute]n divisor y el m\[IAcute]nimo com\[UAcute]n \
+m\[UAcute]ltiplo de los polinomios del ejemplo anterior."
+}], "Text",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolynomialGCD", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"8", 
+     RowBox[{"x", 
+      StyleBox["^",
+       FormatType->StandardForm], 
+      StyleBox["5",
+       FormatType->StandardForm]}]}], 
+    StyleBox["-",
+     FormatType->StandardForm], 
+    StyleBox[
+     RowBox[{"16", 
+      RowBox[{"x", "^", "4"}]}],
+     FormatType->StandardForm], 
+    StyleBox["-",
+     FormatType->StandardForm], 
+    StyleBox[
+     RowBox[{"16", 
+      RowBox[{"x", "^", "3"}]}],
+     FormatType->StandardForm], 
+    StyleBox["+",
+     FormatType->StandardForm], 
+    StyleBox[
+     RowBox[{"8", 
+      RowBox[{"x", "^", "2"}]}],
+     FormatType->StandardForm], 
+    StyleBox["+",
+     FormatType->StandardForm], 
+    StyleBox[
+     RowBox[{"32", "x"}],
+     FormatType->StandardForm], 
+    StyleBox["+",
+     FormatType->StandardForm], 
+    StyleBox["32",
+     FormatType->StandardForm]}], 
+   StyleBox[",",
+    FormatType->StandardForm], 
+   RowBox[{
+    RowBox[{"4", 
+     RowBox[{"x", "^", "3"}]}], "-", 
+    RowBox[{"12", "x"}], "-", "8"}]}], 
+  StyleBox["]",
+   FormatType->StandardForm]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"PolynomialLCM", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"8", 
+      RowBox[{"x", 
+       StyleBox["^",
+        FormatType->StandardForm], 
+       StyleBox["5",
+        FormatType->StandardForm]}]}], 
+     StyleBox["-",
+      FormatType->StandardForm], 
+     StyleBox[
+      RowBox[{"16", 
+       RowBox[{"x", "^", "4"}]}],
+      FormatType->StandardForm], 
+     StyleBox["-",
+      FormatType->StandardForm], 
+     StyleBox[
+      RowBox[{"16", 
+       RowBox[{"x", "^", "3"}]}],
+      FormatType->StandardForm], 
+     StyleBox["+",
+      FormatType->StandardForm], 
+     StyleBox[
+      RowBox[{"8", 
+       RowBox[{"x", "^", "2"}]}],
+      FormatType->StandardForm], 
+     StyleBox["+",
+      FormatType->StandardForm], 
+     StyleBox[
+      RowBox[{"32", "x"}],
+      FormatType->StandardForm], 
+     StyleBox["+",
+      FormatType->StandardForm], 
+     StyleBox["32",
+      FormatType->StandardForm]}], 
+    StyleBox[",",
+     FormatType->StandardForm], 
+    RowBox[{
+     RowBox[{"4", 
+      RowBox[{"x", "^", "3"}]}], "-", 
+     RowBox[{"12", "x"}], "-", "8"}]}], 
+   StyleBox["]",
+    FormatType->StandardForm]}], 
+  StyleBox[" \t",
+   FormatType->StandardForm]}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "8"}], "-", 
+  RowBox[{"4", " ", "x"}], "+", 
+  RowBox[{"4", " ", 
+   SuperscriptBox["x", "2"]}]}]], "Output"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "4"}], "-", 
+    RowBox[{"2", " ", "x"}], "-", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "2"]}], "+", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "3"]}]}], ")"}], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"-", "8"}], "-", 
+    RowBox[{"12", " ", "x"}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}]}], ")"}]}]], "Output"]
+}, Open  ]],
+
+Cell["\<\
+Observemos que los resultados son polinomios asociados a los del ejemplo \
+anterior.\
+\>", "Text",
+ FontSize->14]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 13.12. ", "Subsection",
+ FontSize->16],
+
+Cell[TextData[{
+ "Calcular, usando el algoritmo de Euclides, el m\[AAcute]ximo com\[UAcute]n \
+divisor y el m\[IAcute]nimo com\[UAcute]n m\[UAcute]ltiplo de los polinomios \
+8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "5"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox["-", TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "4"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "16x",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["", "3"], "+"}], TraditionalForm]]],
+ "8x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "2"], TraditionalForm]]],
+ "+ 32x + 32  y  4x",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["", "3"], TraditionalForm]]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "12x ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    FormBox["",
+     TraditionalForm]}], TraditionalForm]]],
+ "8"
+}], "Text",
+ FontSize->14],
+
+Cell["Usando el programa 13.1., introducimos los polinomios", "Text",
+ FontSize->16],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "\"\<Global`*\>\"", "]"}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"p1", "=", 
+    RowBox[{"PolynomialMod", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"8", 
+        RowBox[{"x", "^", "5"}]}], "-", 
+       RowBox[{"16", 
+        RowBox[{"x", "^", "4"}]}], "-", 
+       RowBox[{"16", 
+        RowBox[{"x", "^", "3"}]}], "+", 
+       RowBox[{"8", 
+        RowBox[{"x", "^", "2"}]}], "+", 
+       RowBox[{"32", "x"}], "+", "32"}], ",", " ", "5"}], "]"}]}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\n", 
+ StyleBox[
+  RowBox[{
+   RowBox[{"p2", "=", 
+    RowBox[{"PolynomialMod", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"4", 
+        RowBox[{"x", "^", "3"}]}], "-", 
+       RowBox[{"12", "x"}], "-", "8"}], ",", " ", "5"}], "]"}]}], ";"}],
+  FontColor->RGBColor[1, 0, 0]], "\n", 
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"Exponent", "[", 
+    RowBox[{"p1", ",", "x"}], "]"}]}], ";", 
+  RowBox[{"b", "=", 
+   RowBox[{"Exponent", "[", 
+    RowBox[{"p2", ",", "x"}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"a", "<", "b"}], ",", 
+    RowBox[{
+     RowBox[{"p", "=", "p2"}], ";", 
+     RowBox[{"q", "=", "p1"}]}], ",", "\[IndentingNewLine]", 
+    "               ", 
+    RowBox[{
+     RowBox[{"p", "=", "p1"}], ";", 
+     RowBox[{"q", "=", "p2"}]}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"While", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Exponent", "[", 
+         RowBox[{"q", ",", "x"}], "]"}], "\[GreaterEqual]", "1"}], " ", "||", 
+       " ", 
+       RowBox[{"q", "\[NotEqual]", "0"}]}], ")"}], " ", "&&", " ", 
+     RowBox[{
+      RowBox[{"Exponent", "[", 
+       RowBox[{"p", ",", "x"}], "]"}], "\[GreaterEqual]", 
+      RowBox[{"Exponent", "[", 
+       RowBox[{"q", ",", "x"}], "]"}]}]}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"m", "=", 
+      RowBox[{"PolynomialRemainder", "[", 
+       RowBox[{"p", ",", "q", ",", "x", ",", " ", 
+        RowBox[{"Modulus", "\[Rule]", "5"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"p", "=", "q"}], ";", 
+     RowBox[{"q", "=", "m"}], ";"}]}], "\[IndentingNewLine]", "]"}], 
+  ";"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.d.(\>\"", ",", "p1", ",", "\"\<,\>\"", ",", "p2", ",", 
+   "\"\<)=\>\"", ",", "p"}], "]"}], "\n", 
+ RowBox[{"Print", "[", 
+  RowBox[{
+  "\"\<m.c.m.(\>\"", ",", "p1", ",", "\"\<,\>\"", ",", "p2", ",", 
+   "\"\<)=\>\"", ",", 
+   RowBox[{"PolynomialQuotient", "[", 
+    RowBox[{
+     RowBox[{"p1", "*", "p2"}], ",", "p", ",", "x", ",", " ", 
+     RowBox[{"Modulus", "\[Rule]", "5"}]}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.540205024852195*^9, 3.540205034649012*^9}, {
+  3.5402051246455703`*^9, 3.54020512999638*^9}, {3.7270725565418587`*^9, 
+  3.727072656790593*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.d.(\"\>", "\[InvisibleSpace]", 
+   RowBox[{"2", "+", 
+    RowBox[{"2", " ", "x"}], "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "2"]}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "4"]}], "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "5"]}]}], "\[InvisibleSpace]", "\<\",\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"2", "+", 
+    RowBox[{"3", " ", "x"}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}]}], "\[InvisibleSpace]", "\<\")=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"3", "+", 
+    RowBox[{"4", " ", "x"}], "+", 
+    SuperscriptBox["x", "2"]}]}],
+  SequenceForm[
+  "m.c.d.(", 2 + 2 $CellContext`x + 3 $CellContext`x^2 + 4 $CellContext`x^3 + 
+   4 $CellContext`x^4 + 3 $CellContext`x^5, ",", 2 + 3 $CellContext`x + 
+   4 $CellContext`x^3, ")=", 3 + 4 $CellContext`x + $CellContext`x^2],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7270726599347725`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"m.c.m.(\"\>", "\[InvisibleSpace]", 
+   RowBox[{"2", "+", 
+    RowBox[{"2", " ", "x"}], "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "2"]}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "4"]}], "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "5"]}]}], "\[InvisibleSpace]", "\<\",\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"2", "+", 
+    RowBox[{"3", " ", "x"}], "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}]}], "\[InvisibleSpace]", "\<\")=\"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"3", "+", "x", "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "3"]}], "+", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "4"]}], "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "5"]}], "+", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "6"]}]}]}],
+  SequenceForm[
+  "m.c.m.(", 2 + 2 $CellContext`x + 3 $CellContext`x^2 + 4 $CellContext`x^3 + 
+   4 $CellContext`x^4 + 3 $CellContext`x^5, ",", 2 + 3 $CellContext`x + 
+   4 $CellContext`x^3, ")=", 3 + $CellContext`x + 3 $CellContext`x^3 + 
+   2 $CellContext`x^4 + 3 $CellContext`x^5 + 2 $CellContext`x^6],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.727072659936773*^9}]
+}, Open  ]],
+
+Cell["\<\
+N\[OAcute]tese que nuevamente los resultados obtenidos son polinomios \
+distintos a los de los ejemplos anteriores, pero vuelven a ser asociados.\
+\>", "Text",
+ FontSize->14]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1008, 710},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"PASTELCOLOR.NB",
+WindowOLEData -> {"Content" -> {29130, 20425}}
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 98, 2, 54, "Title"],
+Cell[680, 26, 44, 0, 39, "Subtitle"],
+Cell[CellGroupData[{
+Cell[749, 30, 101, 2, 52, "Section"],
+Cell[CellGroupData[{
+Cell[875, 36, 51, 1, 41, "Subsection"],
+Cell[929, 39, 373, 11, 46, "Text"],
+Cell[1305, 52, 126, 4, 36, "Input"],
+Cell[1434, 58, 161, 5, 36, "Input"],
+Cell[1598, 65, 110, 3, 27, "Text"],
+Cell[CellGroupData[{
+Cell[1733, 72, 142, 4, 36, "Input"],
+Cell[1878, 78, 122, 4, 35, "Output"]
+}, Open  ]],
+Cell[2015, 85, 92, 1, 27, "Text"],
+Cell[CellGroupData[{
+Cell[2132, 90, 142, 4, 36, "Input"],
+Cell[2277, 96, 83, 2, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2409, 104, 51, 1, 41, "Subsection"],
+Cell[2463, 107, 124, 4, 24, "Text"],
+Cell[CellGroupData[{
+Cell[2612, 115, 221, 6, 57, "Input"],
+Cell[2836, 123, 32, 0, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2905, 128, 111, 3, 36, "Input"],
+Cell[3019, 133, 31, 0, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3099, 139, 51, 1, 41, "Subsection"],
+Cell[3153, 142, 419, 18, 24, "Text"],
+Cell[CellGroupData[{
+Cell[3597, 164, 294, 10, 36, "Input"],
+Cell[3894, 176, 175, 5, 35, "Output"]
+}, Open  ]],
+Cell[4084, 184, 138, 4, 27, "Text"],
+Cell[CellGroupData[{
+Cell[4247, 192, 91, 2, 36, "Input"],
+Cell[4341, 196, 132, 3, 35, "Output"]
+}, Open  ]],
+Cell[4488, 202, 152, 4, 52, "Text"],
+Cell[CellGroupData[{
+Cell[4665, 210, 328, 11, 36, "Input"],
+Cell[4996, 223, 28, 0, 35, "Output"]
+}, Open  ]],
+Cell[5039, 226, 87, 1, 27, "Text"],
+Cell[CellGroupData[{
+Cell[5151, 231, 84, 2, 36, "Input"],
+Cell[5238, 235, 28, 0, 35, "Output"]
+}, Open  ]],
+Cell[5281, 238, 116, 3, 27, "Text"],
+Cell[CellGroupData[{
+Cell[5422, 245, 84, 2, 36, "Input"],
+Cell[5509, 249, 55, 1, 35, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5625, 257, 188, 7, 52, "Section"],
+Cell[CellGroupData[{
+Cell[5838, 268, 51, 1, 41, "Subsection"],
+Cell[5892, 271, 175, 7, 24, "Text"],
+Cell[CellGroupData[{
+Cell[6092, 282, 172, 6, 36, "Input"],
+Cell[6267, 290, 50, 1, 35, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6378, 298, 89, 1, 52, "Section"],
+Cell[CellGroupData[{
+Cell[6492, 303, 51, 1, 41, "Subsection"],
+Cell[6546, 306, 560, 25, 24, "Text"],
+Cell[CellGroupData[{
+Cell[7131, 335, 268, 8, 36, "Input"],
+Cell[7402, 345, 181, 6, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7620, 356, 269, 8, 36, "Input"],
+Cell[7892, 366, 141, 5, 35, "Output"]
+}, Open  ]]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[8082, 377, 51, 1, 27, "Subsection"],
+Cell[8136, 380, 894, 36, 68, "Text"],
+Cell[CellGroupData[{
+Cell[9055, 420, 207, 7, 36, "Input"],
+Cell[9265, 429, 155, 5, 35, "Output"]
+}, Open  ]],
+Cell[9435, 437, 422, 14, 46, "Text"],
+Cell[CellGroupData[{
+Cell[9882, 455, 278, 9, 36, "Input"],
+Cell[10163, 466, 131, 4, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10331, 475, 279, 9, 36, "Input"],
+Cell[10613, 486, 28, 0, 35, "Output"]
+}, Open  ]],
+Cell[10656, 489, 298, 10, 24, "Text"],
+Cell[CellGroupData[{
+Cell[10979, 503, 285, 8, 57, "Input"],
+Cell[11267, 513, 155, 5, 35, "Output"],
+Cell[11425, 520, 28, 0, 35, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11514, 527, 116, 2, 52, "Section"],
+Cell[CellGroupData[{
+Cell[11655, 533, 51, 1, 41, "Subsection"],
+Cell[11709, 536, 744, 32, 24, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12502, 574, 112, 1, 49, "Section"],
+Cell[CellGroupData[{
+Cell[12639, 579, 318, 11, 36, "Input"],
+Cell[12960, 592, 395, 15, 38, "Output"]
+}, Open  ]],
+Cell[13370, 610, 223, 7, 24, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13630, 622, 197, 5, 49, "Section"],
+Cell[13830, 629, 260, 9, 24, "Text"],
+Cell[CellGroupData[{
+Cell[14115, 642, 387, 13, 36, "Input"],
+Cell[14505, 657, 147, 5, 35, "Output"]
+}, Open  ]],
+Cell[14667, 665, 243, 9, 24, "Text"],
+Cell[14913, 676, 260, 9, 24, "Text"],
+Cell[CellGroupData[{
+Cell[15198, 689, 387, 13, 36, "Input"],
+Cell[15588, 704, 233, 8, 38, "Output"]
+}, Open  ]],
+Cell[15836, 715, 222, 9, 24, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16095, 729, 142, 1, 49, "Section"],
+Cell[16240, 732, 169, 4, 24, "Text"],
+Cell[CellGroupData[{
+Cell[16434, 740, 394, 14, 36, "Input"],
+Cell[16831, 756, 386, 12, 52, "Output"]
+}, Open  ]],
+Cell[17232, 771, 1413, 62, 46, "Text"],
+Cell[CellGroupData[{
+Cell[18670, 837, 526, 18, 36, "Input"],
+Cell[19199, 857, 126, 4, 35, "Output"]
+}, Open  ]],
+Cell[19340, 864, 1958, 89, 60, "Text"],
+Cell[CellGroupData[{
+Cell[21323, 957, 703, 25, 44, "Input"],
+Cell[22029, 984, 74, 2, 35, "Output"]
+}, Open  ]],
+Cell[22118, 989, 951, 37, 57, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23106, 1031, 182, 3, 52, "Section"],
+Cell[CellGroupData[{
+Cell[23313, 1038, 51, 1, 41, "Subsection"],
+Cell[23367, 1041, 190, 7, 24, "Text"],
+Cell[CellGroupData[{
+Cell[23582, 1052, 120, 3, 36, "Input"],
+Cell[23705, 1057, 386, 13, 38, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24140, 1076, 51, 1, 41, "Subsection"],
+Cell[24194, 1079, 660, 28, 24, "Text"],
+Cell[CellGroupData[{
+Cell[24879, 1111, 407, 14, 36, "Input"],
+Cell[25289, 1127, 427, 15, 38, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25753, 1147, 451, 16, 36, "Input"],
+Cell[26207, 1165, 294, 10, 38, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26550, 1181, 52, 1, 41, "Subsection"],
+Cell[26605, 1184, 1010, 44, 46, "Text"],
+Cell[CellGroupData[{
+Cell[27640, 1232, 407, 14, 36, "Input"],
+Cell[28050, 1248, 477, 17, 38, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28564, 1270, 230, 8, 36, "Input"],
+Cell[28797, 1280, 354, 13, 35, "Output"]
+}, Open  ]],
+Cell[29166, 1296, 794, 29, 46, "Text"],
+Cell[CellGroupData[{
+Cell[29985, 1329, 538, 19, 57, "Input"],
+Cell[30526, 1350, 152, 5, 35, "Output"],
+Cell[30681, 1357, 341, 11, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31071, 1374, 52, 1, 41, "Subsection"],
+Cell[31126, 1377, 268, 7, 24, "Text"],
+Cell[CellGroupData[{
+Cell[31419, 1388, 2338, 91, 57, "Input"],
+Cell[33760, 1481, 149, 5, 35, "Output"],
+Cell[33912, 1488, 421, 15, 38, "Output"]
+}, Open  ]],
+Cell[34348, 1506, 123, 4, 24, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34508, 1515, 52, 1, 41, "Subsection"],
+Cell[34563, 1518, 1016, 44, 46, "Text"],
+Cell[35582, 1564, 84, 1, 27, "Text"],
+Cell[35669, 1567, 73, 1, 36, "Input"],
+Cell[CellGroupData[{
+Cell[35767, 1572, 2780, 84, 237, "Input"],
+Cell[38550, 1658, 1025, 27, 37, "Print"],
+Cell[39578, 1687, 1277, 34, 37, "Print"]
+}, Open  ]],
+Cell[40870, 1724, 184, 4, 24, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

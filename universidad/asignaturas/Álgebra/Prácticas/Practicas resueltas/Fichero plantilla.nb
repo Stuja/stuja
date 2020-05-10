@@ -1,0 +1,134 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3704,        124]
+NotebookOptionsPosition[      2898,         93]
+NotebookOutlinePosition[      3243,        108]
+CellTagsIndexPosition[      3200,        105]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Cuaderno de pr\[AAcute]cticas de Matem\[AAcute]tica Discreta
+\
+\>", "Title",
+ CellChangeTimes->{{3.7155795680804377`*^9, 3.7155795794240866`*^9}, {
+  3.715579829286378*^9, 3.715579831390498*^9}, {3.7155805687226715`*^9, 
+  3.715580570714785*^9}},
+ TextAlignment->Center],
+
+Cell["   Pr\[AAcute]ctica 1", "Subtitle",
+ CellChangeTimes->{{3.7155797471746817`*^9, 3.715579780846607*^9}, {
+  3.7155798236140537`*^9, 3.7155798260461926`*^9}}],
+
+Cell["\<\
+Nombre:
+Apellidos:
+DNI:
+Fecha de nacimiento:
+Grupo de teor\[IAcute]a:
+Grupo de pr\[AAcute]cticas:
+\>", "Text",
+ CellChangeTimes->{{3.715579817574708*^9, 3.715579867582568*^9}, {
+  3.7155800084836273`*^9, 3.7155800238125043`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 1.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}}],
+
+Cell["Texto del enunciado.", "Text",
+ CellChangeTimes->{{3.715580396236806*^9, 3.715580427125572*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"10", " ", "+", " ", "0"}]}]], "Input",
+ CellChangeTimes->{{3.715580429897731*^9, 3.715580435463049*^9}}],
+
+Cell[BoxData[
+ RowBox[{"10", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7155804485657988`*^9, 3.7155804540151105`*^9}}],
+
+Cell["Conclusi\[OAcute]n", "Text",
+ CellChangeTimes->{{3.7155804421974344`*^9, 3.7155804447895827`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 2.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}, {3.715580560435197*^9, 3.7155805605152016`*^9}}],
+
+Cell["Texto del enunciado.", "Text",
+ CellChangeTimes->{{3.715580396236806*^9, 3.715580427125572*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"10", " ", "+", " ", "0"}]}]], "Input",
+ CellChangeTimes->{{3.715580429897731*^9, 3.715580435463049*^9}}],
+
+Cell[BoxData[
+ RowBox[{"10", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.7155804485657988`*^9, 3.7155804540151105`*^9}}],
+
+Cell["Conclusi\[OAcute]n", "Text",
+ CellChangeTimes->{{3.7155804421974344`*^9, 3.7155804447895827`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{907, 896},
+WindowMargins->{{28, Automatic}, {Automatic, 5}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 280, 7, 166, "Title"],
+Cell[863, 31, 162, 2, 56, "Subtitle"],
+Cell[1028, 35, 304, 9, 125, "Text"],
+Cell[CellGroupData[{
+Cell[1357, 48, 201, 3, 70, "Section"],
+Cell[1561, 53, 102, 1, 30, "Text"],
+Cell[1666, 56, 162, 3, 52, "Input"],
+Cell[1831, 61, 133, 2, 52, InheritFromParent],
+Cell[1967, 65, 104, 1, 30, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2108, 71, 249, 3, 70, "Section"],
+Cell[2360, 76, 102, 1, 30, "Text"],
+Cell[2465, 79, 162, 3, 52, "Input"],
+Cell[2630, 84, 133, 2, 52, InheritFromParent],
+Cell[2766, 88, 104, 1, 30, "Text"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

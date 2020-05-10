@@ -1,0 +1,80 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1727,         70]
+NotebookOptionsPosition[      1416,         54]
+NotebookOutlinePosition[      1761,         69]
+CellTagsIndexPosition[      1718,         66]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Cuaderno de \[CapitalAAcute]lgebra ", "Title",
+ CellChangeTimes->{{3.728283740054975*^9, 3.72828374766241*^9}}],
+
+Cell["\<\
+pr\[AAcute]ctica 2
+
+
+Para el ejercicio 1, usa  la interna, neutro, elementosimetrico, asociativa,  \
+conmutativa, si cumple todas menos conmitativa es grupo, si cumple \
+conmutativa es abeliano tambien. 
+
+G = {0, 1, 2, 3, 4, 5}; (Z6)
+operacion = {{0, 1, 2, 3, 4, 5}, {1, 2, 3, 4, 5, 0}.....}
+operacion // TableForm
+
+...
+
+b) y c) con dos funciones
+
+
+
+
+Ejercicio 2
+
+G3 = {{1, 1}, {1, 0}, {0, 1}, {0, 0}}
+operacion3 = {{{0, 0},{0, 1},{1, 0},{1, 1}}, {}{}{}{}}\
+\>", "Text",
+ CellChangeTimes->{{3.7282837685896072`*^9, 3.7282838720315237`*^9}, {
+  3.728284011574505*^9, 3.7282841264860773`*^9}, {3.728284194742982*^9, 
+  3.7282842223985634`*^9}, {3.7282845152473135`*^9, 3.728284610806779*^9}}]
+}, Open  ]]
+},
+WindowSize->{1904, 998},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 117, 1, 101, "Title"],
+Cell[700, 25, 700, 26, 391, "Text"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

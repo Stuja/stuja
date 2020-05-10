@@ -1,0 +1,1517 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     51151,       1508]
+NotebookOptionsPosition[     45475,       1322]
+NotebookOutlinePosition[     45820,       1337]
+CellTagsIndexPosition[     45777,       1334]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Cuaderno de pr\[AAcute]cticas de \[CapitalAAcute]lgebra
+\
+\>", "Title",
+ CellChangeTimes->{{3.7155795680804377`*^9, 3.7155795794240866`*^9}, {
+  3.715579829286378*^9, 3.715579831390498*^9}, {3.7155805687226715`*^9, 
+  3.715580570714785*^9}, {3.7300982244300275`*^9, 3.730098230045349*^9}},
+ TextAlignment->Center],
+
+Cell["   Pr\[AAcute]ctica 1", "Subtitle",
+ CellChangeTimes->{{3.7155797471746817`*^9, 3.715579780846607*^9}, {
+  3.7155798236140537`*^9, 3.7155798260461926`*^9}}],
+
+Cell["\<\
+Nombre:
+Apellidos:
+DNI:
+Fecha de nacimiento:
+Grupo de teor\[IAcute]a:
+Grupo de pr\[AAcute]cticas:
+\>", "Text",
+ CellChangeTimes->{{3.715579817574708*^9, 3.715579867582568*^9}, {
+  3.7155800084836273`*^9, 3.7155800238125043`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 1.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}}],
+
+Cell["Para los grafos del ejercicio 6.8 del manual:", "Text",
+ CellChangeTimes->{{3.7300982422850485`*^9, 3.730098285821539*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Grafo a)", "Subsubsection",
+ CellChangeTimes->{{3.7300989405259857`*^9, 3.730098941878063*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"W1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", " ", "2", ",", " ", "3", ",", " ", "4", ",", " ", "5", ",", " ",
+      "6"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"F1", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", " ", "\[Rule]", " ", "2"}], ",", " ", 
+      RowBox[{"3", " ", "\[Rule]", " ", "1"}], ",", " ", 
+      RowBox[{"4", " ", "\[Rule]", " ", "5"}], ",", " ", 
+      RowBox[{"6", " ", "\[Rule]", " ", "1"}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"MATRIZADYACENCIA", "[", 
+     RowBox[{"W_", ",", "F_"}], "]"}], ":=", 
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"k", ",", "i", ",", "j", ",", "CONTADORi", ",", "nuevoF"}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"nuevoF", "=", 
+        RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"AppendTo", "[", 
+           RowBox[{"nuevoF", ",", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"Position", "[", 
+                RowBox[{"W", ",", 
+                 RowBox[{
+                  RowBox[{"F", "[", 
+                   RowBox[{"[", "CONTADORi", "]"}], "]"}], "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], "]"}], "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "[", 
+              RowBox[{"[", "1", "]"}], "]"}], "->", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Position", "[", 
+                RowBox[{"W", ",", 
+                 RowBox[{
+                  RowBox[{"F", "[", 
+                   RowBox[{"[", "CONTADORi", "]"}], "]"}], "[", 
+                  RowBox[{"[", "2", "]"}], "]"}]}], "]"}], "[", 
+               RowBox[{"[", "1", "]"}], "]"}], "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}], ";"}], 
+         "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"CONTADORi", ",", 
+           RowBox[{"Length", "[", "F", "]"}]}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"matrizadyacencia", "=", 
+        RowBox[{"Table", "[", 
+         RowBox[{"0", ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", 
+            RowBox[{"Length", "[", "W", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"j", ",", 
+            RowBox[{"Length", "[", "W", "]"}]}], "}"}]}], "]"}]}], ";", 
+       "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"matrizadyacencia", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"nuevoF", "[", 
+               RowBox[{"[", 
+                RowBox[{"k", ",", "1"}], "]"}], "]"}], ",", 
+              RowBox[{"nuevoF", "[", 
+               RowBox[{"[", 
+                RowBox[{"k", ",", "2"}], "]"}], "]"}]}], "]"}], "]"}], "=", 
+           "1"}], ";", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"matrizadyacencia", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"nuevoF", "[", 
+               RowBox[{"[", 
+                RowBox[{"k", ",", "2"}], "]"}], "]"}], ",", 
+              RowBox[{"nuevoF", "[", 
+               RowBox[{"[", 
+                RowBox[{"k", ",", "1"}], "]"}], "]"}]}], "]"}], "]"}], "=", 
+           "1"}], ";"}], "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", 
+           RowBox[{"Length", "[", "F", "]"}]}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", "matrizadyacencia"}]}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"matriz1", " ", "=", " ", 
+   RowBox[{"MATRIZADYACENCIA", "[", 
+    RowBox[{"W1", ",", " ", "F1"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7300983840041547`*^9, 3.7300984688950105`*^9}, {
+  3.730098551775751*^9, 3.730098566367585*^9}, {3.7300986556326914`*^9, 
+  3.73009866208106*^9}, {3.73009925005369*^9, 3.730099250277703*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo b)", "Subsubsection",
+ CellChangeTimes->{{3.7300989469093513`*^9, 3.730098949701511*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"matriz2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", " ", "1", ",", " ", "0", ",", "1"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "1", ",", "0"}], "}"}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.7300989720637903`*^9, 3.730099003080564*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo c)", "Subsubsection",
+ CellChangeTimes->{{3.7300991265576267`*^9, 3.7300991281497173`*^9}}],
+
+Cell[BoxData[{
+ StyleBox[
+  RowBox[{
+   RowBox[{"matrizincidencia", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", " ", "1", ",", "0", ",", "0", ",", "0", ",", "0"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "1", ",", "1", ",", "0", ",", "0"}], "}"}],
+       ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0", ",", "0", ",", "1", ",", "1"}], "}"}],
+       ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "0", ",", "1", ",", "0", ",", "1", ",", "0"}], "}"}],
+       ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1", ",", "0", ",", "1", ",", "0", ",", "1"}], 
+       "}"}]}], "}"}]}], ";"}],
+  FontWeight->"Bold"], "\n", 
+ RowBox[{"W", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{"i", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", 
+      RowBox[{
+       RowBox[{"Dimensions", "[", "matrizincidencia", "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"F", "=", 
+   RowBox[{"{", "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Do", "[", "\n", "    ", 
+   RowBox[{
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"F", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"Position", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Transpose", "[", "matrizincidencia", "]"}], "[", 
+            RowBox[{"[", "i", "]"}], "]"}], ",", "1"}], "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "\[Rule]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Position", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Transpose", "[", "matrizincidencia", "]"}], "[", 
+            RowBox[{"[", "i", "]"}], "]"}], ",", "1"}], "]"}], "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}], "\n", "    ", ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", 
+      RowBox[{
+       RowBox[{"Dimensions", "[", "matrizincidencia", "]"}], "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], 
+  ";"}], "\n", "F"}], "Input",
+ CellChangeTimes->{{3.7300991293037834`*^9, 3.7300991773295307`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"W3", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], ";"}]], \
+"Input",
+ CellChangeTimes->{{3.7300991922383833`*^9, 3.730099202639978*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F3", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "4"}], ",", 
+     RowBox[{"1", "\[Rule]", "5"}], ",", 
+     RowBox[{"2", "\[Rule]", "4"}], ",", 
+     RowBox[{"2", "\[Rule]", "5"}], ",", 
+     RowBox[{"3", "\[Rule]", "4"}], ",", 
+     RowBox[{"3", "\[Rule]", "5"}]}], "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7300992055981474`*^9, 3.73009920931236*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"matriz3", " ", "=", " ", 
+   RowBox[{"MATRIZADYACENCIA", "[", 
+    RowBox[{"W3", ",", " ", "F3"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.7300992159697404`*^9, 3.7300992210960336`*^9}, {
+  3.730099271920941*^9, 3.7300992787693324`*^9}}]
+}, Open  ]],
+
+Cell["Grafo d.1)", "Subsubsection",
+ CellChangeTimes->{{3.730099309462088*^9, 3.7300993120222344`*^9}, {
+  3.730099517726*^9, 3.7300995178060045`*^9}}],
+
+Cell["Grafo d.2)", "Subsubsection",
+ CellChangeTimes->{{3.730099522222257*^9, 3.730099524510388*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["I) Calcular el n\[UAcute]mero crom\[AAcute]tico y una \
+coloraci\[OAcute]n \[OAcute]ptima", "Subsection",
+ CellChangeTimes->{{3.73009828986177*^9, 3.7300983108299694`*^9}}],
+
+Cell["DUDA SOBRE NCOLORACIONES", "Text",
+ CellChangeTimes->{{3.7300988485657263`*^9, 3.730098851765909*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"NCOLORACIONES", "[", 
+    RowBox[{"matrizadyacencia_", ",", "lambda_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "coloracionestemp", ",", "t", ",", "h", ",", "i", ",", "j", ",", 
+       "colorady", ",", "k"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"coloraciones", "=", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"{", "k", "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "lambda"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Do", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"coloracionestemp", "=", 
+          RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"Do", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"colorady", "=", 
+             RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", 
+            RowBox[{"Do", "[", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"matrizadyacencia", "[", 
+                   RowBox[{"[", 
+                    RowBox[{"t", ",", "i"}], "]"}], "]"}], "\[Equal]", "1"}], 
+                 " ", "\[IndentingNewLine]", ",", 
+                 RowBox[{"colorady", "=", 
+                  RowBox[{"Union", "[", 
+                   RowBox[{"colorady", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"coloraciones", "[", 
+                    RowBox[{"[", "h", "]"}], "]"}], "[", 
+                    RowBox[{"[", "t", "]"}], "]"}], "}"}]}], "]"}]}]}], "]"}],
+                ";"}], "\[IndentingNewLine]", ",", 
+              RowBox[{"{", 
+               RowBox[{"t", ",", 
+                RowBox[{"Length", "[", 
+                 RowBox[{"coloraciones", "[", 
+                  RowBox[{"[", "h", "]"}], "]"}], "]"}]}], "}"}]}], "]"}], 
+            ";", "\[IndentingNewLine]", 
+            RowBox[{"Do", "[", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"If", "[", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"Intersection", "[", 
+                   RowBox[{
+                    RowBox[{"{", "j", "}"}], ",", "colorady"}], "]"}], 
+                  "\[Equal]", 
+                  RowBox[{"{", "}"}]}], ",", 
+                 RowBox[{"AppendTo", "[", 
+                  RowBox[{"coloracionestemp", ",", 
+                   RowBox[{"Append", "[", 
+                    RowBox[{
+                    RowBox[{"coloraciones", "[", 
+                    RowBox[{"[", "h", "]"}], "]"}], ",", "j"}], "]"}]}], 
+                  "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", ",", 
+              RowBox[{"{", 
+               RowBox[{"j", ",", "lambda"}], "}"}]}], "]"}], ";"}], 
+           "\[IndentingNewLine]", ",", 
+           RowBox[{"{", 
+            RowBox[{"h", ",", 
+             RowBox[{"Length", "[", "coloraciones", "]"}]}], "}"}]}], "]"}], 
+         ";", "\[IndentingNewLine]", 
+         RowBox[{"coloraciones", "=", "coloracionestemp"}], ";"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "2", ",", 
+          RowBox[{
+           RowBox[{"Dimensions", "[", "matrizadyacencia", "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "coloraciones"}]}], "\[IndentingNewLine]", 
+    "]"}]}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"NUMEROCROMATICO", "[", "matrizadyacencia_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"t", "=", "1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"NCOLORACIONES", "[", 
+         RowBox[{"matrizadyacencia", ",", "t"}], "]"}], "\[Equal]", 
+        RowBox[{"{", "}"}]}], ",", 
+       RowBox[{"t", "++"}]}], "]"}], ";", "\[IndentingNewLine]", "t"}]}], 
+   "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DIBUJAR", "[", "matrizadyacencia_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"colores", ",", "colorear", ",", "COLORES", ",", "i"}], "}"}], 
+    ",", 
+    RowBox[{
+     RowBox[{"NUMEROCROMATICO", "[", "matrizadyacencia", "]"}], ";", 
+     RowBox[{"colorear", "=", 
+      RowBox[{
+      "coloraciones", "\[LeftDoubleBracket]", "1", 
+       "\[RightDoubleBracket]"}]}], ";", 
+     RowBox[{"colores", "=", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Negro\>\"", ",", "\"\<Rojo\>\"", ",", "\"\<Verde\>\"", ",", 
+        "\"\<Azul\>\"", ",", "\"\<Amarillo\>\"", ",", "\"\<Cyan\>\"", ",", 
+        "\"\<Marr\[OAcute]n\>\"", ",", "\"\<Naranja\>\"", ",", 
+        "\"\<P\[UAcute]rpura\>\"", ",", "\"\<Rosa\>\"", ",", "\"\<Gris\>\""}],
+        "}"}]}], ";", 
+     RowBox[{"COLORES", "=", 
+      RowBox[{"{", 
+       RowBox[{
+       "Black", ",", "Red", ",", "Green", ",", "Blue", ",", "Yellow", ",", 
+        "Cyan", ",", "Brown", ",", "Orange", ",", "Purple", ",", "Pink", ",", 
+        "Gray"}], "}"}]}], ";", 
+     RowBox[{"Print", "[", "\"\<Colores asignados: \>\"", "]"}], ";", 
+     RowBox[{"Do", "[", 
+      RowBox[{
+       RowBox[{"Print", "[", 
+        RowBox[{
+        "\"\<V\[EAcute]rtice \>\"", ",", "i", ",", "\"\<, color \>\"", ",", 
+         RowBox[{"colores", "\[LeftDoubleBracket]", 
+          RowBox[{
+          "colorear", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
+          "\[RightDoubleBracket]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"Length", "[", "colorear", "]"}]}], "}"}]}], "]"}], ";", 
+     RowBox[{"GraphPlot", "[", 
+      RowBox[{"matrizadyacencia", ",", 
+       RowBox[{"VertexRenderingFunction", "\[Rule]", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"COLORES", "\[LeftDoubleBracket]", 
+             RowBox[{
+             "colorear", "\[LeftDoubleBracket]", "#2", 
+              "\[RightDoubleBracket]"}], "\[RightDoubleBracket]"}], ",", 
+            RowBox[{"Disk", "[", 
+             RowBox[{"#1", ",", "0.06`"}], "]"}], ",", "Black", ",", 
+            RowBox[{"Text", "[", 
+             RowBox[{"#2", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"#1", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}], "+", ".1"}], ",", 
+                RowBox[{
+                 RowBox[{"#1", "[", 
+                  RowBox[{"[", "2", "]"}], "]"}], "+", ".1"}]}], "}"}]}], 
+             "]"}]}], "}"}], "&"}], ")"}]}]}], "]"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell["Grafo a)", "Subsubsection",
+ CellChangeTimes->{{3.7300986403418164`*^9, 3.730098646541171*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NUMEROCROMATICO", "[", "matriz1", "]"}]], "Input",
+ CellChangeTimes->{{3.730098649463338*^9, 3.730098668416422*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.7300986699435096`*^9, 3.7300987035824337`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DIBUJAR", "[", "matriz1", "]"}]], "Input",
+ CellChangeTimes->{{3.7300999235132093`*^9, 3.730099927136417*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Colores asignados: \"\>"], "Print",
+ CellChangeTimes->{3.7300999279684644`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 1, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999279704647`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 2, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999279724646`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 3, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999279774647`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 4, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099927980465*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 5, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999279824653`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "6", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 6, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099927983465*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsGroupBox[{
+     GraphicsComplexBox[{{1.1305385792334834`, -0.7645131755512611}, {
+      0.2645131754864585, -0.2645131754864585}, {
+      1.1305385790987936`, -1.7645131755512613`}, {
+      1.2645131754864585`, -2.2935395266139715`}, {
+      0.2645131754864585, -2.2935395265241785`}, {
+      1.996563983115198, -0.26451317571974786`}}, 
+      {RGBColor[0.5, 0., 0.], LineBox[{{1, 2}, {1, 3}, {1, 6}, {4, 5}}]}], {{
+       {GrayLevel[0], 
+        DiskBox[{1.1305385792334834`, -0.7645131755512611}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["1", {1.2305385792334835`, -0.6645131755512611}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{0.2645131754864585, -0.2645131754864585}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["2", {0.36451317548645845`, -0.16451317548645847`}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{1.1305385790987936`, -1.7645131755512613`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["3", {1.2305385790987937`, -1.6645131755512612`}]}}, {
+       {GrayLevel[0], 
+        DiskBox[{1.2645131754864585`, -2.2935395266139715`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["4", {1.3645131754864586`, -2.1935395266139714`}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{0.2645131754864585, -2.2935395265241785`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["5", {0.36451317548645845`, -2.1935395265241784`}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{1.996563983115198, -0.26451317571974786`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["6", {2.096563983115198, -0.16451317571974786`}]}}}},
+    ContentSelectable->True],
+   Annotation[#, 
+    VertexCoordinateRules -> {{1.1305385792334834`, -0.7645131755512611}, {
+     0.2645131754864585, -0.2645131754864585}, {
+     1.1305385790987936`, -1.7645131755512613`}, {
+     1.2645131754864585`, -2.2935395266139715`}, {
+     0.2645131754864585, -2.2935395265241785`}, {
+     1.996563983115198, -0.26451317571974786`}}]& ],
+  AspectRatio->Automatic,
+  FrameTicks->None,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{3.7300999281064725`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo b)", "Subsubsection",
+ CellChangeTimes->{{3.730099011998074*^9, 3.7300990137341733`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NUMEROCROMATICO", "[", "matriz2", "]"}]], "Input",
+ CellChangeTimes->{{3.7300990189674726`*^9, 3.7300990233767247`*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.7300990243317795`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DIBUJAR", "[", "matriz2", "]"}]], "Input",
+ CellChangeTimes->{{3.7300999328677444`*^9, 3.7300999377990265`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Colores asignados: \"\>"], "Print",
+ CellChangeTimes->{3.7300999389200907`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 1, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099938921091*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 2, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099938926091*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 3, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999389290915`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 4, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999389310913`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsGroupBox[{
+     GraphicsComplexBox[{{0., 0.9997532360813222}, {0.9993931236462025, 
+      1.0258160108662504`}, {1.0286626995939243`, 0.026431169015735057`}, {
+      0.02872413637035287, 0.}}, 
+      {RGBColor[0.5, 0., 0.], LineBox[{{1, 2}, {1, 4}, {2, 3}, {3, 4}}]}], {{
+       {GrayLevel[0], DiskBox[{0., 0.9997532360813222}, 0.06]}, 
+       {GrayLevel[0], InsetBox["1", {0.1, 1.0997532360813222`}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{0.9993931236462025, 1.0258160108662504`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["2", {1.0993931236462025`, 1.1258160108662505`}]}}, {
+       {GrayLevel[0], 
+        DiskBox[{1.0286626995939243`, 0.026431169015735057`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["3", {1.1286626995939244`, 0.12643116901573506`}]}}, {
+       {RGBColor[1, 0, 0], DiskBox[{0.02872413637035287, 0.}, 0.06]}, 
+       {GrayLevel[0], InsetBox["4", {0.12872413637035288`, 0.1}]}}}},
+    ContentSelectable->True],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0., 0.9997532360813222}, {0.9993931236462025, 
+     1.0258160108662504`}, {1.0286626995939243`, 0.026431169015735057`}, {
+     0.02872413637035287, 0.}}]& ],
+  AspectRatio->Automatic,
+  FrameTicks->None,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{3.7300999390690994`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo c) ", "Subsubsection",
+ CellChangeTimes->{{3.730099287613838*^9, 3.730099289373939*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"NUMEROCROMATICO", "[", "matriz3", "]"}]], "Input",
+ CellChangeTimes->{{3.730099293426171*^9, 3.730099297065379*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.730099298396455*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DIBUJAR", "[", "matriz3", "]"}]], "Input",
+ CellChangeTimes->{{3.7300999433343434`*^9, 3.7300999482306232`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"Colores asignados: \"\>"], "Print",
+ CellChangeTimes->{3.7300999491686773`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 1, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099949170677*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 2, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.730099949171677*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Negro\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 3, ", color ", "Negro"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999491766777`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "4", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 4, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999491786776`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"V\[EAcute]rtice \"\>", "\[InvisibleSpace]", "5", 
+   "\[InvisibleSpace]", "\<\", color \"\>", 
+   "\[InvisibleSpace]", "\<\"Rojo\"\>"}],
+  SequenceForm["V\[EAcute]rtice ", 5, ", color ", "Rojo"],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.7300999491796775`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsGroupBox[{
+     GraphicsComplexBox[{{0., 0.6087417523902826}, {1.6536717088818484`, 
+      1.2169184785346623`}, {1.6534100458758214`, 0.}, {0.9333547488570143, 
+      0.9506184749911817}, {0.9328471144431412, 0.2666987770466018}}, 
+      {RGBColor[0.5, 0., 0.], 
+       LineBox[{{1, 4}, {1, 5}, {2, 4}, {2, 5}, {3, 4}, {3, 5}}]}], {{
+       {GrayLevel[0], DiskBox[{0., 0.6087417523902826}, 0.06]}, 
+       {GrayLevel[0], InsetBox["1", {0.1, 0.7087417523902826}]}}, {
+       {GrayLevel[0], 
+        DiskBox[{1.6536717088818484`, 1.2169184785346623`}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["2", {1.7536717088818485`, 1.3169184785346624`}]}}, {
+       {GrayLevel[0], DiskBox[{1.6534100458758214`, 0.}, 0.06]}, 
+       {GrayLevel[0], InsetBox["3", {1.7534100458758215`, 0.1}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{0.9333547488570143, 0.9506184749911817}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["4", {1.0333547488570143`, 1.0506184749911818`}]}}, {
+       {RGBColor[1, 0, 0], 
+        DiskBox[{0.9328471144431412, 0.2666987770466018}, 0.06]}, 
+       {GrayLevel[0], 
+        InsetBox["5", {1.0328471144431413`, 0.3666987770466018}]}}}},
+    ContentSelectable->True],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0., 0.6087417523902826}, {1.6536717088818484`, 
+     1.2169184785346623`}, {1.6534100458758214`, 0.}, {0.9333547488570143, 
+     0.9506184749911817}, {0.9328471144431412, 0.2666987770466018}}]& ],
+  AspectRatio->Automatic,
+  FrameTicks->None,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{3.7300999491836777`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Grafo d.1)", "Subsubsection",
+ CellChangeTimes->{{3.7300995015540752`*^9, 3.73009951283072*^9}}],
+
+Cell["Grafo d.2)", "Subsubsection",
+ CellChangeTimes->{{3.7300995285046167`*^9, 3.7300995348539796`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["II) Determinar si es plano", "Subsection",
+ CellChangeTimes->{{3.730099562638569*^9, 3.730099565646741*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PLANO", "[", "matrizadyacencia_", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"Nueva", ",", "k2", ",", "k3", ",", "subclados", ",", "lados"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Nueva", "=", 
+      RowBox[{"QUITARVERTICESGRADO210", "[", "matrizadyacencia", "]"}]}], ";",
+      "\[IndentingNewLine]", 
+     RowBox[{"tiempo", "=", 
+      RowBox[{"TimeUsed", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"plano", "=", "True"}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"vertices", "=", 
+      RowBox[{"Table", "[", 
+       RowBox[{"i", ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{
+           RowBox[{"Dimensions", "[", "Nueva", "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"lados", "=", 
+      RowBox[{"{", "}"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Do", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Nueva", "[", 
+               RowBox[{"[", 
+                RowBox[{"t1", ",", "t2"}], "]"}], "]"}], "\[Equal]", "1"}], 
+             ",", 
+             RowBox[{"AppendTo", "[", 
+              RowBox[{"lados", ",", 
+               RowBox[{"t1", "\[Rule]", "t2"}]}], "]"}]}], "]"}], ";"}], 
+          "\[IndentingNewLine]", ",", 
+          RowBox[{"{", 
+           RowBox[{"t1", ",", "t2"}], "}"}]}], "]"}], ";"}], 
+       "\[IndentingNewLine]", ",", 
+       RowBox[{"{", 
+        RowBox[{"t2", ",", 
+         RowBox[{
+          RowBox[{"Dimensions", "[", "Nueva", "]"}], "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Do", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"subclados", "=", 
+         RowBox[{"KSubsets", "[", 
+          RowBox[{"lados", ",", "k2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Do", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"HOMEOMORFOK5K33", "[", 
+               RowBox[{"MATRIZADYACENCIA", "[", 
+                RowBox[{"vertices", ",", 
+                 RowBox[{"subclados", "[", 
+                  RowBox[{"[", "k3", "]"}], "]"}]}], "]"}], "]"}], "\[Equal]",
+               "False"}], ",", 
+             RowBox[{
+              RowBox[{"plano", "=", "False"}], ";", 
+              RowBox[{"subgrafo", "=", 
+               RowBox[{"subclados", "[", 
+                RowBox[{"[", "k3", "]"}], "]"}]}], ";", 
+              RowBox[{"Break", "[", "]"}]}]}], "]"}], ";", 
+           "\[IndentingNewLine]", 
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"TimeUsed", "[", "]"}], "-", "tiempo"}], ">", "5"}], 
+             ",", 
+             RowBox[{
+              RowBox[{"Print", "[", 
+               RowBox[{
+                RowBox[{"k2", "-", "9"}], ",", "\"\< \>\"", ",", 
+                RowBox[{
+                 RowBox[{"Length", "[", "subclados", "]"}], "-", "k3"}]}], 
+               "]"}], ";", 
+              RowBox[{"tiempo", "=", 
+               RowBox[{"TimeUsed", "[", "]"}]}], ";"}]}], "]"}], ";"}], 
+          "\[IndentingNewLine]", ",", 
+          RowBox[{"{", 
+           RowBox[{"k3", ",", 
+            RowBox[{"Length", "[", "subclados", "]"}]}], "}"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"!", "plano"}], ",", 
+          RowBox[{"Break", "[", "]"}]}], "]"}], ";"}], "\[IndentingNewLine]", 
+       ",", 
+       RowBox[{"{", 
+        RowBox[{"k2", ",", 
+         RowBox[{"Length", "[", "lados", "]"}], ",", "9", ",", 
+         RowBox[{"-", "1"}]}], "}"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", "plano"}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell["Grafo a)", "Subsubsection",
+ CellChangeTimes->{{3.7300995755583076`*^9, 3.730099577838438*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PLANO", "[", "matriz1", "]"}]], "Input",
+ CellChangeTimes->{{3.7300996320395384`*^9, 3.7300996366928043`*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.730099637577855*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo b)", "Subsubsection",
+ CellChangeTimes->{{3.7300996408220406`*^9, 3.73009964308617*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PLANO", "[", "matriz2", "]"}]], "Input",
+ CellChangeTimes->{{3.7300996503675866`*^9, 3.7300996545458255`*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.730099655718893*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo c)", "Subsubsection",
+ CellChangeTimes->{{3.730099659558112*^9, 3.7300996610621986`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PLANO", "[", "matriz3", "]"}]], "Input",
+ CellChangeTimes->{{3.730099662702292*^9, 3.730099667413562*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{3.7300996684026184`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Grafo d.1)", "Subsubsection",
+ CellChangeTimes->{{3.7300996957981853`*^9, 3.730099697494282*^9}}],
+
+Cell["Grafo d.2)", "Subsubsection",
+ CellChangeTimes->{{3.7300996992353816`*^9, 3.7300997034306216`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["III) Comprobar si es un \[AAcute]rbol", "Subsection",
+ CellChangeTimes->{{3.730099721910679*^9, 3.730099742582861*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"CONEXO", "[", "A_", "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"i", ",", "j", ",", "B"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"B", "=", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"MatrixPower", "[", 
+          RowBox[{"A", ",", "j"}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", 
+           RowBox[{
+            RowBox[{"Dimensions", "[", "A", "]"}], "[", 
+            RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"conexo", "=", "True"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Do", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Do", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"If", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"i", "\[NotEqual]", "j"}], " ", "&&", " ", 
+               RowBox[{
+                RowBox[{"B", "[", 
+                 RowBox[{"[", 
+                  RowBox[{"i", ",", "j"}], "]"}], "]"}], "\[Equal]", "0"}]}], 
+              ",", 
+              RowBox[{
+               RowBox[{"conexo", "=", "False"}], ";"}]}], "]"}], ";"}], 
+           "\[IndentingNewLine]", ",", 
+           RowBox[{"{", 
+            RowBox[{"i", ",", 
+             RowBox[{
+              RowBox[{"Dimensions", "[", "B", "]"}], "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}], ";"}], 
+        "\[IndentingNewLine]", ",", 
+        RowBox[{"{", 
+         RowBox[{"j", ",", 
+          RowBox[{
+           RowBox[{"Dimensions", "[", "B", "]"}], "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "}"}]}], "]"}], ";", 
+      "\[IndentingNewLine]", "conexo"}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  StyleBox[
+   RowBox[{"ARBOL", "[", "matrizadyacencia_", "]"}],
+   FormatType->StandardForm,
+   FontSize->12], 
+  StyleBox[":=",
+   FormatType->StandardForm,
+   FontSize->12], 
+  RowBox[{
+   StyleBox["Module",
+    FormatType->StandardForm,
+    FontSize->12], 
+   StyleBox["[",
+    FormatType->StandardForm,
+    FontSize->12], 
+   RowBox[{
+    StyleBox[
+     RowBox[{"{", 
+      RowBox[{"i", ",", "j", ",", "lados"}], "}"}],
+     FormatType->StandardForm,
+     FontSize->12], 
+    StyleBox[",",
+     FormatType->StandardForm,
+     FontSize->12], 
+    StyleBox["\n",
+     FormatType->StandardForm,
+     FontSize->12], 
+    RowBox[{
+     StyleBox[
+      RowBox[{"arbol", "=", "False"}],
+      FormatType->StandardForm,
+      FontSize->12], 
+     StyleBox[";",
+      FormatType->StandardForm,
+      FontSize->12], 
+     StyleBox["\n",
+      FormatType->StandardForm,
+      FontSize->12], 
+     RowBox[{
+      StyleBox["If",
+       FormatType->StandardForm,
+       FontSize->12], 
+      StyleBox["[",
+       FormatType->StandardForm,
+       FontSize->12], 
+      RowBox[{
+       StyleBox[
+        RowBox[{"CONEXO", "[", "matrizadyacencia", "]"}],
+        FormatType->StandardForm,
+        FontSize->12], 
+       StyleBox[",",
+        FormatType->StandardForm,
+        FontSize->12], 
+       StyleBox["\n",
+        FormatType->StandardForm,
+        FontSize->12], 
+       RowBox[{
+        RowBox[{
+         StyleBox["arbol",
+          FormatType->StandardForm,
+          FontSize->12], 
+         StyleBox["=",
+          FormatType->StandardForm,
+          FontSize->12], 
+         RowBox[{
+          StyleBox["(",
+           FormatType->StandardForm,
+           FontSize->12], 
+          RowBox[{
+           StyleBox[
+            RowBox[{
+             RowBox[{"Dimensions", "[", "matrizadyacencia", "]"}], "[", 
+             RowBox[{"[", "1", "]"}], "]"}],
+            FormatType->StandardForm,
+            FontSize->12], 
+           StyleBox["==",
+            FormatType->StandardForm,
+            FontSize->12], 
+           RowBox[{
+            RowBox[{"(", 
+             StyleBox[
+              RowBox[{
+               RowBox[{"Sum", "[", 
+                RowBox[{
+                 RowBox[{"matrizadyacencia", "[", 
+                  RowBox[{"[", 
+                   RowBox[{"i", ",", "j"}], "]"}], "]"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"i", ",", 
+                   RowBox[{
+                    RowBox[{"Dimensions", "[", "matrizadyacencia", "]"}], "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"j", ",", 
+                   RowBox[{
+                    RowBox[{"Dimensions", "[", "matrizadyacencia", "]"}], "[", 
+                    RowBox[{"[", "2", "]"}], "]"}]}], "}"}]}], "]"}], "/", 
+               "2"}],
+              FormatType->StandardForm,
+              FontSize->12], 
+             StyleBox[")",
+              FormatType->StandardForm,
+              FontSize->12]}], 
+            StyleBox["+",
+             FormatType->StandardForm,
+             FontSize->12], 
+            StyleBox["1",
+             FormatType->StandardForm,
+             FontSize->12]}]}], 
+          StyleBox[")",
+           FormatType->StandardForm,
+           FontSize->12]}]}], 
+        StyleBox[";",
+         FormatType->StandardForm,
+         FontSize->12]}]}], 
+      StyleBox["\[IndentingNewLine]",
+       FormatType->StandardForm,
+       FontSize->12], 
+      StyleBox["]",
+       FormatType->StandardForm,
+       FontSize->12]}], 
+     StyleBox[";",
+      FormatType->StandardForm,
+      FontSize->12], 
+     StyleBox["\n",
+      FormatType->StandardForm,
+      FontSize->12], 
+     StyleBox["arbol",
+      FormatType->StandardForm,
+      FontSize->12]}]}], 
+   StyleBox["\[IndentingNewLine]",
+    FormatType->StandardForm,
+    FontSize->12], 
+   StyleBox["]",
+    FormatType->StandardForm,
+    FontSize->12]}]}]}], "Input",
+ CellChangeTimes->{{3.730099819473259*^9, 3.730099827293706*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Grafo a)", "Subsubsection",
+ CellChangeTimes->{{3.7300997461030626`*^9, 3.730099754046517*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ARBOL", "[", "matriz1", "]"}]], "Input",
+ CellChangeTimes->{{3.7300998337840776`*^9, 3.730099838181329*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.730099839162385*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo b)", "Subsubsection",
+ CellChangeTimes->{{3.7300998433986273`*^9, 3.730099844750705*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ARBOL", "[", "matriz2", "]"}]], "Input",
+ CellChangeTimes->{{3.7300998459627743`*^9, 3.730099851938116*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.730099852906171*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo c)", "Subsubsection",
+ CellChangeTimes->{{3.730099855878341*^9, 3.7300998576144404`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ARBOL", "[", "matriz3", "]"}]], "Input",
+ CellChangeTimes->{{3.7300998591965313`*^9, 3.730099865790908*^9}}],
+
+Cell[BoxData["False"], "Output",
+ CellChangeTimes->{3.7300998668769703`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Grafo d.1)", "Subsubsection",
+ CellChangeTimes->{{3.730099871902258*^9, 3.730099875230448*^9}}],
+
+Cell["Grafo d.2)", "Subsubsection",
+ CellChangeTimes->{{3.7300998766515293`*^9, 3.7300998817588215`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 2.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}, {3.715580560435197*^9, 3.7155805605152016`*^9}}],
+
+Cell["An\[AAcute]logamente para:", "Text",
+ CellChangeTimes->{{3.730100053878666*^9, 3.730100079903155*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["a) Grafo no orientado del ejercicio 5.29", "Subsection",
+ CellChangeTimes->{{3.7301000862465177`*^9, 3.730100101343381*^9}}],
+
+Cell["i) Calcular el n\[UAcute]mero crom\[AAcute]tico y una \
+coloraci\[OAcute]n \[OAcute]ptima", "Subsubsection",
+ CellChangeTimes->{{3.730100316078663*^9, 3.730100340455057*^9}}],
+
+Cell["ii) Determinar si es plano", "Subsubsection",
+ CellChangeTimes->{{3.730100352292734*^9, 3.730100365390484*^9}}],
+
+Cell["iii) Comprobar si es un \[AAcute]rbol", "Subsubsection",
+ CellChangeTimes->{{3.730100369958745*^9, 3.7301003762071023`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["b) Un oct\[OAcute]gono", "Subsection",
+ CellChangeTimes->{{3.7301001044005556`*^9, 3.73010011321506*^9}}],
+
+Cell["i) Calcular el n\[UAcute]mero crom\[AAcute]tico y una \
+coloraci\[OAcute]n \[OAcute]ptima", "Subsubsection",
+ CellChangeTimes->{{3.730100381335396*^9, 3.7301003837415333`*^9}}],
+
+Cell["ii) Determinar si es plano", "Subsubsection",
+ CellChangeTimes->{3.730100388743819*^9}],
+
+Cell["iii) Comprobar si es un \[AAcute]rbol", "Subsubsection",
+ CellChangeTimes->{3.730100395120184*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["c) K8", "Subsection",
+ CellChangeTimes->{{3.730100117446302*^9, 3.7301001193194094`*^9}}],
+
+Cell["i) Calcular el n\[UAcute]mero crom\[AAcute]tico y una \
+coloraci\[OAcute]n \[OAcute]ptima", "Subsubsection",
+ CellChangeTimes->{{3.73010040729088*^9, 3.7301004097210193`*^9}}],
+
+Cell["ii) Determinar si es plano", "Subsubsection",
+ CellChangeTimes->{{3.7301004163864*^9, 3.7301004179374895`*^9}}],
+
+Cell["iii) Comprobar si es un \[AAcute]rbol", "Subsubsection",
+ CellChangeTimes->{3.730100424231849*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["d) K2, 3", "Subsection",
+ CellChangeTimes->{{3.730100123145628*^9, 3.7301001593346977`*^9}}],
+
+Cell["i) Calcular el n\[UAcute]mero crom\[AAcute]tico y una \
+coloraci\[OAcute]n \[OAcute]ptima", "Subsubsection",
+ CellChangeTimes->{{3.730100432083298*^9, 3.7301004339394045`*^9}}],
+
+Cell["ii) Determinar si es plano", "Subsubsection",
+ CellChangeTimes->{{3.730100442201877*^9, 3.730100443512952*^9}}],
+
+Cell["iii) Comprobar si es un \[AAcute]rbol", "Subsubsection",
+ CellChangeTimes->{{3.730100453354515*^9, 3.7301004547455945`*^9}, {
+  3.730100822430625*^9, 3.7301008254477973`*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{907, 896},
+WindowMargins->{{Automatic, 60}, {3, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 323, 7, 166, "Title"],
+Cell[906, 31, 162, 2, 56, "Subtitle"],
+Cell[1071, 35, 304, 9, 125, "Text"],
+Cell[CellGroupData[{
+Cell[1400, 48, 201, 3, 70, "Section"],
+Cell[1604, 53, 129, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1758, 58, 101, 1, 39, "Subsubsection"],
+Cell[1862, 61, 4113, 107, 332, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6012, 173, 101, 1, 39, "Subsubsection"],
+Cell[6116, 176, 530, 14, 31, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6683, 195, 103, 1, 39, "Subsubsection"],
+Cell[6789, 198, 2162, 63, 192, "Input"],
+Cell[8954, 263, 227, 6, 31, InheritFromParent],
+Cell[9184, 271, 426, 11, 31, InheritFromParent],
+Cell[9613, 284, 280, 6, 31, "Input"]
+}, Open  ]],
+Cell[9908, 293, 151, 2, 39, "Subsubsection"],
+Cell[10062, 297, 101, 1, 33, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[10188, 302, 178, 2, 41, "Subsection"],
+Cell[10369, 306, 108, 1, 30, "Text"],
+Cell[10480, 309, 3583, 87, 392, "Input"],
+Cell[14066, 398, 555, 15, 92, "Input"],
+Cell[14624, 415, 2659, 65, 252, "Input"],
+Cell[CellGroupData[{
+Cell[17308, 484, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[17434, 489, 140, 2, 31, "Input"],
+Cell[17577, 493, 96, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17710, 499, 134, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[17869, 505, 97, 1, 23, "Print"],
+Cell[17969, 508, 320, 7, 23, "Print"],
+Cell[18292, 517, 318, 7, 23, "Print"],
+Cell[18613, 526, 318, 7, 23, "Print"],
+Cell[18934, 535, 318, 7, 23, "Print"],
+Cell[19255, 544, 318, 7, 23, "Print"],
+Cell[19576, 553, 316, 7, 23, "Print"]
+}, Open  ]],
+Cell[19907, 563, 2135, 46, 431, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22091, 615, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[22217, 620, 144, 2, 31, "Input"],
+Cell[22364, 624, 72, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22473, 630, 136, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[22634, 636, 97, 1, 23, "Print"],
+Cell[22734, 639, 318, 7, 23, "Print"],
+Cell[23055, 648, 316, 7, 23, "Print"],
+Cell[23374, 657, 320, 7, 23, "Print"],
+Cell[23697, 666, 318, 7, 23, "Print"]
+}, Open  ]],
+Cell[24030, 676, 1360, 28, 374, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25439, 710, 100, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[25564, 715, 140, 2, 31, "Input"],
+Cell[25707, 719, 70, 1, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25814, 725, 136, 2, 31, "Input"],
+Cell[CellGroupData[{
+Cell[25975, 731, 97, 1, 23, "Print"],
+Cell[26075, 734, 318, 7, 23, "Print"],
+Cell[26396, 743, 318, 7, 23, "Print"],
+Cell[26717, 752, 320, 7, 23, "Print"],
+Cell[27040, 761, 318, 7, 23, "Print"],
+Cell[27361, 770, 318, 7, 23, "Print"]
+}, Open  ]],
+Cell[27694, 780, 1639, 33, 289, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[29360, 817, 102, 1, 39, "Subsubsection"],
+Cell[29465, 820, 105, 1, 33, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29607, 826, 114, 1, 49, "Subsection"],
+Cell[29724, 829, 4235, 108, 572, "Input"],
+Cell[CellGroupData[{
+Cell[33984, 941, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[34110, 946, 134, 2, 31, "Input"],
+Cell[34247, 950, 73, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34369, 957, 100, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[34494, 962, 134, 2, 31, "Input"],
+Cell[34631, 966, 73, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[34753, 973, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[34879, 978, 130, 2, 31, "Input"],
+Cell[35012, 982, 75, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[35114, 987, 103, 1, 39, "Subsubsection"],
+Cell[35220, 990, 105, 1, 33, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35362, 996, 125, 1, 49, "Subsection"],
+Cell[35490, 999, 5876, 188, 392, "Input"],
+Cell[CellGroupData[{
+Cell[41391, 1191, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[41517, 1196, 132, 2, 31, "Input"],
+Cell[41652, 1200, 74, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[41775, 1207, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[41901, 1212, 132, 2, 31, "Input"],
+Cell[42036, 1216, 74, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42159, 1223, 101, 1, 39, "Subsubsection"],
+Cell[CellGroupData[{
+Cell[42285, 1228, 132, 2, 31, "Input"],
+Cell[42420, 1232, 76, 1, 31, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[42523, 1237, 101, 1, 39, "Subsubsection"],
+Cell[42627, 1240, 105, 1, 33, "Subsubsection"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42781, 1247, 249, 3, 70, "Section"],
+Cell[43033, 1252, 108, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[43166, 1257, 130, 1, 49, "Subsection"],
+Cell[43299, 1260, 180, 2, 39, "Subsubsection"],
+Cell[43482, 1264, 117, 1, 33, "Subsubsection"],
+Cell[43602, 1267, 130, 1, 33, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[43769, 1273, 111, 1, 49, "Subsection"],
+Cell[43883, 1276, 182, 2, 39, "Subsubsection"],
+Cell[44068, 1280, 93, 1, 33, "Subsubsection"],
+Cell[44164, 1283, 104, 1, 33, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44305, 1289, 95, 1, 49, "Subsection"],
+Cell[44403, 1292, 181, 2, 39, "Subsubsection"],
+Cell[44587, 1296, 117, 1, 33, "Subsubsection"],
+Cell[44707, 1299, 104, 1, 33, "Subsubsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44848, 1305, 98, 1, 49, "Subsection"],
+Cell[44949, 1308, 182, 2, 39, "Subsubsection"],
+Cell[45134, 1312, 117, 1, 33, "Subsubsection"],
+Cell[45254, 1315, 181, 2, 33, "Subsubsection"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

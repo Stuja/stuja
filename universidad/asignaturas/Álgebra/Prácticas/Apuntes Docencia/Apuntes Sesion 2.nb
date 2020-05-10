@@ -1,0 +1,82 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2035,         72]
+NotebookOptionsPosition[      1652,         54]
+NotebookOutlinePosition[      1999,         69]
+CellTagsIndexPosition[      1956,         66]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["", "Text",
+ CellChangeTimes->{{3.727677366933361*^9, 3.7276773693735003`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["apuntes algebra practica 2", "Title",
+ CellChangeTimes->{{3.727677373685747*^9, 3.7276773825652547`*^9}}],
+
+Cell["\<\
+Position[]
+
+Hay que estudiar que (G, *) sea un grupo.
+
+1.Primero hay que comprobar que la operacion es interna
+2. Comprobar existencia de elemento neutro
+3. Comprobar existencia de elemento simetrico (en el ejemplo, se busca a en \
+la tabla y miramos...)
+4. Asociativa
+Si se cumplen las 4 es grupo.
+5. Conmutativa
+Si se cumplen las 5 es grupo abeliano
+
+Transpose[]\
+\>", "Text",
+ CellChangeTimes->{{3.7276773881215725`*^9, 3.7276773923498144`*^9}, {
+  3.7276774576215477`*^9, 3.7276774923415337`*^9}, {3.7276776047019606`*^9, 
+  3.727677622029951*^9}, {3.727677744477955*^9, 3.727677754405523*^9}, {
+  3.727677799502102*^9, 3.7276778466457987`*^9}, {3.7276782286306467`*^9, 
+  3.7276782791745377`*^9}, {3.727678319134824*^9, 3.7276783536868*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7276776078471403`*^9, 3.7276776087271905`*^9}}]
+}, Open  ]]
+},
+WindowSize->{767, 606},
+WindowMargins->{{Automatic, 120}, {22, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (September 9, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 84, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[667, 25, 111, 1, 101, "Title"],
+Cell[781, 28, 756, 20, 258, "Text"],
+Cell[1540, 50, 96, 1, 31, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
