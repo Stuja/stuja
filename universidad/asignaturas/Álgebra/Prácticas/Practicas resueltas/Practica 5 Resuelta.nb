@@ -1,0 +1,414 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     14703,        406]
+NotebookOptionsPosition[     11805,        349]
+NotebookOutlinePosition[     12151,        364]
+CellTagsIndexPosition[     12108,        361]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Cuaderno de pr\[AAcute]cticas de \[CapitalAAcute]lgebra
+\
+\>", "Title",
+ CellChangeTimes->{{3.7155795680804377`*^9, 3.7155795794240866`*^9}, {
+  3.715579829286378*^9, 3.715579831390498*^9}, {3.7155805687226715`*^9, 
+  3.715580570714785*^9}, {3.727957948976162*^9, 3.7279579498301477`*^9}},
+ TextAlignment->Center,ExpressionUUID->"e5b23258-8e78-4629-bf32-c626f50872c2"],
+
+Cell["   Pr\[AAcute]ctica 5", "Subtitle",
+ CellChangeTimes->{{3.7155797471746817`*^9, 3.715579780846607*^9}, {
+  3.7155798236140537`*^9, 3.7155798260461926`*^9}, {3.7279579521995983`*^9, 
+  3.727957952287876*^9}, {3.7296061734543157`*^9, 3.7296061753036413`*^9}, {
+  3.7303837034013205`*^9, 
+  3.7303837034973764`*^9}},ExpressionUUID->"ffa6c338-ff2e-4fc2-bab6-\
+6dca7f22a9fe"],
+
+Cell["\<\
+Nombre:
+Apellidos:
+DNI:
+Fecha de nacimiento:
+Grupo de teor\[IAcute]a:
+Grupo de pr\[AAcute]cticas:
+\>", "Text",
+ CellChangeTimes->{{3.715579817574708*^9, 3.715579867582568*^9}, {
+  3.7155800084836273`*^9, 
+  3.7155800238125043`*^9}},ExpressionUUID->"54179e8c-1ab0-4530-be5a-\
+847671841161"],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 1.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}},ExpressionUUID->"c401dee9-27eb-4e42-8fc8-\
+9dbe88d1240e"],
+
+Cell["\<\
+Estudiar si los grafos del ejercicio 6.8 del manual son bipartitos y/o \
+bipartitos completos:\
+\>", "Text",
+ CellChangeTimes->{{3.7303837347433386`*^9, 
+  3.7303837511423655`*^9}},ExpressionUUID->"1fc169be-de83-4745-a2ef-\
+6cfda1738dac"],
+
+Cell[CellGroupData[{
+
+Cell["Grafo a)", "Subsection",
+ CellChangeTimes->{{3.7303837542055445`*^9, 
+  3.7303837574854865`*^9}},ExpressionUUID->"7ce27979-0a96-4f9d-b701-\
+4815d7d55b71"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"<<", "\"\<Combinatorica`\>\""}], ";"}]], "Input",ExpressionUUID->\
+"5ed01229-61af-4404-ab2e-516258f73516"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","compat",
+   "\"Combinatorica Graph and Permutations functionality has been superseded \
+by preloaded functionality. The package now being loaded may conflict with \
+this. Please see the Compatibility Guide for details.\"",2,146,20,
+   18361754924371290476,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7303838063712826`*^9},ExpressionUUID->"36d38759-4fb7-4d4a-b336-\
+577ce6897718"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BIPARTITO", "[", 
+   RowBox[{"W_", ",", "F_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"i", ",", "subconjuntos", ",", "j", ",", "fin"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"bipartito", "=", "False"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"i", "=", "1"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"fin", "=", 
+      RowBox[{"Quotient", "[", 
+       RowBox[{
+        RowBox[{"Length", "[", "W", "]"}], ",", "2"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"!", "bipartito"}], " ", "&&", " ", 
+        RowBox[{"i", "<=", "fin"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"subconjuntos", "=", 
+         RowBox[{"KSubsets", "[", 
+          RowBox[{"W", ",", "i"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"j", "=", "1"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"While", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"!", "bipartito"}], " ", "&&", " ", 
+           RowBox[{"j", "<=", 
+            RowBox[{"Length", "[", "subconjuntos", "]"}]}]}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"If", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"IND", "[", 
+               RowBox[{
+                RowBox[{"subconjuntos", "[", 
+                 RowBox[{"[", "j", "]"}], "]"}], ",", "F"}], "]"}], "==", 
+              RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"IND", "[", 
+                  RowBox[{
+                   RowBox[{"Complement", "[", 
+                    RowBox[{"W", ",", 
+                    RowBox[{"subconjuntos", "[", 
+                    RowBox[{"[", "j", "]"}], "]"}]}], "]"}], ",", "F"}], 
+                  "]"}], "\[Equal]", 
+                 RowBox[{"{", "}"}]}], ",", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"bipartito", "=", "True"}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"W1", "=", 
+                  RowBox[{"subconjuntos", "[", 
+                   RowBox[{"[", "j", "]"}], "]"}]}], ";", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"W2", "=", 
+                  RowBox[{"Complement", "[", 
+                   RowBox[{"W", ",", 
+                    RowBox[{"subconjuntos", "[", 
+                    RowBox[{"[", "j", "]"}], "]"}]}], "]"}]}], ";"}]}], 
+               "\[IndentingNewLine]", "]"}], ";"}]}], "\[IndentingNewLine]", 
+            "]"}], ";", "\[IndentingNewLine]", 
+           RowBox[{"j", "++"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"i", "++"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{"bipartito", ",", 
+       RowBox[{
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "\"\<Es bipartito: W1=\>\"", ",", "W1", ",", "\"\< y W2=\>\"", ",", 
+          "W2"}], "]"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Length", "[", "F", "]"}], "==", 
+           RowBox[{
+            RowBox[{"Length", "[", "W1", "]"}], "*", 
+            RowBox[{"Length", "[", "W2", "]"}]}]}], ",", 
+          RowBox[{"Print", "[", 
+           RowBox[{"\"\<Es bipartito completo: \>\"", ",", 
+            SubscriptBox["\"\<K\>\"", 
+             RowBox[{
+              RowBox[{"Length", "[", "W1", "]"}], ",", 
+              RowBox[{"Length", "[", "W2", "]"}]}]]}], "  ", "]"}], ",", " ", 
+          RowBox[{"Print", "[", "\"\<No es bipartito completo\>\"", "]"}]}], 
+         "]"}], ";"}], "\[IndentingNewLine]", ",", 
+       RowBox[{"Print", "[", "\"\<No es bipartito\>\"", "]"}]}], "]"}], 
+     ";"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",ExpressionUUID->\
+"0c70d8d8-87da-415a-b698-b20559f0db97"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"W1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", " ", "2", ",", " ", "3", ",", " ", "4", ",", " ", "5", ",", " ",
+      "6"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"F1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", " ", "\[Rule]", " ", "2"}], ",", " ", 
+     RowBox[{"3", " ", "\[Rule]", " ", "1"}], ",", " ", 
+     RowBox[{"4", " ", "\[Rule]", " ", "5"}], ",", " ", 
+     RowBox[{"6", " ", "\[Rule]", " ", "1"}]}], "}"}]}], ";"}]}], "Input",Expr\
+essionUUID->"f26bf064-b1b5-4734-a205-e7930735c304"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BIPARTITO", "[", 
+  RowBox[{"W1", ",", " ", "F1"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7303838487227545`*^9, 
+  3.730383854719019*^9}},ExpressionUUID->"692804ee-4669-488b-818b-\
+4a50e15d649f"],
+
+Cell[BoxData["\<\"No es bipartito\"\>"], "Print",
+ CellChangeTimes->{
+  3.7303838555145693`*^9},ExpressionUUID->"65e89882-85a3-4921-84c8-\
+c36eb2081488"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo b)", "Subsection",
+ CellChangeTimes->{{3.7303838645340033`*^9, 
+  3.730383869013149*^9}},ExpressionUUID->"bb236e2c-4b3f-4c33-9431-\
+fdabd60775e5"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"W2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "2", ",", "3", " ", ",", "4"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"F2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", " ", "\[Rule]", " ", "2"}], ",", " ", 
+     RowBox[{"1", "\[Rule]", "4"}], ",", " ", 
+     RowBox[{"2", "\[Rule]", "3"}], ",", " ", 
+     RowBox[{"3", "\[Rule]", "4"}]}], "}"}]}], ";"}]}], "Input",ExpressionUUID\
+->"94e4df13-7aa5-46c2-adbc-01042072fcef"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BIPARTITO", "[", 
+  RowBox[{"W2", ",", " ", "F2"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7303838812488837`*^9, 
+  3.7303838879749193`*^9}},ExpressionUUID->"157ece9c-896c-4fea-86d7-\
+503ab2f9324d"],
+
+Cell[BoxData["\<\"No es bipartito\"\>"], "Print",
+ CellChangeTimes->{
+  3.730383889605506*^9},ExpressionUUID->"22bfe3fb-9d30-4d21-9278-\
+9c8f29b45c57"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Grafo c)", "Subsection",
+ CellChangeTimes->{{3.730383892809806*^9, 
+  3.7303838966785326`*^9}},ExpressionUUID->"112d24b4-8269-4018-a9f3-\
+9ae8ddf1084f"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"W3", " ", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}]}], 
+  ";"}]], "Input",ExpressionUUID->"7a3051a6-8755-4607-a7f7-62be89dc03ac"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"F3", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"1", "\[Rule]", "4"}], ",", 
+     RowBox[{"1", "\[Rule]", "5"}], ",", 
+     RowBox[{"2", "\[Rule]", "4"}], ",", 
+     RowBox[{"2", "\[Rule]", "5"}], ",", 
+     RowBox[{"3", "\[Rule]", "4"}], ",", 
+     RowBox[{"3", "\[Rule]", "5"}]}], "}"}]}], ";"}]], "Input",ExpressionUUID-\
+>"c143ab9d-dcac-46f7-bd8f-c6ce1714cbcd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BIPARTITO", "[", 
+  RowBox[{"W3", ",", " ", "F3"}], "]"}]], "Input",
+ CellChangeTimes->{{3.730383912474798*^9, 
+  3.7303839173502674`*^9}},ExpressionUUID->"a679985c-4f25-4900-8959-\
+5dd456df1a5e"],
+
+Cell[BoxData["\<\"No es bipartito\"\>"], "Print",
+ CellChangeTimes->{
+  3.7303839183209295`*^9},ExpressionUUID->"cf5d9b34-ce1c-4e63-8a30-\
+7ad077e72052"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Grafo d.1)", "Subsection",
+ CellChangeTimes->{{3.7303839242861767`*^9, 
+  3.730383927582548*^9}},ExpressionUUID->"80fe015c-3e29-4133-b2c4-\
+4522c6fb9e77"],
+
+Cell["Grafo d.2)", "Subsection",
+ CellChangeTimes->{{3.7303839294478483`*^9, 
+  3.7303839366620083`*^9}},ExpressionUUID->"dd5ab949-b25f-4c68-8522-\
+4bcd2ede759c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejercicio 2.", "Section",
+ CellChangeTimes->{{3.715580033128037*^9, 3.7155800340370893`*^9}, {
+  3.715580163239479*^9, 3.7155801749861507`*^9}, {3.715580394248692*^9, 
+  3.7155803952237473`*^9}, {3.715580560435197*^9, 
+  3.7155805605152016`*^9}},ExpressionUUID->"cc60e372-e1c6-4135-913e-\
+aa8275b00034"],
+
+Cell["\<\
+Dados los siguientes grafos:
+\ta) Grafo no orientado del ejercicio 5.29
+\tb) Un oct\[OAcute]gono
+\tc) K8
+\td) K2,3
+\t
+Se pide:
+\ti) Comprobar si es de Euler
+\tii) Comprobar si es de Hamilton
+\tiii) Utilizar el teorema del n\[UAcute]mero de caminos para calcular la \
+distancia entre el primer y \[UAcute]ltimo v\[EAcute]rtice de cada grafo.
+\tiv) Determinar, si existen, un ciclo de Euler, un ciclo de Hamilton y una \
+geod\[EAcute]sica entre el primer y \[UAcute]ltimo v\[EAcute]rtice de cada \
+grafo.\
+\>", "Text",
+ CellChangeTimes->{{3.730383955312279*^9, 
+  3.730384077311987*^9}},ExpressionUUID->"3531e7c7-600f-4e26-bf80-\
+b3373541f59f"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{681, 676},
+WindowMargins->{{-7, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 378, 7, 216, "Title",ExpressionUUID->"e5b23258-8e78-4629-bf32-c626f50872c2"],
+Cell[961, 31, 376, 6, 53, "Subtitle",ExpressionUUID->"ffa6c338-ff2e-4fc2-bab6-6dca7f22a9fe"],
+Cell[1340, 39, 364, 11, 144, "Text",ExpressionUUID->"54179e8c-1ab0-4530-be5a-847671841161"],
+Cell[CellGroupData[{
+Cell[1729, 54, 258, 4, 67, "Section",ExpressionUUID->"c401dee9-27eb-4e42-8fc8-9dbe88d1240e"],
+Cell[1990, 60, 248, 6, 34, "Text",ExpressionUUID->"1fc169be-de83-4745-a2ef-6cfda1738dac"],
+Cell[CellGroupData[{
+Cell[2263, 70, 160, 3, 53, "Subsection",ExpressionUUID->"7ce27979-0a96-4f9d-b701-4815d7d55b71"],
+Cell[CellGroupData[{
+Cell[2448, 77, 141, 3, 28, "Input",ExpressionUUID->"5ed01229-61af-4404-ab2e-516258f73516"],
+Cell[2592, 82, 452, 10, 56, "Message",ExpressionUUID->"36d38759-4fb7-4d4a-b336-577ce6897718"]
+}, Open  ]],
+Cell[3059, 95, 3997, 95, 449, "Input",ExpressionUUID->"0c70d8d8-87da-415a-b698-b20559f0db97"],
+Cell[7059, 192, 593, 15, 48, "Input",ExpressionUUID->"f26bf064-b1b5-4734-a205-e7930735c304"],
+Cell[CellGroupData[{
+Cell[7677, 211, 220, 5, 28, "Input",ExpressionUUID->"692804ee-4669-488b-818b-4a50e15d649f"],
+Cell[7900, 218, 153, 3, 22, "Print",ExpressionUUID->"65e89882-85a3-4921-84c8-c36eb2081488"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8102, 227, 158, 3, 53, "Subsection",ExpressionUUID->"bb236e2c-4b3f-4c33-9431-fdabd60775e5"],
+Cell[8263, 232, 520, 14, 48, "Input",ExpressionUUID->"94e4df13-7aa5-46c2-adbc-01042072fcef"],
+Cell[CellGroupData[{
+Cell[8808, 250, 222, 5, 28, "Input",ExpressionUUID->"157ece9c-896c-4fea-86d7-503ab2f9324d"],
+Cell[9033, 257, 151, 3, 22, "Print",ExpressionUUID->"22bfe3fb-9d30-4d21-9278-9c8f29b45c57"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9233, 266, 158, 3, 53, "Subsection",ExpressionUUID->"112d24b4-8269-4018-a9f3-9ae8ddf1084f"],
+Cell[9394, 271, 210, 5, 28, "Input",ExpressionUUID->"7a3051a6-8755-4607-a7f7-62be89dc03ac"],
+Cell[9607, 278, 416, 11, 28, "Input",ExpressionUUID->"c143ab9d-dcac-46f7-bd8f-c6ce1714cbcd"],
+Cell[CellGroupData[{
+Cell[10048, 293, 220, 5, 28, "Input",ExpressionUUID->"a679985c-4f25-4900-8959-5dd456df1a5e"],
+Cell[10271, 300, 153, 3, 22, "Print",ExpressionUUID->"cf5d9b34-ce1c-4e63-8a30-7ad077e72052"]
+}, Open  ]]
+}, Open  ]],
+Cell[10451, 307, 160, 3, 53, "Subsection",ExpressionUUID->"80fe015c-3e29-4133-b2c4-4522c6fb9e77"],
+Cell[10614, 312, 162, 3, 37, "Subsection",ExpressionUUID->"dd5ab949-b25f-4c68-8522-4bcd2ede759c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10813, 320, 309, 5, 67, "Section",ExpressionUUID->"cc60e372-e1c6-4135-913e-aa8275b00034"],
+Cell[11125, 327, 652, 18, 298, "Text",ExpressionUUID->"3531e7c7-600f-4e26-bf80-b3373541f59f"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

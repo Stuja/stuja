@@ -1,4 +1,4 @@
-<h1 align="center"> Sistemas concurrentes y distribuidos </h1> <br>
+<h1 align="center"> Sistemas de Información Espacial </h1> <br>
 <p align="center">
           <a 		href="../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">

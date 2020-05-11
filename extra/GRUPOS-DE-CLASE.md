@@ -14,7 +14,7 @@
     <img alt="HOME" title="HOME" src="../imagenes/grupos-de-clase.png" width="450">
 </p>
 
-## Primer 
+## Primero 
 
 * [Telegram](https://t.me/joinchat/GpXWQkoyBVZVvwN3cq6IKQ)
 
@@ -22,7 +22,7 @@
 
 * [Telegram](https://t.me/joinchat/H0bK_E36S3UdVzuCtT59Kw) 
 
-## Tercer  
+## Tercero  
 
 **Grupo principal** 
 
