@@ -41,9 +41,9 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Segundo semestre
 
 - Organización y gestión empresarial 
-- Programación orientada a objetos 
-- Álgebra 
-- Electrónica digital 
+- [Programación orientada a objetos](asignaturas/Programación%20Orientada%20a%20Objetos) 
+- [Álgebra](asignaturas/Álgebra) 
+- [Electrónica digital](asignaturas/Electrónica%20Digital) 
 - Estadística
 
 
@@ -129,7 +129,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 #### Rama: Sistemas de información 
 
 - Sistemas de ayuda a la decisión
-- Sistemas de información espacial 
+- [Sistemas de información espacial](asignaturas/Sistemas%20De%20Información%20Espacial) 
 - Minería de datos
 
 #### Rama: Tecnología de la información
