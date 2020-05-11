@@ -42,3 +42,4 @@ Tras la realización de la asignatura el alumno deberá tener un amplio conocimi
 ## Consejos para superar la asignatura
 
 Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
+

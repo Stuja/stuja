@@ -41,9 +41,9 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Segundo semestre
 
 - Organización y gestión empresarial 
-- Programación orientada a objetos 
-- Álgebra 
-- Electrónica digital 
+- [Programación orientada a objetos](asignaturas/Programación%20Orientada%20a%20Objetos) 
+- [Álgebra](asignaturas/Álgebra) 
+- [Electrónica digital](asignaturas/Electrónica%20Digital) 
 - Estadística
 
 
@@ -129,7 +129,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 #### Rama: Sistemas de información 
 
 - Sistemas de ayuda a la decisión
-- Sistemas de información espacial 
+- [Sistemas de información espacial](asignaturas/Sistemas%20De%20Información%20Espacial) 
 - Minería de datos
 
 #### Rama: Tecnología de la información
@@ -196,7 +196,9 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 Todos aquellos que ayudaron a levantar el proyecto.
 
-| <img alt="manuelalferez" src="https://avatars1.githubusercontent.com/u/38152841?s=400&amp" width="50"> | <img alt="Delunado" src="https://avatars0.githubusercontent.com/u/11133623?s=400&v=4" width="50"> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [manuelalferez](https://github.com/manuelalferez)            | [Delunado](https://github.com/Delunado)                      |
+| <img alt="manuelalferez" src="https://avatars1.githubusercontent.com/u/38152841?s=400&amp" width="50"> | <img alt="Delunado" src="https://avatars0.githubusercontent.com/u/11133623?s=400&v=4" width="50"> | <img alt="rgomez96" src="https://avatars3.githubusercontent.com/u/50320963?s=400&v=4" width="50"> |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [manuelalferez](https://github.com/manuelalferez)            | [Delunado](https://github.com/Delunado)                      | [rgomez96](https://github.com/rgomez96)                      |
+
+
 

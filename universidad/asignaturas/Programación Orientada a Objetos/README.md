@@ -15,10 +15,6 @@
 </p>
 
 
-
-
-
-
 ## Resumen
 
 El objetivo de la asignatura es introducir al alumno en el paradigma de la programación mediante objetos, conocimiento esencial para cualquier profesional dedicado a la Informática. El aprendizaje se realiza de forma tanto téorica como práctica, e incluye conceptos como: clases y objetos, técnicas y notaciones (UML), y herencia, polimorfismo, y asociaciones.
@@ -36,5 +32,3 @@ El objetivo de la asignatura es introducir al alumno en el paradigma de la progr
 ## Consejos para superar la asignatura
 
 Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
-
-[TUS CONSEJOS PARA SUPERAR LA ASIGNATURA]

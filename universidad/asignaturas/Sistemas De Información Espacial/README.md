@@ -29,8 +29,9 @@ En esta asignatura se estudian técnicas de visualización y análisis de datos 
 
 ## Tabla de contenido
 
-- [Cuestiones](Cuestiones)
 - [Teoría](Teoría)
+- [Prácticas](Prácticas)
+- [Ejercicios y exámenes](Apoyo)
 
 
 
