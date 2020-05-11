@@ -1,4 +1,4 @@
-<h1 align="center"> Sistemas concurrentes y distribuidos </h1> <br>
+<h1 align="center"> Electrónica digital </h1> <br>
 <p align="center">
           <a 		href="../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
@@ -21,6 +21,7 @@
 
 
 
+
 ## Resumen
 
 En esta asignatura se muestran las técnicas y principios fundamentales de la electrónica digital.
@@ -29,7 +30,9 @@ En esta asignatura se muestran las técnicas y principios fundamentales de la el
 
 ## Tabla de contenido
 
-- [Libros](Libros)
+- [Teoría](Teoría)
+- [Prácticas](Prácticas)
+- [Ejercicios y exámenes](Apoyo)
 
 
 
