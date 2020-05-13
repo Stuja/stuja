@@ -80,7 +80,7 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
    * [Best practices for protected branches](https://github.community/t5/Support-Protips/Best-practices-for-protected-branches/ba-p/10224#)
    * [Protecting the master branch](https://cityofaustin.github.io/ctm-dev-workflow/protected-branches.html)
 
-5. **Aporta tus mejoras** al proyecto. 
+5. **Aporta tus mejoras** al proyecto. ¡Ah!, y no olvides incluirte en la sección de *Contribuidores*: `doc/CONTRIBUIR.md`, `universidad/README.md` y `README.md`.
 
 6. **Guarda** los cambios. 
 
