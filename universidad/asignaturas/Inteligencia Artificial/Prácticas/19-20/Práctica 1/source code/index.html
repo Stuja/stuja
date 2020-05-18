@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Mundos Virtuales</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+    <div id="left_panel">
+        <div id="main_holder">
+            <canvas id="main" class="pixeled"></canvas>
+        </div>
+    </div>
+    <div id="right_panel" class="show">
+        <div id="buttons">
+            <table>
+                <tr>
+                    <td><button id="start">Start</button></td>
+                    <td><button id="stop">Stop</button></td>
+                    <td><button id="toggle_pixel">Pixel<br />Perfect</button></td>
+                </tr>
+            </table>
+        </div>
+        <div id="seed_holder">
+            Seed <input id="seed" />
+        </div>
+        <div id="flow_holder">
+            Flow <select id="flow">
+                <option value="spiral" selected="selected">Spiral</option>
+                <option value="tight_spiral">Tight Spiral</option>
+                <option value="dual_spirals">Dual Spirals</option>
+                <option value="opposite_spirals">Opposite Spirals</option>
+            </select>
+        </div>
+        <div id="options"></div>
+        <div id="stats"></div>
+    </div>
+    <script src="build/main.js"></script>
+    <div id="cjcarmona" style="position:absolute; top:10px; left:10px">
+        <div id="contenedor">
+            <div class="reloj" id="Horas">00</div>
+            <div class="reloj" id="Minutos">:00</div>
+            <div class="reloj" id="Segundos">:00</div>
+            <div class="reloj" id="Centesimas">:00</div>
+            <input type="button" class="boton" id="inicio" value="Inicio" onclick="inicio();">
+            <input type="button" class="boton" id="reinicio" value="Reset" onclick="reinicio();">
+        </div>
+    </div>
+    <script src="src/cjcarmona.js"></script>
+    </body>
+</html>
