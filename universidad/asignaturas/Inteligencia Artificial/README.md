@@ -38,4 +38,4 @@ En esta asignatura se ven los fundamentos, objetivos y métodos generales de la 
 
 Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
 
-* Las prácticas son muy importantes. Llevándolas al día, se aprueba la asignatura sin problema. 
+* Las prácticas son muy importantes. Llevándolas al día, se aprueba la asignatura sin problemas. 
