@@ -66,7 +66,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 - [Sistemas concurrentes y distribuidos](asignaturas/Sistemas%20concurrentes%20y%20distribuidos) 
 - Programación y administración de redes
-- Inteligencia artificial 
+- [Inteligencia artificial](asignaturas/Inteligencia%20Artificial) 
 - [Fundamentos de base de datos](asignaturas/Fundamentos%20de%20bases%20de%20datos) 
 - Diseño de algoritmos 
 

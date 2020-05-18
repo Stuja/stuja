@@ -129,6 +129,8 @@ Para una visualización homogénea del proyecto, lee [nuestra guía de estilo](G
 
 Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](../plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
 
+Igualmente si vas a añadir soluciones sobre las prácticas, usa el [template](../plantillas/README-PARA-PRÁCTICAS.md) y sitúalo dentro de la carpeta `universidad/asignatura/NOMBRE-DE-LA-ASIGNATURA/Prácticas`.
+
 Basta con rellenar los espacios entre corchetes `[]` con la información correspondiente. 
 
 

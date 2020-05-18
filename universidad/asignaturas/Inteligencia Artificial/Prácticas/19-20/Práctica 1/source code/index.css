@@ -1,0 +1,139 @@
+#contenedor{
+  margin: 10px auto;
+  width: 130px;
+  height: 115px;
+}
+.reloj{
+  float: left;
+  font-size: 18px;
+  font-family: Courier,sans-serif;
+  color: #363431;
+}
+.boton{
+  outline: none;
+  margin: 1px;
+  border: 1px solid #363431;
+  color: white;
+  width: 60px;
+  height: 30px;
+  text-shadow: 0px -1px 1px black;
+  font-size: 10px;
+  border-radius: 5px;
+  font-family: Helvetica;
+  cursor: pointer;
+  background-image: linear-gradient(#3aad02,#2c6f05);
+}
+.boton:active{
+  background-image: linear-gradient(#2c6f05,#3aad02);
+}
+.boton:hover{
+  box-shadow: 0px 0px 14px #3aad02;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  background: #649201;
+}
+#left_panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#right_panel {
+  transition: right 500ms ease-in-out;
+  background: #444;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  bottom: 0;
+  width: 200px;
+  color: white;
+}
+#right_panel.show {
+  right: 0;
+}
+#main_holder {
+  margin: 0 auto;
+}
+#main {
+  width: 100%;
+  height: 100%;
+}
+#main.pixeled {
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: -o-crisp-edges;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+#buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+}
+#buttons table,
+#buttons button {
+  width: 100%;
+  height: 100%;
+}
+#buttons button {
+  color: white;
+  background: #222;
+  border: solid thin black;
+  outline: none;
+}
+#flow_holder {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 0;
+  height: 20px;
+}
+#seed_holder {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+  height: 20px;
+}
+#seed_holder input {
+  width: 100px;
+}
+#options {
+  position: absolute;
+  top: 100px;
+  bottom: 40px;
+  right: 0;
+  left: 0;
+  overflow: auto;
+  padding: 0 10px;
+}
+#options label {
+  margin-left: 10px;
+}
+#options input {
+  margin-left: 20px;
+  width: 120px;
+}
+#stats {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  padding-top: 10px;
+  background: #222;
+  font-size: 20px;
+  text-align: center;
+}
