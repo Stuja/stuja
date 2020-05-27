@@ -42,3 +42,4 @@
 ### Idiomas
 
 * [Awesome English Awesome](https://github.com/yvoronoy/awesome-english). A collection of awesome study resources for learners of English
+* [Free4Talk](https://www.free4talk.com/). The best website of practicing English speaking, easy to find a conversation partner, improve your English speaking skills, make friends, language exchange ...
