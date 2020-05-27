@@ -12,8 +12,10 @@
 </p>
 <p align="center">
     <img alt="No-Stuja" title="No-Stuja" src="../imagenes/no-stuja.png" width="450">
-        Recursos para ayudar a los estudiantes a construir cosas. 	
 </p>
+
+<p align="center">Recursos para ayudar a los estudiantes a construir cosas.</p>
+
 
 
 
