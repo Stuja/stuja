@@ -9,6 +9,9 @@
         <a 		href="doc/CONTRIBUIR.md">
   <img alt="Contribuir" title="Contribuir" src="imagenes/boton-contribuir.png" width="140">
   </a>
+         <a 		href="extra/no-stuja.md">
+  <img alt="No-Stuja" title="No-Stuja" src="imagenes/boton-no-stuja.png" width="140">
+  </a>
 </p>
 <p align="center">
     <img alt="Stuja" title="Stuja" src="imagenes/home.png" width="450">
@@ -18,7 +21,6 @@
   <img alt="Web" title="Web" src="imagenes/boton-web.png" width="140">
   </a>
 </p>
-
 
 
 
