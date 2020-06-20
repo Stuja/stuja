@@ -121,6 +121,28 @@ En la sección de [Issues](https://github.com/Stuja/stuja/issues) podrás ver qu
 
 ¡Es una idea maravillosa!
 
+Y eso no es todo. Si tienes una idea y vas a necesitar un poco de ayuda en el proceso, házte con un mentor haciendo lo siguiente: 
+
+1. Ve a la **sección de [Issues](https://github.com/Stuja/stuja/issues)**.
+
+2. **Crea un nuevo issue** pulsando en `New issue`
+
+   ![](http://i.imgur.com/Eg3QiKG.png)
+
+3. **Añade un título** y una descripción a tu idea. 
+
+   <img src="http://i.imgur.com/TNmwEPz.png" style="zoom: 80%;" />
+
+4. **Asígnate la tarea**.
+
+   <img src="http://i.imgur.com/Tmvkhyx.png" style="zoom: 67%;" />
+
+5. **Añade la etiqueta** `E-mentor`. 
+
+   <img src="http://i.imgur.com/8dxmJwK.png" style="zoom: 67%;" />
+
+¡Ya lo tienes! Un colaborador se pondrá en contacto contigo a través del chat del issue y podréis llevar a cabo esa idea que tienes en mente 😉 . 
+
 
 
 ## Alternativas de colabaración
