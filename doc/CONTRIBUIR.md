@@ -115,6 +115,14 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
 
 
+## Házte con un mentor
+
+En la sección de [Issues](https://github.com/Stuja/stuja/issues) podrás ver que muchas tareas están por hacer y que algunas tienen la etiqueta `E-mentor`. En los issues etiquetados con `E-mentor`, un colaborador que tiene experiencia con el proyecto se ha ofrecido como voluntario para guiarte a través de la resolución del issue. 
+
+¡Es una idea maravillosa!
+
+
+
 ## Alternativas de colabaración
 
 Si quieres aportar algo al repositorio pero aún no te has animado a hacerlo directamente, hay otra manera en la que puedes colaborar: 
