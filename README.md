@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Inicio" title="Inicio" src="imagenes/logo.png" width="240">
+    <img alt="Logo de Stuja" title="Logo de Stuja" src="imagenes/logo.png" width="240">
     <br/> <br/>
 </p>
 <p align="center">
