@@ -1,4 +1,7 @@
-<h1 align="center"> Stuja </h1> <br>
+<p align="center">
+    <img alt="Inicio" title="Inicio" src="imagenes/logo.png" width="240">
+    <br/> <br/>
+</p>
 <p align="center">
           <a 		href="README.md">
   <img alt="Inicio" title="Inicio" src="imagenes/boton-inicio.png" width="140">
@@ -21,6 +24,7 @@
   <img alt="Web" title="Web" src="imagenes/boton-web.png" width="140">
   </a>
 </p>
+
 
 
 
