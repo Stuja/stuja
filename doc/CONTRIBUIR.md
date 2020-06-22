@@ -115,6 +115,36 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
 
 
+## Házte con un mentor
+
+En la sección de [Issues](https://github.com/Stuja/stuja/issues) podrás ver que muchas tareas están por hacer y que algunas tienen la etiqueta `E-mentor`. En los issues etiquetados con `E-mentor`, un colaborador que tiene experiencia con el proyecto se ha ofrecido como voluntario para guiarte a través de la resolución del issue. 
+
+¡Es una idea maravillosa!
+
+Y eso no es todo. Si tienes una idea y vas a necesitar un poco de ayuda en el proceso, házte con un mentor haciendo lo siguiente: 
+
+1. Ve a la **sección de [Issues](https://github.com/Stuja/stuja/issues)**.
+
+2. **Crea un nuevo issue** pulsando en `New issue`
+
+   ![](http://i.imgur.com/Eg3QiKG.png)
+
+3. **Añade un título** y una descripción a tu idea. 
+
+   <img src="http://i.imgur.com/TNmwEPz.png" style="zoom: 80%;" />
+
+4. **Asígnate la tarea**.
+
+   <img src="http://i.imgur.com/Tmvkhyx.png" style="zoom: 67%;" />
+
+5. **Añade la etiqueta** `E-mentor`. 
+
+   <img src="http://i.imgur.com/8dxmJwK.png" style="zoom: 67%;" />
+
+¡Ya lo tienes! Un colaborador se pondrá en contacto contigo a través del chat del issue y podréis llevar a cabo esa idea que tienes en mente 😉 . 
+
+
+
 ## Alternativas de colabaración
 
 Si quieres aportar algo al repositorio pero aún no te has animado a hacerlo directamente, hay otra manera en la que puedes colaborar: 
