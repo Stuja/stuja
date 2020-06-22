@@ -79,8 +79,8 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 ### Primer semestre
 
 - Metaheurísticas
-- Interacción persona-ordenador
-- Informática gráfica y visualización 
+- [Interacción persona-ordenador](asignaturas/Interacción%20persona-ordenador)
+- Informática gráfica y visualización
 - Gestión y administración de base de datos 
 - Gestión y control de proyectos informáticos 
 
