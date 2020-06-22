@@ -80,7 +80,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 - Metaheurísticas
 - Interacción persona-ordenador
-- Informática gráfica y visualización 
+- [Informática gráfica y visualización](asignaturas/Interacción%20persona-ordenador) 
 - Gestión y administración de base de datos 
 - Gestión y control de proyectos informáticos 
 
