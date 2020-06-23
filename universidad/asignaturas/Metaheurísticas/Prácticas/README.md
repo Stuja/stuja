@@ -21,7 +21,7 @@
 
 ### Prácticas
 
-* [Solución de manuelalferez](https://github.com/manuelalferez/metaheuristica) `19-20`
+* [Solución de manuelalferez](https://github.com/manuelalferez/metaheuristica) 
   * [Documentación Práctica 1](19-20/Práctica%201/Solución1/Documentación.pdf)
   * [Documentación Práctica 2](19-20/Práctica%202/Solución1/Documentación.pdf)
   * [Documentación Práctica 3](19-20/Práctica%203/Solución1/Documentación.pdf)
