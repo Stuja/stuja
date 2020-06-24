@@ -43,3 +43,6 @@
 
 * [Awesome English Awesome](https://github.com/yvoronoy/awesome-english). A collection of awesome study resources for learners of English
 * [Free4Talk](https://www.free4talk.com/). The best website of practicing English speaking, easy to find a conversation partner, improve your English speaking skills, make friends, language exchange ...
+
+### Seguridad
+* [Haz clic para matarlos a todos](https://www.amazon.es/clic-aquí-para-matarlos-todos-ebook/dp/B07QQGBH7X). Libro muy interesante que analiza un poco la situación actual de la informática, más concretamente en los dispositivos IoT.
