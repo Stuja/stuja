@@ -99,7 +99,7 @@ Todos aquellos que ayudaron a levantar el proyecto.
 
 | <img alt="manuelalferez" src="https://avatars1.githubusercontent.com/u/38152841?s=400&amp" width="50"> | <img alt="Delunado" src="https://avatars0.githubusercontent.com/u/11133623?s=400&v=4" width="50"> | <img alt="rgomez96" src="https://avatars3.githubusercontent.com/u/50320963?s=400&v=4" width="50"> | <img alt="Davavico22" src="https://avatars0.githubusercontent.com/u/57295165?s=400&u=e12594f20ed0f40e56be958eb12622e04e4f1854&v=4" width="50"> |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [manuelalferez](https://github.com/manuelalferez)            | [Delunado](https://github.com/Delunado)                      | [rgomez96](https://github.com/rgomez96)                      | [Davavico22](https://github.com/Davavico22)|
+| [manuelalferez](https://github.com/manuelalferez)            | [Delunado](https://github.com/Delunado)                      | [rgomez96](https://github.com/rgomez96)                      | [Davavico](https://github.com/Davavico22)            |
 
 
 
@@ -113,5 +113,3 @@ El proyecto está bajo la licencia **Atribución/Reconocimiento-NoComercial 4.0 
   <img alt="Licencia" title="Licencia" src="imagenes/licencia.png" width="80">
   </a>
 </p>
-
-
