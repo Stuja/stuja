@@ -104,6 +104,60 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
 
 
+## Manténte al día 
+
+Deberías configurar tu repositorio local para que apunte al repositorio original de Stuja `https://github.com/Stuja/stuja`, para sincronizar cualquier cambio que se realicen en GitHub. 
+
+De este modo, siempre tendrás la última actualización de Stuja en tu repositorio local. 
+
+#### Pasos a seguir
+
+1. **Lista** tus repositorios remotos
+
+   ```bash
+   git remote -v
+   ```
+
+   ```bash
+   origin	https://github.com/tu-usuario/stuja.git (fetch)
+   origin	https://github.com/tu-usuario/stuja.git (push)
+   ```
+
+2. **Crea** un nuevo repositorio remoto
+
+   ```
+   git remote add upstream https://github.com/Stuja/stuja.git
+   ```
+
+   Ahora upstream apuntará al repositorio original de GitHub de Stuja. 
+
+3. **Verifica** tus repositorios remotos
+
+   ```bash
+   git remote -v
+   ```
+
+   ```bash
+   origin	https://github.com/tu-usuario/stuja.git (fetch)
+   origin	https://github.com/tu-usuario/stuja.git (push)
+   upstream	https://github.com/Stuja/stuja.git (fetch)
+   upstream	https://github.com/Stuja/stuja.git (push)
+   ```
+
+4. **Actualiza** tu rama master
+
+   ```bash
+   git pull upstream master
+   ```
+
+   ```bash
+   Desde https://github.com/Stuja/stuja
+    * branch            master     -> FETCH_HEAD
+   Ya está actualizado.
+   ```
+
+
+
 ### Dudas 🙋
 
 ¿Has tenido algún problema con los pasos anteriores? No te preocupes, aquí te facilitamos ayudas para que te sea más fácil: 
