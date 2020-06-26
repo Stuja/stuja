@@ -61,6 +61,8 @@ Visita nuestro [tablón de tareas](https://github.com/Stuja/stuja/projects), es 
 
    En la esquina superior izquierda de la página encontrarás un botón, haz click en **Fork**.
 
+   [**¿Qué es un fork?**](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) Un fork es una copia de un repositorio. Haciendo un fork de un repositorio te permite experimentar libremente con los cambios sin afectar el proyecto original.
+
 2. En GitHub, **navega hacia el Fork** que se te ha generado. 
 
 3. **Clona el proyecto**. 
