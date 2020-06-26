@@ -57,7 +57,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 - Sistemas operativos 
 - Seguridad en tecnologías de la información 
 - Fundamentos de ingeniería del software
-- Estructuras de datos 
+- [Estructuras de datos](asignaturas/Estructuras%20de%20datos) 
 - Arquitectura de computadores
 
 
