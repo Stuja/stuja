@@ -21,6 +21,10 @@
 
 El objetivo de esta asignatura es proporcionar al alumno conocimientos básicos de Cálculo Diferencial e integral y de Métodos Numéricos, centrándose en las aplicaciones.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
+
+
 
 ## Tabla de contenido
 

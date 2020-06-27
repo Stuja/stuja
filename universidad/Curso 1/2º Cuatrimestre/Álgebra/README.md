@@ -20,6 +20,8 @@
 
 El objetivo general de esta asignatura es proporcionar al alumno una base en conocimientos algebraicos tanto teóricos como prácticos que le permitan aplicarlos a los distintos aspectos de la ingeniería informática.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

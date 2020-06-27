@@ -21,6 +21,8 @@
 
 En esta asignatura se muestran las técnicas y principios fundamentales de la electrónica digital.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

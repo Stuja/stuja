@@ -21,6 +21,8 @@
 
 La asignatura se centra en el estudio de distintas estructuras de datos que permiten representar de una manera apropiada la información del problema para obtener soluciones eficientes. Los conocimientos de esta asignatura son además fundamentales para la mayoría de asignaturas posteriores, especialmente Diseño de Algoritmos, Inteligencia Artificial, Metaheurísticas o Informática Gráfica y Visualización.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

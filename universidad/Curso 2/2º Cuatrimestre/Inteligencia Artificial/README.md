@@ -21,6 +21,8 @@
 
 En esta asignatura se ven los fundamentos, objetivos y métodos generales de la Inteligencia Artificial. El aprendizaje se realiza de forma tanto teórico como práctica e incluye conceptos como resolución de problemas, representación del conocimiento y aprendizaje.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

@@ -18,7 +18,9 @@
 
 ## Resumen
 
-Continuación de la asignatura de primer curso **Fundamentos de Arquitectura de Computadores.**
+Continuación de la asignatura de primer curso **Fundamentos de Arquitectura de Computadores.** Se conoce a fondo las características y el funcionamiento del hardware, saber cómo mejorar el rendimiento de un sistema, y saber comparar dos arquitecturas distintas con el fin de identificar y escoger la mejor en función de las necesidades.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

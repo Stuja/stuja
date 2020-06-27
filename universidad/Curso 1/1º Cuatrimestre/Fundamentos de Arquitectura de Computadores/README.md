@@ -27,6 +27,10 @@ Tras la realización de la asignatura el alumno deberá tener un amplio conocimi
 - Instalación y configuración de equipos y evaluación de prestaciones.
 - Programación en lenguaje ensamblador.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
+
+
 
 ## Tabla de contenido
 

@@ -18,7 +18,9 @@
 
 ## Resumen
 
-El objetivo de esta asignatura es 
+Esta asignatura se incluye dentro del módulo de formación básica con contenidos relacionados con la organización y gestión empresarial y el estímulo del espíritu emprendedor. Estos contenidos se podrán ampliar con posterioridad a través de dos asignaturas optativas (Sistemas de información para las decisiones estratégicas, y Creación de empresas basadas en TIC) que se encuadran dentro de la Mención de Informática Empresarial para el módulo de optatividad.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

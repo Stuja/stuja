@@ -20,6 +20,8 @@
 
 El objetivo general de la asignatura Fundamentos Físicos de la Informática es dotar al alumno de algunos de los fundamentos físicos elementales, Electromagnetismo básico y Teoría de Circuitos, en los que se basa el funcionamiento de los dispositivos y sistemas usados en Informática.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

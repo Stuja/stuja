@@ -21,6 +21,8 @@
 
 El objetivo de esta asignatura es proporcionar al alumno una base de conocimientos del campo estadístico que realmente son muy útiles a lo largo en de la carrera. Una de las asignaturas futuras donde requeriras de conocimientos estadísticos es Metaheurística.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

@@ -20,6 +20,10 @@
 
 El objetivo general de la asignatura es proporcionar al alumno los conocimientos básicos sobre la programación de los ordenadores. Se utiliza el lenguaje C++.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
+
+
 
 ## Tabla de contenido
 

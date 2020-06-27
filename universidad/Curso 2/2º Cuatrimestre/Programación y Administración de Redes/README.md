@@ -18,7 +18,15 @@
 
 ## Resumen
 
+Esta asignatura proporciona al alumno fundamentos sobre el funcionamiento, usos y aplicaciones de las redes de computadores, haciendo especial énfasis en la administración y programación de éstas.
 
+* Tema 1. Introducción
+* Tema 2. Aplicaciones y su programación
+* Tema 3. Internet - Administración de Sistemas y Servicios
+* Tema 4. Seguridad en Redes
+* Tema 5. Hardware de Redes
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

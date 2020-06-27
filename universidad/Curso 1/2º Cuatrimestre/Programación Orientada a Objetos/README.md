@@ -20,6 +20,8 @@
 
 El objetivo de la asignatura es introducir al alumno en el paradigma de la programación mediante objetos, conocimiento esencial para cualquier profesional dedicado a la Informática. El aprendizaje se realiza de forma tanto téorica como práctica, e incluye conceptos como: clases y objetos, técnicas y notaciones (UML), y herencia, polimorfismo, y asociaciones.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

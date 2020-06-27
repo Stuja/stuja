@@ -21,6 +21,8 @@
 
 Es la primera asignatura de la carrera en la que aprendemos la utilización de los sistemas de gestión de bases de datos. Asimismo se hace uso del lenguaje declarativo SQL.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

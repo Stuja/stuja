@@ -18,7 +18,24 @@
 
 ## Resumen
 
+Constituye una asignatura de especial interés para el alumno que esté interesado en cursar a partir del segundo semestre del tercer curso el módulo de tecnología específica denominado *Ingeniería del Software*. 
 
+* **Bloque 1**. **Software e ingeniría del software**
+  * Tema 1. Software e Ingeniería del Software
+* **Bloque 2. El proceso del sofware**
+  * Tema 2. El Proceso del Software
+* **Bloque 3. Ingeniería de Requisitos**
+  * Tema 3. Introducción a la Ingeniería de Requisitos
+  * Tema 4. Modelado de la Dinámica
+  * Tema 5. Modelado del Ciclo de Vida de los Objetos
+  * Tema 6. Modelado de los Objetos
+  * Tema 7. De los Requisitos a las Clases
+* **Bloque 4. Diseño de Software**
+  * Tema 8. Fundamentos del Diseño de Software
+  * Tema 9. Diseño Arquitectónico
+  * Tema 10. Diseño Detallado
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

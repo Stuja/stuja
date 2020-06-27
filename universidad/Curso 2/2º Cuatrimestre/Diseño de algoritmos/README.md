@@ -18,7 +18,11 @@
 
 ## Resumen
 
+Diseño de Algotitmos es una asignatura donde se obtienen las capacidades de diseñar algoritmos eficientes que resuelvan problemas reales y de modelar sistemas usando autómatas finitos.
 
+Esto se consigue de dos maneras: en primer lugar el alumno desarrolla unos amplios conocimientos de distintas técnicas de diseño de algoritmos junto con el soporte teórico de la teoría de autómatas finitos, y en segundo lugar, plasma estos conocimientos en la resolucuión de problemas reales de distinta naturaleza.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

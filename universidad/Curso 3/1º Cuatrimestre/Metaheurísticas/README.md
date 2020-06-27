@@ -25,6 +25,8 @@ En esta asignatura se estudian algoritmos avanzados de:
 * Técnicas de diseño de algoritmos basados en trayectorias y poblaciones
 * Metaheurísticas paralelas
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

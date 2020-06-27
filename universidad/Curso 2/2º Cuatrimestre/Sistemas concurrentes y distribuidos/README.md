@@ -20,6 +20,8 @@
 
 En esta asignatura se muestran las técnicas y principios fundamentales de los sistemas distribuidos y la programación de sistemas concurrentes. 
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

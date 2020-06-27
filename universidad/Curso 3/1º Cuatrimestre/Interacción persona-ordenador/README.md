@@ -21,6 +21,8 @@
 
 Conocimientos tanto teóricos como prácticos que rigen la creación de interfaces de usuario. Dentro del proceso de desarrollo de una aplicación software, la asignatura aborda el análisis de requisitos, perfiles de usuarios y de elementos hardware que van a formar parte del sistema informático, así como el posterior diseño e implementación de la interfaz de la aplicación conforme al análisis realizado.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido

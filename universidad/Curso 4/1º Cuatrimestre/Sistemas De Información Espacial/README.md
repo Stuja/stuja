@@ -20,6 +20,8 @@
 
 En esta asignatura se estudian técnicas de visualización y análisis de datos que incluyen una ubicación en el espacio.
 
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
+
 
 
 ## Tabla de contenido
