@@ -1,19 +1,18 @@
 <h1 align="center"> Fundamentos de bases de datos </h1> <br>
 <p align="center">
-          <a 		href="../../../README.md">
-  <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
+          <a 		href="../../../../README.md">
+  <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../README.md">
-  <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
+      <a 		href="../../../README.md">
+  <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="../../../doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="../../../imagenes/boton-contribuir.png" width="140">
+        <a 		href="../../../../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../../../../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Asignatura" title="Asignatura" src="../../../imagenes/asignatura.png" width="450">
+    <img alt="Asignatura" title="Asignatura" src="../../../../imagenes/asignatura.png" width="450">
 </p>
-
 
 
 
@@ -21,6 +20,8 @@
 ## Resumen
 
 Es la primera asignatura de la carrera en la que aprendemos la utilización de los sistemas de gestión de bases de datos. Asimismo se hace uso del lenguaje declarativo SQL.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

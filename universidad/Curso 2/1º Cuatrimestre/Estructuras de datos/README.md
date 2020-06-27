@@ -1,21 +1,18 @@
 <h1 align="center"> Estructuras de datos </h1> <br>
 <p align="center">
-          <a 		href="../../../README.md">
-  <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
+          <a 		href="../../../../README.md">
+  <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../README.md">
-  <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
+      <a 		href="../../../README.md">
+  <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="../../../doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="../../../imagenes/boton-contribuir.png" width="140">
+        <a 		href="../../../../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../../../../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Asignatura" title="Asignatura" src="../../../imagenes/asignatura.png" width="450">
+    <img alt="Asignatura" title="Asignatura" src="../../../../imagenes/asignatura.png" width="450">
 </p>
-
-
-
 
 
 
@@ -23,6 +20,8 @@
 ## Resumen
 
 La asignatura se centra en el estudio de distintas estructuras de datos que permiten representar de una manera apropiada la información del problema para obtener soluciones eficientes. Los conocimientos de esta asignatura son además fundamentales para la mayoría de asignaturas posteriores, especialmente Diseño de Algoritmos, Inteligencia Artificial, Metaheurísticas o Informática Gráfica y Visualización.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

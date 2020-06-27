@@ -1,10 +1,9 @@
-<h1 align="center"> [TITULO DE LA ASIGNATURA] </h1> 
-<h2 align="center"> Prácticas </h2><br>
+<h1 align="center"> [TITULO DE LA ASIGNATURA] </h1> <br>
 <p align="center">
           <a 		href="../../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../../../universidad">
+      <a 		href="../../../README.md">
   <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
         <a 		href="../../../../doc/CONTRIBUIR.md">
@@ -17,4 +16,22 @@
 
 
 
-[AQUÍ ENLACES DE PRÁCTICAS RESUELTAS]
+## Resumen
+
+[RESUMEN DE LA ASIGNATURA]
+
+
+
+## Tabla de contenido
+
+- [Teoría](Teoría)
+- [Prácticas](Prácticas)
+- [Ejercicios y exámenes](Apoyo)
+
+
+
+## Consejos para superar la asignatura
+
+Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
+
+[TUS CONSEJOS PARA SUPERAR LA ASIGNATURA]

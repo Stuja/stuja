@@ -1,29 +1,28 @@
 <h1 align="center"> Diseño de Algoritmos </h1> <br>
 <p align="center">
-          <a 		href="../../../README.md">
-  <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
+          <a 		href="../../../../README.md">
+  <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../README.md">
-  <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
+      <a 		href="../../../README.md">
+  <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="../../../doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="../../../imagenes/boton-contribuir.png" width="140">
+        <a 		href="../../../../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../../../../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Asignatura" title="Asignatura" src="../../../imagenes/asignatura.png" width="450">
+    <img alt="Asignatura" title="Asignatura" src="../../../../imagenes/asignatura.png" width="450">
 </p>
-
-
-
-
-
 
 
 
 ## Resumen
 
+Diseño de Algotitmos es una asignatura donde se obtienen las capacidades de diseñar algoritmos eficientes que resuelvan problemas reales y de modelar sistemas usando autómatas finitos.
 
+Esto se consigue de dos maneras: en primer lugar el alumno desarrolla unos amplios conocimientos de distintas técnicas de diseño de algoritmos junto con el soporte teórico de la teoría de autómatas finitos, y en segundo lugar, plasma estos conocimientos en la resolucuión de problemas reales de distinta naturaleza.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

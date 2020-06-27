@@ -129,7 +129,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 #### Rama: Sistemas de información 
 
 - Sistemas de ayuda a la decisión
-- [Sistemas de información espacial](Curso%204/1º%20Cuatrimestre/Sistemas%20de%20Información/Sistemas%20De%20Información%20Espacial/Sistemas%20De%20Información%20Espacial) 
+- [Sistemas de información espacial](Curso%204/1º%20Cuatrimestre/Sistemas%20De%20Información%20Espacial) 
 - Minería de datos
 
 #### Rama: Tecnología de la información

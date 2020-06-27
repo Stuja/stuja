@@ -1,4 +1,4 @@
-<h1 align="center"> Matemática discreta </h1> <br>
+<h1 align="center"> Sistemas de Información Espacial </h1> <br>
 <p align="center">
           <a 		href="../../../../README.md">
   <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
@@ -18,10 +18,9 @@
 
 ## Resumen
 
-El objetivo general de esta asignatura es proporcionar al alumno una base en conocimientos algebraicos y de matemática discreta tanto teóricos como prácticos que le permitan aplicarlos a los distintos aspectos de la Ingeniería Informática.
+En esta asignatura se estudian técnicas de visualización y análisis de datos que incluyen una ubicación en el espacio.
 
 [Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
-
 
 
 
@@ -36,3 +35,5 @@ El objetivo general de esta asignatura es proporcionar al alumno una base en con
 ## Consejos para superar la asignatura
 
 Aquí los alumnos de la carrera irán contribuyendo con tips para superar la asignatura. Es una guía de cómo ellos la superaron, para que tú también lo consigas. 
+
+

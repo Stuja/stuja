@@ -1,29 +1,26 @@
 <h1 align="center"> Arquitectura de Computadores </h1> <br>
 <p align="center">
-          <a 		href="../../../README.md">
-  <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
+          <a 		href="../../../../README.md">
+  <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../README.md">
-  <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
+      <a 		href="../../../README.md">
+  <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="../../../doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="../../../imagenes/boton-contribuir.png" width="140">
+        <a 		href="../../../../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../../../../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Asignatura" title="Asignatura" src="../../../imagenes/asignatura.png" width="450">
+    <img alt="Asignatura" title="Asignatura" src="../../../../imagenes/asignatura.png" width="450">
 </p>
-
-
-
-
-
 
 
 
 ## Resumen
 
-Continuación de la asignatura de primer curso **Fundamentos de Arquitectura de Computadores.**
+Continuación de la asignatura de primer curso **Fundamentos de Arquitectura de Computadores.** Se conoce a fondo las características y el funcionamiento del hardware, saber cómo mejorar el rendimiento de un sistema, y saber comparar dos arquitecturas distintas con el fin de identificar y escoger la mejor en función de las necesidades.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

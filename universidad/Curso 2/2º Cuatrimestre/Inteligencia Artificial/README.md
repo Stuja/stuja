@@ -1,21 +1,18 @@
 <h1 align="center"> Inteligencia Artificial </h1> <br>
 <p align="center">
-          <a 		href="../../../README.md">
-  <img alt="Inicio" title="Inicio" src="../../../imagenes/boton-inicio.png" width="140">
+          <a 		href="../../../../README.md">
+  <img alt="Inicio" title="Inicio" src="../../../../imagenes/boton-inicio.png" width="140">
   </a>
-      <a 		href="../../README.md">
-  <img alt="Universidad" title="Universidad" src="../../../imagenes/boton-universidad.png" width="140">
+      <a 		href="../../../README.md">
+  <img alt="Universidad" title="Universidad" src="../../../../imagenes/boton-universidad.png" width="140">
   </a>
-        <a 		href="../../../doc/CONTRIBUIR.md">
-  <img alt="Contribuir" title="Contribuir" src="../../../imagenes/boton-contribuir.png" width="140">
+        <a 		href="../../../../doc/CONTRIBUIR.md">
+  <img alt="Contribuir" title="Contribuir" src="../../../../imagenes/boton-contribuir.png" width="140">
   </a>
 </p>
 <p align="center">
-    <img alt="Asignatura" title="Asignatura" src="../../../imagenes/asignatura.png" width="450">
+    <img alt="Asignatura" title="Asignatura" src="../../../../imagenes/asignatura.png" width="450">
 </p>
-
-
-
 
 
 
@@ -23,6 +20,8 @@
 ## Resumen
 
 En esta asignatura se ven los fundamentos, objetivos y métodos generales de la Inteligencia Artificial. El aprendizaje se realiza de forma tanto teórico como práctica e incluye conceptos como resolución de problemas, representación del conocimiento y aprendizaje.
+
+[Guía docente](https://uvirtual.ujaen.es/pub/es/informacionacademica/catalogoguiasdocentes/p/2019-20/4/133A)
 
 
 

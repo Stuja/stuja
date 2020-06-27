@@ -1,4 +1,4 @@
-<h1 align="center"> Metaheurísticas</h1> 
+<h1 align="center"> [TITULO DE LA ASIGNATURA] </h1> 
 <h2 align="center"> Prácticas </h2><br>
 <p align="center">
           <a 		href="../../../../../README.md">
@@ -17,13 +17,4 @@
 
 
 
-
-## Curso 19/20
-
-### Prácticas
-
-* [Solución de manuelalferez](https://github.com/manuelalferez/metaheuristica) 
-  * [Documentación Práctica 1](19-20/Práctica%201/Solución1/Documentación.pdf)
-  * [Documentación Práctica 2](19-20/Práctica%202/Solución1/Documentación.pdf)
-  * [Documentación Práctica 3](19-20/Práctica%203/Solución1/Documentación.pdf)
-
+[AQUÍ ENLACES DE PRÁCTICAS RESUELTAS]
