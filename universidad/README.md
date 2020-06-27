@@ -30,21 +30,21 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Primer semestre
 
-- [Fundamentos físicos de la informática](asignaturas/Fundamentos%20Físicos%20de%20la%20Informática)
-- [Matemática discreta](asignaturas/Matemática%20Discreta)
-- [Fundamentos de programación](asignaturas/Fundamentos%20de%20programación)
-- [Análisis y métodos numéricos](asignaturas/Análisis%20y%20Métodos%20Numéricos)
-- [Fundamentos de arquitectura de computadores](asignaturas/Fundamentos%20de%20Arquitectura%20de%20Computadores)
+- [Fundamentos físicos de la informática](Curso%201/1º%20Cuatrimestre/Fundamentos%20Físicos%20de%20la%20Informática)
+- [Matemática discreta](Curso%201/1º%20Cuatrimestre/Matemática%20Discreta)
+- [Fundamentos de programación](Curso%201/1º%20Cuatrimestre/Fundamentos%20de%20la%20programación)
+- [Análisis y métodos numéricos](Curso%201/1º%20Cuatrimestre/Análisis%20y%20Métodos%20Numéricos)
+- [Fundamentos de arquitectura de computadores](Curso%201/1º%20Cuatrimestre/Fundamentos%20de%20Arquitectura%20de%20Computadores)
 
 
 
 ### Segundo semestre
 
-- Organización y gestión empresarial 
-- [Programación orientada a objetos](asignaturas/Programación%20Orientada%20a%20Objetos) 
-- [Álgebra](asignaturas/Álgebra) 
-- [Electrónica digital](asignaturas/Electrónica%20Digital) 
-- Estadística
+- [Organización y gestión empresarial ](Curso%201/2º%20Cuatrimestre/Organización%20y%20Gestión%20Empresarial)
+- [Programación orientada a objetos](Curso%201/2º%20Cuatrimestre/Programación%20Orientada%20a%20Objetos) 
+- [Álgebra](Curso%201/2º%20Cuatrimestre/Álgebra) 
+- [Electrónica digital](Curso%201/2º%20Cuatrimestre/Electrónica%20Digital) 
+- [Estadística](Curso%201/2º%20Cuatrimestre/Estadística)
 
 
 
@@ -54,21 +54,21 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Primer semestre
 
-- Sistemas operativos 
-- Seguridad en tecnologías de la información 
-- Fundamentos de ingeniería del software
-- [Estructuras de datos](asignaturas/Estructuras%20de%20datos) 
-- Arquitectura de computadores
+- [Sistemas operativos](Curso%202/1º%20Cuatrimestre/Sistemas%20Operativos)
+- [Seguridad en tecnologías de la información](Curso%202/1º%20Cuatrimestre/Seguridad%20en%20Tecnologías%20de%20la%20Información)
+- [Fundamentos de ingeniería del software](Curso%202/1º%20Cuatrimestre/Fundamentos%20de%20Ingeniería%20del%20Software)
+- [Estructuras de datos](Curso%202/1º%20Cuatrimestre/Estructuras%20de%20datos) 
+- [Arquitectura de computadores](Curso%202/1º%20Cuatrimestre/Arquitectura%20de%20Computadores)
 
 
 
 ### Segundo semestre
 
-- [Sistemas concurrentes y distribuidos](asignaturas/Sistemas%20concurrentes%20y%20distribuidos) 
-- Programación y administración de redes
-- [Inteligencia artificial](asignaturas/Inteligencia%20Artificial) 
-- [Fundamentos de base de datos](asignaturas/Fundamentos%20de%20bases%20de%20datos) 
-- Diseño de algoritmos 
+- [Sistemas concurrentes y distribuidos](Curso%202/2º%20Cuatrimestre/Sistemas%20concurrentes%20y%20distribuidos) 
+- [Programación y administración de redes](Curso%202/2º%20Cuatrimestre/Programación%20y%20Administración%20de%20Redes)
+- [Inteligencia artificial](Curso%202/2º%20Cuatrimestre/Inteligencia%20Artificial) 
+- [Fundamentos de base de datos](Curso%202/2º%20Cuatrimestre/Fundamentos%20de%20bases%20de%20datos) 
+- [Diseño de algoritmos ](Curso%202/2º%20Cuatrimestre/Diseño%20de%20algoritmos)
 
 
 
@@ -78,8 +78,8 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 
 ### Primer semestre
 
-- [Metaheurísticas](asignaturas/Metaheurísticas)
-- [Interacción persona-ordenador](asignaturas/Interacción%20persona-ordenador)
+- [Metaheurísticas](Curso%203/1º%20Cuatrimestre/Metaheurísticas)
+- [Interacción persona-ordenador](Curso%203/1º%20Cuatrimestre/Interacción%20persona-ordenador)
 - Informática gráfica y visualización
 - Gestión y administración de base de datos 
 - Gestión y control de proyectos informáticos 
@@ -129,7 +129,7 @@ Encuentra los apuntes y el código que estás buscando. Aquí encontrarás un li
 #### Rama: Sistemas de información 
 
 - Sistemas de ayuda a la decisión
-- [Sistemas de información espacial](asignaturas/Sistemas%20De%20Información%20Espacial) 
+- [Sistemas de información espacial](Curso%204/1º%20Cuatrimestre/Sistemas%20de%20Información/Sistemas%20De%20Información%20Espacial/Sistemas%20De%20Información%20Espacial) 
 - Minería de datos
 
 #### Rama: Tecnología de la información
