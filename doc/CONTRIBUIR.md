@@ -211,11 +211,11 @@ Accediendo a nuestro [grupo de Telegram](https://t.me/stujaGitHub) y enviándono
 
 Para una visualización homogénea del proyecto, lee [nuestra guía de estilo](GUIA-DE-ESTILO.md). Si ves algo que se pueda mejorar, no dudes en aportar tu mejora. 
 
-Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, créalo y usa [nuestro template](../plantillas/README-PARA-ASIGNATURA.md) para el `README.md` de dicha asignatura. 
+Si la asignatura sobre la que vas a añadir contenido aún no tiene un directorio creado, haz lo siguiente:
 
-Igualmente si vas a añadir soluciones sobre las prácticas, usa el [template](../plantillas/README-PARA-PRÁCTICAS.md) y sitúalo dentro de la carpeta `universidad/asignatura/NOMBRE-DE-LA-ASIGNATURA/Prácticas`.
-
-Basta con rellenar los espacios entre corchetes `[]` con la información correspondiente. 
+* **Copia** [nuestra plantilla](../plantillas).
+* **Pégala** dentro del directorio adecuado. Por ejemplo, si es una asignatura del segundo cuatrimestre del primer año, pégalo en: `universidad/Curso1/2ºCuatrimestre`.
+*  **Rellena** los espacios entre corchetes `[]` con la información correspondiente. 
 
 
 
