@@ -527,7 +527,7 @@
 
 
 
-## Lección 7
+## Lección 8
 
 ![](http://i.imgur.com/Ky8THj9.png)
 
@@ -624,7 +624,7 @@
 
 
 
-## Lección 8
+## Lección 9
 
 ![](http://i.imgur.com/3TPBCwO.png)
 
@@ -743,12 +743,540 @@
    Process finished with exit code 0
    ```
 
-3. 
+3.  
 
    ```
    Sin implementar
    ```
 
-4. fsgfdsg
+4. 
 
-5. sgfsdg
+   ```
+   Sin implementar
+   ```
+
+
+
+
+## Lección 10
+
+![](http://i.imgur.com/EXzCWJg.png)
+
+#### Soluciones:
+
+1. F
+
+2. V
+
+3. V
+
+4. F. Se hace un recorrido en inorden. 
+
+5. V
+
+6. F. 
+
+   ```
+   7->der = 12->der = 13. Después eliminamos 12
+   ```
+
+7. V
+
+8. F. Solo hacia adelante. 
+
+
+
+![](http://i.imgur.com/JxrCArP.png)
+
+#### Soluciones:
+
+1. 
+
+   ```c++
+   #include <vector>
+   #include <queue>
+   
+   vector<T> recorreNiveles() {
+       vector<T> nodosPorNiveles;
+       queue<Nodo < T> *> cola;
+       cola.push(this.raiz);
+   
+       while (!cola.empty()) {
+           Nodo <T> *topCola = cola.top();
+           cola.pop();
+           nodosPorNiveles.push_back(topCola->dato);
+   
+           if (topCola->izq) cola.push(topCola->izq);
+           if (topCola->der) cola.push(topCola->der);
+       }
+       return nodosPorNiveles;
+   }
+   ```
+
+2. 
+
+   ```c++
+   int ABB::calculaAltura(Nodo <T> *p, int alt) {
+       if (p) {
+           int alt_izq, alt_der = alt;
+           int alt_izq += calculaAltura(this->raiz->izq, alt + 1);
+           int alt_der += calculaAltura(this->raiz->der, alt + 1);
+           if (alt_izq > alt_der) return alt_izq;
+           else return alt_der;
+       } else return 0;
+   
+   }
+   
+   int ABB::altura() {
+       int alt_izq = calculaAltura(this->raiz->izq, 1);
+       int alt_der = calcularAltura(this->raiz->der, 1);
+       if (alt_izq > alt_der) return alt_izq;
+       else return alt_der;
+   }
+   
+   // Otra solución
+   #include <algorithm>
+   
+   int ABB::calcularAltura(Nodo <T> *p) {
+       if (p) return (1 + max(calcularAltura(p->izq), calcularAltura(p->der)));
+       else return 0;
+   }
+   
+   int ABB::altura() {
+       return calcularAltura(this->raiz);
+   }
+   ```
+
+3. 
+
+   ```c++
+   #include <stack>
+   
+   bool Abb<T>::buscarNR(T &ele) {
+       if (this->raiz) {
+           stack<Nodo < T> *> pila;
+           pila.push(this->raiz);
+           while (!pila.empty()) {
+               Nodo <T> *topePila = pila.top();
+               pila.pop();
+               if (topePila->dato == ele) return true;
+               else {
+                   if (topePila->izq) {
+                       pila.push(topePila->izq);
+                   }
+                   if (topePila->der) {
+                       pila.push(topePila->der);
+                   }
+               }
+           }
+       }
+       return false;
+   }
+   ```
+
+
+
+## Lección 11
+
+![](http://i.imgur.com/8Ln1jWK.png)
+
+#### Soluciones:
+
+1. F. Caso 4. Rotación simple hacia izquierda.
+2. V
+3. V
+4. F
+5. V
+6. F
+7. F
+8. V
+
+
+
+![](http://i.imgur.com/sdMtOAF.png)
+
+![](http://i.imgur.com/VNSYLV8.png)
+
+#### Soluciones:
+
+1. 
+
+   <img src="http://i.imgur.com/fiIB8wc.png" style="zoom: 25%;" />
+
+   <img src="http://i.imgur.com/akc9vta.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/qVEtF2e.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/6LgMUaF.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/RzP0iUO.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/RzP0iUO.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/t5iQysS.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/G6u40yn.png" style="zoom:25%;" />
+
+   <img src="http://i.imgur.com/t5iQysS.png" style="zoom:25%;" />![](http://i.imgur.com/G6u40yn.png)<img src="http://i.imgur.com/t5iQysS.png" style="zoom:25%;" />![](http://i.imgur.com/G6u40yn.png)
+
+   <img src="http://i.imgur.com/G6u40yn.png" style="zoom:25%;" />
+
+2. 
+
+   ```
+   Sin implementar
+   ```
+
+
+
+## Lección 12
+
+![](http://i.imgur.com/ONonSdU.png)
+
+#### Soluciones:
+
+1. V
+2. F
+3. V
+4. V
+5. V
+6. V
+7. V.
+
+![](http://i.imgur.com/WJc6OmF.png)
+
+#### Soluciones:
+
+1. 
+
+   <img src="http://i.imgur.com/83H7Y4J.png" style="zoom:50%;" />
+
+2. 
+
+   ```c++
+   template<typename T>
+   class Heap {
+       T *arr; // El contenedor
+       int tamal, tamaf; // tamaños logico y físico del contenedor
+   public:
+       Heap(int aTamaf = 500) {
+           arr = new T[tamaf = aTamaf];
+           tamal = 0;
+       }
+   
+       ~Heap() { delete[] arr; }
+   
+       void push(const T &t); // Implementar
+       void swap(T &a, T &b);
+   };
+   
+   inline void Heap::swap(T &a, T &b) {
+       T aux = a;
+       a = b;
+       b = aux;
+   }
+   
+   inline void Heap::push(const T &t) {
+       if (tamal == tamaf) {
+           throw ("Error de espacio");
+       } else {
+           arr[taml++] = T;
+           int posPadre = (taml - 1 - 1) / 2;
+           int posActual = taml - 1;
+           while (arr[posActual] < arr[posPadre]) {
+               this->swap(arr[posActual], arr[posPadre]);
+               posActual = posPadre;
+               posPadre = (posActual - 1) / 2;
+           }
+       }
+   }
+   ```
+
+3. 
+
+   ```c++
+   int ConjuntoDisjunto::busca(int dato) {
+       int r = dato;
+       while (rep[r] != r) {
+           r = rep[r];
+       }
+       return r;
+   }
+   ```
+
+   
+
+## Lección 13
+
+![](http://i.imgur.com/zAyyWPF.png)
+
+#### Soluciones:
+
+1. F
+2. F
+3. F. Habría que borrar y crear de nuevo.
+4. V
+5. F. Una lista de listas.
+6. F. Un deque solo usa índices numéricos.
+7. V
+8. V
+
+![](http://i.imgur.com/KFQTKgw.png)
+
+#### Soluciones:
+
+1. 
+
+   ```c++
+   #include <iostream>
+   
+   using namespace std;
+   
+   #include <set>
+   #include <limits.h>
+   
+   int main() {
+       // Creation
+       multiset<int> box;
+       for (int i = 0; i < 10000; ++i) {
+           box.insert(rand() % 999);
+       }
+   
+       // Counting 
+       auto it = box.begin();
+       int number_max, number_min, actual = -1, max_counter = 0, min_counter = 0;
+       int repetition_max = INT_MIN, repetition_min = INT_MAX;
+       while (it != box.end()) {
+           if (actual != *it) {
+               if (min_counter < repetition_min && min_counter > 0) {
+                   number_min = *it - 1;
+                   repetition_min = min_counter;
+               }
+               actual = *it;
+               max_counter = min_counter = 0;
+           }
+           max_counter++;
+           min_counter++;
+   
+           if (max_counter > repetition_max) {
+               number_max = *it;
+               repetition_max = max_counter;
+           }
+           it++;
+       }
+       cout << "Max number: " << number_max << " Repetition: " << repetition_max << endl;
+       cout << "Min number: " << number_min << " Repetition: " << repetition_min << endl;
+       return 0;
+   }
+   ```
+
+   ```bash
+   Max number: 20 Repetition: 20
+   Min number: 989 Repetition: 1
+   
+   Process finished with exit code 0
+   ```
+
+2. 
+
+   ```c++
+       set<int> little_box;
+       auto it2 = box.begin();
+       while (it2 != box.end()) {
+           little_box.insert(*it2);
+           it2++;
+       }
+       cout << "Set size: " << little_box.size() << endl;
+   ```
+
+   ```bash
+   Set size: 999
+   
+   Process finished with exit code 0
+   ```
+
+3. 
+
+   ```
+   //Sin implementar
+   ```
+
+4. 
+
+   ```
+   //Sin implementar
+   ```
+
+   
+
+## Lección 14
+
+![](http://i.imgur.com/lVQTmP7.png)
+
+#### Soluciones:
+
+1. V
+
+2. V
+
+3. F. Por lo dicho en 1
+
+4. V
+
+5. F
+
+   ```c++
+   vector<list<Entrada<T>>>
+   ```
+
+6. V
+
+7. V
+
+![](http://i.imgur.com/Kkpwjs0.png)
+
+#### Soluciones:
+
+1. 
+
+   ```
+   //Sin implementar
+   ```
+
+2. 
+
+   ```
+   //Sin implementar
+   ```
+
+   
+
+
+
+## Lección 15
+
+![](http://i.imgur.com/xln2U6d.png)
+
+#### Soluciones:
+
+1. F
+2. V
+3. F
+4. V
+5. F
+6. V
+7. V
+
+![](http://i.imgur.com/XBVlphq.png)
+
+#### Soluciones:
+
+1. ​    
+
+   ![](http://i.imgur.com/4oJ15kl.png)
+
+2. 
+
+   ![](http://i.imgur.com/xL4c1Yu.png)
+
+3. 
+
+   ```
+   //Sin implementar
+   ```
+
+   
+
+## Lección 16
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+
+
+## Lección 17
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+
+
+## Lección 18
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+
+
+## Lección 19
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+
+
+## Lección 20
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+
+
+## Lección 21
+
+![]()
+
+#### Soluciones:
+
+1. 
+
+![]()
+
+#### Soluciones:
+
+1. 
