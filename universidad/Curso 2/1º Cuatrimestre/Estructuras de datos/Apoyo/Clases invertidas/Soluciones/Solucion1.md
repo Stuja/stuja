@@ -1189,94 +1189,173 @@
 
 ## Lección 16
 
-![]()
+![](http://i.imgur.com/wFd2qF5.png)
+
+#### Soluciones:
+
+1. V
+2. V
+3. F. Ya que hay que recorrer toda la estructura.
+4. F. Al revés. 
+5. V
+
+![](http://i.imgur.com/6fFS38m.png)
+
+![](http://i.imgur.com/LMOGmZG.png)
 
 #### Soluciones:
 
 1. 
 
-![]()
+   ```
+   DFS: 0,1,2,3,4,5
+   BFS: 0,1,5,2,4,3
+   ```
 
-#### Soluciones:
+2. 
 
-1. 
+   ```
+   // Sin implementar
+   ```
+
+3. 
+
+   ```
+   // Sin implementar
+   ```
 
 
 
 ## Lección 17
 
-![]()
+![](http://i.imgur.com/gO0wBVs.png)
+
+#### Soluciones:
+
+1. V
+2. F
+3. V
+4. V
+5. V
+6. V
+
+![](http://i.imgur.com/RizwpH7.png)
 
 #### Soluciones:
 
 1. 
 
-![]()
+   ```
+   // Sin implementar
+   ```
 
-#### Soluciones:
+2. 
 
-1. 
+   ```
+   // Sin implementar
+   ```
 
+3. 
 
+   ```
+   // Sin implementar
+   ```
 
-## Lección 18
+4. 
 
-![]()
-
-#### Soluciones:
-
-1. 
-
-![]()
-
-#### Soluciones:
-
-1. 
+   ```
+   // Sin implementar
+   ```
 
 
 
 ## Lección 19
 
-![]()
+![](http://i.imgur.com/Vm3VoyO.png)
+
+#### Soluciones:
+
+1. F. Al revés.
+2. V
+3. F. Al revés.
+4. V
+5. F. Se necesitan dos accesos a disco.
+6. F
+7. V
+
+![](http://i.imgur.com/kJyYCbO.png)
 
 #### Soluciones:
 
 1. 
 
-![]()
+   ```
+   // Sin implementar
+   ```
 
-#### Soluciones:
+2. 
 
-1. 
+   ```
+   // Sin implementar
+   ```
 
 
 
 ## Lección 20
 
-![]()
+![](http://i.imgur.com/12KbLh4.png)
+
+#### Soluciones:
+
+1. F
+2. F. A memoria no a disco.
+3. V
+4. F
+5. F. Si está corrompido.
+6. V
+
+![](http://i.imgur.com/hE8UuTs.png)
 
 #### Soluciones:
 
 1. 
 
-![]()
-
-#### Soluciones:
-
-1. 
+   ```
+   // Sin implementar
+   ```
 
 
 
 ## Lección 21
 
-![]()
+![](http://i.imgur.com/IQCuou5.png)
+
+#### Soluciones:
+
+1. F. Se mantienen en disco. 
+
+2. V
+
+3. F
+
+4. V
+
+   ```
+   5*5*5*5 = 625
+   ```
+
+5. F
+
+6. F
+
+![](http://i.imgur.com/nUUkldA.png)
 
 #### Soluciones:
 
 1. 
 
-![]()
+   ![](http://i.imgur.com/jRnCbz0.png)
 
-#### Soluciones:
+2. 
 
-1. 
+   ![](http://i.imgur.com/dbE8igw.png)
