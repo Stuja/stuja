@@ -1,0 +1,12 @@
+.data 0
+.global x
+x: 	.float 4,8
+
+.text 256
+
+add r7,r0,x
+lf f2,0(r7)
+lf f4,4(r7)
+addf f6,f4,f2
+
+trap #0

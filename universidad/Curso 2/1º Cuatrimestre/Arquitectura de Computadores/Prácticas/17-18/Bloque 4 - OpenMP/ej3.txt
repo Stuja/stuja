@@ -1,0 +1,35 @@
+	Obteniendo el número máximo de hilos de la arquitectura en la que se va a ejecutar
+el código del programa se obtine un total de 4 hilos. 
+    Ahora bien, procedemos a configurar los tamaños de las matrices con M=20, N=20 y P=20 (un tamaño lo suficientemente grande como para notar a diferencia de tiempos).
+	
+    Se procede a medir 7 tiempos con y sin OMP:
+    
+    Con OMP: 256, sin OMP: 894
+    Con OMP: 250, sin OMP: 805
+    Con OMP: 157, sin OMP: 584
+    Con OMP: 3374, sin OMP: 4163
+    Con OMP: 2341, sin OMP: 3117
+    Con OMP: 5763, sin OMP: 6462
+    Con OMP: 1515, sin OMP: 2141
+
+    A continuación se realizan los tiempos medios para las diferentes versiones: 
+
+    Con OMP: 
+    (256+250+157+3374+2341+5763+1515)/7= 1950.8571 microsegundos
+
+    Sin OMP:
+    (894+805+584+4163+3117+6462+2141)/7= 2595.1428 microsegundos
+
+    A continuación, procedemos a calcular la ganancia real, que se obtendría dividiendo el tiempo de ejecución sin OMP/ el tiempo de ejecución con OMP: 
+
+    (Tiempo original/Tiempo mejorado)=(2595.1428/1950.8571)= 1.33025 microsegundos
+
+    Es decir, la ganancia con respecto a usar OMP es de un 33.03% a no utilizarlo. 
+
+    Finalmente, procedemos a calcular la ganancia teórica. Si el código sin paralelizar tarda T, y paralelizamos todo el código (es decir, el 100%), el tiempo debería reducirse a T/4. Pero esto, como hemos visto en las operaciones realizadas, no sucede así.
+
+    Según la ley de Amdahl esto se debe a que cada algoritmo tiene una parte intrínsicamente secuencial (no paralelizable) que eventualmente no limitará la ganancia de velocidad alcanzable en un ordenador paralelo. 
+
+    Pero en este caso, interesa usar OMP ya que se obtiene una ganancia de un 33.03%.
+
+    

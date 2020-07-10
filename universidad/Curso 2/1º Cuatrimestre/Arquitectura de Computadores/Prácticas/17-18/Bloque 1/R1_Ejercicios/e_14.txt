@@ -1,0 +1,38 @@
+	.data 0
+	
+	.global x
+x:	.float 6,1,6,7,2,3,6,-3,6,1,-2,3,-5,2,6
+
+	.text 256
+
+;---------------------------------------------
+
+addi 	r1,r0,x		;R1=Puntero
+addi	r2,r0,#14	;R2=Contador
+addi	r8,r0,#1	;Veces repetidas
+lf	f1,56(r1)	;Valor de referencia (6), el ultimo
+
+;---------------------------------------------
+
+cuenta_repeticiones: 
+lf 	f3,0(r1)	;Cargamos el siguiente 
+subf	f5,f1,f3	;Restamos Valor de referencia-siguiente
+eqf	f7,f5		;Comparammos si cero es igual al resultado de la resta
+bfpt	son_iguales	;FPSR=1-> Son iguales
+subi	r2,r2,#1	;Decrementamos contador
+beqz	r2,fin		;Si el contador es cero-> fin de programa
+addi	r1,r1,#4	;Apuntamos a la siguiente posicion
+j	cuenta_repeticiones
+
+;---------------------------------------------
+
+son_iguales: 
+addi	r8,r8,#1	;El valor de referencia esta->+1
+subi	r2,r2,#1	;Decrementamos contador
+beqz	r2,fin		;Si el contador es cero-> fin de programa
+addi	r1,r1,#4	;Apuntamos a la siguiente posicion
+j	cuenta_repeticiones
+
+;---------------------------------------------
+
+fin:	trap #0

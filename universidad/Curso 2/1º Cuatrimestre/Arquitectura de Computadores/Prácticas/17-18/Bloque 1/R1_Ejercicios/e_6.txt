@@ -1,0 +1,27 @@
+	.data 0
+	.global x
+x: 	.float 1,2,3,4,5,6,7,8,9,10
+	
+
+	.text 256
+
+add 	r1,r0,x
+addi 	r7,r0,#4
+lf 	f1,0(r1) 
+addf	f9,f9,f1
+lf 	f7,16(r1)
+lf 	f5,0(r1)
+
+bucle: 	addi r1,r1,#8
+lf 	f1,0(r1)
+addf	f9,f9,f1
+subi	r7,r7,#1
+bnez	r7,bucle
+
+division: subf	f9,f9,f7 ;resta divisor
+addf	f11,f11,f5  ;f11 sera el cociente
+gtf	f11,f9
+bfpt	fin
+j	division
+
+fin:	trap #0

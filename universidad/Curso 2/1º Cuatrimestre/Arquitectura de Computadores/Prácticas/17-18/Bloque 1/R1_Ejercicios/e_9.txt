@@ -1,0 +1,61 @@
+	.data 0
+	
+	.global x
+x: 	.float 3,2,1,4,5
+
+	.text 256
+
+;-----------------------------------
+
+add r1,r0,x		;Puntero a mi vector
+
+lf	f11,0(r1)	;Cargo en f11 mi minimo actual (3)
+
+lf	f1,4(r1)	;Cargo el siguiente numero (2)
+lf	f3,8(r1)	;(1)
+lf 	f5,12(r1)	;(4)
+lf	f7,16(r1)	;(5)
+
+;-----------------------------------
+
+gtf	f11,f1		;Comparo mi menor con (2) f11>f1->FPSR=0
+bfpt	cambiamin1	;Cambio minimo si FPSR=0
+j siguiente1		;Salto incondicional a siguiente comparacion
+
+cambiamin1:	lf f11,4(r1)	;f11<-(2)
+j	siguiente1	;Salto incondicional a siguiente comparacion
+
+;-----------------------------------
+
+siguiente1:
+
+gtf 	f11,f3
+bfpt	cambiamin2
+j	siguiente2
+
+cambiamin2:	lf f11,8(r1)
+j	siguiente2
+
+;-----------------------------------
+
+siguiente2: 
+
+gtf 	f11,f5
+bfpt	cambiamin3
+j	siguiente3
+
+cambiamin3:	lf f11,12(r1)
+j	siguiente3
+
+;-----------------------------------
+
+siguiente3: 
+
+gtf 	f11,f7
+bfpt	cambiamin4
+j	fin
+
+cambiamin4:	lf f11,16(r1)
+j	fin
+
+fin: 	trap #0

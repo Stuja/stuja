@@ -1,0 +1,57 @@
+Instructions_process_per_cycle
+	fetch		3
+	decode		3
+	commit		3
+Memory
+	size		66000
+	latency		1
+	accesses		1
+Reorder_Buffer_sizes
+	integer		8
+	float		8
+Instruction_Window_sizes
+	integer		8
+	float		8
+Data_Buffer_sizes
+	load		5
+	store		5
+Instruction_Queue_size	8
+Branch_Buffer_size	200
+Integer_Functional_Units
+    Alu
+	number		4
+	latency		1
+    shift
+	number		2
+	latency		1
+    comp
+	number		1
+	latency		1
+    address
+	number		4
+	latency		1
+    branch
+	number		1
+	latency		1
+Floating_Point_Units
+    add
+	number		4
+	latency		2
+    mult
+	number		2
+	latency		5
+    div
+	number		2
+	latency		10
+    convt
+	number		2
+	latency		2
+    comp
+	number		1
+	latency		1
+    address
+	number		4
+	latency		1
+    branch
+	number		1
+	latency		1

@@ -1,0 +1,55 @@
+	.data 0 
+
+	.global x
+x:	.word 3,2,1,4,5
+
+	.text 256
+
+add	r1,r0,x		;Mi puntero para moverme en el vector
+
+lw r10,0(r1)		;R10<-3 (Mi actual minimo)
+
+lw	r3,4(r1)	;R3<-2
+lw 	r4,8(r1)	;R4<-1
+lw 	r5,12(r1)	;R5<-4
+lw	r6,16(r1)	;R6<-5
+
+;------------------------------------------------
+
+slt	r8,r10,r3	;Comparamos R10<R3
+beqz	r8,cambiamin1	;Si cero lo cambiamos R10=R3
+j	siguiente1	;Si no es cero pasamos al siguiente
+
+cambiamin1:	lw r10,4(r1)	;R10=R3
+j 	siguiente1	;Salto incondicional a siguiente
+;------------------------------------------------
+
+siguiente1:
+slt	r8,r10,r4
+beqz	r8,cambiamin2
+j	siguiente2
+
+cambiamin2:	lw r10,8(r1)
+j	siguiente2
+
+;------------------------------------------------
+
+siguiente2:
+slt	r8,r10,r5
+beqz	r8,cambiamin3
+j 	siguiente3
+
+cambiamin3:	lw r10,12(r1)
+j	siguiente3
+
+;------------------------------------------------
+
+siguiente3:	
+slt	r8,r10,r6
+beqz	r8,cambiamin4
+j 	fin
+
+cambiamin4:	lw r10,16(r1)
+j	fin
+
+fin: trap #0

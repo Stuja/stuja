@@ -1,0 +1,3 @@
+1512723097:180523200
+4 procesadores
+4 hilos

@@ -1,0 +1,30 @@
+	.data 0
+	
+	.global x
+x: 	.double 1,2,3,4,5,6,7,8,9,10
+
+	.text 256
+
+
+add	r1,r0,x		;Mi puntero a mis datos
+addi	r3,r3,#4	;Contador=4
+
+ld	f0,0(r1)	;Cargo el primer valor en f0 (1)
+addd	f2,f2,f0	;El resultado de la suma en f2
+ld 	f4,32(r1)	;Cargo el divisor (5)
+ld 	f6,0(r1)	;Cargo el 1 para comenzar la division
+
+suma: 	addi r1,r1,#16	;Apunto al siguiente dato 
+ld	f0,0(r1)	;Cargo en f0 el siguiente valor
+addd	f2,f2,f0	;Sumo el siguiente dato a mi suma
+subi	r3,r3,#1	;Decremento el contador
+bnez	r3,suma		;Mi contador no es cero, sigue sumando
+
+division: subd	f2,f2,f4	;Resto el resultado de la suma el divisor (5)
+addd	f10,f10,f6		;Incremento en uno el cociente
+gtd 	f10,f2			;Si cociente>dividiendo ->0 Fin de division
+bfpt	fin			;Cociente menor que dividiendo
+j	division		;Salto inconcicional a division
+
+fin:	trap #0
+
