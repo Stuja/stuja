@@ -1,0 +1,67 @@
+	.data 0
+	
+	.global x
+x: 	.word 1,5,9,13, 2,6,10,14, 3,7,11,15, 4,8,12,16
+
+	.text 256
+
+;---------------------------------------
+
+addi	r1,r0,x		;R1= Puntero
+addi 	r2,r0,#4	;R2= Contador=4
+
+;---------------------------------------
+
+suma_col1:
+lw	r3,0(r1)
+add	r11,r11,r3
+addi	r1,r1,#4
+subi	r2,r2,#1
+beqz	r2,inicializar1
+j	suma_col1
+
+;---------------------------------------
+
+inicializar1: 
+addi 	r2,r0,#4
+j	suma_col2
+
+suma_col2:
+lw	r3,0(r1)
+add	r12,r12,r3
+addi	r1,r1,#4
+subi	r2,r2,#1
+beqz	r2,inicializar2
+j	suma_col2
+
+;---------------------------------------
+
+inicializar2: 
+addi 	r2,r0,#4
+j	suma_col3
+
+suma_col3:
+lw	r3,0(r1)
+add	r13,r13,r3
+addi	r1,r1,#4
+subi	r2,r2,#1
+beqz	r2,inicializar3
+j	suma_col3
+
+;---------------------------------------
+
+inicializar3: 
+addi 	r2,r0,#4
+j	suma_col4
+
+suma_col4:
+lw	r3,0(r1)
+add	r14,r14,r3
+addi	r1,r1,#4
+subi	r2,r2,#1
+beqz	r2,fin
+j	suma_col4
+
+;---------------------------------------
+
+fin:	trap #0

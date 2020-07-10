@@ -1,0 +1,38 @@
+	.data 0	
+
+	.global x
+x:	.word 6,1,6,7,2,3,6,-3,6,1,-2,3,-5,2,6
+
+	.text 256
+
+;----------------------------------------------
+
+addi	r1,r0,x		;R1=Puntero
+addi	r2,r0,#14	;R2=Contador
+addi	r8,r0,#1	;R8=1 (Cuentas veces esta)
+lw	r3,0(r1)	;Valor de referencia (6)
+addi	r1,r1,#4
+
+;----------------------------------------------
+
+cuenta_repeticiones:
+lw 	r4,0(r1)
+sub	r5,r3,r4
+beqz	r5,son_iguales
+subi	r2,r2,#1
+beqz	r2,fin
+addi	r1,r1,#4
+j	cuenta_repeticiones
+
+;----------------------------------------------
+
+son_iguales: 
+addi	r8,r8,#1
+subi	r2,r2,#1
+beqz	r2,fin
+addi	r1,r1,#4
+j	cuenta_repeticiones
+
+;----------------------------------------------
+
+fin:	trap #0

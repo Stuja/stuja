@@ -1,0 +1,38 @@
+	.data 0
+
+	.global x 
+x: 	.double 3,2,1,4,5
+
+	.text 256
+
+;----------------------------------
+
+addi	r1,r0,x		;R1= Puntero
+addi	r2,r0,#4	;R2= Contador
+
+ld	f10,0(r1)	;Maximo actual= 3->F10
+addi 	r1,r1,#8	;R1->(2) Apunto al siguiente
+
+;----------------------------------
+
+maximo:	
+ld	f0,0(r1)
+gtd	f10,f0
+bfpf	cambiar_maximo
+subi	r2,r2,#1
+beqz	r2,fin
+addi	r1,r1,#8
+j	maximo
+
+;----------------------------------
+
+cambiar_maximo:
+ld	f10,0(r1)
+addi	r1,r1,#8
+subi	r2,r2,#1
+beqz	r2,fin
+j	maximo
+
+;----------------------------------
+
+fin:	trap #0
