@@ -46,3 +46,14 @@
 
 ### Seguridad
 * [Haz clic para matarlos a todos](https://www.amazon.es/clic-aquí-para-matarlos-todos-ebook/dp/B07QQGBH7X). Libro muy interesante que analiza un poco la situación actual de la informática, más concretamente en los dispositivos IoT.
+
+
+
+### Open Source
+
+**Stuja** es un proyecto Open Source, desarrollado por personas como tú. Si quieres aprender más sobre Open Source, estos recursos te serán de gran ayuda:
+
+* [Open Source Guide](https://opensource.guide/es/). Aprende cómo crear y hacer que tu proyecto crezca.
+* [Manifesto de Mozilla](https://www.mozilla.org/es-ES/about/manifesto/). Un ejemplo claro de una visión y compromiso por un idea: un internet saludable. 
+* [Google Summer of Code](https://summerofcode.withgoogle.com/archive/). Google Summer of Code es un programa global centrado en atraer a más desarrolladores de estudiantes al desarrollo de software de código abierto. Los estudiantes trabajan en un proyecto de programación de tres meses con una organización de código abierto durante su descanso de la universidad.
+
