@@ -38,7 +38,7 @@
 
 * [Open Source Guide](https://opensource.guide/es/). Aprende cómo crear y hacer que tu proyecto crezca.
 * [Manifesto de Mozilla](https://www.mozilla.org/es-ES/about/manifesto/). Un ejemplo claro de una visión y compromiso por un idea: un internet saludable. 
-* [Google Summer of Code](https://summerofcode.withgoogle.com/archive/). Google Summer of Code es un programa global centrado en atraer a más desarrolladores de estudiantes al desarrollo de software de código abierto. Los estudiantes trabajan en un proyecto de programación de tres meses con una organización de código abierto durante su descanso de la universidad.
+* [Google Summer of Code](https://summerofcode.withgoogle.com). Google Summer of Code es un programa global centrado en atraer a más desarrolladores de estudiantes al desarrollo de software de código abierto. Los estudiantes trabajan en un proyecto de programación de tres meses con una organización de código abierto durante su descanso de la universidad.
 
 
 
