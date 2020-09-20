@@ -16,21 +16,23 @@
 
 ## Primero 
 
-* [Telegram](https://t.me/joinchat/GpXWQkoyBVZVvwN3cq6IKQ)
+* [Telegram](https://t.me/joinchat/LjSg6RyK1Vl5y74xO_avyg)
 
 ## Segundo  
 
-* [Telegram](https://t.me/joinchat/H0bK_E36S3UdVzuCtT59Kw) 
+* [Telegram](https://t.me/joinchat/GpXWQkoyBVZVvwN3cq6IKQ)
 
 ## Tercero  
 
 **Grupo principal** 
 
-* [Telegram](https://t.me/joinchat/ALgesEKGuBujx_K3rz5Veg) 
+* [Telegram](https://t.me/joinchat/H0bK_E36S3UdVzuCtT59Kw) 
 
-**Grupo para la extraordinaria de Gestión y administración de Base de Datos** `Curso 19/20`
+**Grupo SI**
 
-* [Telegram](https://t.me/joinchat/FB0ZKhi4_ek8GMUThB8Mog)
+* [Telegram](https://t.me/joinchat/FnbVVRQX9jLwywwR8x3Biw)
 
 ## Cuarto 
+
+* [Telegram](https://t.me/joinchat/ALgesEKGuBujx_K3rz5Veg) 
 
