@@ -23,8 +23,10 @@
        <a 		href="https://sttuja.web.app">
   <img alt="Web" title="Web" src="imagenes/boton-web.png" width="140">
   </a>
+         <a 		href="http://eps-anterior.ujaen.es/horarios2021v1/horarios/gradoingenieriainformatica.html">
+  <img alt="Web" title="Web" src="imagenes/boton-horario.png" width="140">
+  </a>
 </p>
-
 
 
 
